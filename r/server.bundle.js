@@ -95,7 +95,7 @@ module.exports =
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return createElement; });
 /* unused harmony export useMDXComponents */
 /* unused harmony export withMDXComponents */
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 
 
@@ -299,18 +299,6 @@ function createElement (type, props) {
 
 /***/ }),
 /* 1 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-if (true) {
-  module.exports = __webpack_require__(257);
-} else {}
-
-
-/***/ }),
-/* 2 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -334,19 +322,31 @@ function _extends() {
 }
 
 /***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+if (true) {
+  module.exports = __webpack_require__(257);
+} else {}
+
+
+/***/ }),
 /* 3 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 
 // EXTERNAL MODULE: ./node_modules/react/index.js
-var react = __webpack_require__(1);
+var react = __webpack_require__(2);
 var react_default = /*#__PURE__*/__webpack_require__.n(react);
 
 // CONCATENATED MODULE: ./src/components/API.js
-const Item=({item})=>{const title=item[0];const type=item.length>1&&typeof item[1]=="string"&&item[1];const description=item.length==3?typeof item[2]=="string"&&item[2]:item.length==4&&typeof item[3]=="string"&&item[3];const children=item.length>1&&Array.isArray(item[item.length-1])&&item[item.length-1];return/*#__PURE__*/react_default.a.createElement("li",{className:"api-item"},/*#__PURE__*/react_default.a.createElement("div",null,title&&/*#__PURE__*/react_default.a.createElement("code",{className:"api-title"},title),type&&/*#__PURE__*/react_default.a.createElement("strong",{className:"api-type"},type)),description&&/*#__PURE__*/react_default.a.createElement("div",{className:"api-description",dangerouslySetInnerHTML:{__html:description}}),children&&/*#__PURE__*/react_default.a.createElement(API,{items:children}));};const API=({items})=>{return/*#__PURE__*/react_default.a.createElement("ul",null,items&&items.map((child,i)=>/*#__PURE__*/react_default.a.createElement(Item,{item:child,key:i})));};const Badge=({type,title=true,noMargin=true})=>{let name;switch(type){case"hoc":name="Higher-Order Component";break;default:name=type[0].toUpperCase()+type.substring(1);}return/*#__PURE__*/react_default.a.createElement("div",{className:"badge-wrapper"},/*#__PURE__*/react_default.a.createElement("span",{className:`badge badge-${type} ${title?"badge-title":""} ${noMargin?"badge-no-margin":""}`},name));};
+const Item=({item})=>{const title=item[0];const type=item.length>1&&typeof item[1]=='string'&&item[1];const description=item.length==3?typeof item[2]=='string'&&item[2]:item.length==4&&typeof item[3]=='string'&&item[3];const children=item.length>1&&Array.isArray(item[item.length-1])&&item[item.length-1];return/*#__PURE__*/react_default.a.createElement("li",{className:"api-item"},/*#__PURE__*/react_default.a.createElement("div",null,title&&/*#__PURE__*/react_default.a.createElement("code",{className:"api-title"},title),type&&/*#__PURE__*/react_default.a.createElement("strong",{className:"api-type"},type)),description&&/*#__PURE__*/react_default.a.createElement("div",{className:"api-description",dangerouslySetInnerHTML:{__html:description}}),children&&/*#__PURE__*/react_default.a.createElement(API,{items:children}));};const API=({items})=>{return/*#__PURE__*/react_default.a.createElement("ul",null,items&&items.map((child,i)=>/*#__PURE__*/react_default.a.createElement(Item,{item:child,key:i})));};const Badge=({type,title=true,noMargin=true})=>{let name;switch(type){case'hoc':name='Higher-Order Component';break;default:name=type[0].toUpperCase()+type.substring(1);}return/*#__PURE__*/react_default.a.createElement("div",{className:"badge-wrapper"},/*#__PURE__*/react_default.a.createElement("span",{className:`badge badge-${type} ${title?'badge-title':''} ${noMargin?'badge-no-margin':''}`},name));};
 // CONCATENATED MODULE: ./src/components/Badge.js
-const Badge_Badge=({type,title=true,noMargin=true})=>{let name;switch(type){case"hoc":name="Higher-Order Component";break;default:name=type[0].toUpperCase()+type.substring(1);}return/*#__PURE__*/react_default.a.createElement("div",{className:"badge-wrapper"},/*#__PURE__*/react_default.a.createElement("span",{className:`badge badge-${type} ${title?"badge-title":""} ${noMargin?"badge-no-margin":""}`},name));};
+const Badge_Badge=({type,title=true,noMargin=true})=>{let name;switch(type){case'hoc':name='Higher-Order Component';break;default:name=type[0].toUpperCase()+type.substring(1);}return/*#__PURE__*/react_default.a.createElement("div",{className:"badge-wrapper"},/*#__PURE__*/react_default.a.createElement("span",{className:`badge badge-${type} ${title?'badge-title':''} ${noMargin?'badge-no-margin':''}`},name));};
 // EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/useDocusaurusContext.js
 var useDocusaurusContext = __webpack_require__(5);
 
@@ -442,7 +442,7 @@ function _interopRequireWildcard(obj) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _context__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(74);
 /**
@@ -613,7 +613,7 @@ module.exports = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(37);
 /* harmony import */ var _isInternalUrl__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(24);
@@ -1108,7 +1108,7 @@ function _inheritsLoose(subClass, superClass) {
   subClass.__proto__ = superClass;
 }
 // EXTERNAL MODULE: ./node_modules/react/index.js
-var react = __webpack_require__(1);
+var react = __webpack_require__(2);
 var react_default = /*#__PURE__*/__webpack_require__.n(react);
 
 // EXTERNAL MODULE: /home/runner/work/craft.js/craft.js/node_modules/prop-types/index.js
@@ -3176,7 +3176,7 @@ canUseDOM&&!!(window.addEventListener||window.attachEvent),canUseIntersectionObs
 "use strict";
 
 // EXTERNAL MODULE: ./node_modules/react/index.js
-var react = __webpack_require__(1);
+var react = __webpack_require__(2);
 var react_default = /*#__PURE__*/__webpack_require__.n(react);
 
 // EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/Head.js
@@ -3261,7 +3261,7 @@ var styles_module_default = /*#__PURE__*/__webpack_require__.n(styles_module);
  * LICENSE file in the root directory of this source tree.
  */function AnnouncementBar(){const{siteConfig:{themeConfig:{announcementBar={}}}={}}=Object(useDocusaurusContext["a" /* default */])();const{content,backgroundColor,textColor}=announcementBar;const{isAnnouncementBarClosed,closeAnnouncementBar}=Object(useAnnouncementBarContext["a" /* default */])();if(!content||isAnnouncementBarClosed){return null;}return/*#__PURE__*/react_default.a.createElement("div",{className:styles_module_default.a.announcementBar,style:{backgroundColor,color:textColor},role:"banner"},/*#__PURE__*/react_default.a.createElement("div",{className:styles_module_default.a.announcementBarContent,dangerouslySetInnerHTML:{__html:content}}),/*#__PURE__*/react_default.a.createElement("button",{type:"button",className:styles_module_default.a.announcementBarClose,onClick:closeAnnouncementBar,"aria-label":"Close"},/*#__PURE__*/react_default.a.createElement("span",{"aria-hidden":"true"},"\xD7")));}/* harmony default export */ var theme_AnnouncementBar = (AnnouncementBar);
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/extends.js
-var esm_extends = __webpack_require__(2);
+var esm_extends = __webpack_require__(1);
 
 // EXTERNAL MODULE: /home/runner/work/craft.js/craft.js/node_modules/classnames/index.js
 var classnames = __webpack_require__(6);
@@ -3282,13 +3282,13 @@ var router = __webpack_require__(23);
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- */let loaded=false;const Search=props=>{const initialized=Object(react["useRef"])(false);const searchBarRef=Object(react["useRef"])(null);const{siteConfig={}}=Object(useDocusaurusContext["a" /* default */])();const{themeConfig:{algolia}}=siteConfig;const history=Object(router["c" /* useHistory */])();const initAlgolia=()=>{if(!initialized.current){window.docsearch({appId:algolia.appId,apiKey:algolia.apiKey,indexName:algolia.indexName,inputSelector:"#search_input_react",algoliaOptions:algolia.algoliaOptions,// Override algolia's default selection event, allowing us to do client-side
+ */let loaded=false;const Search=props=>{const initialized=Object(react["useRef"])(false);const searchBarRef=Object(react["useRef"])(null);const{siteConfig={}}=Object(useDocusaurusContext["a" /* default */])();const{themeConfig:{algolia}}=siteConfig;const history=Object(router["c" /* useHistory */])();const initAlgolia=()=>{if(!initialized.current){window.docsearch({appId:algolia.appId,apiKey:algolia.apiKey,indexName:algolia.indexName,inputSelector:'#search_input_react',algoliaOptions:algolia.algoliaOptions,// Override algolia's default selection event, allowing us to do client-side
 // navigation and avoiding a full page refresh.
 handleSelected:(_input,_event,suggestion)=>{// Use an anchor tag to parse the absolute url into a relative url
 // Alternatively, we can use new URL(suggestion.url) but its not supported in IE
-const a=document.createElement("a");a.href=suggestion.url;// Algolia use closest parent element id #__docusaurus when a h1 page title does not have an id
+const a=document.createElement('a');a.href=suggestion.url;// Algolia use closest parent element id #__docusaurus when a h1 page title does not have an id
 // So, we can safely remove it. See https://github.com/facebook/docusaurus/issues/1828 for more details.
-const routePath=`#__docusaurus`===a.hash?`${a.pathname}`:`${a.pathname}${a.hash}`;history.push(routePath);}});initialized.current=true;}};const loadAlgolia=()=>{if(!loaded){Promise.all([Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(381))),Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(434)))]).then(([{default:docsearch}])=>{loaded=true;window.docsearch=docsearch;initAlgolia();});}else{initAlgolia();}};const toggleSearchIconClick=Object(react["useCallback"])(e=>{if(!searchBarRef.current.contains(e.target)){searchBarRef.current.focus();}props.handleSearchBarToggle(!props.isSearchBarExpanded);},[props.isSearchBarExpanded]);return/*#__PURE__*/react_default.a.createElement("div",{className:"navbar__search",key:"search-box"},/*#__PURE__*/react_default.a.createElement("span",{"aria-label":"expand searchbar",role:"button",className:classnames_default()("search-icon",{"search-icon-hidden":props.isSearchBarExpanded}),onClick:toggleSearchIconClick,onKeyDown:toggleSearchIconClick,tabIndex:0}),/*#__PURE__*/react_default.a.createElement("input",{id:"search_input_react",type:"search",placeholder:"Search","aria-label":"Search",className:classnames_default()("navbar__search-input",{"search-bar-expanded":props.isSearchBarExpanded},{"search-bar":!props.isSearchBarExpanded}),onClick:loadAlgolia,onMouseOver:loadAlgolia,onFocus:toggleSearchIconClick,onBlur:toggleSearchIconClick,ref:searchBarRef}));};/* harmony default export */ var SearchBar = (Search);
+const routePath=`#__docusaurus`===a.hash?`${a.pathname}`:`${a.pathname}${a.hash}`;history.push(routePath);}});initialized.current=true;}};const loadAlgolia=()=>{if(!loaded){Promise.all([Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(381))),Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(434)))]).then(([{default:docsearch}])=>{loaded=true;window.docsearch=docsearch;initAlgolia();});}else{initAlgolia();}};const toggleSearchIconClick=Object(react["useCallback"])(e=>{if(!searchBarRef.current.contains(e.target)){searchBarRef.current.focus();}props.handleSearchBarToggle(!props.isSearchBarExpanded);},[props.isSearchBarExpanded]);return/*#__PURE__*/react_default.a.createElement("div",{className:"navbar__search",key:"search-box"},/*#__PURE__*/react_default.a.createElement("span",{"aria-label":"expand searchbar",role:"button",className:classnames_default()('search-icon',{'search-icon-hidden':props.isSearchBarExpanded}),onClick:toggleSearchIconClick,onKeyDown:toggleSearchIconClick,tabIndex:0}),/*#__PURE__*/react_default.a.createElement("input",{id:"search_input_react",type:"search",placeholder:"Search","aria-label":"Search",className:classnames_default()('navbar__search-input',{'search-bar-expanded':props.isSearchBarExpanded},{'search-bar':!props.isSearchBarExpanded}),onClick:loadAlgolia,onMouseOver:loadAlgolia,onFocus:toggleSearchIconClick,onBlur:toggleSearchIconClick,ref:searchBarRef}));};/* harmony default export */ var SearchBar = (Search);
 // EXTERNAL MODULE: ./node_modules/react-toggle/dist/component/index.js
 var component = __webpack_require__(247);
 var component_default = /*#__PURE__*/__webpack_require__.n(component);
@@ -3343,8 +3343,8 @@ var Navbar_styles_module_default = /*#__PURE__*/__webpack_require__.n(Navbar_sty
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- */function NavLink({activeBasePath,activeBaseRegex,to,href,label,activeClassName="navbar__link--active",prependBaseUrlToHref,...props}){const toUrl=Object(useBaseUrl["a" /* default */])(to);const activeBaseUrl=Object(useBaseUrl["a" /* default */])(activeBasePath);const normalizedHref=Object(useBaseUrl["a" /* default */])(href,true);return/*#__PURE__*/react_default.a.createElement(Link["a" /* default */],Object(esm_extends["a" /* default */])({},href?{target:"_blank",rel:"noopener noreferrer",href:prependBaseUrlToHref?normalizedHref:href}:{isNavLink:true,activeClassName,to:toUrl,...(activeBasePath||activeBaseRegex?{isActive:(_match,location)=>activeBaseRegex?new RegExp(activeBaseRegex).test(location.pathname):location.pathname.startsWith(activeBaseUrl)}:null)},props),label);}function NavItem({items,position,className,...props}){const navLinkClassNames=(extraClassName,isDropdownItem=false)=>classnames_default()({"navbar__item navbar__link":!isDropdownItem,dropdown__link:isDropdownItem},extraClassName);if(!items){return/*#__PURE__*/react_default.a.createElement(NavLink,Object(esm_extends["a" /* default */])({className:navLinkClassNames(className)},props));}return/*#__PURE__*/react_default.a.createElement("div",{className:classnames_default()("navbar__item","dropdown","dropdown--hoverable",{"dropdown--left":position==="left","dropdown--right":position==="right"})},/*#__PURE__*/react_default.a.createElement(NavLink,Object(esm_extends["a" /* default */])({className:navLinkClassNames(className)},props,{onClick:e=>e.preventDefault(),onKeyDown:e=>{if(e.key==="Enter"){e.target.parentNode.classList.toggle("dropdown--show");}}}),props.label),/*#__PURE__*/react_default.a.createElement("ul",{className:"dropdown__menu"},items.map(({className:childItemClassName,...childItemProps},i)=>/*#__PURE__*/react_default.a.createElement("li",{key:i},/*#__PURE__*/react_default.a.createElement(NavLink,Object(esm_extends["a" /* default */])({activeClassName:"dropdown__link--active",className:navLinkClassNames(childItemClassName,true)},childItemProps))))));}function MobileNavItem({items,position,className,...props}){// Need to destructure position from props so that it doesn't get passed on.
-const navLinkClassNames=(extraClassName,isSubList=false)=>classnames_default()("menu__link",{"menu__link--sublist":isSubList},extraClassName);if(!items){return/*#__PURE__*/react_default.a.createElement("li",{className:"menu__list-item"},/*#__PURE__*/react_default.a.createElement(NavLink,Object(esm_extends["a" /* default */])({className:navLinkClassNames(className)},props)));}return/*#__PURE__*/react_default.a.createElement("li",{className:"menu__list-item"},/*#__PURE__*/react_default.a.createElement(NavLink,Object(esm_extends["a" /* default */])({className:navLinkClassNames(className,true)},props),props.label),/*#__PURE__*/react_default.a.createElement("ul",{className:"menu__list"},items.map(({className:childItemClassName,...childItemProps},i)=>/*#__PURE__*/react_default.a.createElement("li",{className:"menu__list-item",key:i},/*#__PURE__*/react_default.a.createElement(NavLink,Object(esm_extends["a" /* default */])({activeClassName:"menu__link--active",className:navLinkClassNames(childItemClassName)},childItemProps,{onClick:props.onClick}))))));}function Navbar(){const{siteConfig:{themeConfig:{navbar:{title,links=[],hideOnScroll=false}={},disableDarkMode=false},baseUrl},isClient}=Object(useDocusaurusContext["a" /* default */])();const[sidebarShown,setSidebarShown]=Object(react["useState"])(false);const[isSearchBarExpanded,setIsSearchBarExpanded]=Object(react["useState"])(false);const{isDarkTheme,setLightTheme,setDarkTheme}=Object(useThemeContext["a" /* default */])();const{navbarRef,isNavbarVisible}=hooks_useHideableNavbar(hideOnScroll);const{logoLink,logoLinkProps,logoImageUrl,logoAlt}=Object(useLogo["a" /* default */])();let version=versions[0];const path=typeof window!=="undefined"?window.location.pathname:null;if(path&&path.indexOf(baseUrl+"docs/")>-1){const matches=versions.filter(version=>path.indexOf(version)>-1);version=matches[0]||version;}Object(useLockBodyScroll["a" /* default */])(sidebarShown);const showSidebar=Object(react["useCallback"])(()=>{setSidebarShown(true);},[setSidebarShown]);const hideSidebar=Object(react["useCallback"])(()=>{setSidebarShown(false);},[setSidebarShown]);const onToggleChange=Object(react["useCallback"])(e=>e.target.checked?setDarkTheme():setLightTheme(),[setLightTheme,setDarkTheme]);return/*#__PURE__*/react_default.a.createElement("nav",{ref:navbarRef,className:classnames_default()("navbar","navbar--light","navbar--fixed-top",{"navbar-sidebar--show":sidebarShown,[Navbar_styles_module_default.a.navbarHideable]:hideOnScroll,[Navbar_styles_module_default.a.navbarHidden]:!isNavbarVisible})},/*#__PURE__*/react_default.a.createElement("div",{className:"navbar__inner"},/*#__PURE__*/react_default.a.createElement("div",{className:"navbar__items"},links!=null&&links.length!==0&&/*#__PURE__*/react_default.a.createElement("div",{"aria-label":"Navigation bar toggle",className:"navbar__toggle",role:"button",tabIndex:0,onClick:showSidebar,onKeyDown:showSidebar},/*#__PURE__*/react_default.a.createElement("svg",{xmlns:"http://www.w3.org/2000/svg",width:"30",height:"30",viewBox:"0 0 30 30",role:"img",focusable:"false"},/*#__PURE__*/react_default.a.createElement("title",null,"Menu"),/*#__PURE__*/react_default.a.createElement("path",{stroke:"currentColor",strokeLinecap:"round",strokeMiterlimit:"10",strokeWidth:"2",d:"M4 7h22M4 15h22M4 23h22"}))),/*#__PURE__*/react_default.a.createElement("div",{className:"logo-container"},/*#__PURE__*/react_default.a.createElement(Link["a" /* default */],Object(esm_extends["a" /* default */])({className:"navbar__brand",to:logoLink},logoLinkProps),logoImageUrl!=null&&/*#__PURE__*/react_default.a.createElement("img",{key:isClient,className:"navbar__logo",src:logoImageUrl,alt:logoAlt}),title!=null&&/*#__PURE__*/react_default.a.createElement("strong",{className:classnames_default()("navbar__title",{[Navbar_styles_module_default.a.hideLogoText]:isSearchBarExpanded})},title)),/*#__PURE__*/react_default.a.createElement(Link["a" /* default */],{to:Object(useBaseUrl["a" /* default */])("versions"),className:"version-header-label"},version)),links.filter(linkItem=>linkItem.position==="left").map((linkItem,i)=>/*#__PURE__*/react_default.a.createElement(NavItem,Object(esm_extends["a" /* default */])({},linkItem,{key:i})))),/*#__PURE__*/react_default.a.createElement("div",{className:"navbar__items navbar__items--right"},links.filter(linkItem=>linkItem.position==="right").map((linkItem,i)=>/*#__PURE__*/react_default.a.createElement(NavItem,Object(esm_extends["a" /* default */])({},linkItem,{key:i}))),!disableDarkMode&&/*#__PURE__*/react_default.a.createElement(Toggle,{className:Navbar_styles_module_default.a.displayOnlyInLargeViewport,"aria-label":"Dark mode toggle",checked:isDarkTheme,onChange:onToggleChange}),/*#__PURE__*/react_default.a.createElement(SearchBar,{handleSearchBarToggle:setIsSearchBarExpanded,isSearchBarExpanded:isSearchBarExpanded}))),/*#__PURE__*/react_default.a.createElement("div",{role:"presentation",className:"navbar-sidebar__backdrop",onClick:hideSidebar}),/*#__PURE__*/react_default.a.createElement("div",{className:"navbar-sidebar"},/*#__PURE__*/react_default.a.createElement("div",{className:"navbar-sidebar__brand"},/*#__PURE__*/react_default.a.createElement(Link["a" /* default */],Object(esm_extends["a" /* default */])({className:"navbar__brand",onClick:hideSidebar,to:logoLink},logoLinkProps),logoImageUrl!=null&&/*#__PURE__*/react_default.a.createElement("img",{key:isClient,className:"navbar__logo",src:logoImageUrl,alt:logoAlt}),title!=null&&/*#__PURE__*/react_default.a.createElement("strong",{className:"navbar__title"},title)),!disableDarkMode&&sidebarShown&&/*#__PURE__*/react_default.a.createElement(Toggle,{"aria-label":"Dark mode toggle in sidebar",checked:isDarkTheme,onChange:onToggleChange})),/*#__PURE__*/react_default.a.createElement("div",{className:"navbar-sidebar__items"},/*#__PURE__*/react_default.a.createElement("div",{className:"menu"},/*#__PURE__*/react_default.a.createElement("ul",{className:"menu__list"},links.map((linkItem,i)=>/*#__PURE__*/react_default.a.createElement(MobileNavItem,Object(esm_extends["a" /* default */])({},linkItem,{onClick:hideSidebar,key:i}))))))));}/* harmony default export */ var theme_Navbar = (Navbar);
+ */function NavLink({activeBasePath,activeBaseRegex,to,href,label,activeClassName='navbar__link--active',prependBaseUrlToHref,...props}){const toUrl=Object(useBaseUrl["a" /* default */])(to);const activeBaseUrl=Object(useBaseUrl["a" /* default */])(activeBasePath);const normalizedHref=Object(useBaseUrl["a" /* default */])(href,true);return/*#__PURE__*/react_default.a.createElement(Link["a" /* default */],Object(esm_extends["a" /* default */])({},href?{target:'_blank',rel:'noopener noreferrer',href:prependBaseUrlToHref?normalizedHref:href}:{isNavLink:true,activeClassName,to:toUrl,...(activeBasePath||activeBaseRegex?{isActive:(_match,location)=>activeBaseRegex?new RegExp(activeBaseRegex).test(location.pathname):location.pathname.startsWith(activeBaseUrl)}:null)},props),label);}function NavItem({items,position,className,...props}){const navLinkClassNames=(extraClassName,isDropdownItem=false)=>classnames_default()({'navbar__item navbar__link':!isDropdownItem,dropdown__link:isDropdownItem},extraClassName);if(!items){return/*#__PURE__*/react_default.a.createElement(NavLink,Object(esm_extends["a" /* default */])({className:navLinkClassNames(className)},props));}return/*#__PURE__*/react_default.a.createElement("div",{className:classnames_default()('navbar__item','dropdown','dropdown--hoverable',{'dropdown--left':position==='left','dropdown--right':position==='right'})},/*#__PURE__*/react_default.a.createElement(NavLink,Object(esm_extends["a" /* default */])({className:navLinkClassNames(className)},props,{onClick:e=>e.preventDefault(),onKeyDown:e=>{if(e.key==='Enter'){e.target.parentNode.classList.toggle('dropdown--show');}}}),props.label),/*#__PURE__*/react_default.a.createElement("ul",{className:"dropdown__menu"},items.map(({className:childItemClassName,...childItemProps},i)=>/*#__PURE__*/react_default.a.createElement("li",{key:i},/*#__PURE__*/react_default.a.createElement(NavLink,Object(esm_extends["a" /* default */])({activeClassName:"dropdown__link--active",className:navLinkClassNames(childItemClassName,true)},childItemProps))))));}function MobileNavItem({items,position,className,...props}){// Need to destructure position from props so that it doesn't get passed on.
+const navLinkClassNames=(extraClassName,isSubList=false)=>classnames_default()('menu__link',{'menu__link--sublist':isSubList},extraClassName);if(!items){return/*#__PURE__*/react_default.a.createElement("li",{className:"menu__list-item"},/*#__PURE__*/react_default.a.createElement(NavLink,Object(esm_extends["a" /* default */])({className:navLinkClassNames(className)},props)));}return/*#__PURE__*/react_default.a.createElement("li",{className:"menu__list-item"},/*#__PURE__*/react_default.a.createElement(NavLink,Object(esm_extends["a" /* default */])({className:navLinkClassNames(className,true)},props),props.label),/*#__PURE__*/react_default.a.createElement("ul",{className:"menu__list"},items.map(({className:childItemClassName,...childItemProps},i)=>/*#__PURE__*/react_default.a.createElement("li",{className:"menu__list-item",key:i},/*#__PURE__*/react_default.a.createElement(NavLink,Object(esm_extends["a" /* default */])({activeClassName:"menu__link--active",className:navLinkClassNames(childItemClassName)},childItemProps,{onClick:props.onClick}))))));}function Navbar(){const{siteConfig:{themeConfig:{navbar:{title,links=[],hideOnScroll=false}={},disableDarkMode=false},baseUrl},isClient}=Object(useDocusaurusContext["a" /* default */])();const[sidebarShown,setSidebarShown]=Object(react["useState"])(false);const[isSearchBarExpanded,setIsSearchBarExpanded]=Object(react["useState"])(false);const{isDarkTheme,setLightTheme,setDarkTheme}=Object(useThemeContext["a" /* default */])();const{navbarRef,isNavbarVisible}=hooks_useHideableNavbar(hideOnScroll);const{logoLink,logoLinkProps,logoImageUrl,logoAlt}=Object(useLogo["a" /* default */])();let version=versions[0];const path=typeof window!=='undefined'?window.location.pathname:null;if(path&&path.indexOf(baseUrl+'docs/')>-1){const matches=versions.filter(version=>path.indexOf(version)>-1);version=matches[0]||version;}Object(useLockBodyScroll["a" /* default */])(sidebarShown);const showSidebar=Object(react["useCallback"])(()=>{setSidebarShown(true);},[setSidebarShown]);const hideSidebar=Object(react["useCallback"])(()=>{setSidebarShown(false);},[setSidebarShown]);const onToggleChange=Object(react["useCallback"])(e=>e.target.checked?setDarkTheme():setLightTheme(),[setLightTheme,setDarkTheme]);return/*#__PURE__*/react_default.a.createElement("nav",{ref:navbarRef,className:classnames_default()('navbar','navbar--light','navbar--fixed-top',{'navbar-sidebar--show':sidebarShown,[Navbar_styles_module_default.a.navbarHideable]:hideOnScroll,[Navbar_styles_module_default.a.navbarHidden]:!isNavbarVisible})},/*#__PURE__*/react_default.a.createElement("div",{className:"navbar__inner"},/*#__PURE__*/react_default.a.createElement("div",{className:"navbar__items"},links!=null&&links.length!==0&&/*#__PURE__*/react_default.a.createElement("div",{"aria-label":"Navigation bar toggle",className:"navbar__toggle",role:"button",tabIndex:0,onClick:showSidebar,onKeyDown:showSidebar},/*#__PURE__*/react_default.a.createElement("svg",{xmlns:"http://www.w3.org/2000/svg",width:"30",height:"30",viewBox:"0 0 30 30",role:"img",focusable:"false"},/*#__PURE__*/react_default.a.createElement("title",null,"Menu"),/*#__PURE__*/react_default.a.createElement("path",{stroke:"currentColor",strokeLinecap:"round",strokeMiterlimit:"10",strokeWidth:"2",d:"M4 7h22M4 15h22M4 23h22"}))),/*#__PURE__*/react_default.a.createElement("div",{className:"logo-container"},/*#__PURE__*/react_default.a.createElement(Link["a" /* default */],Object(esm_extends["a" /* default */])({className:"navbar__brand",to:logoLink},logoLinkProps),logoImageUrl!=null&&/*#__PURE__*/react_default.a.createElement("img",{key:isClient,className:"navbar__logo",src:logoImageUrl,alt:logoAlt}),title!=null&&/*#__PURE__*/react_default.a.createElement("strong",{className:classnames_default()('navbar__title',{[Navbar_styles_module_default.a.hideLogoText]:isSearchBarExpanded})},title)),/*#__PURE__*/react_default.a.createElement(Link["a" /* default */],{to:Object(useBaseUrl["a" /* default */])('versions'),className:"version-header-label"},version)),links.filter(linkItem=>linkItem.position==='left').map((linkItem,i)=>/*#__PURE__*/react_default.a.createElement(NavItem,Object(esm_extends["a" /* default */])({},linkItem,{key:i})))),/*#__PURE__*/react_default.a.createElement("div",{className:"navbar__items navbar__items--right"},links.filter(linkItem=>linkItem.position==='right').map((linkItem,i)=>/*#__PURE__*/react_default.a.createElement(NavItem,Object(esm_extends["a" /* default */])({},linkItem,{key:i}))),!disableDarkMode&&/*#__PURE__*/react_default.a.createElement(Toggle,{className:Navbar_styles_module_default.a.displayOnlyInLargeViewport,"aria-label":"Dark mode toggle",checked:isDarkTheme,onChange:onToggleChange}),/*#__PURE__*/react_default.a.createElement(SearchBar,{handleSearchBarToggle:setIsSearchBarExpanded,isSearchBarExpanded:isSearchBarExpanded}))),/*#__PURE__*/react_default.a.createElement("div",{role:"presentation",className:"navbar-sidebar__backdrop",onClick:hideSidebar}),/*#__PURE__*/react_default.a.createElement("div",{className:"navbar-sidebar"},/*#__PURE__*/react_default.a.createElement("div",{className:"navbar-sidebar__brand"},/*#__PURE__*/react_default.a.createElement(Link["a" /* default */],Object(esm_extends["a" /* default */])({className:"navbar__brand",onClick:hideSidebar,to:logoLink},logoLinkProps),logoImageUrl!=null&&/*#__PURE__*/react_default.a.createElement("img",{key:isClient,className:"navbar__logo",src:logoImageUrl,alt:logoAlt}),title!=null&&/*#__PURE__*/react_default.a.createElement("strong",{className:"navbar__title"},title)),!disableDarkMode&&sidebarShown&&/*#__PURE__*/react_default.a.createElement(Toggle,{"aria-label":"Dark mode toggle in sidebar",checked:isDarkTheme,onChange:onToggleChange})),/*#__PURE__*/react_default.a.createElement("div",{className:"navbar-sidebar__items"},/*#__PURE__*/react_default.a.createElement("div",{className:"menu"},/*#__PURE__*/react_default.a.createElement("ul",{className:"menu__list"},links.map((linkItem,i)=>/*#__PURE__*/react_default.a.createElement(MobileNavItem,Object(esm_extends["a" /* default */])({},linkItem,{onClick:hideSidebar,key:i}))))))));}/* harmony default export */ var theme_Navbar = (Navbar);
 // EXTERNAL MODULE: ./src/theme/Footer/styles.module.css
 var Footer_styles_module = __webpack_require__(248);
 var Footer_styles_module_default = /*#__PURE__*/__webpack_require__.n(Footer_styles_module);
@@ -3355,7 +3355,7 @@ var Footer_styles_module_default = /*#__PURE__*/__webpack_require__.n(Footer_sty
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- */function FooterLink({to,href,label,...props}){const toUrl=Object(useBaseUrl["a" /* default */])(to);return/*#__PURE__*/react_default.a.createElement(Link["a" /* default */],Object(esm_extends["a" /* default */])({className:"footer__link-item"},href?{target:"_blank",rel:"noopener noreferrer",href}:{to:toUrl},props),label);}const FooterLogo=({url,alt})=>/*#__PURE__*/react_default.a.createElement("img",{className:"footer__logo",alt:alt,src:url});function Footer(){const context=Object(useDocusaurusContext["a" /* default */])();const{siteConfig={}}=context;const{themeConfig={}}=siteConfig;const{footer}=themeConfig;const{copyright,links=[],logo={}}=footer||{};const logoUrl=Object(useBaseUrl["a" /* default */])(logo.src);if(!footer){return null;}return/*#__PURE__*/react_default.a.createElement("footer",{className:classnames_default()("footer",{"footer--dark":footer.style==="dark"})},/*#__PURE__*/react_default.a.createElement("div",{className:"container"},links&&links.length>0&&/*#__PURE__*/react_default.a.createElement("div",{className:"row footer__links"},links.map((linkItem,i)=>/*#__PURE__*/react_default.a.createElement("div",{key:i,className:"col footer__col"},linkItem.title!=null?/*#__PURE__*/react_default.a.createElement("h4",{className:"footer__title"},linkItem.title):null,linkItem.items!=null&&Array.isArray(linkItem.items)&&linkItem.items.length>0?/*#__PURE__*/react_default.a.createElement("ul",{className:"footer__items"},linkItem.items.map((item,key)=>item.html?/*#__PURE__*/react_default.a.createElement("div",{key:key,dangerouslySetInnerHTML:{__html:item.html}}):/*#__PURE__*/react_default.a.createElement("li",{key:item.href||item.to,className:"footer__item"},/*#__PURE__*/react_default.a.createElement(FooterLink,item)))):null))),/*#__PURE__*/react_default.a.createElement("div",{className:"footer__end text--center"},/*#__PURE__*/react_default.a.createElement("div",{className:"footer__madewith margin-bottom--md"},"Made with ",/*#__PURE__*/react_default.a.createElement("img",{src:Object(useBaseUrl["a" /* default */])("img/heart-fill.png")})," in Kuala Lumpur, Malaysia"),/*#__PURE__*/react_default.a.createElement("div",null,"Released under the MIT license"),(logo||copyright)&&/*#__PURE__*/react_default.a.createElement("div",{className:""},logo&&logo.src&&/*#__PURE__*/react_default.a.createElement("div",{className:"margin-bottom--sm"},logo.href?/*#__PURE__*/react_default.a.createElement("a",{href:logo.href,target:"_blank",rel:"noopener noreferrer",className:Footer_styles_module_default.a.footerLogoLink},/*#__PURE__*/react_default.a.createElement(FooterLogo,{alt:logo.alt,url:logoUrl})):/*#__PURE__*/react_default.a.createElement(FooterLogo,{alt:logo.alt,url:logoUrl})),copyright),/*#__PURE__*/react_default.a.createElement("div",{className:"text--center margin-top--md"},/*#__PURE__*/react_default.a.createElement("a",{target:"_blank",href:"https://github.com/prevwong/craft.js"},/*#__PURE__*/react_default.a.createElement("img",{src:"https://img.shields.io/github/stars/prevwong/craft.js?color=%23000&logo=github&style=social"}))))));}/* harmony default export */ var theme_Footer = (Footer);
+ */function FooterLink({to,href,label,...props}){const toUrl=Object(useBaseUrl["a" /* default */])(to);return/*#__PURE__*/react_default.a.createElement(Link["a" /* default */],Object(esm_extends["a" /* default */])({className:"footer__link-item"},href?{target:'_blank',rel:'noopener noreferrer',href}:{to:toUrl},props),label);}const FooterLogo=({url,alt})=>/*#__PURE__*/react_default.a.createElement("img",{className:"footer__logo",alt:alt,src:url});function Footer(){const context=Object(useDocusaurusContext["a" /* default */])();const{siteConfig={}}=context;const{themeConfig={}}=siteConfig;const{footer}=themeConfig;const{copyright,links=[],logo={}}=footer||{};const logoUrl=Object(useBaseUrl["a" /* default */])(logo.src);if(!footer){return null;}return/*#__PURE__*/react_default.a.createElement("footer",{className:classnames_default()('footer',{'footer--dark':footer.style==='dark'})},/*#__PURE__*/react_default.a.createElement("div",{className:"container"},links&&links.length>0&&/*#__PURE__*/react_default.a.createElement("div",{className:"row footer__links"},links.map((linkItem,i)=>/*#__PURE__*/react_default.a.createElement("div",{key:i,className:"col footer__col"},linkItem.title!=null?/*#__PURE__*/react_default.a.createElement("h4",{className:"footer__title"},linkItem.title):null,linkItem.items!=null&&Array.isArray(linkItem.items)&&linkItem.items.length>0?/*#__PURE__*/react_default.a.createElement("ul",{className:"footer__items"},linkItem.items.map((item,key)=>item.html?/*#__PURE__*/react_default.a.createElement("div",{key:key,dangerouslySetInnerHTML:{__html:item.html}}):/*#__PURE__*/react_default.a.createElement("li",{key:item.href||item.to,className:"footer__item"},/*#__PURE__*/react_default.a.createElement(FooterLink,item)))):null))),/*#__PURE__*/react_default.a.createElement("div",{className:"footer__end text--center"},/*#__PURE__*/react_default.a.createElement("div",{className:"footer__madewith margin-bottom--md"},"Made with ",/*#__PURE__*/react_default.a.createElement("img",{src:Object(useBaseUrl["a" /* default */])('img/heart-fill.png')})," in Kuala Lumpur, Malaysia"),/*#__PURE__*/react_default.a.createElement("div",null,"Released under the MIT license"),(logo||copyright)&&/*#__PURE__*/react_default.a.createElement("div",{className:""},logo&&logo.src&&/*#__PURE__*/react_default.a.createElement("div",{className:"margin-bottom--sm"},logo.href?/*#__PURE__*/react_default.a.createElement("a",{href:logo.href,target:"_blank",rel:"noopener noreferrer",className:Footer_styles_module_default.a.footerLogoLink},/*#__PURE__*/react_default.a.createElement(FooterLogo,{alt:logo.alt,url:logoUrl})):/*#__PURE__*/react_default.a.createElement(FooterLogo,{alt:logo.alt,url:logoUrl})),copyright),/*#__PURE__*/react_default.a.createElement("div",{className:"text--center margin-top--md"},/*#__PURE__*/react_default.a.createElement("a",{target:"_blank",href:"https://github.com/prevwong/craft.js"},/*#__PURE__*/react_default.a.createElement("img",{src:"https://img.shields.io/github/stars/prevwong/craft.js?color=%23000&logo=github&style=social"}))))));}/* harmony default export */ var theme_Footer = (Footer);
 // EXTERNAL MODULE: ./node_modules/@docusaurus/theme-classic/src/theme/Layout/styles.css
 var styles = __webpack_require__(438);
 
@@ -4918,7 +4918,7 @@ function _inheritsLoose(subClass, superClass) {
   subClass.__proto__ = superClass;
 }
 // EXTERNAL MODULE: ./node_modules/react/index.js
-var react = __webpack_require__(1);
+var react = __webpack_require__(2);
 var react_default = /*#__PURE__*/__webpack_require__.n(react);
 
 // EXTERNAL MODULE: /home/runner/work/craft.js/craft.js/node_modules/history/esm/history.js + 3 modules
@@ -5249,7 +5249,7 @@ if (false) { var ariaCurrentType; }
 /* 38 */
 /***/ (function(module) {
 
-module.exports = JSON.parse("[\"0.1.0-beta.7\",\"0.1.0-beta.6\"]");
+module.exports = JSON.parse("[\"0.1.0-beta.8\",\"0.1.0-beta.6\"]");
 
 /***/ }),
 /* 39 */
@@ -8758,7 +8758,7 @@ Prism.languages.yml = Prism.languages.yaml;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _theme_ThemeContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(76);
 /**
@@ -9476,7 +9476,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var React = __webpack_require__(1);
+var React = __webpack_require__(2);
 var PropTypes = __webpack_require__(30);
 
 var ALL_INITIALIZERS = [];
@@ -10875,7 +10875,7 @@ module.exports = require("stream");
 __webpack_require__.r(__webpack_exports__);
 
 // EXTERNAL MODULE: ./node_modules/react/index.js
-var react = __webpack_require__(1);
+var react = __webpack_require__(2);
 var react_default = /*#__PURE__*/__webpack_require__.n(react);
 
 // EXTERNAL MODULE: ./node_modules/@docusaurus/core/lib/client/exports/Head.js
@@ -10921,7 +10921,7 @@ var styles_module_default = /*#__PURE__*/__webpack_require__.n(styles_module);
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- */const LINK_CLASS_NAME="table-of-contents__link";const ACTIVE_LINK_CLASS_NAME="table-of-contents__link--active";const TOP_OFFSET=100;function DocTOC({headings}){hooks_useTOCHighlight(LINK_CLASS_NAME,ACTIVE_LINK_CLASS_NAME,TOP_OFFSET);return/*#__PURE__*/react_default.a.createElement("div",{className:"col col--3"},/*#__PURE__*/react_default.a.createElement("div",{className:styles_module_default.a.tableOfContents},/*#__PURE__*/react_default.a.createElement(Headings,{headings:headings})));}/* eslint-disable jsx-a11y/control-has-associated-label */function Headings({headings,isChild}){if(!headings.length){return null;}return/*#__PURE__*/react_default.a.createElement("ul",{className:isChild?"":"table-of-contents table-of-contents__left-border"},headings.map(heading=>/*#__PURE__*/react_default.a.createElement("li",{key:heading.id},/*#__PURE__*/react_default.a.createElement("a",{href:`#${heading.id}`,className:LINK_CLASS_NAME,dangerouslySetInnerHTML:{__html:heading.value}}),/*#__PURE__*/react_default.a.createElement(Headings,{isChild:true,headings:heading.children}))));}function DocItem(props){const{siteConfig={}}=Object(useDocusaurusContext["a" /* default */])();const{url:siteUrl,title:siteTitle}=siteConfig;const{content:DocContent}=props;const{metadata}=DocContent;const{description,title,permalink,editUrl,lastUpdatedAt,lastUpdatedBy,version}=metadata;const{frontMatter:{image:metaImage,keywords,hide_title:hideTitle,hide_table_of_contents:hideTableOfContents}}=DocContent;const metaTitle=title?`${title} | ${siteTitle}`:siteTitle;let metaImageUrl=siteUrl+Object(useBaseUrl["a" /* default */])(metaImage);if(!Object(isInternalUrl["a" /* default */])(metaImage)){metaImageUrl=metaImage;}return/*#__PURE__*/react_default.a.createElement(react_default.a.Fragment,null,/*#__PURE__*/react_default.a.createElement(Head["a" /* default */],null,/*#__PURE__*/react_default.a.createElement("title",null,metaTitle),/*#__PURE__*/react_default.a.createElement("meta",{property:"og:title",content:metaTitle}),description&&/*#__PURE__*/react_default.a.createElement("meta",{name:"description",content:description}),description&&/*#__PURE__*/react_default.a.createElement("meta",{property:"og:description",content:description}),keywords&&keywords.length&&/*#__PURE__*/react_default.a.createElement("meta",{name:"keywords",content:keywords.join(",")}),metaImage&&/*#__PURE__*/react_default.a.createElement("meta",{property:"og:image",content:metaImageUrl}),metaImage&&/*#__PURE__*/react_default.a.createElement("meta",{property:"twitter:image",content:metaImageUrl}),metaImage&&/*#__PURE__*/react_default.a.createElement("meta",{name:"twitter:image:alt",content:`Image for ${title}`}),permalink&&/*#__PURE__*/react_default.a.createElement("meta",{property:"og:url",content:siteUrl+permalink}),permalink&&/*#__PURE__*/react_default.a.createElement("link",{rel:"canonical",href:siteUrl+permalink})),/*#__PURE__*/react_default.a.createElement("div",{className:classnames_default()("container padding-vert--lg",styles_module_default.a.docItemWrapper)},/*#__PURE__*/react_default.a.createElement("div",{className:"row"},/*#__PURE__*/react_default.a.createElement("div",{className:classnames_default()("col",{[styles_module_default.a.docItemCol]:!hideTableOfContents})},/*#__PURE__*/react_default.a.createElement("div",{className:styles_module_default.a.docItemContainer},/*#__PURE__*/react_default.a.createElement("article",null,!hideTitle&&/*#__PURE__*/react_default.a.createElement("header",null,/*#__PURE__*/react_default.a.createElement("h1",{className:styles_module_default.a.docTitle},title)),/*#__PURE__*/react_default.a.createElement("div",{className:"markdown"},/*#__PURE__*/react_default.a.createElement(DocContent,null))),(editUrl||lastUpdatedAt||lastUpdatedBy)&&/*#__PURE__*/react_default.a.createElement("div",{className:"margin-vert--xl"},/*#__PURE__*/react_default.a.createElement("div",{className:"row"},/*#__PURE__*/react_default.a.createElement("div",{className:"col"},editUrl&&/*#__PURE__*/react_default.a.createElement("a",{href:editUrl,target:"_blank",rel:"noreferrer noopener"},/*#__PURE__*/react_default.a.createElement("svg",{fill:"currentColor",height:"1.2em",width:"1.2em",preserveAspectRatio:"xMidYMid meet",viewBox:"0 0 40 40",style:{marginRight:"0.3em",verticalAlign:"sub"}},/*#__PURE__*/react_default.a.createElement("g",null,/*#__PURE__*/react_default.a.createElement("path",{d:"m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"}))),"Edit this page")),(lastUpdatedAt||lastUpdatedBy)&&/*#__PURE__*/react_default.a.createElement("div",{className:"col text--right"},/*#__PURE__*/react_default.a.createElement("em",null,/*#__PURE__*/react_default.a.createElement("small",null,"Last updated"," ",lastUpdatedAt&&/*#__PURE__*/react_default.a.createElement(react_default.a.Fragment,null,"on"," ",/*#__PURE__*/react_default.a.createElement("time",{dateTime:new Date(lastUpdatedAt*1000).toISOString(),className:styles_module_default.a.docLastUpdatedAt},new Date(lastUpdatedAt*1000).toLocaleDateString()),lastUpdatedBy&&" "),lastUpdatedBy&&/*#__PURE__*/react_default.a.createElement(react_default.a.Fragment,null,"by ",/*#__PURE__*/react_default.a.createElement("strong",null,lastUpdatedBy)), false&&/*#__PURE__*/false))))),/*#__PURE__*/react_default.a.createElement("div",{className:"margin-vert--lg"},/*#__PURE__*/react_default.a.createElement(theme_DocPaginator,{metadata:metadata})))),!hideTableOfContents&&DocContent.rightToc&&/*#__PURE__*/react_default.a.createElement(DocTOC,{headings:DocContent.rightToc}))));}/* harmony default export */ var theme_DocItem = __webpack_exports__["default"] = (DocItem);
+ */const LINK_CLASS_NAME='table-of-contents__link';const ACTIVE_LINK_CLASS_NAME='table-of-contents__link--active';const TOP_OFFSET=100;function DocTOC({headings}){hooks_useTOCHighlight(LINK_CLASS_NAME,ACTIVE_LINK_CLASS_NAME,TOP_OFFSET);return/*#__PURE__*/react_default.a.createElement("div",{className:"col col--3"},/*#__PURE__*/react_default.a.createElement("div",{className:styles_module_default.a.tableOfContents},/*#__PURE__*/react_default.a.createElement(Headings,{headings:headings})));}/* eslint-disable jsx-a11y/control-has-associated-label */function Headings({headings,isChild}){if(!headings.length){return null;}return/*#__PURE__*/react_default.a.createElement("ul",{className:isChild?'':'table-of-contents table-of-contents__left-border'},headings.map(heading=>/*#__PURE__*/react_default.a.createElement("li",{key:heading.id},/*#__PURE__*/react_default.a.createElement("a",{href:`#${heading.id}`,className:LINK_CLASS_NAME,dangerouslySetInnerHTML:{__html:heading.value}}),/*#__PURE__*/react_default.a.createElement(Headings,{isChild:true,headings:heading.children}))));}function DocItem(props){const{siteConfig={}}=Object(useDocusaurusContext["a" /* default */])();const{url:siteUrl,title:siteTitle}=siteConfig;const{content:DocContent}=props;const{metadata}=DocContent;const{description,title,permalink,editUrl,lastUpdatedAt,lastUpdatedBy,version}=metadata;const{frontMatter:{image:metaImage,keywords,hide_title:hideTitle,hide_table_of_contents:hideTableOfContents}}=DocContent;const metaTitle=title?`${title} | ${siteTitle}`:siteTitle;let metaImageUrl=siteUrl+Object(useBaseUrl["a" /* default */])(metaImage);if(!Object(isInternalUrl["a" /* default */])(metaImage)){metaImageUrl=metaImage;}return/*#__PURE__*/react_default.a.createElement(react_default.a.Fragment,null,/*#__PURE__*/react_default.a.createElement(Head["a" /* default */],null,/*#__PURE__*/react_default.a.createElement("title",null,metaTitle),/*#__PURE__*/react_default.a.createElement("meta",{property:"og:title",content:metaTitle}),description&&/*#__PURE__*/react_default.a.createElement("meta",{name:"description",content:description}),description&&/*#__PURE__*/react_default.a.createElement("meta",{property:"og:description",content:description}),keywords&&keywords.length&&/*#__PURE__*/react_default.a.createElement("meta",{name:"keywords",content:keywords.join(',')}),metaImage&&/*#__PURE__*/react_default.a.createElement("meta",{property:"og:image",content:metaImageUrl}),metaImage&&/*#__PURE__*/react_default.a.createElement("meta",{property:"twitter:image",content:metaImageUrl}),metaImage&&/*#__PURE__*/react_default.a.createElement("meta",{name:"twitter:image:alt",content:`Image for ${title}`}),permalink&&/*#__PURE__*/react_default.a.createElement("meta",{property:"og:url",content:siteUrl+permalink}),permalink&&/*#__PURE__*/react_default.a.createElement("link",{rel:"canonical",href:siteUrl+permalink})),/*#__PURE__*/react_default.a.createElement("div",{className:classnames_default()('container padding-vert--lg',styles_module_default.a.docItemWrapper)},/*#__PURE__*/react_default.a.createElement("div",{className:"row"},/*#__PURE__*/react_default.a.createElement("div",{className:classnames_default()('col',{[styles_module_default.a.docItemCol]:!hideTableOfContents})},/*#__PURE__*/react_default.a.createElement("div",{className:styles_module_default.a.docItemContainer},/*#__PURE__*/react_default.a.createElement("article",null,!hideTitle&&/*#__PURE__*/react_default.a.createElement("header",null,/*#__PURE__*/react_default.a.createElement("h1",{className:styles_module_default.a.docTitle},title)),/*#__PURE__*/react_default.a.createElement("div",{className:"markdown"},/*#__PURE__*/react_default.a.createElement(DocContent,null))),(editUrl||lastUpdatedAt||lastUpdatedBy)&&/*#__PURE__*/react_default.a.createElement("div",{className:"margin-vert--xl"},/*#__PURE__*/react_default.a.createElement("div",{className:"row"},/*#__PURE__*/react_default.a.createElement("div",{className:"col"},editUrl&&/*#__PURE__*/react_default.a.createElement("a",{href:editUrl,target:"_blank",rel:"noreferrer noopener"},/*#__PURE__*/react_default.a.createElement("svg",{fill:"currentColor",height:"1.2em",width:"1.2em",preserveAspectRatio:"xMidYMid meet",viewBox:"0 0 40 40",style:{marginRight:'0.3em',verticalAlign:'sub'}},/*#__PURE__*/react_default.a.createElement("g",null,/*#__PURE__*/react_default.a.createElement("path",{d:"m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"}))),"Edit this page")),(lastUpdatedAt||lastUpdatedBy)&&/*#__PURE__*/react_default.a.createElement("div",{className:"col text--right"},/*#__PURE__*/react_default.a.createElement("em",null,/*#__PURE__*/react_default.a.createElement("small",null,"Last updated",' ',lastUpdatedAt&&/*#__PURE__*/react_default.a.createElement(react_default.a.Fragment,null,"on",' ',/*#__PURE__*/react_default.a.createElement("time",{dateTime:new Date(lastUpdatedAt*1000).toISOString(),className:styles_module_default.a.docLastUpdatedAt},new Date(lastUpdatedAt*1000).toLocaleDateString()),lastUpdatedBy&&' '),lastUpdatedBy&&/*#__PURE__*/react_default.a.createElement(react_default.a.Fragment,null,"by ",/*#__PURE__*/react_default.a.createElement("strong",null,lastUpdatedBy)), false&&/*#__PURE__*/false))))),/*#__PURE__*/react_default.a.createElement("div",{className:"margin-vert--lg"},/*#__PURE__*/react_default.a.createElement(theme_DocPaginator,{metadata:metadata})))),!hideTableOfContents&&DocContent.rightToc&&/*#__PURE__*/react_default.a.createElement(DocTOC,{headings:DocContent.rightToc}))));}/* harmony default export */ var theme_DocItem = __webpack_exports__["default"] = (DocItem);
 
 /***/ }),
 /* 73 */
@@ -10937,7 +10937,7 @@ function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'defau
 var PropTypes = _interopDefault(__webpack_require__(30));
 var withSideEffect = _interopDefault(__webpack_require__(262));
 var isEqual = _interopDefault(__webpack_require__(264));
-var React = _interopDefault(__webpack_require__(1));
+var React = _interopDefault(__webpack_require__(2));
 var objectAssign = _interopDefault(__webpack_require__(58));
 
 var ATTRIBUTE_NAMES = {
@@ -11838,7 +11838,7 @@ exports.Helmet = HelmetExport;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -11852,7 +11852,7 @@ exports.Helmet = HelmetExport;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(73);
 /* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_helmet__WEBPACK_IMPORTED_MODULE_1__);
@@ -11868,7 +11868,7 @@ exports.Helmet = HelmetExport;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -11882,7 +11882,7 @@ exports.Helmet = HelmetExport;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -11896,7 +11896,7 @@ exports.Helmet = HelmetExport;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _theme_AnnouncementBarContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(77);
 /**
@@ -11911,7 +11911,7 @@ exports.Helmet = HelmetExport;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _docusaurus_ExecutionEnvironment__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(22);
 /**
@@ -11926,7 +11926,7 @@ exports.Helmet = HelmetExport;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -11999,7 +11999,7 @@ function _extends() {
   return _extends.apply(this, arguments);
 }
 // EXTERNAL MODULE: ./node_modules/react/index.js
-var react = __webpack_require__(1);
+var react = __webpack_require__(2);
 var react_default = /*#__PURE__*/__webpack_require__.n(react);
 
 // CONCATENATED MODULE: ./node_modules/react-router-config/esm/react-router-config.js
@@ -13987,7 +13987,7 @@ webpackContext.id = 112;
 // For browser users, this will be mapped to src/browser/builds/algoliasearchLite.js
 // when used through browserify or webpack (see package.json browser field)
 // This is done to ease universal applications (https://github.com/algolia/algoliasearch-client-js/issues/283)
-module.exports = __webpack_require__(152);
+module.exports = __webpack_require__(153);
 
 
 /***/ }),
@@ -13996,7 +13996,7 @@ module.exports = __webpack_require__(152);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _theme_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(25);
 /**
@@ -15936,170 +15936,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
-/* harmony import */ var _site_src_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
-const frontMatter={id:'user-components',title:'User Components'};const metadata={"id":"version-0.1.0-beta.7/concepts/user-components","title":"User Components","description":"User Components are intended to be written just like any other React Component.","source":"@site/versioned_docs/version-0.1.0-beta.7/concepts/user-components.md","permalink":"/r/docs/concepts/user-components","version":"0.1.0-beta.7","sidebar":"version-0.1.0-beta.7/docs","previous":{"title":"Nodes","permalink":"/r/docs/concepts/nodes"},"next":{"title":"Interacting with the Editor","permalink":"/r/docs/concepts/editor-components"}};/* @jsx mdx */const rightToc=[{value:'Connectors',id:'connectors',children:[]},{value:'Props manipulation',id:'props-manipulation',children:[]},{value:'Collecting Node&#39;s state',id:'collecting-nodes-state',children:[]},{value:'Default Props',id:'default-props',children:[]},{value:'Specify drag/drop rules',id:'specify-dragdrop-rules',children:[]},{value:'Related Components',id:'related-components',children:[]},{value:'Defining editable elements',id:'defining-editable-elements',children:[]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`User Components are intended to be written just like any other React Component. `),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Let's start with a simple Text component:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const Text = ({text, fontSize}) => {
-  return (
-    <span contenteditable="true" style={{fontSize}}>{text}</span>
-  )
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Now, let's actually get the component to work with the editor. The `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`useNode`),` hook provides us with several information and methods related to the corresponding `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Node`),` that manages the component.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const { connectors: {connect, drag}, setProp, ...collected } = useNode((node) => {});
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Additionally we can pass configuration values via the static `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`craft`),` property:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const Text = () => {...}
-Text.craft = {
-  props: {},
-  rules: {
-    canDrag: () => true,
-    canMoveIn: () => true,
-    canMoveOut: () => true
-  },
-  related: {}
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`We'll explore each of these values in the following sections.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"connectors"},`Connectors`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`The first thing we would want to do is to actually let Craft.js to manage the DOM for our component. `),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("ul",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"li"},`connect`),`: specifies the DOM that represents the User Component.  If the component's corresponding Node is a Canvas, then this also defines the area that is droppable.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"li"},`drag`),`: specifies the DOM element that should be made draggable. When the user drags this element, it'll be considered as dragging the entire component, therefore moving the entire component to the drop location. This connector only takes effect if the component's corresponding node is a Canvas Node.`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx","metastring":"{14,15,18}","{14,15,18}":true}),`const Container = ({children}) => {
-  const { connectors: {connect, drag} } = useNode();
-  return (
-    <div ref={dom => connect(drag(dom))}>
-      {children}
-    </div>
-  )
-}
-
-const App = () => {
-  return (
-    <Editor resolvers={{Container}}>
-      <Frame>
-        <Element is={Container} canvas> // (i)
-          <Container> // (ii)
-            <h2>Hi</h2>
-          </Container>
-          <Element is={Container} canvas> // (iii)
-            <h2>Hi</h2>
-          </Element>
-        </Element>
-      </Frame>
-    </Editor>
-  )
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("ul",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`i. `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"li"},`Hero`),` is being rendered with a Canvas Node, thus it defines a droppable region. However, since it is not a child of a Canvas Node, it is not draggable (the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"li"},`drag`),` handler will not do anything).`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`ii. `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"li"},`Hero`),` is an immediate child of a Canvas Node; it is draggable.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`iii. `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"li"},`Hero`),` is an immediate child of a Canvas Node and is rendered with a Canvas Node - it is both draggable and droppable.`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"props-manipulation"},`Props manipulation`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`You've probably seen page editors where you could directly interact with the components and manipulate them. For instance, drag to resize an image or visually edit a text. This is easily achievable with Craft.js as well.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Since components are managed by their corresponding `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Node`),` which contains information including the component's props, thus we can call the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`setProp`),` method to update the prop values stored in the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Node`),`. In turn, this will re-render the component with its updated values.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx","metastring":"{2,6-8}","{2,6-8}":true}),`const Text = ({text, fontSize}) => {
-  const { connectors: {connect, drag}, actions: {setProp} } = useNode();
-
-  return (
-    <span ref={dom => connect(drag(dom))} style={{fontSize}} onKeyUp={(e) => {
-        setProp(props => {
-          props.text = e.target.innerText;
-        })
-      }}>{text}
-    </span>
-  )
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`In the above example, we have updated our `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`span`),` element to be content editable and added an event handler to update the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`text`),` prop as the user visually enters in a new value.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"collecting-nodes-state"},`Collecting Node's state`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`The information stored in a corresponding `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Node`),` could be useful in helping you build more usable components. We can retrieve information from a `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Node`),` by passing a collector function to the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`useNode`),` hook. Every time the values we retrieved via the collector function changes, our component will re-render. This is very much similar to Redux's `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`connect`),` pattern.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`For instance, let's say we would like to enable the content editable text from the previous section only when the user has actually clicked on our component: `),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const Text = ({text, fontSize}) => {
-  // highlight-next-line
-  const { connectors: {connect, drag}, setProp, isClicked } = useNode((node) => ({
-    // highlight-next-line
-    isClicked: node.events.selected
-  }));
-
-  return (
-    // highlight-next-line
-    <span ref={dom => connect(drag(dom))} style={{fontSize}} contentEditable={isClicked} onKeyUp={(e) => {
-        setProp(props => {
-          props.text = e.target.innerText;
-        })
-      }}>{text}
-    </span>
-  )
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"default-props"},`Default Props`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`While it's not necessary as we could simply define default parameters (e.g.: ES6 defaults) directly within our components, these default values will not actually be recorded into the component's corresponding `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Node`),`, which could leave us with a lot of empty prop values when we wish to retrieve the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Node`),` for a component when building other parts of our editor (eg: a Toolbar for editing a component's values).`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`To prevent that, we can explicitly specify default prop values via the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`craft.props`),` like the following:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const Text = ({text, fontSize}) => { /** same as previous example **/ }
-Hero.craft = {
-  props: {
-    text: "Hi there!",
-    fontSize: 12
-  }
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"specify-dragdrop-rules"},`Specify drag/drop rules`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`You may want to restrict how your components are dragged or what goes in and out of your component. These rules can be specified in the static `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`craft.rules`),`.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Let us write a (pretty strange) rule for our Text component which users can only drag if they change the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`text`),` prop to "Drag": `),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const Text = ({text, fontSize}) => { /** same as the previous example **/ }
-Text.craft = {
-  props: { /** same as the previous example **/ },
-  rules: {
-    canDrag: (node) => !!node.data.props.text == "Drag"
-  }
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"related-components"},`Related Components`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`What happens if you need to design some component to complement our  user component? For instance, if we were planning on building a Toolbar somewhere in our page editor, we would like the Toolbar to display a bunch of text inputs to allow the user the edit the currently selected component. It would be great if we could retrieve a specific component that has all the relevant inputs for the user to edit the currently selected component.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`This is where related components become useful. These components share the same corresponding `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Node`),` as the actual user component, hence the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`useNode`),` hook that we have been using all this while will be made available to these components as well. `),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const Text = ({text, fontSize}) => { /** same as the previous example **/ }
-Text.craft = {
-  related: {
-    toolbar: TextToolbarSettings
-  }
-}
-
-const TextToolbarSettings = () => {
-  const { setProp, fontSize } = useNode((node) => ({
-    fontSize: node.data.props.fontSize
-  }));
-
-  return (
-    <div>
-      <h2>Text settings</h2>
-      <input 
-        type = "number" 
-        value={fontSize} 
-        placeholder="Font size"
-        onChange={e => 
-          setProp(prop => prop.fontSize = e.target.value) 
-        }
-       />
-    </div>
-  )
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Now, let's say we have a Toolbar component somewhere in our editor. We can easily retrieve the related component as such:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const Toolbar = () => {
-  const { selectededNodeId, toolbarSettings } = useEditor((state) => ({
-    selectededNodeId : state.event.selected,
-    toolbarSettings:  state.nodes[state.events.selected].related.toolbar
-  }));
-  return (
-    <div>
-      <h2>My Awesome Toolbar</h2>
-      {
-        selectededNodeId && toolbarSettings ? 
-          React.createElement(toolbarSettings)
-        : null
-      }
-    </div>
-  )
-}
-
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"defining-editable-elements"},`Defining editable elements`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Now, let's say we are creating a new User Component like so:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const Hero = ({background}) => {
-  return (
-    <div style={{ background }}>
-      <span>Hero Title</span>
-    </div>
-  )
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Then, we decide that we want to have the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`span`),` element to be editable indepdently via the Text user component that we made from earlier.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Your first instinct might be to just use the Text component directly:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx","metastring":"{4}","{4}":true}),`const Hero = ({background}) => {
-  return (
-    <div style={{ background }}>
-      <Text text="Hero Title" />
-    </div>
-  )
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`But this won't really work the way we want it to - the Text Component will not have its own Node. Instead, it will still be a part of Hero's Node. So, inside the Text Component, when we call `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`setProps(props => props.text = "...")`),`, it will actually be editing the props of `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Hero`),`. In this case, it will be adding a new prop `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`text`),` to Hero, which is not consumed by Hero and therefore makes no sense.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`So how do we even define new Nodes inside a User Component? Previously, we discussed how `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`<Element />`),` is used to define Nodes; that concept is applied universally in Craft.js. Hence, we just have to wrap our `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`<Text />`),` element in the example above with `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`<Element />`),`. `),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx","metastring":"{4}","{4}":true}),`const Hero = ({background}) => {
-  return (
-    <div style={{ background }}>
-      <Element is={Text} text="Hero Title" id="title_text" />
-    </div>
-  )
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("blockquote",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"blockquote"},`You must specify the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`id`),` prop of `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`<Element />`),` when used inside a User Component`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`In the above example, we used `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`<Element />`),` to create and configure a new Node inside our User Component. We call these Linked Nodes since they are linked to a parent Node via an arbitary `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`id`),`. In this case, the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Text`),` node is linked to the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Hero`),` node via its "title_text" id.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Similarly, we could also create a droppable region inside a User Component via a Canvas Node:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx","metastring":"{5-7}","{5-7}":true}),`const Hero = ({background}) => {
-  return (
-    <div style={{ background }}>
-      <Element is={Text} text="Hero Title" id="title_text" />
-      <Element canvas is="section" id="droppable_container">
-        <h2>I'm dropped here for now</h2>
-      </Elemnet>
-    </div>
-  )
-}
-`)));};MDXContent.isMDXComponent=true;
+const frontMatter={id:'acknowledgements',title:'Acknowledgements'};const metadata={"id":"version-0.1.0-beta.8/acknowledgements","title":"Acknowledgements","description":"A huge thank you to the authors and contributors of the following libraries/frameworks:","source":"@site/versioned_docs/version-0.1.0-beta.8/acknowledgements.md","permalink":"/r/docs/acknowledgements","version":"0.1.0-beta.8","sidebar":"version-0.1.0-beta.8/docs","previous":{"title":"Overview","permalink":"/r/docs/overview"},"next":{"title":"Nodes","permalink":"/r/docs/concepts/nodes"}};/* @jsx mdx */const rightToc=[];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`A huge thank you to the authors and contributors of the following libraries/frameworks:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("ul",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("strong",{parentName:"li"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"strong"},{"href":"https://github.com/react-dnd/react-dnd"}),`react-dnd`)),` The React drag-n-drop library.
+Although it is not actually used here, many aspects of Craft.js are written with react-dnd as a reference along with some utilities and functions being borrowed. `),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("strong",{parentName:"li"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"strong"},{"href":"https://github.com/artf/grapesjs"}),`Grape.js`)),` The HTML web builder framework. This has served as an inspiration for Craft.js. The element positioning logic used in Craft.js is borrowed from Grape.js`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("strong",{parentName:"li"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"strong"},{"href":"https://github.com/pelotom/use-methods"}),`use-methods`)),` A super handy hook when dealing with reducers. Craft.js uses a slightly modified version of `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"li"},`use-methods`),` to better fit our API.`)));};MDXContent.isMDXComponent=true;
 
 /***/ }),
 /* 146 */
@@ -16111,8 +15953,58 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
+const frontMatter={id:'serializing',title:'Serializing'};const metadata={"id":"version-0.1.0-beta.8/concepts/serializing","title":"Serializing","description":"Serializing","source":"@site/versioned_docs/version-0.1.0-beta.8/concepts/serializing.md","permalink":"/r/docs/concepts/serializing","version":"0.1.0-beta.8"};/* @jsx mdx */const rightToc=[{value:'Serializing',id:'serializing',children:[]},{value:'Resolvers',id:'resolvers',children:[]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"serializing"},`Serializing`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`We can serialize the editor's current state of Nodes into JSON by calling the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`serialize`),` method provided by the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`useEditor`),` hook`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const Toolbar = () => {
+  const { query } = useEditor();
+
+  return (
+    <a onClick={() => console.log(query.serialize())}>Serialize</a>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"resolvers"},`Resolvers`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Craft.js exports the nodes in its internal state into a serialzable JSON format. For this to be possible, complex objects such as functions cannot be included - which means User Components cannot be serialised. `),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`To overcome this is why when setting up Craft.js with your React application, one of the first things you have to do is to specify a map of user components in the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`resolver`),` prop of the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Manager`),` component.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`import {Text, Hero, Container} from ".../myproject/components";
+
+const App = () => {
+  return (
+    <Manager resolvers={{
+      "MyText" : Text
+    }}>
+      <Frame>
+        <Element is="div">
+          <h1>Hi</h1>
+          <Text text="Hi" />
+        </Element>
+      </Frame>
+    </Manager>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Given the above example, when a `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Node`),` that is of the type  `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Text`),` is serialised, it will return something like this:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-json"}),`"node-randomId": {
+  "type": {
+    "resolvedName": "MyText"
+  },
+  "props": {
+    "text" : "Hi World!"
+  },
+  "parent": "ROOT",
+  "displayName": "Card"
+  ...
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Notice how the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`resolvedName`),` is `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`MyText`),` rather than the name of the component, `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Text`),`. This is because in our `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`resolver`),`, we mapped `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`MyText`),` to our Text component. Now, when we deserialize - Craft.js is easily able to find `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`MyText`),` in our resolver, and knows the component it refers to.`));};MDXContent.isMDXComponent=true;
+
+/***/ }),
+/* 147 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "frontMatter", function() { return frontMatter; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
+/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
 /* harmony import */ var _site_src_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
@@ -16228,23 +16120,6 @@ export const Button = connectNode((node) => ({
 `)));};MDXContent.isMDXComponent=true;
 
 /***/ }),
-/* 147 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "frontMatter", function() { return frontMatter; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
-/* harmony import */ var _site_src_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
-const frontMatter={id:'editor-state',title:'EditorState',sidebar_label:'EditorState'};const metadata={"id":"api/editor-state","title":"EditorState","description":"Reference","source":"@site/docs/api/EditorState.md","permalink":"/r/docs/next/api/editor-state","version":"next","sidebar_label":"EditorState","sidebar":"docs","previous":{"title":"Save and Load","permalink":"/r/docs/next/guides/save-load-state"},"next":{"title":"Node","permalink":"/r/docs/next/api/node"}};/* @jsx mdx */const rightToc=[{value:'Reference',id:'reference',children:[{value:'Properties',id:'properties',children:[]}]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"type",mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"reference"},`Reference`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"properties"},`Properties`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["nodes","Record<NodeId, Node>","A map sof all the Nodes in the editor"],["events","Object",[["selected","NodeId"],["hovered","NodeId"],["dragged","NodeId"]]],["options","Object",[["resolver","Map<String, React.ComponentType>","A map of User Components that will be used in the editor"],["enabled?","boolean","Optional. If set to false, all editing capabilities will be disabled"],["indicator?",'Record<"success" | "error", String>',"Optional. The colour to use for the drop indicator. The colour set in 'success' will be used when the indicator shows a droppable location; otherwise the colour set in 'error' will be used."],["onRender?","React.ComponentType<{element: React.ReactElement}>","Optional. Specify a custom component to render every User Element in the editor."],["onNodesChange?","() => void","Optional. A callback method when the values of any of the nodes in the state changes"]]]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("blockquote",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"blockquote"},`Note: `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`options`),` can be specified as props in the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"p"},{"href":"/r/docs/next/api/editor"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"a"},`<Editor />`)))));};MDXContent.isMDXComponent=true;
-
-/***/ }),
 /* 148 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -16254,8 +16129,25 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
+/* harmony import */ var _site_src_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
+const frontMatter={id:'editor-state',title:'EditorState',sidebar_label:'EditorState'};const metadata={"id":"api/editor-state","title":"EditorState","description":"Reference","source":"@site/docs/api/EditorState.md","permalink":"/r/docs/next/api/editor-state","version":"next","sidebar_label":"EditorState","sidebar":"docs","previous":{"title":"Save and Load","permalink":"/r/docs/next/guides/save-load-state"},"next":{"title":"Node","permalink":"/r/docs/next/api/node"}};/* @jsx mdx */const rightToc=[{value:'Reference',id:'reference',children:[{value:'Properties',id:'properties',children:[]}]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"type",mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"reference"},`Reference`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"properties"},`Properties`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["nodes","Record<NodeId, Node>","A map sof all the Nodes in the editor"],["events","Object",[["selected","NodeId"],["hovered","NodeId"],["dragged","NodeId"]]],["options","Object",[["resolver","Map<String, React.ComponentType>","A map of User Components that will be used in the editor"],["enabled?","boolean","Optional. If set to false, all editing capabilities will be disabled"],["indicator?",'Record<"success" | "error", String>',"Optional. The colour to use for the drop indicator. The colour set in 'success' will be used when the indicator shows a droppable location; otherwise the colour set in 'error' will be used."],["onRender?","React.ComponentType<{element: React.ReactElement}>","Optional. Specify a custom component to render every User Element in the editor."],["onNodesChange?","() => void","Optional. A callback method when the values of any of the nodes in the state changes"]]]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("blockquote",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"blockquote"},`Note: `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`options`),` can be specified as props in the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"p"},{"href":"/r/docs/next/api/editor"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"a"},`<Editor />`)))));};MDXContent.isMDXComponent=true;
+
+/***/ }),
+/* 149 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "frontMatter", function() { return frontMatter; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
+/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
 /* harmony import */ var _site_src_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
@@ -16371,204 +16263,6 @@ export const Button = connectNode((node) => ({
 `)));};MDXContent.isMDXComponent=true;
 
 /***/ }),
-/* 149 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "frontMatter", function() { return frontMatter; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
-/* harmony import */ var _site_src_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
-const frontMatter={id:'helpers',title:'NodeHelpers',sidebar_label:'NodeHelpers'};const metadata={"id":"version-0.1.0-beta.7/api/helpers","title":"NodeHelpers","description":"Methods that helps describe a specified Node.","source":"@site/versioned_docs/version-0.1.0-beta.7/api/NodeHelpers.md","permalink":"/r/docs/api/helpers","version":"0.1.0-beta.7","sidebar_label":"NodeHelpers","sidebar":"version-0.1.0-beta.7/docs","previous":{"title":"useNode()","permalink":"/r/docs/api/useNode"},"next":{"title":"Layers","permalink":"/r/docs/additional/layers"}};/* @jsx mdx */const rightToc=[{value:'Usage',id:'usage',children:[{value:'useEditor hook',id:'useeditor-hook',children:[]},{value:'User Component rules',id:'user-component-rules',children:[]}]},{value:'Methods',id:'methods',children:[{value:'get',id:'get',children:[]},{value:'descendants',id:'descendants',children:[]},{value:'ancestors',id:'ancestors',children:[]},{value:'linkedNodes',id:'linkednodes',children:[]},{value:'isRoot',id:'isroot',children:[]},{value:'isCanvas',id:'iscanvas',children:[]},{value:'isLinkedNode',id:'islinkednode',children:[]},{value:'isDeletable',id:'isdeletable',children:[]},{value:'isTopLevelNode',id:'istoplevelnode',children:[]},{value:'isParentOfTopLevelNode',id:'isparentoftoplevelnode',children:[]},{value:'isDraggable',id:'isdraggable',children:[]},{value:'isDroppable',id:'isdroppable',children:[]},{value:'toSerializedNode',id:'toserializednode',children:[]},{value:'toNodeTree',id:'tonodetree',children:[]}]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Methods that helps describe a specified `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Node`),`.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"usage"},`Usage`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"useeditor-hook"},`useEditor hook`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`You can access the NodeHelpers via the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`node`),` query method in the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`useEditor`),` hook.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`import {useEditor} from "@craftjs/core";
-
-const TextComponent = () => {
-  const { id } = useNode();
-  const { query: {node} } = useEditor();
-  const isRoot = node(id).Root(),
-        isDraggable = node(id).Draggable();
-  ...
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"user-component-rules"},`User Component rules`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`NodeHelpers can also be accessed via the last parameter of each User Component rules.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const MyComp = () => {
-
-}
-MyComp.craft = { 
-  rules: {
-    canDrag: (node: Node, helper: NodeHelpers) => {
-      const ancestors = helper(node.id).ancestors();
-      ...
-    },
-    canMoveIn : (incoming: Node, self: Node, helper: NodeHelpers) => {
-      const isRoot = helper(node.id).isRoot();
-      ...
-    }
-    canMoveOut: (outgoing: Node, self: Node, helper: NodeHelpers) => {
-      const isDeletable = helper(node.id).isDeletable();
-      ...
-    }
-  }
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"methods"},`Methods`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"get"},`get`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"function",mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Get `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Node`),` object from id`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"returns"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["Node"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"descendants"},`descendants`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"function",mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Returns an array of Node ids of all child Nodes of a given Node.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"returns-1"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["NodeId[]"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"ancestors"},`ancestors`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"function",mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Returns an array of Node ids of all ancestors`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"returns-2"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["NodeId[]"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"linkednodes"},`linkedNodes`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"function",mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Returns an array of linked Node ids`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"returns-3"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["NodeId[]"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"isroot"},`isRoot`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"function",mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Returns `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`true`),` if a given Node is the Root Node`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"returns-4"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["boolean"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx","metastring":"{5}","{5}":true}),`const App  = () => {
-  return (
-    <Editor>
-      <Frame>
-        <div> // true
-          <div>Yo</div> // false
-          <h2>It's me</h2> // false
-          <Element is={Container}> // false 
-            <h3>Child</h3> // false
-          </Element>
-        </div>
-      </Frame>
-    </Editor>
-  )
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"iscanvas"},`isCanvas`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"function",noMargin:true,mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Check if a given Node is a Canvas`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"returns-5"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["boolean"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx","metastring":"{5,8}","{5,8}":true}),`const App  = () => {
-  return (
-    <Editor>
-      <Frame>
-        <Element canvas> // true
-          <div>Yo</div> // false
-          <Element is={Container}>It's me</Element> // false
-          <Element canvas> // true 
-            <h3>Child</h3> // false
-          </Element>
-        </Element>
-      </Frame>
-    </Editor>
-  )
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"islinkednode"},`isLinkedNode`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"function",noMargin:true,mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Check if a given Node is linked to the parent Node via an arbitary id`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"returns-6"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["boolean"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx","metastring":"{17}","{17}":true}),`const App  = () => {
-  return (
-    <Editor>
-      <Frame>
-        <Element canvas> // false
-          <div>Yo</div> // false
-          <Element is={Hero}>It's me</Element> // false
-        </Element>
-      </Frame>
-    </Editor>
-  )
-}
-
-const Hero = ({background, title}) => {
-  return (
-    <div style={{ background }}>
-      <Element id="title" is={Text} text={title} /> // true
-      ...
-    </div>
-  )
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"isdeletable"},`isDeletable`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"function",noMargin:true,mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`A Node may be deleted as long as it is `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("strong",{parentName:"p"},`not`),` one of the following:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("ul",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`Root Node`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`Top-level Node`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"parameters"},`Parameters`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["node","Node","The Node object to check"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"returns-7"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["boolean"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx","metastring":"{5,21}","{5,21}":true}),`const App  = () => {
-  return (
-    <Editor resolves={{Container}}>
-      <Frame>
-        <div> // false
-          <div>Yo</div> // true
-          <h2>It's me</h2> // true
-          <Element canvas> // true 
-            <h3>Child</h3> // true
-            <Container /> // true
-          </Element>
-        </div>
-      </Frame>
-    </Editor>
-  )
-}
-
-const Container = () => {
-  return (
-    <div>
-      <Element id="main"> // false
-        <h2>Hi</h2> // true
-      </Element>
-    </div>
-  )
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"istoplevelnode"},`isTopLevelNode`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"function",noMargin:true,mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`A Node is considered top-level if it's one of the following:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("ul",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`The Root Node`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`A linked Node defined inside a User Component`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"parameters-1"},`Parameters`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["node","Node","The Node object to check"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"returns-8"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["boolean"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx","metastring":"{5,21,27}","{5,21,27}":true}),`const App  = () => {
-  return (
-    <Editor resolves={{Container}}>
-      <Frame>
-        <div> // true
-          <div>Yo</div> // false
-          <h2>It's me</h2> // false
-          <div> // false 
-            <h3>Child</h3> // false
-            <Container /> // false
-          </div>
-        </div>
-      </Frame>
-    </Editor>
-  )
-}
-
-const Container = () => {
-  return (
-    <div>
-      <Element id="main"> // true
-        <h2>Hi</h2> // false
-        <Element> // false
-          <h2>Hi</h2> // false
-        </Element>
-      </Element>
-      <Element id="secondary"> // true
-        <h2>Hi</h2> // false
-        <Element> // false
-          <h2>Hi</h2> // false
-        </Element>
-      </Element>
-    </div>
-  )
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"isparentoftoplevelnode"},`isParentOfTopLevelNode`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"function",noMargin:true,mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`This returns `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`true`),` if a Node's User Component defines a `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`<Element />`),` in its render method.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"returns-9"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["boolean"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx","metastring":"{10}","{10}":true}),`const App  = () => {
-  return (
-    <Editor resolves={{Container}}>
-      <Frame>
-        <Element> // false
-          <div>Yo</div> // false
-          <h2>It's me</h2> // false
-          <Element> // false 
-            <h3>Child</h3> // false
-            <Container /> // true
-          </Element>
-        </Element>
-      </Frame>
-    </Editor>
-  )
-}
-
-const Container = () => {
-  return (
-    <div>
-      <Element id="main"> // false
-        <h2>Hi</h2> // false
-        <Element> // false
-          <h2>Hi</h2> // false
-        </Element>
-      </Element>
-      <Element id="seconday"> // false
-        <h2>Hi</h2> // false
-        <Element> // false
-          <h2>Hi</h2> // false
-        </Element>
-      </Element>
-    </div>
-  )
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"isdraggable"},`isDraggable`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"function",noMargin:true,mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`A Node may be dragged and moved if it satisfies both of the following conditions:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("ul",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`The Node is an immediate child of a Canvas Node, hence it's draggable`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`The Node's `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"li"},`canDrag`),` rule allows it to be moved `)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"parameters-2"},`Parameters`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["onError","(err: string) => void","Error callback"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"returns-10"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["boolean"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"isdroppable"},`isDroppable`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"function",noMargin:true,mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Check if a Node is Droppable relative to the target Node.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"parameters-3"},`Parameters`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["targetId","NodeId","The target Node"],["onError","(err: string) => void","Error callback"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"returns-11"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["boolean"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"example"},`Example`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`In the following example, we're checking if our `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`MyCanvas`),` component would be able to accept the current selected Node in the editor.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const MyCanvas = () => {
-  const { id } = useNode();
-  const { canWeAcceptTheSelectedNode } = useEditor((state, query) => ({
-    canWeAcceptTheSelectedNode: state.events.selected && query.node(id).Droppable(state.events.selected)
-  }));
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"toserializednode"},`toSerializedNode`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"function",noMargin:true,mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Gets the current Node in it's `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`SerializedNode`),` form`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"returns-12"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["SerializedNode"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"tonodetree"},`toNodeTree`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"function",noMargin:true,mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Gets the current Node in it's `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`NodeTree`),` form`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"returns-13"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["NodeTree"]],mdxType:"API"}));};MDXContent.isMDXComponent=true;
-
-/***/ }),
 /* 150 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -16578,8 +16272,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
 const frontMatter={id:'editor-components',title:'Interacting with the Editor'};const metadata={"id":"version-0.1.0-beta.6/concepts/editor-components","title":"Interacting with the Editor","description":"Previously, we have looked at User Components and how to write them, but what about all the other components that are integral to our page editor like a Toolbar for users to edit components, or maybe a layers panel?","source":"@site/versioned_docs/version-0.1.0-beta.6/concepts/editor-components.md","permalink":"/r/docs/0.1.0-beta.6/concepts/editor-components","version":"0.1.0-beta.6","sidebar":"version-0.1.0-beta.6/docs","previous":{"title":"User Components","permalink":"/r/docs/0.1.0-beta.6/concepts/user-components"},"next":{"title":"Basic Tutorial","permalink":"/r/docs/0.1.0-beta.6/guides/basic-tutorial"}};/* @jsx mdx */const rightToc=[{value:'Getting state information',id:'getting-state-information',children:[]},{value:'Connectors',id:'connectors',children:[]},{value:'Manipulating state',id:'manipulating-state',children:[]},{value:'Querying',id:'querying',children:[]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Previously, we have looked at User Components and how to write them, but what about all the other components that are integral to our page editor like a Toolbar for users to edit components, or maybe a layers panel?`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`The `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`useEditor`),` hook allows us to read and manipulate the entire editor's internal state. Essentially, this is similar to the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`useNode`),` hook we have seen previously, except this deals with the entire editor rather than with a particular `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Node`),`.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const { actions, connectors, ...collected } = useEditor((state) => {});
@@ -16669,8 +16363,275 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
+/* harmony import */ var _site_src_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
+const frontMatter={id:'helpers',title:'NodeHelpers',sidebar_label:'NodeHelpers'};const metadata={"id":"version-0.1.0-beta.8/api/helpers","title":"NodeHelpers","description":"Methods that helps describe a specified Node.","source":"@site/versioned_docs/version-0.1.0-beta.8/api/NodeHelpers.md","permalink":"/r/docs/api/helpers","version":"0.1.0-beta.8","sidebar_label":"NodeHelpers","sidebar":"version-0.1.0-beta.8/docs","previous":{"title":"useNode()","permalink":"/r/docs/api/useNode"},"next":{"title":"Layers","permalink":"/r/docs/additional/layers"}};/* @jsx mdx */const rightToc=[{value:'Usage',id:'usage',children:[{value:'useEditor hook',id:'useeditor-hook',children:[]},{value:'User Component rules',id:'user-component-rules',children:[]}]},{value:'Methods',id:'methods',children:[{value:'get',id:'get',children:[]},{value:'descendants',id:'descendants',children:[]},{value:'ancestors',id:'ancestors',children:[]},{value:'linkedNodes',id:'linkednodes',children:[]},{value:'isRoot',id:'isroot',children:[]},{value:'isCanvas',id:'iscanvas',children:[]},{value:'isLinkedNode',id:'islinkednode',children:[]},{value:'isDeletable',id:'isdeletable',children:[]},{value:'isTopLevelNode',id:'istoplevelnode',children:[]},{value:'isParentOfTopLevelNode',id:'isparentoftoplevelnode',children:[]},{value:'isDraggable',id:'isdraggable',children:[]},{value:'isDroppable',id:'isdroppable',children:[]},{value:'toSerializedNode',id:'toserializednode',children:[]},{value:'toNodeTree',id:'tonodetree',children:[]}]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Methods that helps describe a specified `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Node`),`.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"usage"},`Usage`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"useeditor-hook"},`useEditor hook`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`You can access the NodeHelpers via the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`node`),` query method in the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`useEditor`),` hook.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`import {useEditor} from "@craftjs/core";
+
+const TextComponent = () => {
+  const { id } = useNode();
+  const { query: {node} } = useEditor();
+  const isRoot = node(id).Root(),
+        isDraggable = node(id).Draggable();
+  ...
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"user-component-rules"},`User Component rules`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`NodeHelpers can also be accessed via the last parameter of each User Component rules.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const MyComp = () => {
+
+}
+MyComp.craft = { 
+  rules: {
+    canDrag: (node: Node, helper: NodeHelpers) => {
+      const ancestors = helper(node.id).ancestors();
+      ...
+    },
+    canMoveIn : (incoming: Node, self: Node, helper: NodeHelpers) => {
+      const isRoot = helper(node.id).isRoot();
+      ...
+    }
+    canMoveOut: (outgoing: Node, self: Node, helper: NodeHelpers) => {
+      const isDeletable = helper(node.id).isDeletable();
+      ...
+    }
+  }
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"methods"},`Methods`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"get"},`get`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"function",mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Get `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Node`),` object from id`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"returns"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["Node"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"descendants"},`descendants`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"function",mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Returns an array of Node ids of all child Nodes of a given Node.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"parameters"},`Parameters`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["deep","boolean","If set to true, retrieve all descendants in nested levels. Default is false"],["includeOnly?","'childNodes' | 'linkedNodes'","Get descendants that are either childNodes or linkedNodes. If unset, get all descendants"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"returns-1"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["NodeId[]"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`// The descendants of \`div\` when deep=false
+<div> 
+  // highlight-next-line
+  <h2>Yo</h2>
+  // highlight-next-line
+  <Element is={Container}>
+    <h3>Child</h3>
+    // highlight-next-line
+  </Element>
+</div>
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`// The descendants of \`div\` when deep=true
+<div> 
+  // highlight-start
+  <h2>Yo</h2>
+  <Element is={Container}>
+    <h3>Child</h3>
+  </Element>
+  // highlight-end
+</div>
+
+const Container = () => {
+  return (
+    <div>
+      // highlight-start
+      <Element id="linked-div">
+        <h1>Hello</h1>
+      <Element>
+      // highlight-end
+    </div>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`// The descendants of \`div\` when deep=true and includeOnly="childNodes" only
+<div> 
+  // highlight-start
+  <h2>Yo</h2>
+  <Element is={Container}>
+    <h3>Child</h3>
+  </Element>
+  // highlight-end
+</div>
+
+const Container = () => {
+  return (
+    <div>
+      <Element id="linked-div">
+        <h1>Hello</h1>
+      <Element>
+    </div>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`// The descendants of \`div\` when deep=true and includeOnly="linkedNodes" only
+<div> 
+  <h2>Yo</h2>
+  <Element is={Container}>
+    <h3>Child</h3>
+  </Element>
+</div>
+
+const Container = () => {
+  return (
+    <div>
+      // highlight-start
+      <Element id="linked-div">
+        <h1>Hello</h1>
+      <Element>
+      // highlight-end
+    </div>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"ancestors"},`ancestors`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"function",mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Returns an array of Node ids of all ancestors`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"returns-2"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["NodeId[]"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"linkednodes"},`linkedNodes`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"function",mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Returns an array of linked Node ids`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"returns-3"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["NodeId[]"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"isroot"},`isRoot`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"function",mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Returns `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`true`),` if a given Node is the Root Node`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"returns-4"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["boolean"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx","metastring":"{5}","{5}":true}),`const App  = () => {
+  return (
+    <Editor>
+      <Frame>
+        <div> // true
+          <div>Yo</div> // false
+          <h2>It's me</h2> // false
+          <Element is={Container}> // false 
+            <h3>Child</h3> // false
+          </Element>
+        </div>
+      </Frame>
+    </Editor>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"iscanvas"},`isCanvas`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"function",noMargin:true,mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Check if a given Node is a Canvas`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"returns-5"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["boolean"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx","metastring":"{5,8}","{5,8}":true}),`const App  = () => {
+  return (
+    <Editor>
+      <Frame>
+        <Element canvas> // true
+          <div>Yo</div> // false
+          <Element is={Container}>It's me</Element> // false
+          <Element canvas> // true 
+            <h3>Child</h3> // false
+          </Element>
+        </Element>
+      </Frame>
+    </Editor>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"islinkednode"},`isLinkedNode`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"function",noMargin:true,mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Check if a given Node is linked to the parent Node via an arbitary id`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"returns-6"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["boolean"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx","metastring":"{17}","{17}":true}),`const App  = () => {
+  return (
+    <Editor>
+      <Frame>
+        <Element canvas> // false
+          <div>Yo</div> // false
+          <Element is={Hero}>It's me</Element> // false
+        </Element>
+      </Frame>
+    </Editor>
+  )
+}
+
+const Hero = ({background, title}) => {
+  return (
+    <div style={{ background }}>
+      <Element id="title" is={Text} text={title} /> // true
+      ...
+    </div>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"isdeletable"},`isDeletable`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"function",noMargin:true,mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`A Node may be deleted as long as it is `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("strong",{parentName:"p"},`not`),` one of the following:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("ul",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`Root Node`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`Top-level Node`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"parameters-1"},`Parameters`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["node","Node","The Node object to check"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"returns-7"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["boolean"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx","metastring":"{5,21}","{5,21}":true}),`const App  = () => {
+  return (
+    <Editor resolves={{Container}}>
+      <Frame>
+        <div> // false
+          <div>Yo</div> // true
+          <h2>It's me</h2> // true
+          <Element canvas> // true 
+            <h3>Child</h3> // true
+            <Container /> // true
+          </Element>
+        </div>
+      </Frame>
+    </Editor>
+  )
+}
+
+const Container = () => {
+  return (
+    <div>
+      <Element id="main"> // false
+        <h2>Hi</h2> // true
+      </Element>
+    </div>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"istoplevelnode"},`isTopLevelNode`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"function",noMargin:true,mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`A Node is considered top-level if it's one of the following:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("ul",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`The Root Node`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`A linked Node defined inside a User Component`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"parameters-2"},`Parameters`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["node","Node","The Node object to check"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"returns-8"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["boolean"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx","metastring":"{5,21,27}","{5,21,27}":true}),`const App  = () => {
+  return (
+    <Editor resolves={{Container}}>
+      <Frame>
+        <div> // true
+          <div>Yo</div> // false
+          <h2>It's me</h2> // false
+          <div> // false 
+            <h3>Child</h3> // false
+            <Container /> // false
+          </div>
+        </div>
+      </Frame>
+    </Editor>
+  )
+}
+
+const Container = () => {
+  return (
+    <div>
+      <Element id="main"> // true
+        <h2>Hi</h2> // false
+        <Element> // false
+          <h2>Hi</h2> // false
+        </Element>
+      </Element>
+      <Element id="secondary"> // true
+        <h2>Hi</h2> // false
+        <Element> // false
+          <h2>Hi</h2> // false
+        </Element>
+      </Element>
+    </div>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"isparentoftoplevelnode"},`isParentOfTopLevelNode`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"function",noMargin:true,mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`This returns `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`true`),` if a Node's User Component defines a `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`<Element />`),` in its render method.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"returns-9"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["boolean"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx","metastring":"{10}","{10}":true}),`const App  = () => {
+  return (
+    <Editor resolves={{Container}}>
+      <Frame>
+        <Element> // false
+          <div>Yo</div> // false
+          <h2>It's me</h2> // false
+          <Element> // false 
+            <h3>Child</h3> // false
+            <Container /> // true
+          </Element>
+        </Element>
+      </Frame>
+    </Editor>
+  )
+}
+
+const Container = () => {
+  return (
+    <div>
+      <Element id="main"> // false
+        <h2>Hi</h2> // false
+        <Element> // false
+          <h2>Hi</h2> // false
+        </Element>
+      </Element>
+      <Element id="seconday"> // false
+        <h2>Hi</h2> // false
+        <Element> // false
+          <h2>Hi</h2> // false
+        </Element>
+      </Element>
+    </div>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"isdraggable"},`isDraggable`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"function",noMargin:true,mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`A Node may be dragged and moved if it satisfies both of the following conditions:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("ul",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`The Node is an immediate child of a Canvas Node, hence it's draggable`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`The Node's `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"li"},`canDrag`),` rule allows it to be moved `)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"parameters-3"},`Parameters`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["onError","(err: string) => void","Error callback"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"returns-10"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["boolean"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"isdroppable"},`isDroppable`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"function",noMargin:true,mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Check if a Node is Droppable relative to the target Node.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"parameters-4"},`Parameters`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["targetId","NodeId","The target Node"],["onError","(err: string) => void","Error callback"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"returns-11"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["boolean"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"example"},`Example`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`In the following example, we're checking if our `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`MyCanvas`),` component would be able to accept the current selected Node in the editor.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const MyCanvas = () => {
+  const { id } = useNode();
+  const { canWeAcceptTheSelectedNode } = useEditor((state, query) => ({
+    canWeAcceptTheSelectedNode: state.events.selected && query.node(id).Droppable(state.events.selected)
+  }));
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"toserializednode"},`toSerializedNode`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"function",noMargin:true,mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Gets the current Node in it's `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`SerializedNode`),` form`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"returns-12"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["SerializedNode"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"tonodetree"},`toNodeTree`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"function",noMargin:true,mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Gets the current Node and its descendants in its `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`NodeTree`),` form`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"parameters-5"},`Parameters`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["includeOnly?","'childNodes' | 'linkedNodes'","Get descendants that are either childNodes or linkedNodes. If unset, get all descendants"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"returns-13"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["NodeTree"]],mdxType:"API"}));};MDXContent.isMDXComponent=true;
+
+/***/ }),
+/* 152 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "frontMatter", function() { return frontMatter; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
+/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
 /* harmony import */ var _site_src_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
@@ -16777,7 +16738,7 @@ const App = () => {
 `)));};MDXContent.isMDXComponent=true;
 
 /***/ }),
-/* 152 */
+/* 153 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16790,7 +16751,7 @@ module.exports = __webpack_require__(388);
 
 
 /***/ }),
-/* 153 */
+/* 154 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -16998,7 +16959,7 @@ function coerce(val) {
 
 
 /***/ }),
-/* 154 */
+/* 155 */
 /***/ (function(module, exports) {
 
 exports = module.exports = SemVer
@@ -18487,7 +18448,7 @@ function coerce (version) {
 
 
 /***/ }),
-/* 155 */
+/* 156 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = buildSearchMethod;
@@ -18560,10 +18521,10 @@ function buildSearchMethod(queryParam, url) {
 
 
 /***/ }),
-/* 156 */
+/* 157 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var buildSearchMethod = __webpack_require__(155);
+var buildSearchMethod = __webpack_require__(156);
 var deprecate = __webpack_require__(104);
 var deprecatedMessage = __webpack_require__(105);
 
@@ -18723,7 +18684,7 @@ IndexCore.prototype.similarSearch = deprecate(
 * @see {@link https://www.algolia.com/doc/rest_api#Browse|Algolia REST API Documentation}
 */
 IndexCore.prototype.browse = function(query, queryParameters, callback) {
-  var merge = __webpack_require__(157);
+  var merge = __webpack_require__(158);
 
   var indexObj = this;
 
@@ -18819,7 +18780,7 @@ IndexCore.prototype.browseFrom = function(cursor, callback) {
 */
 IndexCore.prototype.searchForFacetValues = function(params, callback) {
   var clone = __webpack_require__(33);
-  var omit = __webpack_require__(158);
+  var omit = __webpack_require__(159);
   var usage = 'Usage: index.searchForFacetValues({facetName, facetQuery, ...params}[, callback])';
 
   if (params.facetName === undefined || params.facetQuery === undefined) {
@@ -18955,7 +18916,7 @@ IndexCore.prototype.typeAheadValueOption = null;
 
 
 /***/ }),
-/* 157 */
+/* 158 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var foreach = __webpack_require__(45);
@@ -18980,11 +18941,11 @@ module.exports = function merge(destination/* , sources */) {
 
 
 /***/ }),
-/* 158 */
+/* 159 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = function omit(obj, test) {
-  var keys = __webpack_require__(159);
+  var keys = __webpack_require__(160);
   var foreach = __webpack_require__(45);
 
   var filtered = {};
@@ -19000,14 +18961,14 @@ module.exports = function omit(obj, test) {
 
 
 /***/ }),
-/* 159 */
+/* 160 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var slice = Array.prototype.slice;
-var isArgs = __webpack_require__(160);
+var isArgs = __webpack_require__(161);
 
 var origKeys = Object.keys;
 var keysShim = origKeys ? function keys(o) { return origKeys(o); } : __webpack_require__(403);
@@ -19039,7 +19000,7 @@ module.exports = keysShim;
 
 
 /***/ }),
-/* 160 */
+/* 161 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19063,7 +19024,7 @@ module.exports = function isArguments(value) {
 
 
 /***/ }),
-/* 161 */
+/* 162 */
 /***/ (function(module, exports) {
 
 // Parse cloud does not supports setTimeout
@@ -19076,15 +19037,15 @@ module.exports = function exitPromise(fn, _setTimeout) {
 
 
 /***/ }),
-/* 162 */
+/* 163 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(163);
+module.exports = __webpack_require__(164);
 module.exports.HttpsAgent = __webpack_require__(412);
 
 
 /***/ }),
-/* 163 */
+/* 164 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19188,7 +19149,7 @@ function inspect(obj) {
 
 
 /***/ }),
-/* 164 */
+/* 165 */
 /***/ (function(module, exports) {
 
 /* istanbul ignore next */
@@ -20511,7 +20472,7 @@ function inspect(obj) {
 
 
 /***/ }),
-/* 165 */
+/* 166 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20551,7 +20512,7 @@ module.exports = EventBus;
 
 
 /***/ }),
-/* 166 */
+/* 167 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20567,14 +20528,14 @@ module.exports = {
 
 
 /***/ }),
-/* 167 */
+/* 168 */
 /***/ (function(module, exports) {
 
 module.exports = "0.36.0";
 
 
 /***/ }),
-/* 168 */
+/* 169 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20587,7 +20548,7 @@ module.exports = function parseAlgoliaClientVersion(agent) {
 
 
 /***/ }),
-/* 169 */
+/* 170 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20597,7 +20558,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _zepto = __webpack_require__(164);
+var _zepto = __webpack_require__(165);
 
 var _zepto2 = _interopRequireDefault(_zepto);
 
@@ -20606,7 +20567,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _zepto2.default;
 
 /***/ }),
-/* 170 */
+/* 171 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20618,7 +20579,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = '2.6.3';
 
 /***/ }),
-/* 171 */
+/* 172 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -20627,8 +20588,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
 const frontMatter={id:'editor-components',title:'Interacting with the Editor'};const metadata={"id":"concepts/editor-components","title":"Interacting with the Editor","description":"Previously, we have looked at User Components and how to write them, but what about all the other components that are integral to our page editor like a Toolbar for users to edit components, or maybe a layers panel?","source":"@site/docs/concepts/editor-components.md","permalink":"/r/docs/next/concepts/editor-components","version":"next","sidebar":"docs","previous":{"title":"User Components","permalink":"/r/docs/next/concepts/user-components"},"next":{"title":"Basic Tutorial","permalink":"/r/docs/next/guides/basic-tutorial"}};/* @jsx mdx */const rightToc=[{value:'Getting state information',id:'getting-state-information',children:[]},{value:'Connectors',id:'connectors',children:[]},{value:'Manipulating state',id:'manipulating-state',children:[]},{value:'Querying',id:'querying',children:[]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Previously, we have looked at User Components and how to write them, but what about all the other components that are integral to our page editor like a Toolbar for users to edit components, or maybe a layers panel?`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`The `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`useEditor`),` hook allows us to read and manipulate the entire editor's internal state. Essentially, this is similar to the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`useNode`),` hook we have seen previously, except this deals with the entire editor rather than with a particular `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Node`),`.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const { actions, connectors, ...collected } = useEditor((state) => {});
@@ -20709,7 +20670,7 @@ const frontMatter={id:'editor-components',title:'Interacting with the Editor'};c
 `)));};MDXContent.isMDXComponent=true;
 
 /***/ }),
-/* 172 */
+/* 173 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -20718,12 +20679,666 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
+const frontMatter={id:'overview',title:'Overview'};const metadata={"id":"overview","title":"Overview","description":"Motivation","source":"@site/docs/overview.md","permalink":"/r/docs/next/overview","version":"next","sidebar":"docs","next":{"title":"Acknowledgements","permalink":"/r/docs/next/acknowledgements"}};/* @jsx mdx */const rightToc=[{value:'Motivation',id:'motivation',children:[]},{value:'Features',id:'features',children:[{value:'It&#39;s just React',id:'its-just-react',children:[]},{value:'Control how your components are edited',id:'control-how-your-components-are-edited',children:[]},{value:'User components with droppable regions',id:'user-components-with-droppable-regions',children:[]},{value:'Extensible',id:'extensible',children:[]},{value:'Serializable state',id:'serializable-state',children:[]}]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"motivation"},`Motivation`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Page editors are a great way to provide an excellent user experience. However, to build one is often a pretty dreadful task.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`There're existing libraries that come with a fully working page editor out of the box with a user interface and editable components. However, if you wish to make customisations such as tweaking the user interface, it will most definitely involve modifying the library itself.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Craft.js solves this problem by modularising the building blocks of a page editor. It provides a drag-n-drop system and handles the way user components should be rendered, updated and moved - among other things. With this, you'll be able to focus on building the page editor according to your own specifications and needs.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"features"},`Features`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"its-just-react"},`It's just React`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`No need for complicated plugin systems. Design your editor from top to bottom the same way as you would design any other frontend application in React.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`A simple user component can easily be defined as such:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`import {useNode} from "@craftjs/core";
+
+const TextComponent = ({text}) => {
+  const { connectors: {drag} } = useNode();
+
+  return (
+    <div ref={drag}>
+      <h2>{text}</h2>
+    </div>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Heck, the entire UI of your page editor is built using just React.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`import React from "react";
+import {Editor, Frame, Canvas, Selector} from "@craftjs/core";
+const App = () => {
+  return (
+    <div>
+      <header>Some fancy header or whatever</header>
+      <Editor>
+        // Editable area starts here
+        <Frame resolver={TextComponent, Container}> 
+          <Canvas>
+            <TextComponent text="I'm already rendered here" />
+          </Canvas>
+        </Frame>
+      </Editor>
+    </div>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"control-how-your-components-are-edited"},`Control how your components are edited`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`An obvious requirement for page editors is that they need to allow users to edit components. With Craft.js, you control the process of which these components should be edited.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`In the following example, when the user clicks on a component, we'll display a modal that requires the user to input a value for the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`text`),` prop. As the input value changes, the component will be re-rendered with updated prop.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`import {useNode} from "@craftjs/core";
+
+const TextComponent = ({text}) => {
+  const { connectors: { connect, drag }, isClicked, actions: {setProp} } = useNode(
+    (state) => ({
+      isClicked: state.event.selected,
+    })
+  );
+
+  return (
+    <div ref={dom => connect(drag(dom))}>
+      <h2>{text}</h2>
+      {
+        isClicked ? (
+          <Modal>
+            <input
+              type="text"
+              value={text}
+              onChange={e => setProp(e.target.value)}
+            />
+          </Modal>
+        )
+      }
+    </div>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`With this, you could easily implement content editable text or drag-to-resize components, just as any modern page editor would have.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"user-components-with-droppable-regions"},`User components with droppable regions`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Let's say we need a "Container" component which users can drop into the editor. Additionally, we would also like them to be able to drag and drop other components into the Container.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`In Craft.js, it's as simple as calling the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`<Canvas />`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`import {useNode} from "@craftjs/core";
+const Container = () => {
+  const { connectors: {drag} } = useNode();
+
+  return (
+    <div ref={drag}>
+      <Canvas id="drop_section">
+         // Now users will be able to drag/drop components into this section
+        <TextComponent />
+      </Canvas>
+    </div>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"extensible"},`Extensible`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Craft.js provides an expressive API which allows you to easily read and manipulate the editor state. Let's say you would like to implement a copy function for a component:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`import {useEditor, useNode} from "@craftjs/core";
+const Container = () => {
+  const { actions: {add}, query: { createNode, node } } = useEditor();
+  const { id, connectors: {drag, connect} } = useNode();
+  return (
+    <div ref={dom => connect(drag(dom))}>
+      ...
+      <a onClick={() => {
+        const { data: {type, props}} = node(id).get();
+        add(
+          createNode(React.createElement(type, props));
+        );
+      }}>
+        Make a copy of me
+      </a>
+    </div>
+  )
+}
+
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"serializable-state"},`Serializable state`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`The editor's state can be serialized into JSON which you can then apply a compression technique of your choice for storage.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const SaveButton = () => {
+  const { query } = useEditor();
+  return <a onClick={() => console.log(query.serialize()) }>Get JSON</a>
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Of course, Craft.js will also able to recreate the entire state from the JSON string.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const App = () => {
+  const jsonString = /* retrieve JSON from server */
+  return (
+    <Editor>
+      <Frame json={jsonString}>
+        ...
+      </Frame>
+    </Editor>
+  )
+}
+`)));};MDXContent.isMDXComponent=true;
+
+/***/ }),
+/* 174 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "frontMatter", function() { return frontMatter; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
+/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
 /* harmony import */ var _site_src_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
-const frontMatter={id:'basic-tutorial',title:'Basic Tutorial'};const metadata={"id":"version-0.1.0-beta.7/guides/basic-tutorial","title":"Basic Tutorial","description":"Live Demo","source":"@site/versioned_docs/version-0.1.0-beta.7/guides/basic-tutorial.md","permalink":"/r/docs/guides/basic-tutorial","version":"0.1.0-beta.7","sidebar":"version-0.1.0-beta.7/docs","previous":{"title":"Interacting with the Editor","permalink":"/r/docs/concepts/editor-components"},"next":{"title":"Save and Load","permalink":"/r/docs/guides/save-load-state"}};/* @jsx mdx */const rightToc=[{value:'Overview',id:'overview',children:[]},{value:'Installation',id:'installation',children:[]},{value:'Designing a user interface',id:'designing-a-user-interface',children:[{value:'User Components',id:'user-components',children:[]},{value:'The Editor',id:'the-editor',children:[]}]},{value:'Implementing Craft.js',id:'implementing-craftjs',children:[{value:'Setup',id:'setup',children:[]},{value:'Enabling Drag and Drop',id:'enabling-drag-and-drop',children:[]},{value:'Implementing the Toolbox',id:'implementing-the-toolbox',children:[]},{value:'Making the components editable',id:'making-the-components-editable',children:[]},{value:'Settings Panel',id:'settings-panel-1',children:[]},{value:'Topbar',id:'topbar',children:[]}]},{value:'You made it 🎉',id:'you-made-it-',children:[]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",{target:"_blank",href:"https://prevwong.github.io/craft.js/examples/basic",className:"btn"},"Live Demo"),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",{target:"_blank",href:"https://github.com/prevwong/craft.js/tree/master/packages/examples/basic",className:"btn btn-text"},"View Code"),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"overview"},`Overview`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`In this tutorial, we'll be designing a simple page editor. It's recommended that you have a basic to intermediate workings of React and it'd be even better if you first have a quick glance at the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"p"},{"href":"/r/docs/concepts/nodes"}),`Core Concepts`),` and come back here. If you are feeling adventurous, that's fine too.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"installation"},`Installation`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-bash"}),`yarn add @craftjs/core
+const frontMatter={id:'frame',title:'<Frame />',sidebar_label:'<Frame />'};const metadata={"id":"version-0.1.0-beta.6/api/frame","title":"<Frame />","description":"Frame defines the editable area in your page editor. It is rendered based on the editor's internal state (i.e. Nodes).","source":"@site/versioned_docs/version-0.1.0-beta.6/api/Frame.md","permalink":"/r/docs/0.1.0-beta.6/api/frame","version":"0.1.0-beta.6","sidebar_label":"<Frame />","sidebar":"version-0.1.0-beta.6/docs","previous":{"title":"<Editor />","permalink":"/r/docs/0.1.0-beta.6/api/editor"},"next":{"title":"<Canvas />","permalink":"/r/docs/0.1.0-beta.6/api/canvas"}};/* @jsx mdx */const rightToc=[{value:'Reference',id:'reference',children:[{value:'Props',id:'props',children:[]}]},{value:'Examples',id:'examples',children:[{value:'Designing the default screen',id:'designing-the-default-screen',children:[]},{value:'Loading from serialised Nodes',id:'loading-from-serialised-nodes',children:[]}]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"component",mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Frame defines the editable area in your page editor. It is rendered based on the editor's internal state (i.e. Nodes).`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-tsx"}),`const { connectors, setProp, ...collected } = useNode(collector);
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"reference"},`Reference`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"props"},`Props`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Both props specifies the initial screen to render. You must specify at least one of them (`,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`json`),` takes precendence over `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`children`),`).`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["children?","React.ReactElement<Canvas>","Creates the initial screen using React Elements. Must begin with a &lt;Canvas /&gt; which creates the Root Node."],["json?","String","Loads the initial screen from the serialised JSON Nodes"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("blockquote",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"blockquote"},`These props are memoized - after the initial render, changes to these props will have no effect. If for example, you wish to load a different set of serialised JSON nodes after the initial render, you may use the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`deserialize`),` method via the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"p"},{"href":"/r/docs/api/useEditor"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"a"},`useEditor`)),` hook.`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"examples"},`Examples`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"designing-the-default-screen"},`Designing the default screen`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-tsx","metastring":"{9,10,16,17}","{9,10,16,17}":true}),`import {Editor, Frame, Canvas} from "@craftjs/core";
+
+const App = () => {
+  return (
+    <div>
+      <h2>My App!</h2>
+      <Editor>
+        <h2>My Page Editor</h2>
+        <Frame> 
+          <Canvas is={Container}> // defines the Root Node
+            <h2>Drag me around</h2>
+            <MyComp text="You can drag me around too" />
+            <Canvas is="div" style={{background: "#333" }}>
+              <p>Same here</p>
+            </Canvas>
+          </Canvas>
+        </Frame>
+      </Editor>
+    </div>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"loading-from-serialised-nodes"},`Loading from serialised Nodes`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-tsx","metastring":"{10}","{10}":true}),`import {Editor, Frame, Canvas} from "@craftjs/core";
+
+const App = () => {
+  return (
+    <div>
+      <h2>My App!</h2>
+      <Editor>
+        <h2>My Page Editor</h2>
+        <Frame
+          json='{"canvas-ROOT":{"type":"div","isCanvas":true,"props":{},"parent":null,"displayName":"div","custom":{},"nodes":["node-sdiwzXkvQ","node-rGFDi0G6m","node-yNBLMy5Oj"]},"node-sdiwzXkvQ":{"type":{"resolvedName":"Card"},"props":{},"parent":"canvas-ROOT","displayName":"Card","custom":{},"_childCanvas":{"main":"canvas-_EEw_eBD_","second":"canvas-lE4Ni9oIn"}}'
+        > 
+          <Canvas is={Container}> // defines the Root Node
+            <h2>Drag me around</h2>
+            <MyComp text="You can drag me around too" />
+            <Canvas is="div" style={{background: "#333" }}>
+              <p>Same here</p>
+            </Canvas>
+          </Canvas>
+        </Frame>
+      </Editor>
+    </div>
+  )
+}
+`)));};MDXContent.isMDXComponent=true;
+
+/***/ }),
+/* 175 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "frontMatter", function() { return frontMatter; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
+/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
+/* harmony import */ var _site_src_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
+const frontMatter={id:'save-load-state',title:'Save and Load'};const metadata={"id":"version-0.1.0-beta.8/guides/save-load-state","title":"Save and Load","description":"This guide extends upon the Basic Tutorial","source":"@site/versioned_docs/version-0.1.0-beta.8/guides/save-load.md","permalink":"/r/docs/guides/save-load-state","version":"0.1.0-beta.8","sidebar":"version-0.1.0-beta.8/docs","previous":{"title":"Basic Tutorial","permalink":"/r/docs/guides/basic-tutorial"},"next":{"title":"EditorState","permalink":"/r/docs/api/editor-state"}};/* @jsx mdx */const rightToc=[{value:'Overview',id:'overview',children:[]},{value:'Copy compressed output',id:'copy-compressed-output',children:[]},{value:'Load state',id:'load-state',children:[{value:'Load JSON on page load',id:'load-json-on-page-load',children:[]}]},{value:'All set! 💖',id:'all-set-',children:[]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`This guide extends upon the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"p"},{"href":"/craft.js/r/docs/basic-tutorial"}),`Basic Tutorial`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"overview"},`Overview`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Previously, we saw how we could serialise the entire state of `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Nodes`),` in our editor into JSON. Of course, you probably will not want to store the JSON in your server or database, for obvious reasons. Instead, you should first employ a text compression technique of your choice to compress the serialised JSON Nodes.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`In this guide, we'll be mainly modifying the previous tutorial's Topbar component. We'll add 2 new features`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("ul",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`Copy the compressed output of the serialised Nodes to the user's clipboard`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`Load the editor state from a compressed output of serialised Nodes.`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`We'll be using 2 external libraries - `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`lzutf8`),` (for compression) and `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`copy-to-clipboard`),` (you know)`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-bash"}),`yarn add lzutf8 copy-to-clipboard
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"copy-compressed-output"},`Copy compressed output`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`We'll use `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`lzutf8`),` to compress our serialised JSON Nodes, and additionally transform it into base64.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx","metastring":"{24-36}","{24-36}":true}),`import React, { useState } from "react";
+import { Box, FormControlLabel, Switch, Grid, Button as MaterialButton, Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions, TextField, Snackbar } from "@material-ui/core";
+import { useEditor } from "@craftjs/core";
+import lz from "lzutf8";
+import copy from 'copy-to-clipboard';
+
+export const Topbar = () => {
+  const { actions, query, enabled } = useEditor((state) => ({
+    enabled: state.options.enabled
+  }));
+
+const [snackbarMessage, setSnackbarMessage] = useState();
+  return (
+    <Box px={1} py={1} mt={3} mb={1} bgcolor="#cbe8e7">
+      <Grid container alignItems="center">
+        <Grid item xs>
+          <FormControlLabel
+            className="enable-disable-toggle"
+            control={<Switch checked={enabled} onChange={(_, value) => actions.setOptions(options => options.enabled = value)} />}
+            label="Enable"
+          />
+        </Grid>
+        <Grid item>
+          <MaterialButton 
+            className="copy-state-btn"
+            size="small" 
+            variant="outlined" 
+            color="secondary"
+            onClick={() => {
+              const json = query.serialize();
+              copy(lz.encodeBase64(lz.compress(json)));
+              setSnackbarMessage("State copied to clipboard")
+            }}
+          >
+              Copy current state
+          </MaterialButton>
+          <Snackbar
+            autoHideDuration={1000}
+            anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
+            open={!!snackbarMessage}
+            onClose={() => setSnackbarMessage(null)}
+            message={<span>{snackbarMessage}</span>}
+          />
+        </Grid>
+      </Grid>
+    </Box>
+  )
+};
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`When you click on the button now, it should copy the compressed base64 string to the clipboard.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"load-state"},`Load state`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Now let's implement the Load State button in our Topbar component. We will display a Dialog box when the button is clicked, and our users would be able to paste the compressed base64 string here. `),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Then, we would need to work in reverse to obtain the original JSON provided by our editor. Finally, we'll call the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`deserialize`),` action which will result in the editor replacing all the current Nodes in the editor with the deserialized output.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx","metastring":"{12-14,40-83}","{12-14,40-83}":true}),`import React, { useState } from "react";
+import { Box, FormControlLabel, Switch, Grid, Button as MaterialButton, Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions, TextField, Snackbar } from "@material-ui/core";
+import { useEditor } from "@craftjs/core";
+import lz from "lzutf8";
+import copy from 'copy-to-clipboard';
+
+export const Topbar = () => {
+  const { actions, query, enabled } = useEditor((state) => ({
+    enabled: state.options.enabled
+  }));
+
+  const [dialogOpen, setDialogOpen] = useState(false);
+  const [snackbarMessage, setSnackbarMessage] = useState();
+  const [stateToLoad, setStateToLoad] = useState(null);
+
+  return (
+    <Box px={1} py={1} mt={3} mb={1} bgcolor="#cbe8e7">
+      <Grid container alignItems="center">
+        <Grid item xs>
+          <FormControlLabel
+            className="enable-disable-toggle"
+            control={<Switch checked={enabled} onChange={(_, value) => actions.setOptions(options => options.enabled = value)} />}
+            label="Enable"
+          />
+        </Grid>
+        <Grid item>
+          <MaterialButton 
+            className="copy-state-btn"
+            size="small" 
+            variant="outlined" 
+            color="secondary"
+            onClick={() => {
+              const json = query.serialize();
+              copy(lz.encodeBase64(lz.compress(json)));
+              setSnackbarMessage("State copied to clipboard")
+            }}
+          >
+              Copy current state
+          </MaterialButton>
+          <MaterialButton 
+            className="load-state-btn"
+            size="small" 
+            variant="outlined" 
+            color="secondary"
+            onClick={() => setDialogOpen(true)}
+          >
+              Load
+          </MaterialButton>
+          <Dialog
+            open={dialogOpen}
+            onClose={() => setDialogOpen(false)}
+            fullWidth
+            maxWidth="md"
+          >
+            <DialogTitle id="alert-dialog-title">Load state</DialogTitle>
+            <DialogContent>
+              <TextField 
+                multiline 
+                fullWidth
+                placeholder='Paste the contents that was copied from the "Copy Current State" button'
+                size="small"
+                value={stateToLoad}
+                onChange={e => setStateToLoad(e.target.value)}
+              />
+            </DialogContent>
+            <DialogActions>
+              <MaterialButton onClick={() => setDialogOpen(false)} color="primary">
+                Cancel
+              </MaterialButton>
+              <MaterialButton 
+                onClick={() => {
+                  setDialogOpen(false);
+                  const json = lz.decompress(lz.decodeBase64(stateToLoad));
+                  actions.deserialize(json);
+                  setSnackbarMessage("State loaded")
+                }} 
+                color="primary" 
+                autoFocus
+              >
+                Load
+              </MaterialButton>
+            </DialogActions>
+          </Dialog>
+          <Snackbar
+            autoHideDuration={1000}
+            anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
+            open={!!snackbarMessage}
+            onClose={() => setSnackbarMessage(null)}
+            message={<span>{snackbarMessage}</span>}
+          />
+        </Grid>
+      </Grid>
+    </Box>
+  )
+};
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"load-json-on-page-load"},`Load JSON on page load`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Of course, what if we wanted our editor to load a serialized output on page load? For this, we will need to take a step back and revisit the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`<Frame />`),` component which we encountered when we first set up Craft.js. `),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`By default, it constructs the editor state based on whats was initially rendered in its `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`children`),`. But, we could also specifiy the serialised JSON nodes to its `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`json`),` prop which would cause it to load the state from the JSON string instead. `),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`import React, {useState, useEffect} from 'react';
+import "../styles/main.css";
+import {Typography, Button as MaterialButton, Paper, Grid, makeStyles} from '@material-ui/core';
+import {Toolbox} from '../components/Toolbox';
+import {Container} from '../components/user/Container';
+import {Button} from '../components/user/Button';
+import {Card, CardBottom, CardTop} from '../components/user/Card';
+import {Text} from '../components/user/Text';
+import {SettingsPanel} from '../components/SettingsPanel';
+import {Editor, Frame, Element} from "@craftjs/core";
+import { Topbar } from '../components/Topbar';
+
+
+export default function App() {
+  const [enabled, setEnabled] = useState(true);
+  const [json, setJson] = useState(null);
+
+  // Load save state from server on page load
+  useEffect(() => {
+    const stateToLoad = await fetch("your api to get the compressed data");
+    const json = lz.decompress(lz.decodeBase64(stateToLoad));
+    setJson(json);
+  }, []);
+
+  return (
+    <div style={{margin: "0 auto", width: "800px"}}>
+      <Typography style={{margin: "20px 0"}} variant="h5" align="center">Basic Page Editor</Typography>
+        <Editor
+          resolver={{Card, Button, Text, Container, CardTop, CardBottom}}
+          enabled={enabled}
+        > 
+          <Topbar />
+          <Grid container spacing={5} style={{paddingTop: "10px"}}>
+            <Grid item xs>
+              <Frame json={json}>
+                <Element is={Container} padding={5} background="#eeeeee">
+                  ...
+                </Element>
+              </Frame>
+            </Grid>
+            <Grid item xs={4}>
+              ...
+            </Grid>
+          </Grid>
+        </Editor>
+    </div>
+  );
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"all-set-"},`All set! 💖`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Now, play with the editor and press the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Copy Current State`),` button when you are done. Refresh the page so the editor returns to its default state, then press the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Load State`),` button and paste the copied output - you should see the editor displaying the elements in the state from the time you copied.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Image */ "c"],{img:"tutorial/save-and-load.gif",mdxType:"Image"}));};MDXContent.isMDXComponent=true;
+
+/***/ }),
+/* 176 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "frontMatter", function() { return frontMatter; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
+/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
+/* harmony import */ var _site_src_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
+const frontMatter={id:'helpers',title:'NodeHelpers',sidebar_label:'NodeHelpers'};const metadata={"id":"api/helpers","title":"NodeHelpers","description":"Methods that helps describe a specified Node.","source":"@site/docs/api/NodeHelpers.md","permalink":"/r/docs/next/api/helpers","version":"next","sidebar_label":"NodeHelpers","sidebar":"docs","previous":{"title":"useNode()","permalink":"/r/docs/next/api/useNode"},"next":{"title":"Layers","permalink":"/r/docs/next/additional/layers"}};/* @jsx mdx */const rightToc=[{value:'Usage',id:'usage',children:[{value:'useEditor hook',id:'useeditor-hook',children:[]},{value:'User Component rules',id:'user-component-rules',children:[]}]},{value:'Methods',id:'methods',children:[{value:'get',id:'get',children:[]},{value:'descendants',id:'descendants',children:[]},{value:'ancestors',id:'ancestors',children:[]},{value:'linkedNodes',id:'linkednodes',children:[]},{value:'isRoot',id:'isroot',children:[]},{value:'isCanvas',id:'iscanvas',children:[]},{value:'isLinkedNode',id:'islinkednode',children:[]},{value:'isDeletable',id:'isdeletable',children:[]},{value:'isTopLevelNode',id:'istoplevelnode',children:[]},{value:'isParentOfTopLevelNode',id:'isparentoftoplevelnode',children:[]},{value:'isDraggable',id:'isdraggable',children:[]},{value:'isDroppable',id:'isdroppable',children:[]},{value:'toSerializedNode',id:'toserializednode',children:[]},{value:'toNodeTree',id:'tonodetree',children:[]}]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Methods that helps describe a specified `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Node`),`.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"usage"},`Usage`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"useeditor-hook"},`useEditor hook`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`You can access the NodeHelpers via the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`node`),` query method in the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`useEditor`),` hook.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`import {useEditor} from "@craftjs/core";
+
+const TextComponent = () => {
+  const { id } = useNode();
+  const { query: {node} } = useEditor();
+  const isRoot = node(id).Root(),
+        isDraggable = node(id).Draggable();
+  ...
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"user-component-rules"},`User Component rules`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`NodeHelpers can also be accessed via the last parameter of each User Component rules.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const MyComp = () => {
+
+}
+MyComp.craft = { 
+  rules: {
+    canDrag: (node: Node, helper: NodeHelpers) => {
+      const ancestors = helper(node.id).ancestors();
+      ...
+    },
+    canMoveIn : (incoming: Node, self: Node, helper: NodeHelpers) => {
+      const isRoot = helper(node.id).isRoot();
+      ...
+    }
+    canMoveOut: (outgoing: Node, self: Node, helper: NodeHelpers) => {
+      const isDeletable = helper(node.id).isDeletable();
+      ...
+    }
+  }
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"methods"},`Methods`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"get"},`get`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"function",mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Get `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Node`),` object from id`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"returns"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["Node"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"descendants"},`descendants`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"function",mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Returns an array of Node ids of all child Nodes of a given Node.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"parameters"},`Parameters`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["deep","boolean","If set to true, retrieve all descendants in nested levels. Default is false"],["includeOnly?","'childNodes' | 'linkedNodes'","Get descendants that are either childNodes or linkedNodes. If unset, get all descendants"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"returns-1"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["NodeId[]"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`// The descendants of \`div\` when deep=false
+<div> 
+  // highlight-next-line
+  <h2>Yo</h2>
+  // highlight-next-line
+  <Element is={Container}>
+    <h3>Child</h3>
+    // highlight-next-line
+  </Element>
+</div>
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`// The descendants of \`div\` when deep=true
+<div> 
+  // highlight-start
+  <h2>Yo</h2>
+  <Element is={Container}>
+    <h3>Child</h3>
+  </Element>
+  // highlight-end
+</div>
+
+const Container = () => {
+  return (
+    <div>
+      // highlight-start
+      <Element id="linked-div">
+        <h1>Hello</h1>
+      <Element>
+      // highlight-end
+    </div>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`// The descendants of \`div\` when deep=true and includeOnly="childNodes" only
+<div> 
+  // highlight-start
+  <h2>Yo</h2>
+  <Element is={Container}>
+    <h3>Child</h3>
+  </Element>
+  // highlight-end
+</div>
+
+const Container = () => {
+  return (
+    <div>
+      <Element id="linked-div">
+        <h1>Hello</h1>
+      <Element>
+    </div>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`// The descendants of \`div\` when deep=true and includeOnly="linkedNodes" only
+<div> 
+  <h2>Yo</h2>
+  <Element is={Container}>
+    <h3>Child</h3>
+  </Element>
+</div>
+
+const Container = () => {
+  return (
+    <div>
+      // highlight-start
+      <Element id="linked-div">
+        <h1>Hello</h1>
+      <Element>
+      // highlight-end
+    </div>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"ancestors"},`ancestors`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"function",mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Returns an array of Node ids of all ancestors`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"returns-2"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["NodeId[]"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"linkednodes"},`linkedNodes`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"function",mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Returns an array of linked Node ids`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"returns-3"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["NodeId[]"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"isroot"},`isRoot`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"function",mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Returns `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`true`),` if a given Node is the Root Node`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"returns-4"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["boolean"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx","metastring":"{5}","{5}":true}),`const App  = () => {
+  return (
+    <Editor>
+      <Frame>
+        <div> // true
+          <div>Yo</div> // false
+          <h2>It's me</h2> // false
+          <Element is={Container}> // false 
+            <h3>Child</h3> // false
+          </Element>
+        </div>
+      </Frame>
+    </Editor>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"iscanvas"},`isCanvas`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"function",noMargin:true,mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Check if a given Node is a Canvas`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"returns-5"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["boolean"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx","metastring":"{5,8}","{5,8}":true}),`const App  = () => {
+  return (
+    <Editor>
+      <Frame>
+        <Element canvas> // true
+          <div>Yo</div> // false
+          <Element is={Container}>It's me</Element> // false
+          <Element canvas> // true 
+            <h3>Child</h3> // false
+          </Element>
+        </Element>
+      </Frame>
+    </Editor>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"islinkednode"},`isLinkedNode`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"function",noMargin:true,mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Check if a given Node is linked to the parent Node via an arbitary id`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"returns-6"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["boolean"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx","metastring":"{17}","{17}":true}),`const App  = () => {
+  return (
+    <Editor>
+      <Frame>
+        <Element canvas> // false
+          <div>Yo</div> // false
+          <Element is={Hero}>It's me</Element> // false
+        </Element>
+      </Frame>
+    </Editor>
+  )
+}
+
+const Hero = ({background, title}) => {
+  return (
+    <div style={{ background }}>
+      <Element id="title" is={Text} text={title} /> // true
+      ...
+    </div>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"isdeletable"},`isDeletable`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"function",noMargin:true,mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`A Node may be deleted as long as it is `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("strong",{parentName:"p"},`not`),` one of the following:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("ul",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`Root Node`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`Top-level Node`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"parameters-1"},`Parameters`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["node","Node","The Node object to check"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"returns-7"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["boolean"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx","metastring":"{5,21}","{5,21}":true}),`const App  = () => {
+  return (
+    <Editor resolves={{Container}}>
+      <Frame>
+        <div> // false
+          <div>Yo</div> // true
+          <h2>It's me</h2> // true
+          <Element canvas> // true 
+            <h3>Child</h3> // true
+            <Container /> // true
+          </Element>
+        </div>
+      </Frame>
+    </Editor>
+  )
+}
+
+const Container = () => {
+  return (
+    <div>
+      <Element id="main"> // false
+        <h2>Hi</h2> // true
+      </Element>
+    </div>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"istoplevelnode"},`isTopLevelNode`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"function",noMargin:true,mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`A Node is considered top-level if it's one of the following:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("ul",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`The Root Node`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`A linked Node defined inside a User Component`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"parameters-2"},`Parameters`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["node","Node","The Node object to check"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"returns-8"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["boolean"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx","metastring":"{5,21,27}","{5,21,27}":true}),`const App  = () => {
+  return (
+    <Editor resolves={{Container}}>
+      <Frame>
+        <div> // true
+          <div>Yo</div> // false
+          <h2>It's me</h2> // false
+          <div> // false 
+            <h3>Child</h3> // false
+            <Container /> // false
+          </div>
+        </div>
+      </Frame>
+    </Editor>
+  )
+}
+
+const Container = () => {
+  return (
+    <div>
+      <Element id="main"> // true
+        <h2>Hi</h2> // false
+        <Element> // false
+          <h2>Hi</h2> // false
+        </Element>
+      </Element>
+      <Element id="secondary"> // true
+        <h2>Hi</h2> // false
+        <Element> // false
+          <h2>Hi</h2> // false
+        </Element>
+      </Element>
+    </div>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"isparentoftoplevelnode"},`isParentOfTopLevelNode`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"function",noMargin:true,mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`This returns `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`true`),` if a Node's User Component defines a `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`<Element />`),` in its render method.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"returns-9"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["boolean"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx","metastring":"{10}","{10}":true}),`const App  = () => {
+  return (
+    <Editor resolves={{Container}}>
+      <Frame>
+        <Element> // false
+          <div>Yo</div> // false
+          <h2>It's me</h2> // false
+          <Element> // false 
+            <h3>Child</h3> // false
+            <Container /> // true
+          </Element>
+        </Element>
+      </Frame>
+    </Editor>
+  )
+}
+
+const Container = () => {
+  return (
+    <div>
+      <Element id="main"> // false
+        <h2>Hi</h2> // false
+        <Element> // false
+          <h2>Hi</h2> // false
+        </Element>
+      </Element>
+      <Element id="seconday"> // false
+        <h2>Hi</h2> // false
+        <Element> // false
+          <h2>Hi</h2> // false
+        </Element>
+      </Element>
+    </div>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"isdraggable"},`isDraggable`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"function",noMargin:true,mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`A Node may be dragged and moved if it satisfies both of the following conditions:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("ul",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`The Node is an immediate child of a Canvas Node, hence it's draggable`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`The Node's `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"li"},`canDrag`),` rule allows it to be moved `)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"parameters-3"},`Parameters`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["onError","(err: string) => void","Error callback"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"returns-10"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["boolean"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"isdroppable"},`isDroppable`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"function",noMargin:true,mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Check if a Node is Droppable relative to the target Node.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"parameters-4"},`Parameters`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["targetId","NodeId","The target Node"],["onError","(err: string) => void","Error callback"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"returns-11"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["boolean"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"example"},`Example`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`In the following example, we're checking if our `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`MyCanvas`),` component would be able to accept the current selected Node in the editor.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const MyCanvas = () => {
+  const { id } = useNode();
+  const { canWeAcceptTheSelectedNode } = useEditor((state, query) => ({
+    canWeAcceptTheSelectedNode: state.events.selected && query.node(id).Droppable(state.events.selected)
+  }));
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"toserializednode"},`toSerializedNode`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"function",noMargin:true,mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Gets the current Node in it's `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`SerializedNode`),` form`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"returns-12"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["SerializedNode"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"tonodetree"},`toNodeTree`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"function",noMargin:true,mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Gets the current Node and its descendants in its `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`NodeTree`),` form`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"parameters-5"},`Parameters`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["includeOnly?","'childNodes' | 'linkedNodes'","Get descendants that are either childNodes or linkedNodes. If unset, get all descendants"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"returns-13"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["NodeTree"]],mdxType:"API"}));};MDXContent.isMDXComponent=true;
+
+/***/ }),
+/* 177 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "frontMatter", function() { return frontMatter; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
+/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
+/* harmony import */ var _site_src_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
+const frontMatter={id:'basic-tutorial',title:'Basic Tutorial'};const metadata={"id":"version-0.1.0-beta.8/guides/basic-tutorial","title":"Basic Tutorial","description":"Live Demo","source":"@site/versioned_docs/version-0.1.0-beta.8/guides/basic-tutorial.md","permalink":"/r/docs/guides/basic-tutorial","version":"0.1.0-beta.8","sidebar":"version-0.1.0-beta.8/docs","previous":{"title":"Interacting with the Editor","permalink":"/r/docs/concepts/editor-components"},"next":{"title":"Save and Load","permalink":"/r/docs/guides/save-load-state"}};/* @jsx mdx */const rightToc=[{value:'Overview',id:'overview',children:[]},{value:'Installation',id:'installation',children:[]},{value:'Designing a user interface',id:'designing-a-user-interface',children:[{value:'User Components',id:'user-components',children:[]},{value:'The Editor',id:'the-editor',children:[]}]},{value:'Implementing Craft.js',id:'implementing-craftjs',children:[{value:'Setup',id:'setup',children:[]},{value:'Enabling Drag and Drop',id:'enabling-drag-and-drop',children:[]},{value:'Implementing the Toolbox',id:'implementing-the-toolbox',children:[]},{value:'Making the components editable',id:'making-the-components-editable',children:[]},{value:'Settings Panel',id:'settings-panel-1',children:[]},{value:'Topbar',id:'topbar',children:[]}]},{value:'You made it 🎉',id:'you-made-it-',children:[]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",{target:"_blank",href:"https://prevwong.github.io/craft.js/examples/basic",className:"btn"},"Live Demo"),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",{target:"_blank",href:"https://github.com/prevwong/craft.js/tree/master/packages/examples/basic",className:"btn btn-text"},"View Code"),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"overview"},`Overview`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`In this tutorial, we'll be designing a simple page editor. It's recommended that you have a basic to intermediate workings of React and it'd be even better if you first have a quick glance at the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"p"},{"href":"/r/docs/concepts/nodes"}),`Core Concepts`),` and come back here. If you are feeling adventurous, that's fine too.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"installation"},`Installation`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-bash"}),`yarn add @craftjs/core
 `)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`or with npm:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-bash"}),`npm install --save @craftjs/core
 `)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"designing-a-user-interface"},`Designing a user interface`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`With Craft.js you decide how your editor should look and function. So, let's build a user interface for our page editor. We'll add the page editor functionalities later.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`To make our lives easier, we'll use some external packages for designing our user interfaces.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-bash"}),`yarn add @material-ui/core react-contenteditable material-ui-color-picker
 `)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"user-components"},`User Components`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Let's first create the User Components - the components that our end users will be able create/edit/move around. `),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"text"},`Text`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`// components/user/Text.js
@@ -21515,638 +22130,10 @@ export const Topbar = () => {
 `)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Image */ "c"],{img:"tutorial/topbar.gif",mdxType:"Image"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("blockquote",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"blockquote"},`We'll explore how to compress the JSON output and have the editor load from the serialised JSON in the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"p"},{"href":"/r/docs/guides/save-load-state"}),`Save and Load`),` guide.`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"you-made-it-"},`You made it 🎉`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`We've made it until the end! Not too bad right? Hopefully, you're able to see the simplicity of building a fully working page editor with Craft.js.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`We do not need to worry about implementing the drag-n-drop system but rather simply focus on writing rules and attaching connectors to the desired elements.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`When it comes to writing the components themselves, it is the same as writing any other React component - you control how the components react to different editor events and how they are edited. `));};MDXContent.isMDXComponent=true;
 
 /***/ }),
-/* 173 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "frontMatter", function() { return frontMatter; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
-const frontMatter={id:'overview',title:'Overview'};const metadata={"id":"overview","title":"Overview","description":"Motivation","source":"@site/docs/overview.md","permalink":"/r/docs/next/overview","version":"next","sidebar":"docs","next":{"title":"Acknowledgements","permalink":"/r/docs/next/acknowledgements"}};/* @jsx mdx */const rightToc=[{value:'Motivation',id:'motivation',children:[]},{value:'Features',id:'features',children:[{value:'It&#39;s just React',id:'its-just-react',children:[]},{value:'Control how your components are edited',id:'control-how-your-components-are-edited',children:[]},{value:'User components with droppable regions',id:'user-components-with-droppable-regions',children:[]},{value:'Extensible',id:'extensible',children:[]},{value:'Serializable state',id:'serializable-state',children:[]}]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"motivation"},`Motivation`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Page editors are a great way to provide an excellent user experience. However, to build one is often a pretty dreadful task.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`There're existing libraries that come with a fully working page editor out of the box with a user interface and editable components. However, if you wish to make customisations such as tweaking the user interface, it will most definitely involve modifying the library itself.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Craft.js solves this problem by modularising the building blocks of a page editor. It provides a drag-n-drop system and handles the way user components should be rendered, updated and moved - among other things. With this, you'll be able to focus on building the page editor according to your own specifications and needs.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"features"},`Features`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"its-just-react"},`It's just React`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`No need for complicated plugin systems. Design your editor from top to bottom the same way as you would design any other frontend application in React.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`A simple user component can easily be defined as such:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`import {useNode} from "@craftjs/core";
-
-const TextComponent = ({text}) => {
-  const { connectors: {drag} } = useNode();
-
-  return (
-    <div ref={drag}>
-      <h2>{text}</h2>
-    </div>
-  )
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Heck, the entire UI of your page editor is built using just React.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`import React from "react";
-import {Editor, Frame, Canvas, Selector} from "@craftjs/core";
-const App = () => {
-  return (
-    <div>
-      <header>Some fancy header or whatever</header>
-      <Editor>
-        // Editable area starts here
-        <Frame resolver={TextComponent, Container}> 
-          <Canvas>
-            <TextComponent text="I'm already rendered here" />
-          </Canvas>
-        </Frame>
-      </Editor>
-    </div>
-  )
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"control-how-your-components-are-edited"},`Control how your components are edited`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`An obvious requirement for page editors is that they need to allow users to edit components. With Craft.js, you control the process of which these components should be edited.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`In the following example, when the user clicks on a component, we'll display a modal that requires the user to input a value for the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`text`),` prop. As the input value changes, the component will be re-rendered with updated prop.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`import {useNode} from "@craftjs/core";
-
-const TextComponent = ({text}) => {
-  const { connectors: { connect, drag }, isClicked, actions: {setProp} } = useNode(
-    (state) => ({
-      isClicked: state.event.selected,
-    })
-  );
-
-  return (
-    <div ref={dom => connect(drag(dom))}>
-      <h2>{text}</h2>
-      {
-        isClicked ? (
-          <Modal>
-            <input
-              type="text"
-              value={text}
-              onChange={e => setProp(e.target.value)}
-            />
-          </Modal>
-        )
-      }
-    </div>
-  )
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`With this, you could easily implement content editable text or drag-to-resize components, just as any modern page editor would have.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"user-components-with-droppable-regions"},`User components with droppable regions`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Let's say we need a "Container" component which users can drop into the editor. Additionally, we would also like them to be able to drag and drop other components into the Container.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`In Craft.js, it's as simple as calling the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`<Canvas />`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`import {useNode} from "@craftjs/core";
-const Container = () => {
-  const { connectors: {drag} } = useNode();
-
-  return (
-    <div ref={drag}>
-      <Canvas id="drop_section">
-         // Now users will be able to drag/drop components into this section
-        <TextComponent />
-      </Canvas>
-    </div>
-  )
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"extensible"},`Extensible`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Craft.js provides an expressive API which allows you to easily read and manipulate the editor state. Let's say you would like to implement a copy function for a component:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`import {useEditor, useNode} from "@craftjs/core";
-const Container = () => {
-  const { actions: {add}, query: { createNode, node } } = useEditor();
-  const { id, connectors: {drag, connect} } = useNode();
-  return (
-    <div ref={dom => connect(drag(dom))}>
-      ...
-      <a onClick={() => {
-        const { data: {type, props}} = node(id).get();
-        add(
-          createNode(React.createElement(type, props));
-        );
-      }}>
-        Make a copy of me
-      </a>
-    </div>
-  )
-}
-
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"serializable-state"},`Serializable state`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`The editor's state can be serialized into JSON which you can then apply a compression technique of your choice for storage.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const SaveButton = () => {
-  const { query } = useEditor();
-  return <a onClick={() => console.log(query.serialize()) }>Get JSON</a>
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Of course, Craft.js will also able to recreate the entire state from the JSON string.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const App = () => {
-  const jsonString = /* retrieve JSON from server */
-  return (
-    <Editor>
-      <Frame json={jsonString}>
-        ...
-      </Frame>
-    </Editor>
-  )
-}
-`)));};MDXContent.isMDXComponent=true;
-
-/***/ }),
-/* 174 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "frontMatter", function() { return frontMatter; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
-/* harmony import */ var _site_src_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
-const frontMatter={id:'frame',title:'<Frame />',sidebar_label:'<Frame />'};const metadata={"id":"version-0.1.0-beta.6/api/frame","title":"<Frame />","description":"Frame defines the editable area in your page editor. It is rendered based on the editor's internal state (i.e. Nodes).","source":"@site/versioned_docs/version-0.1.0-beta.6/api/Frame.md","permalink":"/r/docs/0.1.0-beta.6/api/frame","version":"0.1.0-beta.6","sidebar_label":"<Frame />","sidebar":"version-0.1.0-beta.6/docs","previous":{"title":"<Editor />","permalink":"/r/docs/0.1.0-beta.6/api/editor"},"next":{"title":"<Canvas />","permalink":"/r/docs/0.1.0-beta.6/api/canvas"}};/* @jsx mdx */const rightToc=[{value:'Reference',id:'reference',children:[{value:'Props',id:'props',children:[]}]},{value:'Examples',id:'examples',children:[{value:'Designing the default screen',id:'designing-the-default-screen',children:[]},{value:'Loading from serialised Nodes',id:'loading-from-serialised-nodes',children:[]}]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"component",mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Frame defines the editable area in your page editor. It is rendered based on the editor's internal state (i.e. Nodes).`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-tsx"}),`const { connectors, setProp, ...collected } = useNode(collector);
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"reference"},`Reference`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"props"},`Props`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Both props specifies the initial screen to render. You must specify at least one of them (`,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`json`),` takes precendence over `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`children`),`).`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["children?","React.ReactElement<Canvas>","Creates the initial screen using React Elements. Must begin with a &lt;Canvas /&gt; which creates the Root Node."],["json?","String","Loads the initial screen from the serialised JSON Nodes"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("blockquote",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"blockquote"},`These props are memoized - after the initial render, changes to these props will have no effect. If for example, you wish to load a different set of serialised JSON nodes after the initial render, you may use the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`deserialize`),` method via the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"p"},{"href":"/r/docs/api/useEditor"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"a"},`useEditor`)),` hook.`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"examples"},`Examples`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"designing-the-default-screen"},`Designing the default screen`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-tsx","metastring":"{9,10,16,17}","{9,10,16,17}":true}),`import {Editor, Frame, Canvas} from "@craftjs/core";
-
-const App = () => {
-  return (
-    <div>
-      <h2>My App!</h2>
-      <Editor>
-        <h2>My Page Editor</h2>
-        <Frame> 
-          <Canvas is={Container}> // defines the Root Node
-            <h2>Drag me around</h2>
-            <MyComp text="You can drag me around too" />
-            <Canvas is="div" style={{background: "#333" }}>
-              <p>Same here</p>
-            </Canvas>
-          </Canvas>
-        </Frame>
-      </Editor>
-    </div>
-  )
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"loading-from-serialised-nodes"},`Loading from serialised Nodes`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-tsx","metastring":"{10}","{10}":true}),`import {Editor, Frame, Canvas} from "@craftjs/core";
-
-const App = () => {
-  return (
-    <div>
-      <h2>My App!</h2>
-      <Editor>
-        <h2>My Page Editor</h2>
-        <Frame
-          json='{"canvas-ROOT":{"type":"div","isCanvas":true,"props":{},"parent":null,"displayName":"div","custom":{},"nodes":["node-sdiwzXkvQ","node-rGFDi0G6m","node-yNBLMy5Oj"]},"node-sdiwzXkvQ":{"type":{"resolvedName":"Card"},"props":{},"parent":"canvas-ROOT","displayName":"Card","custom":{},"_childCanvas":{"main":"canvas-_EEw_eBD_","second":"canvas-lE4Ni9oIn"}}'
-        > 
-          <Canvas is={Container}> // defines the Root Node
-            <h2>Drag me around</h2>
-            <MyComp text="You can drag me around too" />
-            <Canvas is="div" style={{background: "#333" }}>
-              <p>Same here</p>
-            </Canvas>
-          </Canvas>
-        </Frame>
-      </Editor>
-    </div>
-  )
-}
-`)));};MDXContent.isMDXComponent=true;
-
-/***/ }),
-/* 175 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "frontMatter", function() { return frontMatter; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
-/* harmony import */ var _site_src_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
-const frontMatter={id:'helpers',title:'NodeHelpers',sidebar_label:'NodeHelpers'};const metadata={"id":"api/helpers","title":"NodeHelpers","description":"Methods that helps describe a specified Node.","source":"@site/docs/api/NodeHelpers.md","permalink":"/r/docs/next/api/helpers","version":"next","sidebar_label":"NodeHelpers","sidebar":"docs","previous":{"title":"useNode()","permalink":"/r/docs/next/api/useNode"},"next":{"title":"Layers","permalink":"/r/docs/next/additional/layers"}};/* @jsx mdx */const rightToc=[{value:'Usage',id:'usage',children:[{value:'useEditor hook',id:'useeditor-hook',children:[]},{value:'User Component rules',id:'user-component-rules',children:[]}]},{value:'Methods',id:'methods',children:[{value:'get',id:'get',children:[]},{value:'descendants',id:'descendants',children:[]},{value:'ancestors',id:'ancestors',children:[]},{value:'linkedNodes',id:'linkednodes',children:[]},{value:'isRoot',id:'isroot',children:[]},{value:'isCanvas',id:'iscanvas',children:[]},{value:'isLinkedNode',id:'islinkednode',children:[]},{value:'isDeletable',id:'isdeletable',children:[]},{value:'isTopLevelNode',id:'istoplevelnode',children:[]},{value:'isParentOfTopLevelNode',id:'isparentoftoplevelnode',children:[]},{value:'isDraggable',id:'isdraggable',children:[]},{value:'isDroppable',id:'isdroppable',children:[]},{value:'toSerializedNode',id:'toserializednode',children:[]},{value:'toNodeTree',id:'tonodetree',children:[]}]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Methods that helps describe a specified `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Node`),`.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"usage"},`Usage`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"useeditor-hook"},`useEditor hook`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`You can access the NodeHelpers via the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`node`),` query method in the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`useEditor`),` hook.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`import {useEditor} from "@craftjs/core";
-
-const TextComponent = () => {
-  const { id } = useNode();
-  const { query: {node} } = useEditor();
-  const isRoot = node(id).Root(),
-        isDraggable = node(id).Draggable();
-  ...
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"user-component-rules"},`User Component rules`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`NodeHelpers can also be accessed via the last parameter of each User Component rules.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const MyComp = () => {
-
-}
-MyComp.craft = { 
-  rules: {
-    canDrag: (node: Node, helper: NodeHelpers) => {
-      const ancestors = helper(node.id).ancestors();
-      ...
-    },
-    canMoveIn : (incoming: Node, self: Node, helper: NodeHelpers) => {
-      const isRoot = helper(node.id).isRoot();
-      ...
-    }
-    canMoveOut: (outgoing: Node, self: Node, helper: NodeHelpers) => {
-      const isDeletable = helper(node.id).isDeletable();
-      ...
-    }
-  }
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"methods"},`Methods`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"get"},`get`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"function",mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Get `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Node`),` object from id`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"returns"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["Node"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"descendants"},`descendants`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"function",mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Returns an array of Node ids of all child Nodes of a given Node.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"returns-1"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["NodeId[]"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"ancestors"},`ancestors`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"function",mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Returns an array of Node ids of all ancestors`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"returns-2"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["NodeId[]"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"linkednodes"},`linkedNodes`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"function",mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Returns an array of linked Node ids`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"returns-3"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["NodeId[]"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"isroot"},`isRoot`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"function",mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Returns `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`true`),` if a given Node is the Root Node`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"returns-4"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["boolean"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx","metastring":"{5}","{5}":true}),`const App  = () => {
-  return (
-    <Editor>
-      <Frame>
-        <div> // true
-          <div>Yo</div> // false
-          <h2>It's me</h2> // false
-          <Element is={Container}> // false 
-            <h3>Child</h3> // false
-          </Element>
-        </div>
-      </Frame>
-    </Editor>
-  )
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"iscanvas"},`isCanvas`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"function",noMargin:true,mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Check if a given Node is a Canvas`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"returns-5"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["boolean"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx","metastring":"{5,8}","{5,8}":true}),`const App  = () => {
-  return (
-    <Editor>
-      <Frame>
-        <Element canvas> // true
-          <div>Yo</div> // false
-          <Element is={Container}>It's me</Element> // false
-          <Element canvas> // true 
-            <h3>Child</h3> // false
-          </Element>
-        </Element>
-      </Frame>
-    </Editor>
-  )
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"islinkednode"},`isLinkedNode`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"function",noMargin:true,mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Check if a given Node is linked to the parent Node via an arbitary id`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"returns-6"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["boolean"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx","metastring":"{17}","{17}":true}),`const App  = () => {
-  return (
-    <Editor>
-      <Frame>
-        <Element canvas> // false
-          <div>Yo</div> // false
-          <Element is={Hero}>It's me</Element> // false
-        </Element>
-      </Frame>
-    </Editor>
-  )
-}
-
-const Hero = ({background, title}) => {
-  return (
-    <div style={{ background }}>
-      <Element id="title" is={Text} text={title} /> // true
-      ...
-    </div>
-  )
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"isdeletable"},`isDeletable`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"function",noMargin:true,mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`A Node may be deleted as long as it is `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("strong",{parentName:"p"},`not`),` one of the following:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("ul",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`Root Node`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`Top-level Node`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"parameters"},`Parameters`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["node","Node","The Node object to check"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"returns-7"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["boolean"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx","metastring":"{5,21}","{5,21}":true}),`const App  = () => {
-  return (
-    <Editor resolves={{Container}}>
-      <Frame>
-        <div> // false
-          <div>Yo</div> // true
-          <h2>It's me</h2> // true
-          <Element canvas> // true 
-            <h3>Child</h3> // true
-            <Container /> // true
-          </Element>
-        </div>
-      </Frame>
-    </Editor>
-  )
-}
-
-const Container = () => {
-  return (
-    <div>
-      <Element id="main"> // false
-        <h2>Hi</h2> // true
-      </Element>
-    </div>
-  )
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"istoplevelnode"},`isTopLevelNode`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"function",noMargin:true,mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`A Node is considered top-level if it's one of the following:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("ul",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`The Root Node`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`A linked Node defined inside a User Component`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"parameters-1"},`Parameters`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["node","Node","The Node object to check"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"returns-8"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["boolean"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx","metastring":"{5,21,27}","{5,21,27}":true}),`const App  = () => {
-  return (
-    <Editor resolves={{Container}}>
-      <Frame>
-        <div> // true
-          <div>Yo</div> // false
-          <h2>It's me</h2> // false
-          <div> // false 
-            <h3>Child</h3> // false
-            <Container /> // false
-          </div>
-        </div>
-      </Frame>
-    </Editor>
-  )
-}
-
-const Container = () => {
-  return (
-    <div>
-      <Element id="main"> // true
-        <h2>Hi</h2> // false
-        <Element> // false
-          <h2>Hi</h2> // false
-        </Element>
-      </Element>
-      <Element id="secondary"> // true
-        <h2>Hi</h2> // false
-        <Element> // false
-          <h2>Hi</h2> // false
-        </Element>
-      </Element>
-    </div>
-  )
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"isparentoftoplevelnode"},`isParentOfTopLevelNode`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"function",noMargin:true,mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`This returns `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`true`),` if a Node's User Component defines a `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`<Element />`),` in its render method.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"returns-9"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["boolean"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx","metastring":"{10}","{10}":true}),`const App  = () => {
-  return (
-    <Editor resolves={{Container}}>
-      <Frame>
-        <Element> // false
-          <div>Yo</div> // false
-          <h2>It's me</h2> // false
-          <Element> // false 
-            <h3>Child</h3> // false
-            <Container /> // true
-          </Element>
-        </Element>
-      </Frame>
-    </Editor>
-  )
-}
-
-const Container = () => {
-  return (
-    <div>
-      <Element id="main"> // false
-        <h2>Hi</h2> // false
-        <Element> // false
-          <h2>Hi</h2> // false
-        </Element>
-      </Element>
-      <Element id="seconday"> // false
-        <h2>Hi</h2> // false
-        <Element> // false
-          <h2>Hi</h2> // false
-        </Element>
-      </Element>
-    </div>
-  )
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"isdraggable"},`isDraggable`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"function",noMargin:true,mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`A Node may be dragged and moved if it satisfies both of the following conditions:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("ul",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`The Node is an immediate child of a Canvas Node, hence it's draggable`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`The Node's `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"li"},`canDrag`),` rule allows it to be moved `)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"parameters-2"},`Parameters`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["onError","(err: string) => void","Error callback"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"returns-10"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["boolean"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"isdroppable"},`isDroppable`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"function",noMargin:true,mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Check if a Node is Droppable relative to the target Node.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"parameters-3"},`Parameters`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["targetId","NodeId","The target Node"],["onError","(err: string) => void","Error callback"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"returns-11"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["boolean"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"example"},`Example`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`In the following example, we're checking if our `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`MyCanvas`),` component would be able to accept the current selected Node in the editor.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const MyCanvas = () => {
-  const { id } = useNode();
-  const { canWeAcceptTheSelectedNode } = useEditor((state, query) => ({
-    canWeAcceptTheSelectedNode: state.events.selected && query.node(id).Droppable(state.events.selected)
-  }));
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"toserializednode"},`toSerializedNode`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"function",noMargin:true,mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Gets the current Node in it's `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`SerializedNode`),` form`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"returns-12"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["SerializedNode"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"tonodetree"},`toNodeTree`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"function",noMargin:true,mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Gets the current Node in it's `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`NodeTree`),` form`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"returns-13"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["NodeTree"]],mdxType:"API"}));};MDXContent.isMDXComponent=true;
-
-/***/ }),
-/* 176 */
+/* 178 */
 /***/ (function(module) {
 
 module.exports = JSON.parse("{\"docsSidebars\":{\"version-0.1.0-beta.6/docs\":[{\"type\":\"category\",\"label\":\"Introduction\",\"items\":[{\"type\":\"link\",\"label\":\"Overview\",\"href\":\"/r/docs/0.1.0-beta.6/overview\"},{\"type\":\"link\",\"label\":\"Acknowledgements\",\"href\":\"/r/docs/0.1.0-beta.6/acknowledgements\"}]},{\"type\":\"category\",\"label\":\"Core Concepts\",\"items\":[{\"type\":\"link\",\"label\":\"Nodes\",\"href\":\"/r/docs/0.1.0-beta.6/concepts/nodes\"},{\"type\":\"link\",\"label\":\"User Components\",\"href\":\"/r/docs/0.1.0-beta.6/concepts/user-components\"},{\"type\":\"link\",\"label\":\"Interacting with the Editor\",\"href\":\"/r/docs/0.1.0-beta.6/concepts/editor-components\"}]},{\"type\":\"category\",\"label\":\"Guides\",\"items\":[{\"type\":\"link\",\"label\":\"Basic Tutorial\",\"href\":\"/r/docs/0.1.0-beta.6/guides/basic-tutorial\"},{\"type\":\"link\",\"label\":\"Save and Load\",\"href\":\"/r/docs/0.1.0-beta.6/guides/save-load-state\"}]},{\"type\":\"category\",\"label\":\"API Reference\",\"items\":[{\"type\":\"link\",\"label\":\"EditorState\",\"href\":\"/r/docs/0.1.0-beta.6/api/editor-state\"},{\"type\":\"link\",\"label\":\"Node\",\"href\":\"/r/docs/0.1.0-beta.6/api/node\"},{\"type\":\"link\",\"label\":\"UserComponent\",\"href\":\"/r/docs/0.1.0-beta.6/api/user-component\"},{\"type\":\"link\",\"label\":\"<Editor />\",\"href\":\"/r/docs/0.1.0-beta.6/api/editor\"},{\"type\":\"link\",\"label\":\"<Frame />\",\"href\":\"/r/docs/0.1.0-beta.6/api/frame\"},{\"type\":\"link\",\"label\":\"<Canvas />\",\"href\":\"/r/docs/0.1.0-beta.6/api/canvas\"},{\"type\":\"link\",\"label\":\"useEditor()\",\"href\":\"/r/docs/0.1.0-beta.6/api/useEditor\"},{\"type\":\"link\",\"label\":\"useNode()\",\"href\":\"/r/docs/0.1.0-beta.6/api/useNode\"},{\"type\":\"link\",\"label\":\"NodeHelpers\",\"href\":\"/r/docs/0.1.0-beta.6/api/helpers\"}]},{\"type\":\"category\",\"label\":\"Additional Packages\",\"items\":[{\"type\":\"link\",\"label\":\"Layers\",\"href\":\"/r/docs/0.1.0-beta.6/additional/layers\"}]}]},\"permalinkToSidebar\":{\"/r/docs/0.1.0-beta.6/acknowledgements\":\"version-0.1.0-beta.6/docs\",\"/r/docs/0.1.0-beta.6/additional/layers\":\"version-0.1.0-beta.6/docs\",\"/r/docs/0.1.0-beta.6/api/canvas\":\"version-0.1.0-beta.6/docs\",\"/r/docs/0.1.0-beta.6/api/editor\":\"version-0.1.0-beta.6/docs\",\"/r/docs/0.1.0-beta.6/api/editor-state\":\"version-0.1.0-beta.6/docs\",\"/r/docs/0.1.0-beta.6/api/frame\":\"version-0.1.0-beta.6/docs\",\"/r/docs/0.1.0-beta.6/api/helpers\":\"version-0.1.0-beta.6/docs\",\"/r/docs/0.1.0-beta.6/api/node\":\"version-0.1.0-beta.6/docs\",\"/r/docs/0.1.0-beta.6/api/useEditor\":\"version-0.1.0-beta.6/docs\",\"/r/docs/0.1.0-beta.6/api/useNode\":\"version-0.1.0-beta.6/docs\",\"/r/docs/0.1.0-beta.6/api/user-component\":\"version-0.1.0-beta.6/docs\",\"/r/docs/0.1.0-beta.6/concepts/editor-components\":\"version-0.1.0-beta.6/docs\",\"/r/docs/0.1.0-beta.6/concepts/nodes\":\"version-0.1.0-beta.6/docs\",\"/r/docs/0.1.0-beta.6/concepts/user-components\":\"version-0.1.0-beta.6/docs\",\"/r/docs/0.1.0-beta.6/guides/basic-tutorial\":\"version-0.1.0-beta.6/docs\",\"/r/docs/0.1.0-beta.6/guides/save-load-state\":\"version-0.1.0-beta.6/docs\",\"/r/docs/0.1.0-beta.6/overview\":\"version-0.1.0-beta.6/docs\"},\"version\":\"0.1.0-beta.6\"}");
-
-/***/ }),
-/* 177 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "frontMatter", function() { return frontMatter; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
-const frontMatter={id:'dev',title:'Craft.js - Build any page editor with React'};const metadata={"id":"version-0.1.0-beta.7/dev","title":"Craft.js - Build any page editor with React","description":"You know a web application is fancy when it has a page editor. Without a doubt, a page editor helps boost user experience significantly. If you're a frontend developer and have been tasked to be build one before, then you know precisely the difficulties and challenges of building one.","source":"@site/versioned_docs/version-0.1.0-beta.7/dev.md","permalink":"/r/docs/dev","version":"0.1.0-beta.7"};/* @jsx mdx */const rightToc=[{value:'Introducing Craft.js',id:'introducing-craftjs',children:[{value:'TL;DR',id:'tldr',children:[]}]},{value:'Editable React Components',id:'editable-react-components',children:[]},{value:'Control editing behaviours',id:'control-editing-behaviours',children:[]},{value:'Your page editor, your user interface',id:'your-page-editor-your-user-interface',children:[{value:'Interacting with the editor',id:'interacting-with-the-editor',children:[]}]},{value:'Closing words',id:'closing-words',children:[]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`You know a web application is fancy when it has a page editor. Without a doubt, a page editor helps boost user experience significantly. If you're a frontend developer and have been tasked to be build one before, then you know precisely the difficulties and challenges of building one.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Existing libraries such as Grape.js or react-page are great for a working out-of-the-box page editor solution. However, as soon as you need to customise the look and feel of the page editor itself, you will find yourself hacking in the library's code.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"introducing-craftjs"},`Introducing Craft.js`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Craft.js is a React framework to build any type of page editor. Instead of providing a working page editor implementation with a user interface, Craft.js provides an abstraction for you to implement your own page editor upon. It comes backed-in with an extensible drag-n-drop system which handles the way React elements should be rendered/updated, and a cohesive API to interact with the editor which you can additionally implement your own features on top of.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"tldr"},`TL;DR`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("ul",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`Design your own user interface for your page editor`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`Write React components that end-user could edit`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`Govern drag-and-drop conditions for your components`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`Control how your components should be edited. From simple text fields to content editables and drag to resize; if you can do it in React, then you can do it with Craft.js.`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"editable-react-components"},`Editable React Components`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Let's start with a simple Card component like this:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const Card = ({title}) => {
-  return (
-    <div>
-      <h2>{title}</h2>
-      <div id="p-only">
-        <p>Hi</p>
-      </div>
-    </div>
-  )
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`First, to integrate it with with Craft.js' drag-and-drop system, we just need to do the following modifications:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`import {useNode} from "@craftjs/core";
-
-const Card = ({title}) => {
-  const { connectors: { connect, drag } } = useNode();
-  return (
-    <div ref={dom => connect(drag(dom))}>
-      <h2>{title}</h2>
-      <div id="p-only">
-        <p>Hi</p>
-      </div>
-    </div>
-  )
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`What's happening here? `),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("ul",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`We passed the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"li"},`connect`),` connector to the root element of our component; this tells Craft.js that this element represents the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"li"},`Card`),` component. Hence, the dimensions of the specified element will be taken into consideration during drag and drop events.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`Then, we also passed `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"li"},`drag`),` connector to the same root element; this adds the drag handlers to the DOM. If the component is rendered as the child of a `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"li"},`<Canvas />`),`, the user will be able to drag this element and it will move the entire Text component.`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Next, we might want to be able to control the drag-n-drop rules of our Card component. For example, let's say we only want our Card component to be draggable as long as its `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`title`),` prop is not "No Drag". We can achieve this easily as such:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const Card = () => {...}
-
-Card.craft = {
-  rules: {
-    canDrag: (node) => node.data.props.title != "No Drag"
-  }
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"droppable-regions"},`Droppable regions`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Next, let's take a look at the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`#p-only`),` element we specified in our Card component. What if we want this area to be droppable where only `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`p`),` can be dropped? `),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`This is where the`,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`<Canvas />`),` component provided by Craft.js becomes useful. It defines a droppable region where each of its immediate child is draggable.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`import {useNode, Canvas} from "@craftjs/core";
-
-const Card = ({title}) => {
-  const { connectors: { connect, drag } } = useNode();
-  return (
-    <div ref={dom => connect(drag(dom))}>
-      <h2>{title}</h2>
-      <Canvas id="p-only">
-        <p>Hi</p>
-      </Canvas>
-    </div>
-  )
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Your next question might be about how we control our newly created droppable region. The `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`<Canvas />`),` component accepts an `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`is`),` prop which can be either a HTML element or a React component (by default, it's a `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`div`),`). So, if we supply a React component, we can essentially achieve the same design flexibility as we have with our Card component:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`import {useNode, Canvas} from "@craftjs/core";
-
-const Container = ({children}) => {
-  const { connectors: {connect} } = useNode();
-  return (
-    <div ref={dom => connect(dom)}>
-      {children}
-    </div>
-  )
-}
-
-Container.craft = {
-  rules: {
-    canMoveIn: (incomingNode) => incomingNode.data.type == "p"
-  }
-}
-
-const Card = ({title}) => {
-  const { connectors: { connect, drag } } = useNode();
-  return (
-    <div ref={dom => connect(drag(dom))}>
-      <h2>{title}</h2>
-      <Canvas id="p-only" is={Container}>
-        <p>Hi</p>
-      </Canvas>
-    </div>
-  )
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Let's break this down a bit. Our `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`<Container />`),` component is being rendered as a droppable region. This means, all dropped elements will be rendered in the component's `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`children`),` prop. Next, we also specified the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`connectors`),` just as we did previously. This time, we specified a `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`canMoveIn`),` rule where only elements with the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`p`),` tag will be accepted into the component.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"control-editing-behaviours"},`Control editing behaviours`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Of course, any page editor must allow the end-user to edit the elements that are rendered. With Craft.js, you are in control of this as well. `),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Let's make our `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`h2`),` element content editable so our users could visually edit the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`title`),` prop:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const Card = ({title}) => {
-  const { connectors: { connect, drag }, setProp } = useNode();
-  return (
-    <div ref={dom => connect(drag(dom))}>
-      <h2 contentEditable onKeyUp={e => setProp(e.target.innerText)}>{title}</h2>
-      ...
-    </div>
-  )
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("blockquote",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"blockquote"},`In a real application, you may want to consider using react-contenteditable`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Obviously, we do not want the element to be content editable all the time; perhaps only when our Card component is actually clicked:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const Card = ({title}) => {
-  const { connectors: { connect, drag }, setProp, isSelected } = useNode((node) => ({
-    isSelected: node.events.selected
-  }));
-
-  return (
-    <div ref={dom => connect(drag(dom))}>
-      <h2 contentEditable={isSelected} onKeyUp={e => setProp(e.target.innerText)}>{title}</h2>
-      ...
-    </div>
-  )
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`What we are doing is essentially accessing Craft's internal state and retrieving information about the current instance of our Card component. In this case, we are retrieving the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`selected`),` event state which returns `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`true`),` when the user clicks on the DOM specified by the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`connect`),` connector of the Component.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"your-page-editor-your-user-interface"},`Your page editor, your user interface`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Essentially, Craft.js exposes these few React components:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("ul",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"li"},`Editor`),` creates the Editor context and sets everything up`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"li"},`Frame`),` defines the editable area`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`As you may have noticed, none of these are UI components. Instead, they are intended to be plugged into any user interface you would like to implement for your page editor.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Let's take a look at a super simple interface that we could design:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`// pages/index.js
-import React from 'react';
-
-export default function App() {
-  return (
-    <>
-      <h2>My page editor</h2>
-      <Editor> {/* sets everything up */ }
-        <div>
-          <Frame> {/* This part is now editable */ }
-            <Canvas is="div" style={{background: "#eee"}}> { /* Creates a gray droppable div */ }
-              <h2>Drag me around</h2> 
-              <p>I'm draggable too</h2>
-              <Canvas is="div"> {/* a div that is both droppable and draggable */}
-                <h2>Hi</h2> {/* a draggable h2 */}
-              </Canvas>
-            </Canvas>
-          </Frame>
-        </div>
-      </Editor>
-    </>
-  );
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"interacting-with-the-editor"},`Interacting with the editor`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Your user interface will most likely need to display some information or perform certain editor-related actions.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Let's say we want to design a Toolbar component that does the following things:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("ul",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`Tells us the the type of the currently selected element`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`Has a button to save the current editor state`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`Has another button to load the last saved editor state`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`import React, {useState} from 'react';
-
-export default function App() {
-  return (
-    <>
-      <h2>My page editor</h2>
-      <Editor> 
-        <Toolbar /> {/* Add this */}
-        <div>
-          <Frame>
-            ...
-          </Frame>
-        </div>
-      </Editor>
-    </>
-  );
-}
-
-const Toolbar = () => {
-  const [savedState, setSavedState] = useState();
-  const { selectedType, actions, query } = useEditor(state => {
-    const selectedId = state.events.selected;
-    return {
-      selectedType: selectedId && state.nodes[selectedId].data.type
-    }
-  });
-
-  return (
-    <div>
-      <h2>Currently selected: {selectedType} </h2>
-      <a onClick={() => {
-        const editorState = query.serialize();
-        setSavedState(editorState);
-      }}>Save checkpoint</a>
-     {
-       savedState ? (
-         <a onClick={() => 
-          actions.deserialize(editorState)
-         }>Load from checkpoint</a>
-       ) : null
-     }
-    </div>
-  )
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Let's break this down:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("ul",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`First, we access the editor's state to retrieve the type of the currently selected element`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`Then, when the "Save Checkpoint" button is clicked, we use the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"li"},`serialize`),` query which tells the editor to return its state in a serialised JSON form. We then save the JSON output in our component's state`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`Once we have the JSON, we display the "Load from checkpoint" button. When this button is clicked, we simply call the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"li"},`deserialize`),` editor action which essentially returns the editor to the state stored in the JSON output.`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"closing-words"},`Closing words`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`This has been a high-level overview of Craft.js and we've only covered some very basic examples. We've seen how we could easily control almost every aspect of the page editor experience. Hopefully, this article has given you an idea on the possibilities of what you can do with Craft.js.`));};MDXContent.isMDXComponent=true;
-
-/***/ }),
-/* 178 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "frontMatter", function() { return frontMatter; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
-/* harmony import */ var _site_src_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
-const frontMatter={id:'element',title:'<Element />',sidebar_label:'<Element />'};const metadata={"id":"version-0.1.0-beta.7/api/element","title":"<Element />","description":"Defines the Node for a given User Element","source":"@site/versioned_docs/version-0.1.0-beta.7/api/Element.md","permalink":"/r/docs/api/element","version":"0.1.0-beta.7","sidebar_label":"<Element />","sidebar":"version-0.1.0-beta.7/docs","previous":{"title":"<Frame />","permalink":"/r/docs/api/frame"},"next":{"title":"useEditor()","permalink":"/r/docs/api/useEditor"}};/* @jsx mdx */const rightToc=[{value:'Reference',id:'reference',children:[{value:'Props',id:'props',children:[]}]},{value:'Usage',id:'usage',children:[{value:'Configure Nodes in &lt;Frame /&gt;',id:'configure-nodes-in-frame-',children:[]},{value:'Defining Linked Nodes',id:'defining-linked-nodes',children:[]}]},{value:'Examples',id:'examples',children:[{value:'Setting <code>custom</code> properties',id:'setting-custom-properties',children:[]}]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"component",mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Defines the Node for a given User Element`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"reference"},`Reference`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"props"},`Props`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["is","React.ElementType","The User Element to render"],["id","String","Required if the &lt;Element /&gt; is being created inside a User Component"],["canvas","boolean","If true, a Canvas Node will be created."],["custom","Record<string, any>","Sets the Node's custom properties"],["hidden","boolean","Sets the Node's hidden property. If true, this will hide the Node"],["...elementProps","Object","The props of the element specified in 'is'"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"usage"},`Usage`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"configure-nodes-in-frame-"},`Configure Nodes in `,`<`,`Frame /`,`>`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Since the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`<Frame />`),` component creates a Node automatically for all of its children elements, thus the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`<Element />`),` component can be used to simply configure the values of the Node that is being created.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`import {Craft, Frame, Element} from "@craftjs/core";
-
-const App = () => {
-  return (
-    <div>
-      <h2>My App!</h2>
-      <Craft resolver={{MyComp}}>
-        <h2>My Page Editor</h2>
-        <Frame> 
-          <Element is="div" canvas> // defines the Root Node, droppable
-            <h2>Drag me around</h2> // Node of type h2, draggable
-            <MyComp text="You can drag me around too" /> // Node of type MyComp, draggable
-            <Element is="div" style={{background: "#333" }} canvas> // Canvas Node of type div, draggable and droppable
-              <p>Same here</p> // Not a Node; not draggable
-            </Element>
-          </Element>
-        </Frame>
-      </Craft>
-    </div>
-  )
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"defining-linked-nodes"},`Defining Linked Nodes`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`When used inside a User Component, `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`<Element />`),` works identically as used inside `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`<Frame />`),` but because there isn't a Node in-place, thus it has to create a new Linked Node - which is essentially a Node that is linked to the Node of the containing User Component via an arbitary `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`id`),`:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx","metastring":"{5}","{5}":true}),`const Hero = () => {
-  return (
-    <div>
-      <h3>I'm a Hero</h3>
-      <Element id="drop" is={Container} canvas>
-        <h3>Hi</h3>
-      </Element>
-    </div>
-  )
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("blockquote",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"blockquote"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`<Element />`),` used inside User Component must specify an `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`id`),` prop`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"examples"},`Examples`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"setting-custom-properties"},`Setting `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"h3"},`custom`),` properties`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`User Components may consume `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`custom`),` properties from their corresponding Node. These properties essentially act like additional props.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Let's say we have a Hero component that has a `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`css`),` custom property and as usual, we set its default values via the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`craft`),` property.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx","metastring":"{2-4}","{2-4}":true}),`const Hero = () => {
-  const { css } = useNode(node => ({
-    css: node.data.custom.css
-  }));
-
-  return (
-    <div style={css}>
-      <h3>I'm a Hero</h3>
-      <Element id="drop" is={Container} canvas>
-        <h3>Hi</h3>
-      </Element>
-    </div>
-  )
-}
-
-Hero.craft = {
-  custom: {
-    css: {
-      background: "#eee"
-    }
-  }
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Now, if you'd like to actually set these values when you call the component, you can do it like so:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`<Frame>
-  <Element is={Hero} custom={{
-    css: {
-      background: "#ddd"
-    }
-  }} />
-</Frame>
-`)));};MDXContent.isMDXComponent=true;
 
 /***/ }),
 /* 179 */
@@ -22158,29 +22145,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
 /* harmony import */ var _site_src_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
-const frontMatter={id:'editor-state',title:'EditorState',sidebar_label:'EditorState'};const metadata={"id":"version-0.1.0-beta.7/api/editor-state","title":"EditorState","description":"Reference","source":"@site/versioned_docs/version-0.1.0-beta.7/api/EditorState.md","permalink":"/r/docs/api/editor-state","version":"0.1.0-beta.7","sidebar_label":"EditorState","sidebar":"version-0.1.0-beta.7/docs","previous":{"title":"Save and Load","permalink":"/r/docs/guides/save-load-state"},"next":{"title":"Node","permalink":"/r/docs/api/node"}};/* @jsx mdx */const rightToc=[{value:'Reference',id:'reference',children:[{value:'Properties',id:'properties',children:[]}]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"type",mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"reference"},`Reference`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"properties"},`Properties`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["nodes","Record<NodeId, Node>","A map sof all the Nodes in the editor"],["events","Object",[["selected","NodeId"],["hovered","NodeId"],["dragged","NodeId"]]],["options","Object",[["resolver","Map<String, React.ComponentType>","A map of User Components that will be used in the editor"],["enabled?","boolean","Optional. If set to false, all editing capabilities will be disabled"],["indicator?",'Record<"success" | "error", String>',"Optional. The colour to use for the drop indicator. The colour set in 'success' will be used when the indicator shows a droppable location; otherwise the colour set in 'error' will be used."],["onRender?","React.ComponentType<{element: React.ReactElement}>","Optional. Specify a custom component to render every User Element in the editor."],["onNodesChange?","() => void","Optional. A callback method when the values of any of the nodes in the state changes"]]]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("blockquote",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"blockquote"},`Note: `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`options`),` can be specified as props in the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"p"},{"href":"/r/docs/api/editor"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"a"},`<Editor />`)))));};MDXContent.isMDXComponent=true;
-
-/***/ }),
-/* 180 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "frontMatter", function() { return frontMatter; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
-/* harmony import */ var _site_src_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
-const frontMatter={id:'user-component',title:'UserComponent',sidebar_label:'UserComponent'};const metadata={"id":"api/user-component","title":"UserComponent","description":"A wrapper of React.ComponentType. Accepts a static craft property for configuring the User Component.","source":"@site/docs/api/UserComponent.md","permalink":"/r/docs/next/api/user-component","version":"next","sidebar_label":"UserComponent","sidebar":"docs","previous":{"title":"Node","permalink":"/r/docs/next/api/node"},"next":{"title":"NodeTree","permalink":"/r/docs/next/api/nodetree"}};/* @jsx mdx */const rightToc=[{value:'Reference',id:'reference',children:[{value:'Properties',id:'properties',children:[]}]},{value:'Example',id:'example',children:[]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"type",mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`A wrapper of `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`React.ComponentType<Props>`),`. Accepts a static `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`craft`),` property for configuring the User Component.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"reference"},`Reference`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"properties"},`Properties`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["","React.ComponentType<T> &",[["craft","Object",[["displayName","String","A user-friendly name for the User Component. The value here will be used to set the node.data.displayName property."],["props","T","Specify default values for the props T"],["custom","Record<string, any>","Specify default custom values for the User Component"],["related","Record<string, React.ElementType>","A map of React Components to share the same Node context. This components will be able access the useNode hook"],["rules?",[["canDrag","(currentNode: Node, helpers: NodeHelpers) => boolean","Specifies if the component can be dragged. Applicable only to components whose corresponding Node is a direct child of a Canvas"],["canMoveIn","(incomingNode: Node, currentNode: Node, helpers: NodeHelpers) => boolean","Specifies if an incoming Node can be dropped into the current component. Applicable only to components whose corresponding Node is a Canvas"],["canMoveOut","(outgoingNode: Node, currentNode: Node, helpers: NodeHelpers) => boolean","Specifies if a child Node can be dragged out of the current component. Applicable only to components whose corresponding Node is a Canvas"]]]]]]]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"example"},`Example`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`type TextProps = {
+const frontMatter={id:'user-component',title:'UserComponent',sidebar_label:'UserComponent'};const metadata={"id":"api/user-component","title":"UserComponent","description":"A wrapper of React.ComponentType. Accepts a static craft property for configuring the User Component.","source":"@site/docs/api/UserComponent.md","permalink":"/r/docs/next/api/user-component","version":"next","sidebar_label":"UserComponent","sidebar":"docs","previous":{"title":"Node","permalink":"/r/docs/next/api/node"},"next":{"title":"NodeTree","permalink":"/r/docs/next/api/nodetree"}};/* @jsx mdx */const rightToc=[{value:'Reference',id:'reference',children:[{value:'Properties',id:'properties',children:[]}]},{value:'Example',id:'example',children:[]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"type",mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`A wrapper of `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`React.ComponentType<Props>`),`. Accepts a static `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`craft`),` property for configuring the User Component.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"reference"},`Reference`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"properties"},`Properties`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["","React.ComponentType<T> &",[["craft","Object",[["displayName","String","A user-friendly name for the User Component. The value here will be used to set the node.data.displayName property."],["props","T","Specify default values for the props T"],["custom","Record<string, any>","Specify default custom values for the User Component"],["related","Record<string, React.ElementType>","A map of React Components to share the same Node context. This components will be able access the useNode hook"],["rules?",[["canDrag","(currentNode: Node, helpers: NodeHelpers) => boolean","Specifies if the component can be dragged. Applicable only to components whose corresponding Node is a direct child of a Canvas"],["canDrop","(targetNode: Node, currentNode, helpers: NodeHelpers) => boolean","Specifies if the current Node that is being dragged can be dropped in its target. Applicable only if the current Node is a direct child of a Canvas Node"],["canMoveIn","(incomingNode: Node, currentNode: Node, helpers: NodeHelpers) => boolean","Specifies if an incoming Node can be dropped into the current component. Applicable only to components whose corresponding Node is a Canvas"],["canMoveOut","(outgoingNode: Node, currentNode: Node, helpers: NodeHelpers) => boolean","Specifies if a child Node can be dragged out of the current component. Applicable only to components whose corresponding Node is a Canvas"]]]]]]]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"example"},`Example`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`type TextProps = {
   color: string;
   text: string;
 };
@@ -22218,6 +22188,23 @@ TextComponent.craft = {
 `)));};MDXContent.isMDXComponent=true;
 
 /***/ }),
+/* 180 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "frontMatter", function() { return frontMatter; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
+/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
+const frontMatter={id:'acknowledgements',title:'Acknowledgements'};const metadata={"id":"version-0.1.0-beta.6/acknowledgements","title":"Acknowledgements","description":"A huge thank you to the authors and contributors of the following libraries/frameworks:","source":"@site/versioned_docs/version-0.1.0-beta.6/acknowledgements.md","permalink":"/r/docs/0.1.0-beta.6/acknowledgements","version":"0.1.0-beta.6","sidebar":"version-0.1.0-beta.6/docs","previous":{"title":"Overview","permalink":"/r/docs/0.1.0-beta.6/overview"},"next":{"title":"Nodes","permalink":"/r/docs/0.1.0-beta.6/concepts/nodes"}};/* @jsx mdx */const rightToc=[];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`A huge thank you to the authors and contributors of the following libraries/frameworks:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("ul",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("strong",{parentName:"li"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"strong"},{"href":"https://github.com/react-dnd/react-dnd"}),`react-dnd`)),` The React drag-n-drop library.
+Although it is not actually used here, many aspects of Craft.js are written with react-dnd as a reference along with some utilities and functions being borrowed. `),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("strong",{parentName:"li"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"strong"},{"href":"https://github.com/artf/grapesjs"}),`Grape.js`)),` The HTML web builder framework. This has served as an inspiration for Craft.js. The element positioning logic used in Craft.js is borrowed from Grape.js`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("strong",{parentName:"li"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"strong"},{"href":"https://github.com/pelotom/use-methods"}),`use-methods`)),` A super handy hook when dealing with reducers. Craft.js uses a slightly modified version of `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"li"},`use-methods`),` to better fit our API.`)));};MDXContent.isMDXComponent=true;
+
+/***/ }),
 /* 181 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -22227,12 +22214,139 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
-const frontMatter={id:'acknowledgements',title:'Acknowledgements'};const metadata={"id":"version-0.1.0-beta.6/acknowledgements","title":"Acknowledgements","description":"A huge thank you to the authors and contributors of the following libraries/frameworks:","source":"@site/versioned_docs/version-0.1.0-beta.6/acknowledgements.md","permalink":"/r/docs/0.1.0-beta.6/acknowledgements","version":"0.1.0-beta.6","sidebar":"version-0.1.0-beta.6/docs","previous":{"title":"Overview","permalink":"/r/docs/0.1.0-beta.6/overview"},"next":{"title":"Nodes","permalink":"/r/docs/0.1.0-beta.6/concepts/nodes"}};/* @jsx mdx */const rightToc=[];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`A huge thank you to the authors and contributors of the following libraries/frameworks:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("ul",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("strong",{parentName:"li"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"strong"},{"href":"https://github.com/react-dnd/react-dnd"}),`react-dnd`)),` The React drag-n-drop library.
-Although it is not actually used here, many aspects of Craft.js are written with react-dnd as a reference along with some utilities and functions being borrowed. `),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("strong",{parentName:"li"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"strong"},{"href":"https://github.com/artf/grapesjs"}),`Grape.js`)),` The HTML web builder framework. This has served as an inspiration for Craft.js. The element positioning logic used in Craft.js is borrowed from Grape.js`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("strong",{parentName:"li"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"strong"},{"href":"https://github.com/pelotom/use-methods"}),`use-methods`)),` A super handy hook when dealing with reducers. Craft.js uses a slightly modified version of `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"li"},`use-methods`),` to better fit our API.`)));};MDXContent.isMDXComponent=true;
+/* harmony import */ var _site_src_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
+const frontMatter={id:'node',title:'Node',sidebar_label:'Node'};const metadata={"id":"version-0.1.0-beta.8/api/node","title":"Node","description":"Reference","source":"@site/versioned_docs/version-0.1.0-beta.8/api/Node.md","permalink":"/r/docs/api/node","version":"0.1.0-beta.8","sidebar_label":"Node","sidebar":"version-0.1.0-beta.8/docs","previous":{"title":"EditorState","permalink":"/r/docs/api/editor-state"},"next":{"title":"UserComponent","permalink":"/r/docs/api/user-component"}};/* @jsx mdx */const rightToc=[{value:'Reference',id:'reference',children:[{value:'Properties',id:'properties',children:[]}]},{value:'Examples',id:'examples',children:[{value:'Basics',id:'basics',children:[]},{value:'Child Nodes',id:'child-nodes',children:[]},{value:'Linked nodes',id:'linked-nodes',children:[]},{value:'Nodes with Custom properties',id:'nodes-with-custom-properties',children:[]}]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"type",mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"reference"},`Reference`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"properties"},`Properties`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["id","NodeId","A randomly generated unique id"],["data","Object",[["props","Record<String, any>","The current props for the user element"],["type","React.ElementType","The type of User Element"],["name","String","Name of the User Element"],["displayName","String","By default, it will be set to the same value as 'name'. But User Components have the ability to opt for a more user-friendly name by setting the craft.name property"],["isCanvas","boolean","True if the current Node is a Canvas Node"],["parent","NodeId","The parent Node's id"],["index","number","Position of current Node in its parent"],["nodes","NodeId[]","The id of the child Nodes"],["hidden","boolean"],["custom","Record<String, any>","Custom properties stored in the Node"],["linkedNodes","Record<String, NodeId>","A map of Nodes defined inside the User Component. Only applicable if the current Node's User Element is a Component which contains &lt;Element /&gt; inside its render"]]],["events","Object",[["selected","boolean","Is true if the user element is clicked"],["hovered","boolean","Is true if the user element is being hovered"],["dragged","boolean","Is true if the user element is being dragged"]]],["dom","HTMLElement","The DOM of the current Node's User Element. For User Components, this is defined by the `connect` connector"],["related","Record<String, React.ElementType>","A map of React Components that shares the current Node context"],["rules","Object",[["canDrag","(currentNode: Node) => boolean","Specifies if the current Node can be dragged. Applicable only if the current Node is a direct child of a Canvas Node"],["canDrop","(targetNode: Node, currentNode: Node) => boolean","Specifies if the current Node that is being dragged can be dropped in its target. Applicable only if the current Node is a direct child of a Canvas Node"],["canMoveIn","(incomingNode: Node, currentNode: Node) => boolean","Specifies if an incoming Node can be dropped in the current Node. Applicable only if the current Node is a Canvas Node"],["canMoveOut","(outgoingNode: Node, currentNode: Node) => boolean","Specifies if a child Node can be dragged out of the current Node. Applicable only if the current Node is a Canvas Node"]]]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"examples"},`Examples`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"basics"},`Basics`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"simple-elements"},`Simple elements`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`// Example
+<div style={{background: "#eee"}}>Hello</h2>
+
+"node-a": {
+  id: "node-a",
+  data: {
+    type: "div",
+    props: {
+      style: {{
+        background: "#eee",
+      }}
+      children: "Hello"
+    },
+    name: "div",
+    displayName: "div",
+    isCanvas: false
+  }
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"user-component"},`User Component`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`// Definition
+const Container = () => {}
+Container.craft = {
+  name: "SimpleContainer"
+};
+
+
+// Example
+<Container bg="#fff" />
+
+"node-b": {
+  id: "node-b",
+  data: {
+    type: Container,
+    props: {
+      bg: "#fff"
+    },
+    name: "Container",
+    displayName: "SimpleContainer",
+    isCanvas: false
+  }
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"child-nodes"},`Child Nodes`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Nodes that are referenced in the parent Node's `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`data.nodes`),` property. These nodes are rendered in the parent User Component's `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`children`),` prop`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`// Example
+<Container bg="#fff">
+  // highlight-next-line
+  <h2>Hello</h2>
+</Container>
+
+"node-a": {
+  id: "node-a",
+  data: {
+    ...
+    type: Container,
+    props: {...},
+    // highlight-next-line
+    nodes: ["node-b"]
+  }
+}
+
+"node-b": {
+  id: "node-b",
+  data: {
+    type: "h2,
+    props: {...},
+    // highlight-next-line
+    parent: "node-a"
+  }
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"linked-nodes"},`Linked nodes`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Nodes that are linked to a parent Node via an arbitary `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`id`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`// Definition
+const TextEditable = () => {};
+
+const Container = () => {
+  return (
+    <div>
+      // highlight-next-line
+      <Element id="header" is={TextEditable} text="Header" />
+    </div>
+  )
+}
+
+// Example
+<Container bg="#fff" />
+
+"node-a": {
+  id: "node-a",
+  data: {
+    type: Container,
+    props: {...},
+    // highlight-next-line
+    linkedNodes: {
+      // highlight-next-line
+      "header": "node-b"
+      // highlight-next-line
+    }
+  }
+}
+
+"node-b": {
+  id: "node-b",
+  data: {
+    type: TextEditable,
+    props: {...},
+    // highlight-next-line
+    parent: "node-a"
+  }
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"nodes-with-custom-properties"},`Nodes with Custom properties`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`// Definition
+const Container = () => {...}
+Container.craft = {
+  custom: { // default custom values
+    toSaveInDatabase: false
+  }
+};
+
+// Example
+<Element is={Container} bg="#fff" custom={{ toSaveInDatabase: true}} />
+
+"node-b": {
+  id: "node-b",
+  data: {
+    ...
+    custom: {
+      toSaveInDatabase: true,
+      style: {{
+        display: "flex"
+      }}
+    }
+  }
+}
+`)));};MDXContent.isMDXComponent=true;
 
 /***/ }),
 /* 182 */
@@ -22244,8 +22358,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
 /* harmony import */ var _site_src_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
@@ -22297,8 +22411,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
 /* harmony import */ var _site_src_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
@@ -23103,8 +23217,184 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
+/* harmony import */ var _site_src_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
+const frontMatter={id:'user-components',title:'User Components'};const metadata={"id":"version-0.1.0-beta.8/concepts/user-components","title":"User Components","description":"User Components are intended to be written just like any other React Component.","source":"@site/versioned_docs/version-0.1.0-beta.8/concepts/user-components.md","permalink":"/r/docs/concepts/user-components","version":"0.1.0-beta.8","sidebar":"version-0.1.0-beta.8/docs","previous":{"title":"Nodes","permalink":"/r/docs/concepts/nodes"},"next":{"title":"Interacting with the Editor","permalink":"/r/docs/concepts/editor-components"}};/* @jsx mdx */const rightToc=[{value:'Connectors',id:'connectors',children:[]},{value:'Props manipulation',id:'props-manipulation',children:[]},{value:'Collecting Node&#39;s state',id:'collecting-nodes-state',children:[]},{value:'Default Props',id:'default-props',children:[]},{value:'Specify drag/drop rules',id:'specify-dragdrop-rules',children:[]},{value:'Related Components',id:'related-components',children:[]},{value:'Defining editable elements',id:'defining-editable-elements',children:[]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`User Components are intended to be written just like any other React Component. `),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Let's start with a simple Text component:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const Text = ({text, fontSize}) => {
+  return (
+    <span contenteditable="true" style={{fontSize}}>{text}</span>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Now, let's actually get the component to work with the editor. The `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`useNode`),` hook provides us with several information and methods related to the corresponding `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Node`),` that manages the component.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const { connectors: {connect, drag}, setProp, ...collected } = useNode((node) => {});
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Additionally we can pass configuration values via the static `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`craft`),` property:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const Text = () => {...}
+Text.craft = {
+  props: {},
+  rules: {
+    canDrop: () => true,
+    canDrag: () => true,
+    canMoveIn: () => true,
+    canMoveOut: () => true
+  },
+  related: {}
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`We'll explore each of these values in the following sections.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"connectors"},`Connectors`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`The first thing we would want to do is to actually let Craft.js to manage the DOM for our component. `),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("ul",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"li"},`connect`),`: specifies the DOM that represents the User Component.  If the component's corresponding Node is a Canvas, then this also defines the area that is droppable.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"li"},`drag`),`: specifies the DOM element that should be made draggable. When the user drags this element, it'll be considered as dragging the entire component, therefore moving the entire component to the drop location. This connector only takes effect if the component's corresponding node is a Canvas Node.`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx","metastring":"{14,15,18}","{14,15,18}":true}),`const Container = ({children}) => {
+  const { connectors: {connect, drag} } = useNode();
+  return (
+    <div ref={dom => connect(drag(dom))}>
+      {children}
+    </div>
+  )
+}
+
+const App = () => {
+  return (
+    <Editor resolvers={{Container}}>
+      <Frame>
+        <Element is={Container} canvas> // (i)
+          <Container> // (ii)
+            <h2>Hi</h2>
+          </Container>
+          <Element is={Container} canvas> // (iii)
+            <h2>Hi</h2>
+          </Element>
+        </Element>
+      </Frame>
+    </Editor>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("ul",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`i. `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"li"},`Hero`),` is being rendered with a Canvas Node, thus it defines a droppable region. However, since it is not a child of a Canvas Node, it is not draggable (the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"li"},`drag`),` handler will not do anything).`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`ii. `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"li"},`Hero`),` is an immediate child of a Canvas Node; it is draggable.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`iii. `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"li"},`Hero`),` is an immediate child of a Canvas Node and is rendered with a Canvas Node - it is both draggable and droppable.`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"props-manipulation"},`Props manipulation`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`You've probably seen page editors where you could directly interact with the components and manipulate them. For instance, drag to resize an image or visually edit a text. This is easily achievable with Craft.js as well.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Since components are managed by their corresponding `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Node`),` which contains information including the component's props, thus we can call the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`setProp`),` method to update the prop values stored in the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Node`),`. In turn, this will re-render the component with its updated values.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx","metastring":"{2,6-8}","{2,6-8}":true}),`const Text = ({text, fontSize}) => {
+  const { connectors: {connect, drag}, actions: {setProp} } = useNode();
+
+  return (
+    <span ref={dom => connect(drag(dom))} style={{fontSize}} onKeyUp={(e) => {
+        setProp(props => {
+          props.text = e.target.innerText;
+        })
+      }}>{text}
+    </span>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`In the above example, we have updated our `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`span`),` element to be content editable and added an event handler to update the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`text`),` prop as the user visually enters in a new value.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"collecting-nodes-state"},`Collecting Node's state`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`The information stored in a corresponding `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Node`),` could be useful in helping you build more usable components. We can retrieve information from a `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Node`),` by passing a collector function to the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`useNode`),` hook. Every time the values we retrieved via the collector function changes, our component will re-render. This is very much similar to Redux's `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`connect`),` pattern.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`For instance, let's say we would like to enable the content editable text from the previous section only when the user has actually clicked on our component: `),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const Text = ({text, fontSize}) => {
+  // highlight-next-line
+  const { connectors: {connect, drag}, setProp, isClicked } = useNode((node) => ({
+    // highlight-next-line
+    isClicked: node.events.selected
+  }));
+
+  return (
+    // highlight-next-line
+    <span ref={dom => connect(drag(dom))} style={{fontSize}} contentEditable={isClicked} onKeyUp={(e) => {
+        setProp(props => {
+          props.text = e.target.innerText;
+        })
+      }}>{text}
+    </span>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"default-props"},`Default Props`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`While it's not necessary as we could simply define default parameters (e.g.: ES6 defaults) directly within our components, these default values will not actually be recorded into the component's corresponding `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Node`),`, which could leave us with a lot of empty prop values when we wish to retrieve the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Node`),` for a component when building other parts of our editor (eg: a Toolbar for editing a component's values).`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`To prevent that, we can explicitly specify default prop values via the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`craft.props`),` like the following:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const Text = ({text, fontSize}) => { /** same as previous example **/ }
+Hero.craft = {
+  props: {
+    text: "Hi there!",
+    fontSize: 12
+  }
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"specify-dragdrop-rules"},`Specify drag/drop rules`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`You may want to restrict how your components are dragged or what goes in and out of your component. These rules can be specified in the static `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`craft.rules`),`.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Let us write a (pretty strange) rule for our Text component which users can only drag if they change the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`text`),` prop to "Drag": `),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const Text = ({text, fontSize}) => { /** same as the previous example **/ }
+Text.craft = {
+  props: { /** same as the previous example **/ },
+  rules: {
+    canDrag: (node) => !!node.data.props.text == "Drag"
+  }
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"related-components"},`Related Components`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`What happens if you need to design some component to complement our  user component? For instance, if we were planning on building a Toolbar somewhere in our page editor, we would like the Toolbar to display a bunch of text inputs to allow the user the edit the currently selected component. It would be great if we could retrieve a specific component that has all the relevant inputs for the user to edit the currently selected component.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`This is where related components become useful. These components share the same corresponding `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Node`),` as the actual user component, hence the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`useNode`),` hook that we have been using all this while will be made available to these components as well. `),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const Text = ({text, fontSize}) => { /** same as the previous example **/ }
+Text.craft = {
+  related: {
+    toolbar: TextToolbarSettings
+  }
+}
+
+const TextToolbarSettings = () => {
+  const { setProp, fontSize } = useNode((node) => ({
+    fontSize: node.data.props.fontSize
+  }));
+
+  return (
+    <div>
+      <h2>Text settings</h2>
+      <input 
+        type = "number" 
+        value={fontSize} 
+        placeholder="Font size"
+        onChange={e => 
+          setProp(prop => prop.fontSize = e.target.value) 
+        }
+       />
+    </div>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Now, let's say we have a Toolbar component somewhere in our editor. We can easily retrieve the related component as such:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const Toolbar = () => {
+  const { selectededNodeId, toolbarSettings } = useEditor((state) => ({
+    selectededNodeId : state.event.selected,
+    toolbarSettings:  state.nodes[state.events.selected].related.toolbar
+  }));
+  return (
+    <div>
+      <h2>My Awesome Toolbar</h2>
+      {
+        selectededNodeId && toolbarSettings ? 
+          React.createElement(toolbarSettings)
+        : null
+      }
+    </div>
+  )
+}
+
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"defining-editable-elements"},`Defining editable elements`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Now, let's say we are creating a new User Component like so:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const Hero = ({background}) => {
+  return (
+    <div style={{ background }}>
+      <span>Hero Title</span>
+    </div>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Then, we decide that we want to have the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`span`),` element to be editable indepdently via the Text user component that we made from earlier.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Your first instinct might be to just use the Text component directly:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx","metastring":"{4}","{4}":true}),`const Hero = ({background}) => {
+  return (
+    <div style={{ background }}>
+      <Text text="Hero Title" />
+    </div>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`But this won't really work the way we want it to - the Text Component will not have its own Node. Instead, it will still be a part of Hero's Node. So, inside the Text Component, when we call `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`setProps(props => props.text = "...")`),`, it will actually be editing the props of `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Hero`),`. In this case, it will be adding a new prop `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`text`),` to Hero, which is not consumed by Hero and therefore makes no sense.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`So how do we even define new Nodes inside a User Component? Previously, we discussed how `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`<Element />`),` is used to define Nodes; that concept is applied universally in Craft.js. Hence, we just have to wrap our `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`<Text />`),` element in the example above with `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`<Element />`),`. `),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx","metastring":"{4}","{4}":true}),`const Hero = ({background}) => {
+  return (
+    <div style={{ background }}>
+      <Element is={Text} text="Hero Title" id="title_text" />
+    </div>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("blockquote",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"blockquote"},`You must specify the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`id`),` prop of `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`<Element />`),` when used inside a User Component`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`In the above example, we used `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`<Element />`),` to create and configure a new Node inside our User Component. We call these Linked Nodes since they are linked to a parent Node via an arbitary `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`id`),`. In this case, the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Text`),` node is linked to the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Hero`),` node via its "title_text" id.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Similarly, we could also create a droppable region inside a User Component via a Canvas Node:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx","metastring":"{5-7}","{5-7}":true}),`const Hero = ({background}) => {
+  return (
+    <div style={{ background }}>
+      <Element is={Text} text="Hero Title" id="title_text" />
+      <Element canvas is="section" id="droppable_container">
+        <h2>I'm dropped here for now</h2>
+      </Elemnet>
+    </div>
+  )
+}
+`)));};MDXContent.isMDXComponent=true;
+
+/***/ }),
+/* 185 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "frontMatter", function() { return frontMatter; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
+/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
 /* harmony import */ var _site_src_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
@@ -23271,7 +23561,7 @@ const Container = () => {
 `)));};MDXContent.isMDXComponent=true;
 
 /***/ }),
-/* 185 */
+/* 186 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -23280,8 +23570,131 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
+/* harmony import */ var _site_src_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
+const frontMatter={id:'element',title:'<Element />',sidebar_label:'<Element />'};const metadata={"id":"version-0.1.0-beta.8/api/element","title":"<Element />","description":"Defines the Node for a given User Element","source":"@site/versioned_docs/version-0.1.0-beta.8/api/Element.md","permalink":"/r/docs/api/element","version":"0.1.0-beta.8","sidebar_label":"<Element />","sidebar":"version-0.1.0-beta.8/docs","previous":{"title":"<Frame />","permalink":"/r/docs/api/frame"},"next":{"title":"useEditor()","permalink":"/r/docs/api/useEditor"}};/* @jsx mdx */const rightToc=[{value:'Reference',id:'reference',children:[{value:'Props',id:'props',children:[]}]},{value:'Usage',id:'usage',children:[{value:'Configure Nodes in &lt;Frame /&gt;',id:'configure-nodes-in-frame-',children:[]},{value:'Defining Linked Nodes',id:'defining-linked-nodes',children:[]}]},{value:'Examples',id:'examples',children:[{value:'Setting <code>custom</code> properties',id:'setting-custom-properties',children:[]}]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"component",mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Defines the Node for a given User Element`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"reference"},`Reference`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"props"},`Props`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["is","React.ElementType","The User Element to render"],["id","String","Required if the &lt;Element /&gt; is being created inside a User Component"],["canvas","boolean","If true, a Canvas Node will be created."],["custom","Record<string, any>","Sets the Node's custom properties"],["hidden","boolean","Sets the Node's hidden property. If true, this will hide the Node"],["...elementProps","Object","The props of the element specified in 'is'"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"usage"},`Usage`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"configure-nodes-in-frame-"},`Configure Nodes in `,`<`,`Frame /`,`>`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Since the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`<Frame />`),` component creates a Node automatically for all of its children elements, thus the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`<Element />`),` component can be used to simply configure the values of the Node that is being created.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`import {Craft, Frame, Element} from "@craftjs/core";
+
+const App = () => {
+  return (
+    <div>
+      <h2>My App!</h2>
+      <Craft resolver={{MyComp}}>
+        <h2>My Page Editor</h2>
+        <Frame> 
+          <Element is="div" canvas> // defines the Root Node, droppable
+            <h2>Drag me around</h2> // Node of type h2, draggable
+            <MyComp text="You can drag me around too" /> // Node of type MyComp, draggable
+            <Element is="div" style={{background: "#333" }} canvas> // Canvas Node of type div, draggable and droppable
+              <p>Same here</p> // Not a Node; not draggable
+            </Element>
+          </Element>
+        </Frame>
+      </Craft>
+    </div>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"defining-linked-nodes"},`Defining Linked Nodes`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`When used inside a User Component, `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`<Element />`),` works identically as used inside `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`<Frame />`),` but because there isn't a Node in-place, thus it has to create a new Linked Node - which is essentially a Node that is linked to the Node of the containing User Component via an arbitary `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`id`),`:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx","metastring":"{5}","{5}":true}),`const Hero = () => {
+  return (
+    <div>
+      <h3>I'm a Hero</h3>
+      <Element id="drop" is={Container} canvas>
+        <h3>Hi</h3>
+      </Element>
+    </div>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("blockquote",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"blockquote"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`<Element />`),` used inside User Component must specify an `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`id`),` prop`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"examples"},`Examples`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"setting-custom-properties"},`Setting `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"h3"},`custom`),` properties`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`User Components may consume `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`custom`),` properties from their corresponding Node. These properties essentially act like additional props.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Let's say we have a Hero component that has a `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`css`),` custom property and as usual, we set its default values via the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`craft`),` property.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx","metastring":"{2-4}","{2-4}":true}),`const Hero = () => {
+  const { css } = useNode(node => ({
+    css: node.data.custom.css
+  }));
+
+  return (
+    <div style={css}>
+      <h3>I'm a Hero</h3>
+      <Element id="drop" is={Container} canvas>
+        <h3>Hi</h3>
+      </Element>
+    </div>
+  )
+}
+
+Hero.craft = {
+  custom: {
+    css: {
+      background: "#eee"
+    }
+  }
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Now, if you'd like to actually set these values when you call the component, you can do it like so:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`<Frame>
+  <Element is={Hero} custom={{
+    css: {
+      background: "#ddd"
+    }
+  }} />
+</Frame>
+`)));};MDXContent.isMDXComponent=true;
+
+/***/ }),
+/* 187 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "frontMatter", function() { return frontMatter; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
+/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
+/* harmony import */ var _site_src_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
+const frontMatter={id:'nodetree',title:'NodeTree',sidebar_label:'NodeTree'};const metadata={"id":"version-0.1.0-beta.8/api/nodetree","title":"NodeTree","description":"A useful data structure to represent the tree of a React Element as Nodes.","source":"@site/versioned_docs/version-0.1.0-beta.8/api/NodeTree.md","permalink":"/r/docs/api/nodetree","version":"0.1.0-beta.8","sidebar_label":"NodeTree","sidebar":"version-0.1.0-beta.8/docs","previous":{"title":"UserComponent","permalink":"/r/docs/api/user-component"},"next":{"title":"<Editor />","permalink":"/r/docs/api/editor"}};/* @jsx mdx */const rightToc=[{value:'Reference',id:'reference',children:[{value:'Properties',id:'properties',children:[]}]},{value:'Example',id:'example',children:[]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"type",mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`A useful data structure to represent the tree of a React Element as Nodes.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"reference"},`Reference`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"properties"},`Properties`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["rootNodeId","NodeId","The id of the root Node in the tree"],["nodes","Record<NodeId, Node>"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"example"},`Example`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`<div>
+  <h2>Hello</h2>
+  <h2>World</h2>
+</div>
+
+// The NodeTree of the div is:
+{
+  rootNodeId: "node-a",
+  nodes: {
+    "node-a" : {
+      data: {
+        type: "div",
+        nodes: ["node-b", "node-c"]
+      }
+    },
+    "node-b" : {
+      data: {
+        type: "h2",
+        props: { children: "Hello" }
+      }
+    },
+    "node-c" : {
+      data: {
+        type: "h2",
+        props: { children: "World" }
+      }
+    }
+  }
+}
+`)));};MDXContent.isMDXComponent=true;
+
+/***/ }),
+/* 188 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "frontMatter", function() { return frontMatter; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
+/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
 /* harmony import */ var _site_src_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
@@ -23480,7 +23893,7 @@ export default function App() {
 `)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"all-set-"},`All set! 💖`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Now, play with the editor and press the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Copy Current State`),` button when you are done. Refresh the page so the editor returns to its default state, then press the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Load State`),` button and paste the copied output - you should see the editor displaying the elements in the state from the time you copied.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Image */ "c"],{img:"tutorial/save-and-load.gif",mdxType:"Image"}));};MDXContent.isMDXComponent=true;
 
 /***/ }),
-/* 186 */
+/* 189 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -23489,8 +23902,173 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
+const frontMatter={id:'editor-components',title:'Interacting with the Editor'};const metadata={"id":"version-0.1.0-beta.8/concepts/editor-components","title":"Interacting with the Editor","description":"Previously, we have looked at User Components and how to write them, but what about all the other components that are integral to our page editor like a Toolbar for users to edit components, or maybe a layers panel?","source":"@site/versioned_docs/version-0.1.0-beta.8/concepts/editor-components.md","permalink":"/r/docs/concepts/editor-components","version":"0.1.0-beta.8","sidebar":"version-0.1.0-beta.8/docs","previous":{"title":"User Components","permalink":"/r/docs/concepts/user-components"},"next":{"title":"Basic Tutorial","permalink":"/r/docs/guides/basic-tutorial"}};/* @jsx mdx */const rightToc=[{value:'Getting state information',id:'getting-state-information',children:[]},{value:'Connectors',id:'connectors',children:[]},{value:'Manipulating state',id:'manipulating-state',children:[]},{value:'Querying',id:'querying',children:[]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Previously, we have looked at User Components and how to write them, but what about all the other components that are integral to our page editor like a Toolbar for users to edit components, or maybe a layers panel?`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`The `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`useEditor`),` hook allows us to read and manipulate the entire editor's internal state. Essentially, this is similar to the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`useNode`),` hook we have seen previously, except this deals with the entire editor rather than with a particular `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Node`),`.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const { actions, connectors, ...collected } = useEditor((state) => {});
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("blockquote",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"blockquote"},`Note: Unlike `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`useNode`),` which can be only used inside User Components, `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`useEditor`),` can be used anywhere within the Craft context, including User Components.`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"getting-state-information"},`Getting state information`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Similar with the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`useNode`),`, we can specify a collector function to the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`useEditor`),` hook to retrieve information from the internal state. `),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-tsx"}),`const App = () => {
+  const { hoveredNodeName } = useEditor((state: Node) => {
+    const currentlyHoveredId = state.events.hovered;
+    return {
+      hoveredNodeName: state.nodes[currentlyHoveredId].displayName
+    }
+  })
+  return (
+    <h2>The component being hovered is: {hoveredNodeName}</h2>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"connectors"},`Connectors`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`With`,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`useEditor`),`, you can add connectors to DOM elements anywhere in the editor to make use of the editor's internal events. `),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Let's say, maybe you are creating a layers panel to display all nodes as Photoshop-like layers (wink wink, `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`craftjs-layers`),`) and would like to change the particular Node's event state when the user clicks/hovers/drags your layers.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const LayerItem = (nodeId) => {
+  const { connectors: { select }} = useEditor();
+
+  return (
+   <div>
+      <a ref={ref => select(ref, nodeId)}>Click me to select node {nodeId}</a>
+   </div>
+  );
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Or, maybe drag a button to create a new instance of a User Component`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const DragToCreate = (nodeId) => {
+  const { connectors: { drag }} = useEditor();
+
+  return (
+   <div>
+      <a ref={ref => create(ref, <Text />)}>Drag me to create a new Text</a>
+   </div>
+  );
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"manipulating-state"},`Manipulating state`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`We can use the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`actions`),` provided to manipulate the editor's internal state`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const DeleteButtonThingy = () => {
+  const { actions, selectedNodeId } = useEditor((state) => ({
+    selectedNodeId: state.events.selected
+  }));
+
+  return (
+    <div>
+      <button onClick={() => actions.delete(selectedNodeId) }>
+        Click me to delete the selected node
+      </button>
+    </div>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"querying"},`Querying`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`What if you need to know if two nodes are compatible, how to get all parents of a Node or simply deserialize all Nodes? Queries are methods that provide helpful information based on the editor's state.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const Sidebar = () => {
+  const {query} = useEditor();
+  return (
+    <div>
+      <a onClick={() => {
+        console.log(query.deserialize());
+      }}>Click me</a>
+    </div>
+  )
+}
+
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Queries are also accesible via the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`useEditor`),` collector function. Let's look at an example where we build a component that returns all the descendants of the current selected Node:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const ShowMeMyDescendants = () => {
+  const { allDescendants } = useEditor((state, query) => {
+    const selectedNodeId = state.events.selected;
+    let allDescendants = false;
+
+    if (selectedNodeId)  allDescendants = query.node(selectedNodeId).decendants();  
+
+    return { allDescendants }
+  }); 
+
+  return allDescendants ? (
+    <div>
+      {
+        allDescendants.map(node => 
+          <li>{node.id}</li>
+        )
+      }
+    </div>
+  ) : null
+}
+
+`)));};MDXContent.isMDXComponent=true;
+
+/***/ }),
+/* 190 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "frontMatter", function() { return frontMatter; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
+/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
+/* harmony import */ var _site_src_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
+const frontMatter={id:'editor',title:'<Editor />',sidebar_label:'<Editor />'};const metadata={"id":"version-0.1.0-beta.8/api/editor","title":"<Editor />","description":"Creates the context that stores the editor state.","source":"@site/versioned_docs/version-0.1.0-beta.8/api/Editor.md","permalink":"/r/docs/api/editor","version":"0.1.0-beta.8","sidebar_label":"<Editor />","sidebar":"version-0.1.0-beta.8/docs","previous":{"title":"NodeTree","permalink":"/r/docs/api/nodetree"},"next":{"title":"<Frame />","permalink":"/r/docs/api/frame"}};/* @jsx mdx */const rightToc=[{value:'Reference',id:'reference',children:[{value:'Props',id:'props',children:[]}]},{value:'Examples',id:'examples',children:[{value:'Custom render user elements',id:'custom-render-user-elements',children:[]},{value:'Specifying the Drop Indicator colour',id:'specifying-the-drop-indicator-colour',children:[]},{value:'Callback when Nodes change',id:'callback-when-nodes-change',children:[]}]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"component",mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Creates the context that stores the editor state.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"reference"},`Reference`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"props"},`Props`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["resolver","Map<String, React.ComponentType>","A map of User Components that will be used in the editor"],["enabled?","boolean","Optional. If set to false, all editing capabilities will be disabled"],["indicator?",'Record<"success" | "error", String>',"Optional. The colour to use for the drop indicator. The colour set in 'success' will be used when the indicator shows a droppable location; otherwise the colour set in 'error' will be used."],["onRender?","React.ComponentType<{element: React.ReactElement}>","Optional. Specify a custom component to render every User Element in the editor."],["onNodesChange?","(query: QueryMethods) => void","Optional. A callback method when the values of any of the nodes in the state changes"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"examples"},`Examples`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"custom-render-user-elements"},`Custom render user elements`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`By default, every user element is rendered just as it is. However, if you'd like to, for example, wrap every user element inside a `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`div`),`, you can do so through the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`onRender`),` prop:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx","metastring":"{3-9,13}","{3-9,13}":true}),`import {Editor} from "@craftjs/core";
+
+const RenderNode = ({element}) => {
+  return (
+    <div style={{background: "#000", padding: "5px" }}>
+      {element}
+    </div>
+  )
+}
+
+const App = () => {
+  return (
+    <Editor onRender={RenderNode}>
+      <Frame resolver={{Hero}}>
+        <Element>
+          <h1>Hi</h1>
+          <Hero />
+        </Element>
+      </Frame>
+    </Editor>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`In the above example, every user element will now be wrapped in a black `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`div`),`.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"specifying-the-drop-indicator-colour"},`Specifying the Drop Indicator colour`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`You could change the colours of the drag and drop indicators like so:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx","metastring":"{6-9}","{6-9}":true}),`import {Editor} from "@craftjs/core";
+
+const App = () => {
+  return (
+    <Editor
+      indicator={{
+        'success': '#2d9d78', // green
+        'error': '#e34850' // red
+      }}
+    >
+      <Frame resolver={{Hero}}>
+        <Element>
+          <h1>Hi</h1>
+          <Hero />
+        </Element>
+      </Frame>
+    </Editor>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"callback-when-nodes-change"},`Callback when Nodes change`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Perform a callback whenever the Nodes in the editor is updated/changed`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx","metastring":"{6-11}","{6-11}":true}),`import {Editor} from "@craftjs/core";
+
+const App = () => {
+  return (
+    <Editor
+      // Save the updated JSON whenever the Nodes has been changed
+      onNodesChange={query => {
+        const json = query.serialize();
+        // save to server
+        axios.post('/saveJSON', { json });
+      }}
+    >
+      ..
+    </Editor>
+  )
+}
+`)));};MDXContent.isMDXComponent=true;
+
+/***/ }),
+/* 191 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "frontMatter", function() { return frontMatter; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
+/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
 /* harmony import */ var _site_src_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
@@ -23687,7 +24265,7 @@ export const Sidebar = connectEditor((state) => ({
 `)));};MDXContent.isMDXComponent=true;
 
 /***/ }),
-/* 187 */
+/* 192 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -23696,61 +24274,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
-/* harmony import */ var _site_src_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
-const frontMatter={id:'layers',title:'Layers'};const metadata={"id":"version-0.1.0-beta.7/additional/layers","title":"Layers","description":"A Photoshop-like layers panel for your page editor.","source":"@site/versioned_docs/version-0.1.0-beta.7/additional/layers.md","permalink":"/r/docs/additional/layers","version":"0.1.0-beta.7","sidebar":"version-0.1.0-beta.7/docs","previous":{"title":"NodeHelpers","permalink":"/r/docs/api/helpers"}};/* @jsx mdx */const rightToc=[{value:'Usage',id:'usage',children:[]},{value:'Types',id:'types',children:[{value:'Layer',id:'layer',children:[]}]},{value:'Reference',id:'reference',children:[{value:'<code>&lt;Layers /&gt;</code>',id:'layers-',children:[]},{value:'<code>useLayer</code>',id:'uselayer',children:[]}]},{value:'Default components',id:'default-components',children:[]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`A Photoshop-like layers panel for your page editor.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Image */ "c"],{img:"layers.gif",mdxType:"Image"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"usage"},`Usage`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-bash"}),`yarn add @craftjs/layers
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`import React from "react";
-import {Editor} from "@craftjs/core"
-import {Layers} from "@craftjs/layers"
-
-export default function App() {
-  return (
-    <div style={{margin: "0 auto", width: "800px"}}>
-      <Typography variant="h5" align="center">A super simple page editor</Typography>
-      <Editor resolver={...}>
-        <Layers />
-      </Editor>
-    </div>
-  );
-} 
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"types"},`Types`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"layer"},`Layer`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"properties"},`Properties`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["id","NodeId","A randomly generated unique id"],["depth","number","A depth of the current Layer"],["expanded","boolean","Returns true if the Layer is expanded"],["events","Object",[["selected","boolean","Is true if the layer is clicked"],["hovered","boolean","Is true if the layer is being hovered"]]],["dom","HTMLElement","The DOM of the current layer including its header and children. This is defined by the `connectLayer` connector"],["headingDom","HTMLElement","The DOM of the current Layer's heading. This is defined by the `connectLayerHeader` connector"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"reference"},`Reference`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"layers-"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"h3"},`<Layers />`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"props"},`Props`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["expandRootOnLoad?","boolean","Optional. If enabled, the Root Node will be expanded by default"],["renderLayer?","React.ReactElement","Optional. Specify the component to render each layer"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"uselayer"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"h3"},`useLayer`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"parameters"},`Parameters`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["collector","(layer: Layer) => Collected","A function that collects relevant state information from the corresponding `Layer`. The component will re-render when the values returned by this function changes."]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"returns"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[[null,"Object",[["connectors","Object",[["drag","(dom: HTMLElement, nodeId: String) => HTMLElement","Specifies the DOM that should be draggable"],["layer","(dom: HTMLElement, nodeId: String) => HTMLElement","Specifies the DOM that represents the entire Layer"],["layerHeading","(dom: HTMLElement, nodeId: String) => HTMLElement","Specifies the DOM that represents the layer's heading"]]],["actions","Object",[["toggleLayer","() => void","Toggle the corresponding Layer's expanded state"]]]]]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"default-components"},`Default components`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`These following components are available for you to extend upon if you wish to design your own component to render the layers (which can be specified in the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`renderLayer`),` prop).`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("ul",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"li"},`<DefaultLayer />`),` `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("ul",{parentName:"li"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"li"},`<DefaultLayerHeader />`),` `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("ul",{parentName:"li"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"li"},`<EditableLayerName>`),` This component enables the end user to edit the layer names. The values are saved into the respective Node's `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"li"},`custom.displayName`),` prop.`)))))),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`
-const Layer = () => {
-  return (
-    <div>
-      <DefaultLayerHeader />
-    </div>
-  )
-}
-
-const App = () => {
-  return (
-    <Editor>
-      <Frame>
-        ...
-      </Frame>
-      <Layers 
-        renderLayer={Layer}
-      />
-    </Editor>
-  )
-}
-`)));};MDXContent.isMDXComponent=true;
-
-/***/ }),
-/* 188 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "frontMatter", function() { return frontMatter; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
 /* harmony import */ var _site_src_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
@@ -23949,81 +24474,13 @@ export default function App() {
 `)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"all-set-"},`All set! 💖`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Now, play with the editor and press the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Copy Current State`),` button when you are done. Refresh the page so the editor returns to its default state, then press the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Load State`),` button and paste the copied output - you should see the editor displaying the elements in the state from the time you copied.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Image */ "c"],{img:"tutorial/save-and-load.gif",mdxType:"Image"}));};MDXContent.isMDXComponent=true;
 
 /***/ }),
-/* 189 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/* 193 */
+/***/ (function(module) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "frontMatter", function() { return frontMatter; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
-/* harmony import */ var _site_src_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
-const frontMatter={id:'editor',title:'<Editor />',sidebar_label:'<Editor />'};const metadata={"id":"version-0.1.0-beta.7/api/editor","title":"<Editor />","description":"Creates the context that stores the editor state.","source":"@site/versioned_docs/version-0.1.0-beta.7/api/Editor.md","permalink":"/r/docs/api/editor","version":"0.1.0-beta.7","sidebar_label":"<Editor />","sidebar":"version-0.1.0-beta.7/docs","previous":{"title":"NodeTree","permalink":"/r/docs/api/nodetree"},"next":{"title":"<Frame />","permalink":"/r/docs/api/frame"}};/* @jsx mdx */const rightToc=[{value:'Reference',id:'reference',children:[{value:'Props',id:'props',children:[]}]},{value:'Examples',id:'examples',children:[{value:'Custom render user elements',id:'custom-render-user-elements',children:[]},{value:'Specifying the Drop Indicator colour',id:'specifying-the-drop-indicator-colour',children:[]},{value:'Callback when Nodes change',id:'callback-when-nodes-change',children:[]}]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"component",mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Creates the context that stores the editor state.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"reference"},`Reference`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"props"},`Props`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["resolver","Map<String, React.ComponentType>","A map of User Components that will be used in the editor"],["enabled?","boolean","Optional. If set to false, all editing capabilities will be disabled"],["indicator?",'Record<"success" | "error", String>',"Optional. The colour to use for the drop indicator. The colour set in 'success' will be used when the indicator shows a droppable location; otherwise the colour set in 'error' will be used."],["onRender?","React.ComponentType<{element: React.ReactElement}>","Optional. Specify a custom component to render every User Element in the editor."],["onNodesChange?","(query: QueryMethods) => void","Optional. A callback method when the values of any of the nodes in the state changes"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"examples"},`Examples`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"custom-render-user-elements"},`Custom render user elements`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`By default, every user element is rendered just as it is. However, if you'd like to, for example, wrap every user element inside a `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`div`),`, you can do so through the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`onRender`),` prop:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx","metastring":"{3-9,13}","{3-9,13}":true}),`import {Editor} from "@craftjs/core";
-
-const RenderNode = ({element}) => {
-  return (
-    <div style={{background: "#000", padding: "5px" }}>
-      {element}
-    </div>
-  )
-}
-
-const App = () => {
-  return (
-    <Editor onRender={RenderNode}>
-      <Frame resolver={{Hero}}>
-        <Element>
-          <h1>Hi</h1>
-          <Hero />
-        </Element>
-      </Frame>
-    </Editor>
-  )
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`In the above example, every user element will now be wrapped in a black `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`div`),`.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"specifying-the-drop-indicator-colour"},`Specifying the Drop Indicator colour`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`You could change the colours of the drag and drop indicators like so:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx","metastring":"{6-9}","{6-9}":true}),`import {Editor} from "@craftjs/core";
-
-const App = () => {
-  return (
-    <Editor
-      indicator={{
-        'success': '#2d9d78', // green
-        'error': '#e34850' // red
-      }}
-    >
-      <Frame resolver={{Hero}}>
-        <Element>
-          <h1>Hi</h1>
-          <Hero />
-        </Element>
-      </Frame>
-    </Editor>
-  )
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"callback-when-nodes-change"},`Callback when Nodes change`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Perform a callback whenever the Nodes in the editor is updated/changed`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx","metastring":"{6-11}","{6-11}":true}),`import {Editor} from "@craftjs/core";
-
-const App = () => {
-  return (
-    <Editor
-      // Save the updated JSON whenever the Nodes has been changed
-      onNodesChange={query => {
-        const json = query.serialize();
-        // save to server
-        axios.post('/saveJSON', { json });
-      }}
-    >
-      ..
-    </Editor>
-  )
-}
-`)));};MDXContent.isMDXComponent=true;
+module.exports = JSON.parse("{\"docsSidebars\":{\"version-0.1.0-beta.8/docs\":[{\"type\":\"category\",\"label\":\"Introduction\",\"items\":[{\"type\":\"link\",\"label\":\"Overview\",\"href\":\"/r/docs/overview\"},{\"type\":\"link\",\"label\":\"Acknowledgements\",\"href\":\"/r/docs/acknowledgements\"}]},{\"type\":\"category\",\"label\":\"Core Concepts\",\"items\":[{\"type\":\"link\",\"label\":\"Nodes\",\"href\":\"/r/docs/concepts/nodes\"},{\"type\":\"link\",\"label\":\"User Components\",\"href\":\"/r/docs/concepts/user-components\"},{\"type\":\"link\",\"label\":\"Interacting with the Editor\",\"href\":\"/r/docs/concepts/editor-components\"}]},{\"type\":\"category\",\"label\":\"Guides\",\"items\":[{\"type\":\"link\",\"label\":\"Basic Tutorial\",\"href\":\"/r/docs/guides/basic-tutorial\"},{\"type\":\"link\",\"label\":\"Save and Load\",\"href\":\"/r/docs/guides/save-load-state\"}]},{\"type\":\"category\",\"label\":\"API Reference\",\"items\":[{\"type\":\"link\",\"label\":\"EditorState\",\"href\":\"/r/docs/api/editor-state\"},{\"type\":\"link\",\"label\":\"Node\",\"href\":\"/r/docs/api/node\"},{\"type\":\"link\",\"label\":\"UserComponent\",\"href\":\"/r/docs/api/user-component\"},{\"type\":\"link\",\"label\":\"NodeTree\",\"href\":\"/r/docs/api/nodetree\"},{\"type\":\"link\",\"label\":\"<Editor />\",\"href\":\"/r/docs/api/editor\"},{\"type\":\"link\",\"label\":\"<Frame />\",\"href\":\"/r/docs/api/frame\"},{\"type\":\"link\",\"label\":\"<Element />\",\"href\":\"/r/docs/api/element\"},{\"type\":\"link\",\"label\":\"useEditor()\",\"href\":\"/r/docs/api/useEditor\"},{\"type\":\"link\",\"label\":\"useNode()\",\"href\":\"/r/docs/api/useNode\"},{\"type\":\"link\",\"label\":\"NodeHelpers\",\"href\":\"/r/docs/api/helpers\"}]},{\"type\":\"category\",\"label\":\"Additional Packages\",\"items\":[{\"type\":\"link\",\"label\":\"Layers\",\"href\":\"/r/docs/additional/layers\"}]}]},\"permalinkToSidebar\":{\"/r/docs/acknowledgements\":\"version-0.1.0-beta.8/docs\",\"/r/docs/additional/layers\":\"version-0.1.0-beta.8/docs\",\"/r/docs/api/editor\":\"version-0.1.0-beta.8/docs\",\"/r/docs/api/editor-state\":\"version-0.1.0-beta.8/docs\",\"/r/docs/api/element\":\"version-0.1.0-beta.8/docs\",\"/r/docs/api/frame\":\"version-0.1.0-beta.8/docs\",\"/r/docs/api/helpers\":\"version-0.1.0-beta.8/docs\",\"/r/docs/api/node\":\"version-0.1.0-beta.8/docs\",\"/r/docs/api/nodetree\":\"version-0.1.0-beta.8/docs\",\"/r/docs/api/useEditor\":\"version-0.1.0-beta.8/docs\",\"/r/docs/api/useNode\":\"version-0.1.0-beta.8/docs\",\"/r/docs/api/user-component\":\"version-0.1.0-beta.8/docs\",\"/r/docs/concepts/editor-components\":\"version-0.1.0-beta.8/docs\",\"/r/docs/concepts/nodes\":\"version-0.1.0-beta.8/docs\",\"/r/docs/concepts/user-components\":\"version-0.1.0-beta.8/docs\",\"/r/docs/guides/basic-tutorial\":\"version-0.1.0-beta.8/docs\",\"/r/docs/guides/save-load-state\":\"version-0.1.0-beta.8/docs\",\"/r/docs/overview\":\"version-0.1.0-beta.8/docs\"},\"version\":\"0.1.0-beta.8\"}");
 
 /***/ }),
-/* 190 */
+/* 194 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -24032,332 +24489,202 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
 /* harmony import */ var _site_src_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
-const frontMatter={id:'user-component',title:'UserComponent',sidebar_label:'UserComponent'};const metadata={"id":"version-0.1.0-beta.7/api/user-component","title":"UserComponent","description":"A wrapper of React.ComponentType. Accepts a static craft property for configuring the User Component.","source":"@site/versioned_docs/version-0.1.0-beta.7/api/UserComponent.md","permalink":"/r/docs/api/user-component","version":"0.1.0-beta.7","sidebar_label":"UserComponent","sidebar":"version-0.1.0-beta.7/docs","previous":{"title":"Node","permalink":"/r/docs/api/node"},"next":{"title":"NodeTree","permalink":"/r/docs/api/nodetree"}};/* @jsx mdx */const rightToc=[{value:'Reference',id:'reference',children:[{value:'Properties',id:'properties',children:[]}]},{value:'Example',id:'example',children:[]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"type",mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`A wrapper of `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`React.ComponentType<Props>`),`. Accepts a static `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`craft`),` property for configuring the User Component.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"reference"},`Reference`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"properties"},`Properties`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["","React.ComponentType<T> &",[["craft","Object",[["displayName","String","A user-friendly name for the User Component. The value here will be used to set the node.data.displayName property."],["props","T","Specify default values for the props T"],["custom","Record<string, any>","Specify default custom values for the User Component"],["related","Record<string, React.ElementType>","A map of React Components to share the same Node context. This components will be able access the useNode hook"],["rules?",[["canDrag","(currentNode: Node, helpers: NodeHelpers) => boolean","Specifies if the component can be dragged. Applicable only to components whose corresponding Node is a direct child of a Canvas"],["canMoveIn","(incomingNode: Node, currentNode: Node, helpers: NodeHelpers) => boolean","Specifies if an incoming Node can be dropped into the current component. Applicable only to components whose corresponding Node is a Canvas"],["canMoveOut","(outgoingNode: Node, currentNode: Node, helpers: NodeHelpers) => boolean","Specifies if a child Node can be dragged out of the current component. Applicable only to components whose corresponding Node is a Canvas"]]]]]]]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"example"},`Example`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`type TextProps = {
-  color: string;
-  text: string;
-};
-
-const TextComponent: UserComponent<TextProps> = ({color, text}) => {
-  return (
-    <h2 style={{color}}>{text}</h2>
-  )
-}
-
-const TextSettings = () => {
-  const {props, setProp} = useNode();
-  return (
-    <div>
-      Text: <input type="text" value={props.text} onChange={e => setProp(props => props.text = e.target.value) }/>
-      Color: <input type="text" value={props.color} onChange={e => setProp(props => props.color = e.target.value) }/>
-    </div>
-  )
-}
-TextComponent.craft = {
-  displayName: "My Text Component",
-  props: {
-    color: "#000",
-    text: "Hi"
-  },
-  rules: {
-    canDrag: (self: Node, helper) => true,
-    canMoveIn: (incoming: Node, self: Node, helper) => true,
-    canMoveOut: (outgoing: Node, self: Node, helper) => true
-  },
-  related: {
-    settings: TextSettings
-  }
-}
-`)));};MDXContent.isMDXComponent=true;
-
-/***/ }),
-/* 191 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "frontMatter", function() { return frontMatter; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
-/* harmony import */ var _site_src_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
-const frontMatter={id:'useNode',title:'useNode()',sidebar_label:'useNode()'};const metadata={"id":"version-0.1.0-beta.7/api/useNode","title":"useNode()","description":"A Hook that provides methods and state information related to the corresponding Node that manages the current component.","source":"@site/versioned_docs/version-0.1.0-beta.7/api/useNode.md","permalink":"/r/docs/api/useNode","version":"0.1.0-beta.7","sidebar_label":"useNode()","sidebar":"version-0.1.0-beta.7/docs","previous":{"title":"useEditor()","permalink":"/r/docs/api/useEditor"},"next":{"title":"NodeHelpers","permalink":"/r/docs/api/helpers"}};/* @jsx mdx */const rightToc=[{value:'Reference',id:'reference',children:[{value:'Parameters',id:'parameters',children:[]},{value:'Returns',id:'returns',children:[]}]},{value:'Examples',id:'examples',children:[{value:'Collecting state information',id:'collecting-state-information',children:[]},{value:'Connectors',id:'connectors',children:[]},{value:'Usage within child components',id:'usage-within-child-components',children:[]},{value:'Manipulating state',id:'manipulating-state',children:[]}]},{value:'Legacy API',id:'legacy-api',children:[{value:'Parameters',id:'parameters-1',children:[]},{value:'Injected Props',id:'injected-props',children:[]},{value:'Example',id:'example',children:[]}]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"hook",mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`A Hook that provides methods and state information related to the corresponding `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Node`),` that manages the current component. `),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-tsx"}),`const { connectors, setProp, ...collected } = useNode(collector);
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("blockquote",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"blockquote"},`Note: This hook can only be used within a User Component. `)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"reference"},`Reference`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"parameters"},`Parameters`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["collector","(node: Node) => Collected","A function that collects relevant state information from the corresponding Node. The component will re-render when the values returned by this function changes."]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"returns"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[[null,"Object",[["id","NodeId","The corresponding Node's id"],["related","boolean","Identifies if the component is being used as related component"],["inNodeContext","boolean","This is useful if you are designing a User Component that you also wish to be used as an ordinary React Component; this property helps to differentiate whether the component is being used as a User Component or not"],["connectors","Object",[["connect","(dom: HTMLElement) => HTMLElement","Specifies the DOM that represents the User Component"],["drag","(dom: HTMLElement) => HTMLElement","Specifies the DOM that should be draggable"]]],["actions","Object",[["setProp","(props: Object) => void","Manipulate the current component's props"]]],["...collected","Collected","The collected values returned from the collector"]]]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"examples"},`Examples`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"collecting-state-information"},`Collecting state information`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-tsx"}),`import cx from "classnames";
-import {useNode} from "@craftjs/core";
+const frontMatter={id:'useEditor',title:'useEditor()',sidebar_label:'useEditor()'};const metadata={"id":"version-0.1.0-beta.8/api/useEditor","title":"useEditor()","description":"A Hook that provides methods and state information associated with the entire editor.","source":"@site/versioned_docs/version-0.1.0-beta.8/api/useEditor.md","permalink":"/r/docs/api/useEditor","version":"0.1.0-beta.8","sidebar_label":"useEditor()","sidebar":"version-0.1.0-beta.8/docs","previous":{"title":"<Element />","permalink":"/r/docs/api/element"},"next":{"title":"useNode()","permalink":"/r/docs/api/useNode"}};/* @jsx mdx */const rightToc=[{value:'Reference',id:'reference',children:[{value:'Parameters',id:'parameters',children:[]},{value:'Returns',id:'returns',children:[]}]},{value:'Examples',id:'examples',children:[{value:'Collecting state information',id:'collecting-state-information',children:[]},{value:'Updating props',id:'updating-props',children:[]},{value:'Hiding and Deleting a Node',id:'hiding-and-deleting-a-node',children:[]},{value:'Moving a Node',id:'moving-a-node',children:[]},{value:'Creating and Adding a new Node',id:'creating-and-adding-a-new-node',children:[]},{value:'Getting the currently selected Node&#39;s descendants',id:'getting-the-currently-selected-nodes-descendants',children:[]},{value:'Displaying Drop Indicator for the best possible drop location',id:'displaying-drop-indicator-for-the-best-possible-drop-location',children:[]}]},{value:'Legacy API',id:'legacy-api',children:[{value:'Parameters',id:'parameters-1',children:[]},{value:'Injected Props',id:'injected-props',children:[]},{value:'Example',id:'example',children:[]}]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"hook",mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`A Hook that provides methods and state information associated with the entire editor.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-tsx"}),`const { connectors, actions, query, ...collected } = useEditor(collector);
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"reference"},`Reference`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"parameters"},`Parameters`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["collector","(state: EditorState, query: Query) => Collected","A function that collects relevant state information from the editor state. The component will re-render when the values returned by this function changes."]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"returns"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[[null,"Object",[["connectors","Object",[["select","(dom: HTMLElement, nodeId: NodeId) => HTMLElement","Specifies the DOM that when clicked will in turn click the specified Node's user component"],["hover","(dom: HTMLElement, nodeId: NodeId) => HTMLElement","Specifies the DOM that when hovered will in turn hover the specified Node's user component"],["drag","(dom: HTMLElement, nodeId: NodeId) => HTMLElement","Specifies the DOM that when dragged will move the specified Node's user component. Only applicable if the component is rendered as an immediate child of a &lt;Canvas /&gt; component."],["create","(dom: HTMLElement, userElement: React.ReactElement) => HTMLElement","Specifies the DOM that when dragged will create a new instance of the specified User Element at the drop location."]]],["actions","ActionMethods",[["add","(nodes: Node, parentId?: NodeId, index?: number) => void","Add a Node to the given parent node ID at the specified index. By default the parentId is the id of the Root Node"],["addNodeTree","(tree: NodeTree, parentId?: NodeId) => void","Add a NodeTree to the given parent node ID at the specified index. By default the parentId is the id of the Root Node"],["clearEvents","() => void","Resets the editors events state"],["delete","(nodeID: NodeId) => void","Delete the specified Node"],["deserialize","(data: SerializedNodes | string) => void","Recreate Nodes from a SerializedNodes object/json. This will clear all the current Nodes in the editor state with the recreated Nodes"],["move","(nodeId: NodeId, targetParentId: NodeId, index: number) => void","Move a Node to the specified parent Node at the given index."],["setProp","(nodeId: NodeId, update: (props: Object) => void) => void","Manipulate the props of the given Node"],["setCustom","(nodeId: NodeId, update: (custom: Object) => void) => void","Manipulate the custom values of the given Node"],["setHidden","(nodeId: NodeId, bool: boolean) => void","When set to true, the User Component of the specified Node will be hidden, but not removed"],["setOptions","(options: Object) => void","Update the editor's options. The options object passed is the same as the &lt;Editor /&gt; props."],["selectNode","(nodeId: NodeId | null) => void","Select the specified node. You can clear the selection by passing `null`"]]],["query","QueryMethods",[["getSerializedNodes","() => SerializedNodes","Return the current Nodes into a simpler form safe for storage"],["serialize","() => String","Return getSerializedNodes() in JSON"],["getOptions","() => Object","Get the options specified in the &lt;Editor /&gt; component"],["getDropPlaceholder","(sourceNodeId: NodeId, targetNodeId: NodeId, pos: {x: number, y: number}, nodesToDOM?: (node: Node) => HTMLElement = node => node.dom)","Given the target Node and mouse coordinates on the screen, determine the best possible location to drop the source Node. By default, the Node's DOM property is taken into consideration."],["node","(id: NodeId) => NodeHelpers","Returns an object containing helper methods to describe the specified Node. Click <a href='/craft.js/r/docs/api/helpers/'>here</a> for more information."],["parseReactElement","(element: React.ReactElement) => Object",[["toNodeTree","() => NodeTree","Parses a given React element into a NodeTree"]]],["parseSerializedNode","(node: SerializedNode) => Object",[["toNode","() => Node","Parses a serialized Node back into it's full Node form"]]]]],["inContext","boolean","Returns false if the component is rendered outside of the &lt;Editor /&gt;. This is useful if you are designing a general component that you also wish to use outside of Craft.js."],["...collected","Collected","The collected values returned from the collector"]]]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"examples"},`Examples`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"collecting-state-information"},`Collecting state information`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-tsx"}),`import {useEditor} from "@craftjs/core";
 
 const Example = () => {
-  const { isHovered, amIBeingDragged } = useNode((node) => ({
-    isHovered: node.events.hovered,
-    amIBeingDragged: node.events.drag,
-
+  const { hoveredNodeId } = useEditor((state) => ({
+    hoveredNodeId: state.events.hovered
   }));
 
   return (
-    <div className={cx({
-      "hovering" : isHovered,
-      "dragged" : amIBeingDragged
-    })}>
-      Yo
+    <div>
+      The ID of the node currently being hovered is: {hoveredNodeId}
     </div>
   )
 }
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"connectors"},`Connectors`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Connectors must receive a HTML element which can be obtained via an element's `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`ref`),`.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Typically, you would want to chain the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`connect`),` and `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`drag`),` connectors to the root element of your component. This way, users would be able to drag anywhere within the DOM to move the component.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const Example = () => {
-  const { connectors: {connect, drag} } = useNode();
-
-  return (
-    <div ref={ref => connect(drag(ref))}>
-      <div>Hi world</div>
-    </div>
-  )
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Alternatively, you could place the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`drag`),` connector in a child element too.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`In the following example, we specified it on the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`a`),` element. Now, users will need to drag the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`a`),` element if they wish to move the component.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const Example = () => {
-  const { connectors: {connect, drag} } = useNode();
-
-  return (
-    <div ref={connect}>
-      <div>Hi world</div>
-      <a ref={drag}>Drag me to move this component</a>
-    </div>
-  )
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`You could place the connectors on a React Component as well. However, the component must expose/forward its DOM in its `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`ref`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const CustomDragHandler = React.forwardRef((props, ref) => {
-  return(
-    <a ref={ref}>Drag me to move this component</a>
-  )
-});
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"updating-props"},`Updating props`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-tsx"}),`import {useEditor} from "@craftjs/core";
 
 const Example = () => {
-  const { connectors: {connect, drag} } = useNode();
-
-  return (
-    <div ref={connect}>
-      <div>Hi world</div>
-      <CustomDragHandler ref={drag}>Drag me to move this component</CustomDragHandler>
-    </div>
-  )
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"usage-within-child-components"},`Usage within child components`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Since User Components are contextually bounded by the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Node`),` that they are being managed by, thus `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`useNode`),` can be used anywhere `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("strong",{parentName:"p"},`within`),` the component tree.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`In the previous example, we didn't actually need to forward refs from `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`CustomDragHandler`),` since it's bounded by the same `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Node`),` as its parent. Instead, we can just use the connectors from `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`useNode`),` directly.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const CustomDragHandler = () => {
-  const {drag} = useNode();
-  return(
-    <a ref={drag}>Drag me to move this component</a>
-  )
-};
-
-const Example = () => {
-  const { connectors: {connect} } = useNode();
-
-  return (
-    <div ref={connect}>
-      <div>Hi world</div>
-      <CustomDragHandler />
-    </div>
-  )
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"manipulating-state"},`Manipulating state`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const Example = ({someProp}) => {
-  const { connectors: {connect, drag} } = useNode();
-
-  return (
-    <div ref={connect}>
-      <div>Hi world</div>
-      <a ref={drag}>Drag me to move this component</a>
-      <input type="text" value={someProp} onChange={e => {
-        setProp(props => {
-          props.someProp = e.target.value;
-        });
-      }} />
-    </div>
-  )
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"legacy-api"},`Legacy API`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`For Class Components, use `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`connectNode`),` instead.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"hoc",title:false,mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"parameters-1"},`Parameters`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["collector","(node: Node) => Collected","A function that collects relevant state information from the corresponding Node. The component will re-render when the values returned by this function changes."]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"injected-props"},`Injected Props`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["...useNode(collector)","Object","Identical return values as the useNode() hook above"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"example"},`Example`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`
-import {connectNode} from "@craftjs/core";
-class ButtonInner extends React.Component {
-  render() {
-    const { connectors: {connect, drag}, isHovered, ...compProps } = this.props;
-    const { text, color  } = compProps;
-
-    return (
-      <button ref={ ref => connect(drag(ref))} style={{margin: "5px", backgroundColor: color}} >
-        {text}
-        {
-          isHovered ? "I'm being hovered" : null
-        }
-      </button>
-    );
-  }
-};
-
-export const Button = connectNode((node) => ({
-  isHovered: node.events.hovered
-}))(ButtonInner);
-
-`)));};MDXContent.isMDXComponent=true;
-
-/***/ }),
-/* 192 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "frontMatter", function() { return frontMatter; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
-/* harmony import */ var _site_src_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
-const frontMatter={id:'frame',title:'<Frame />',sidebar_label:'<Frame />'};const metadata={"id":"version-0.1.0-beta.7/api/frame","title":"<Frame />","description":"Frame defines the editable area in your page editor. It is rendered based on the editor's internal state (i.e. Nodes).","source":"@site/versioned_docs/version-0.1.0-beta.7/api/Frame.md","permalink":"/r/docs/api/frame","version":"0.1.0-beta.7","sidebar_label":"<Frame />","sidebar":"version-0.1.0-beta.7/docs","previous":{"title":"<Editor />","permalink":"/r/docs/api/editor"},"next":{"title":"<Element />","permalink":"/r/docs/api/element"}};/* @jsx mdx */const rightToc=[{value:'Reference',id:'reference',children:[{value:'Props',id:'props',children:[]}]},{value:'Examples',id:'examples',children:[{value:'With JSX',id:'with-jsx',children:[]},{value:'Loading from serialised Nodes',id:'loading-from-serialised-nodes',children:[]}]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"component",mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Frame defines the editable area in your page editor. It is rendered based on the editor's internal state (i.e. Nodes).`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-tsx"}),`const { connectors, setProp, ...collected } = useNode(collector);
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"reference"},`Reference`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"props"},`Props`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Both props specifies the initial screen to render. You must specify at least one of them (`,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`data`),` takes precendence over `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`children`),`).`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["children?","React.ReactElement","Creates the initial screen using React Elements. The element defined here will be the Root Node"],["data?","SerializedNodes | string","Loads the initial nodes from SerializedNodes (can be supplied in JSON)"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("blockquote",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"blockquote"},`These props are memoized - after the initial render, changes to these props will have no effect. If for example, you wish to load a different set of serialised JSON nodes after the initial render, you may use the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`deserialize`),` method via the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"p"},{"href":"/r/docs/api/useEditor"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"a"},`useEditor`)),` hook.`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"examples"},`Examples`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"with-jsx"},`With JSX`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-tsx","metastring":"{9,10,16,17}","{9,10,16,17}":true}),`import {Editor, Frame, Element} from "@craftjs/core";
-
-const App = () => {
-  return (
-    <div>
-      <h2>My App!</h2>
-      <Editor>
-        <h2>My Page Editor</h2>
-        <Frame> 
-          <Element is={Container} canvas> // defines the Root Node
-            <h2>Drag me around</h2>
-            <MyComp text="You can drag me around too" />
-            <Element is="div" style={{background: "#333" }}>
-              <p>Same here</p>
-            </Element>
-          </Element>
-        </Frame>
-      </Editor>
-    </div>
-  )
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"loading-from-serialised-nodes"},`Loading from serialised Nodes`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-tsx","metastring":"{10}","{10}":true}),`import {Editor, Frame, Element} from "@craftjs/core";
-
-const App = () => {
-  return (
-    <div>
-      <h2>My App!</h2>
-      <Editor>
-        <h2>My Page Editor</h2>
-        <Frame
-          data='{"ROOT":{"type":"div","isCanvas":true,"props":{},"parent":null,"displayName":"div","custom":{},"nodes":["node-sdiwzXkvQ","node-rGFDi0G6m","node-yNBLMy5Oj"]},"node-sdiwzXkvQ":{"type":{"resolvedName":"Card"},"props":{},"parent":"ROOT","displayName":"Card","custom":{},"_childCanvas":{"main":"canvas-_EEw_eBD_","second":"canvas-lE4Ni9oIn"}}'
-        > 
-          <Element is={Container} canvas> // defines the Root Node
-            <h2>Drag me around</h2>
-            <MyComp text="You can drag me around too" />
-            <Element is="div" style={{background: "#333" }}>
-              <p>Same here</p>
-            </Element>
-          </Element>
-        </Frame>
-      </Editor>
-    </div>
-  )
-}
-`)));};MDXContent.isMDXComponent=true;
-
-/***/ }),
-/* 193 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "frontMatter", function() { return frontMatter; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
-const frontMatter={id:'editor-components',title:'Interacting with the Editor'};const metadata={"id":"version-0.1.0-beta.7/concepts/editor-components","title":"Interacting with the Editor","description":"Previously, we have looked at User Components and how to write them, but what about all the other components that are integral to our page editor like a Toolbar for users to edit components, or maybe a layers panel?","source":"@site/versioned_docs/version-0.1.0-beta.7/concepts/editor-components.md","permalink":"/r/docs/concepts/editor-components","version":"0.1.0-beta.7","sidebar":"version-0.1.0-beta.7/docs","previous":{"title":"User Components","permalink":"/r/docs/concepts/user-components"},"next":{"title":"Basic Tutorial","permalink":"/r/docs/guides/basic-tutorial"}};/* @jsx mdx */const rightToc=[{value:'Getting state information',id:'getting-state-information',children:[]},{value:'Connectors',id:'connectors',children:[]},{value:'Manipulating state',id:'manipulating-state',children:[]},{value:'Querying',id:'querying',children:[]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Previously, we have looked at User Components and how to write them, but what about all the other components that are integral to our page editor like a Toolbar for users to edit components, or maybe a layers panel?`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`The `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`useEditor`),` hook allows us to read and manipulate the entire editor's internal state. Essentially, this is similar to the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`useNode`),` hook we have seen previously, except this deals with the entire editor rather than with a particular `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Node`),`.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const { actions, connectors, ...collected } = useEditor((state) => {});
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("blockquote",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"blockquote"},`Note: Unlike `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`useNode`),` which can be only used inside User Components, `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`useEditor`),` can be used anywhere within the Craft context, including User Components.`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"getting-state-information"},`Getting state information`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Similar with the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`useNode`),`, we can specify a collector function to the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`useEditor`),` hook to retrieve information from the internal state. `),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-tsx"}),`const App = () => {
-  const { hoveredNodeName } = useEditor((state: Node) => {
-    const currentlyHoveredId = state.events.hovered;
-    return {
-      hoveredNodeName: state.nodes[currentlyHoveredId].displayName
-    }
-  })
-  return (
-    <h2>The component being hovered is: {hoveredNodeName}</h2>
-  )
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"connectors"},`Connectors`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`With`,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`useEditor`),`, you can add connectors to DOM elements anywhere in the editor to make use of the editor's internal events. `),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Let's say, maybe you are creating a layers panel to display all nodes as Photoshop-like layers (wink wink, `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`craftjs-layers`),`) and would like to change the particular Node's event state when the user clicks/hovers/drags your layers.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const LayerItem = (nodeId) => {
-  const { connectors: { select }} = useEditor();
-
-  return (
-   <div>
-      <a ref={ref => select(ref, nodeId)}>Click me to select node {nodeId}</a>
-   </div>
-  );
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Or, maybe drag a button to create a new instance of a User Component`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const DragToCreate = (nodeId) => {
-  const { connectors: { drag }} = useEditor();
-
-  return (
-   <div>
-      <a ref={ref => create(ref, <Text />)}>Drag me to create a new Text</a>
-   </div>
-  );
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"manipulating-state"},`Manipulating state`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`We can use the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`actions`),` provided to manipulate the editor's internal state`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const DeleteButtonThingy = () => {
-  const { actions, selectedNodeId } = useEditor((state) => ({
+  const { selectedNodeId, actions: {setProp} } = useEditor((state) => ({
     selectedNodeId: state.events.selected
   }));
 
   return (
+    <a
+      onClick={_ => {
+        setProp(selectedNodeId, props => {
+          props.text = "new value";
+        });
+      }}
+    >
+      Update
+    </a>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"hiding-and-deleting-a-node"},`Hiding and Deleting a Node`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const Example = () => {
+  const {selectedNodeId, actions} = useEditor((state) => ({
+    selectedNodeId: state.events.selected
+  }));
+  return selectedNodeId && (
     <div>
-      <button onClick={() => actions.delete(selectedNodeId) }>
-        Click me to delete the selected node
-      </button>
+      <h2>Node selected: {selectedNodeId}</h2>
+      <a onClick={() => actions.hide(selectedNodeId)}>Hide</a>
+      <a onClick={() => actions.delete(selectedNodeId)}>Delete</a>
     </div>
   )
 }
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"querying"},`Querying`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`What if you need to know if two nodes are compatible, how to get all parents of a Node or simply deserialize all Nodes? Queries are methods that provide helpful information based on the editor's state.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const Sidebar = () => {
-  const {query} = useEditor();
-  return (
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"moving-a-node"},`Moving a Node`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const Example = () => {
+  const [sourceId, setSourceId] = useState();
+  const [targetId, setTargetId] = useState();
+  
+  const {selectedNodeId, actions, query} = useEditor((state) => ({
+    selectedNodeId: state.events.selected
+  }));
+
+  return selectedNodeId && (
     <div>
-      <a onClick={() => {
-        console.log(query.deserialize());
-      }}>Click me</a>
-    </div>
-  )
-}
-
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Queries are also accesible via the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`useEditor`),` collector function. Let's look at an example where we build a component that returns all the descendants of the current selected Node:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const ShowMeMyDescendants = () => {
-  const { allDescendants } = useEditor((state, query) => {
-    const selectedNodeId = state.events.selected;
-    let allDescendants = false;
-
-    if (selectedNodeId)  allDescendants = query.node(selectedNodeId).decendants();  
-
-    return { allDescendants }
-  }); 
-
-  return allDescendants ? (
-    <div>
+      <h2>Node selected: {selectedNodeId}</h2>
+      <div>
+        <input type="text" value={sourceId} placeholder="Source" disabled />
+        <button onClick={() => selectedNodeId && setSourceId(selectedNodeId)}>Set selected Node as source</button>
+      </div>
+      <div>
+        <input type="text" value={targetId} placeholder="Target" disabled />
+        <button onClick={() => selectedNodeId && setTargetId(selectedNodeId)}>Set selected Node as target</button>
+      </div>
       {
-        allDescendants.map(node => 
-          <li>{node.id}</li>
+        sourceId && targeId ? (
+          <button onClick={() => {
+            try {
+              // .canDropInParent will throw an error message if the conditions failed
+              query.canDropInParent(sourceId, targetId); 
+              actions.move(sourceId, targetId);
+            } catch (e) {
+              console.error(e.message);
+            } 
+          }}>Move Node</button>
         )
       }
     </div>
-  ) : null
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"creating-and-adding-a-new-node"},`Creating and Adding a new Node`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-tsx"}),`import {useEditor} from "@craftjs/core";
+
+const Example = () => {
+  const { query, actions } = useEditor((state, query) => ({
+    hoveredNodeId: state.events.hovered
+  }));
+
+  return (
+    <div>
+      <a onClick={() => {
+        const node = query.parseReactElement(<h2>Hi</h2>).toNodeTree();
+        actions.addNodeTree(node);
+      }}>Click me to add a new Node</a>
+    </div>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"getting-the-currently-selected-nodes-descendants"},`Getting the currently selected Node's descendants`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("blockquote",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"blockquote"},`Query methods are also accessible from within the collector function.`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-tsx"}),`import {useEditor} from "@craftjs/core";
+
+const Example = () => {
+  const { selectedDescendants } = useEditor((state, query) => ({
+    selectedDescendants: state.events && query.node(state.events.selected).descendants().map(node => node.id)
+  }));
+
+  return (
+    <ul>
+      {
+        selectedDescendants && selectedDescendants.map(id => <li>{id}</li> )
+      }
+    </ul>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"displaying-drop-indicator-for-the-best-possible-drop-location"},`Displaying Drop Indicator for the best possible drop location`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const Example = () => {
+  const [screenClick, setScreenClick] = useState(false);
+  const [sourceId, setSourceId] = useState();
+  const [targetId, setTargetId] = useState();
+  
+  const {selectedNodeId, actions, query} = useEditor((state) => ({
+    selectedNodeId: state.events.selected
+  }));
+
+  const disableScreenClick = useEffect((e) => {
+     if(e.key === "Escape") {
+       setScreenClick(false);
+    }
+  }, [screenClick]);
+
+  const clickOnScreen = useEffect((e) => {
+    const {clientX: x, clientY: y} = e;
+    const dropIndicator = query.getDropIndicator(sourceId, targetId, {x, y});
+    actions.setDropIndicator(dropIndicator);
+  }, [screenClick]);
+  
+
+  useEffect(() => {
+    window.addEventListener("click", clickOnScreen);
+    window.addEventListener("keyup", disableScreenClick);
+    return (() => {
+      window.removeEventListener("click", clickOnScreen);
+      window.removeEventListener("keyup", disableScreenClick);
+    })
+  }, [clickOnScreen, disableScreenClick]);
+
+  return selectedNodeId && (
+    <div>
+      <h2>Node selected: {selectedNodeId}</h2>
+      <div>
+        <input type="text" value={sourceId} placeholder="Source" disabled />
+        <button onClick={() => selectedNodeId && setSourceId(selectedNodeId)}>Set selected Node as source</button>
+      </div>
+      <div>
+        <input type="text" value={targetId} placeholder="Target" disabled />
+        <button onClick={() => selectedNodeId && setTargetId(selectedNodeId)}>Set selected Node as target</button>
+      </div>
+      {
+        sourceId && targeId ? (
+          <button onClick={() => {
+            setScreenClick(true);
+          }}>
+            {screenClick ? "Click anywhere on the screen to display indicator" : "Start"}
+          </button>
+        )
+      }
+    </div>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"legacy-api"},`Legacy API`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`For Class Components, use `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`connectEditor`),` instead.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"hoc",title:false,mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"parameters-1"},`Parameters`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["collector","(node: Node) => Collected","A function that collects relevant state information from the corresponding Node. The component will re-render when the values returned by this function changes."]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"injected-props"},`Injected Props`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["...useEditor(collector)","Object","Identical return values as the useEditor() hook above"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"example"},`Example`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`import { connectEditor } from "@craftjs/core";
+
+class SidebarInner extends React.Component {
+  render() {
+    const { actions, query, enabled, currentSelectedNodeId } = this.props;
+    return (
+      <div>
+        <input type="checkbox" value={enabled} onChange={
+          e => actions.setOptions(options => options.enabled = !enabled)
+        } />
+        <button 
+          onClick={() => {
+            console.log(query.serialize())
+          }}
+        >
+            Serialize JSON to console
+        </button>
+      </div>
+    )
+  }
 }
 
+export const Sidebar = connectEditor((state) => ({
+  currentSelectedNodeId: state.events.selected
+}))(SidebarInner);
 `)));};MDXContent.isMDXComponent=true;
-
-/***/ }),
-/* 194 */
-/***/ (function(module) {
-
-module.exports = JSON.parse("{\"docsSidebars\":{\"version-0.1.0-beta.7/docs\":[{\"type\":\"category\",\"label\":\"Introduction\",\"items\":[{\"type\":\"link\",\"label\":\"Overview\",\"href\":\"/r/docs/overview\"},{\"type\":\"link\",\"label\":\"Acknowledgements\",\"href\":\"/r/docs/acknowledgements\"}]},{\"type\":\"category\",\"label\":\"Core Concepts\",\"items\":[{\"type\":\"link\",\"label\":\"Nodes\",\"href\":\"/r/docs/concepts/nodes\"},{\"type\":\"link\",\"label\":\"User Components\",\"href\":\"/r/docs/concepts/user-components\"},{\"type\":\"link\",\"label\":\"Interacting with the Editor\",\"href\":\"/r/docs/concepts/editor-components\"}]},{\"type\":\"category\",\"label\":\"Guides\",\"items\":[{\"type\":\"link\",\"label\":\"Basic Tutorial\",\"href\":\"/r/docs/guides/basic-tutorial\"},{\"type\":\"link\",\"label\":\"Save and Load\",\"href\":\"/r/docs/guides/save-load-state\"}]},{\"type\":\"category\",\"label\":\"API Reference\",\"items\":[{\"type\":\"link\",\"label\":\"EditorState\",\"href\":\"/r/docs/api/editor-state\"},{\"type\":\"link\",\"label\":\"Node\",\"href\":\"/r/docs/api/node\"},{\"type\":\"link\",\"label\":\"UserComponent\",\"href\":\"/r/docs/api/user-component\"},{\"type\":\"link\",\"label\":\"NodeTree\",\"href\":\"/r/docs/api/nodetree\"},{\"type\":\"link\",\"label\":\"<Editor />\",\"href\":\"/r/docs/api/editor\"},{\"type\":\"link\",\"label\":\"<Frame />\",\"href\":\"/r/docs/api/frame\"},{\"type\":\"link\",\"label\":\"<Element />\",\"href\":\"/r/docs/api/element\"},{\"type\":\"link\",\"label\":\"useEditor()\",\"href\":\"/r/docs/api/useEditor\"},{\"type\":\"link\",\"label\":\"useNode()\",\"href\":\"/r/docs/api/useNode\"},{\"type\":\"link\",\"label\":\"NodeHelpers\",\"href\":\"/r/docs/api/helpers\"}]},{\"type\":\"category\",\"label\":\"Additional Packages\",\"items\":[{\"type\":\"link\",\"label\":\"Layers\",\"href\":\"/r/docs/additional/layers\"}]}]},\"permalinkToSidebar\":{\"/r/docs/acknowledgements\":\"version-0.1.0-beta.7/docs\",\"/r/docs/additional/layers\":\"version-0.1.0-beta.7/docs\",\"/r/docs/api/editor\":\"version-0.1.0-beta.7/docs\",\"/r/docs/api/editor-state\":\"version-0.1.0-beta.7/docs\",\"/r/docs/api/element\":\"version-0.1.0-beta.7/docs\",\"/r/docs/api/frame\":\"version-0.1.0-beta.7/docs\",\"/r/docs/api/helpers\":\"version-0.1.0-beta.7/docs\",\"/r/docs/api/node\":\"version-0.1.0-beta.7/docs\",\"/r/docs/api/nodetree\":\"version-0.1.0-beta.7/docs\",\"/r/docs/api/useEditor\":\"version-0.1.0-beta.7/docs\",\"/r/docs/api/useNode\":\"version-0.1.0-beta.7/docs\",\"/r/docs/api/user-component\":\"version-0.1.0-beta.7/docs\",\"/r/docs/concepts/editor-components\":\"version-0.1.0-beta.7/docs\",\"/r/docs/concepts/nodes\":\"version-0.1.0-beta.7/docs\",\"/r/docs/concepts/user-components\":\"version-0.1.0-beta.7/docs\",\"/r/docs/guides/basic-tutorial\":\"version-0.1.0-beta.7/docs\",\"/r/docs/guides/save-load-state\":\"version-0.1.0-beta.7/docs\",\"/r/docs/overview\":\"version-0.1.0-beta.7/docs\"},\"version\":\"0.1.0-beta.7\"}");
 
 /***/ }),
 /* 195 */
@@ -24369,8 +24696,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
 const frontMatter={id:'serializing',title:'Serializing'};const metadata={"id":"concepts/serializing","title":"Serializing","description":"Serializing","source":"@site/docs/concepts/serializing.md","permalink":"/r/docs/next/concepts/serializing","version":"next"};/* @jsx mdx */const rightToc=[{value:'Serializing',id:'serializing',children:[]},{value:'Resolvers',id:'resolvers',children:[]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"serializing"},`Serializing`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`We can serialize the editor's current state of Nodes into JSON by calling the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`serialize`),` method provided by the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`useEditor`),` hook`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const Toolbar = () => {
@@ -24419,8 +24746,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
 /* harmony import */ var _site_src_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
@@ -24498,39 +24825,109 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
-/* harmony import */ var _site_src_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
-const frontMatter={id:'nodetree',title:'NodeTree',sidebar_label:'NodeTree'};const metadata={"id":"version-0.1.0-beta.7/api/nodetree","title":"NodeTree","description":"A useful data structure to represent the tree of a React Element as Nodes.","source":"@site/versioned_docs/version-0.1.0-beta.7/api/NodeTree.md","permalink":"/r/docs/api/nodetree","version":"0.1.0-beta.7","sidebar_label":"NodeTree","sidebar":"version-0.1.0-beta.7/docs","previous":{"title":"UserComponent","permalink":"/r/docs/api/user-component"},"next":{"title":"<Editor />","permalink":"/r/docs/api/editor"}};/* @jsx mdx */const rightToc=[{value:'Reference',id:'reference',children:[{value:'Properties',id:'properties',children:[]}]},{value:'Example',id:'example',children:[]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"type",mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`A useful data structure to represent the tree of a React Element as Nodes.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"reference"},`Reference`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"properties"},`Properties`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["rootNodeId","NodeId","The id of the root Node in the tree"],["nodes","Record<NodeId, Node>"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"example"},`Example`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`<div>
-  <h2>Hello</h2>
-  <h2>World</h2>
-</div>
+const frontMatter={id:'overview',title:'Overview'};const metadata={"id":"version-0.1.0-beta.8/overview","title":"Overview","description":"Motivation","source":"@site/versioned_docs/version-0.1.0-beta.8/overview.md","permalink":"/r/docs/overview","version":"0.1.0-beta.8","sidebar":"version-0.1.0-beta.8/docs","next":{"title":"Acknowledgements","permalink":"/r/docs/acknowledgements"}};/* @jsx mdx */const rightToc=[{value:'Motivation',id:'motivation',children:[]},{value:'Features',id:'features',children:[{value:'It&#39;s just React',id:'its-just-react',children:[]},{value:'Control how your components are edited',id:'control-how-your-components-are-edited',children:[]},{value:'User components with droppable regions',id:'user-components-with-droppable-regions',children:[]},{value:'Extensible',id:'extensible',children:[]},{value:'Serializable state',id:'serializable-state',children:[]}]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"motivation"},`Motivation`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Page editors are a great way to provide an excellent user experience. However, to build one is often a pretty dreadful task.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`There're existing libraries that come with a fully working page editor out of the box with a user interface and editable components. However, if you wish to make customisations such as tweaking the user interface, it will most definitely involve modifying the library itself.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Craft.js solves this problem by modularising the building blocks of a page editor. It provides a drag-n-drop system and handles the way user components should be rendered, updated and moved - among other things. With this, you'll be able to focus on building the page editor according to your own specifications and needs.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"features"},`Features`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"its-just-react"},`It's just React`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`No need for complicated plugin systems. Design your editor from top to bottom the same way as you would design any other frontend application in React.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`A simple user component can easily be defined as such:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`import {useNode} from "@craftjs/core";
 
-// The NodeTree of the div is:
-{
-  rootNodeId: "node-a",
-  nodes: {
-    "node-a" : {
-      data: {
-        type: "div",
-        nodes: ["node-b", "node-c"]
+const TextComponent = ({text}) => {
+  const { connectors: {drag} } = useNode();
+
+  return (
+    <div ref={drag}>
+      <h2>{text}</h2>
+    </div>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Heck, the entire UI of your page editor is built using just React.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`import React from "react";
+import {Editor, Frame, Canvas, Selector} from "@craftjs/core";
+const App = () => {
+  return (
+    <div>
+      <header>Some fancy header or whatever</header>
+      <Editor>
+        // Editable area starts here
+        <Frame resolver={TextComponent, Container}> 
+          <Canvas>
+            <TextComponent text="I'm already rendered here" />
+          </Canvas>
+        </Frame>
+      </Editor>
+    </div>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"control-how-your-components-are-edited"},`Control how your components are edited`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`An obvious requirement for page editors is that they need to allow users to edit components. With Craft.js, you control the process of which these components should be edited.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`In the following example, when the user clicks on a component, we'll display a modal that requires the user to input a value for the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`text`),` prop. As the input value changes, the component will be re-rendered with updated prop.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`import {useNode} from "@craftjs/core";
+
+const TextComponent = ({text}) => {
+  const { connectors: { connect, drag }, isClicked, actions: {setProp} } = useNode(
+    (state) => ({
+      isClicked: state.event.selected,
+    })
+  );
+
+  return (
+    <div ref={dom => connect(drag(dom))}>
+      <h2>{text}</h2>
+      {
+        isClicked ? (
+          <Modal>
+            <input
+              type="text"
+              value={text}
+              onChange={e => setProp(e.target.value)}
+            />
+          </Modal>
+        )
       }
-    },
-    "node-b" : {
-      data: {
-        type: "h2",
-        props: { children: "Hello" }
-      }
-    },
-    "node-c" : {
-      data: {
-        type: "h2",
-        props: { children: "World" }
-      }
-    }
-  }
+    </div>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`With this, you could easily implement content editable text or drag-to-resize components, just as any modern page editor would have.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"user-components-with-droppable-regions"},`User components with droppable regions`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Let's say we need a "Container" component which users can drop into the editor. Additionally, we would also like them to be able to drag and drop other components into the Container.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`In Craft.js, it's as simple as calling the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`<Canvas />`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`import {useNode} from "@craftjs/core";
+const Container = () => {
+  const { connectors: {drag} } = useNode();
+
+  return (
+    <div ref={drag}>
+      <Canvas id="drop_section">
+         // Now users will be able to drag/drop components into this section
+        <TextComponent />
+      </Canvas>
+    </div>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"extensible"},`Extensible`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Craft.js provides an expressive API which allows you to easily read and manipulate the editor state. Let's say you would like to implement a copy function for a component:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`import {useEditor, useNode} from "@craftjs/core";
+const Container = () => {
+  const { actions: {add}, query: { createNode, node } } = useEditor();
+  const { id, connectors: {drag, connect} } = useNode();
+  return (
+    <div ref={dom => connect(drag(dom))}>
+      ...
+      <a onClick={() => {
+        const { data: {type, props}} = node(id).get();
+        add(
+          createNode(React.createElement(type, props));
+        );
+      }}>
+        Make a copy of me
+      </a>
+    </div>
+  )
+}
+
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"serializable-state"},`Serializable state`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`The editor's state can be serialized into JSON which you can then apply a compression technique of your choice for storage.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const SaveButton = () => {
+  const { query } = useEditor();
+  return <a onClick={() => console.log(query.serialize()) }>Get JSON</a>
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Of course, Craft.js will also able to recreate the entire state from the JSON string.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const App = () => {
+  const jsonString = /* retrieve JSON from server */
+  return (
+    <Editor>
+      <Frame json={jsonString}>
+        ...
+      </Frame>
+    </Editor>
+  )
 }
 `)));};MDXContent.isMDXComponent=true;
 
@@ -24544,8 +24941,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
 const frontMatter={id:'dev',title:'Craft.js - Build any page editor with React'};const metadata={"id":"dev","title":"Craft.js - Build any page editor with React","description":"You know a web application is fancy when it has a page editor. Without a doubt, a page editor helps boost user experience significantly. If you're a frontend developer and have been tasked to be build one before, then you know precisely the difficulties and challenges of building one.","source":"@site/docs/dev.md","permalink":"/r/docs/next/dev","version":"next"};/* @jsx mdx */const rightToc=[{value:'Introducing Craft.js',id:'introducing-craftjs',children:[{value:'TL;DR',id:'tldr',children:[]}]},{value:'Editable React Components',id:'editable-react-components',children:[]},{value:'Control editing behaviours',id:'control-editing-behaviours',children:[]},{value:'Your page editor, your user interface',id:'your-page-editor-your-user-interface',children:[{value:'Interacting with the editor',id:'interacting-with-the-editor',children:[]}]},{value:'Closing words',id:'closing-words',children:[]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`You know a web application is fancy when it has a page editor. Without a doubt, a page editor helps boost user experience significantly. If you're a frontend developer and have been tasked to be build one before, then you know precisely the difficulties and challenges of building one.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Existing libraries such as Grape.js or react-page are great for a working out-of-the-box page editor solution. However, as soon as you need to customise the look and feel of the page editor itself, you will find yourself hacking in the library's code.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"introducing-craftjs"},`Introducing Craft.js`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Craft.js is a React framework to build any type of page editor. Instead of providing a working page editor implementation with a user interface, Craft.js provides an abstraction for you to implement your own page editor upon. It comes backed-in with an extensible drag-n-drop system which handles the way React elements should be rendered/updated, and a cohesive API to interact with the editor which you can additionally implement your own features on top of.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"tldr"},`TL;DR`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("ul",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`Design your own user interface for your page editor`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`Write React components that end-user could edit`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`Govern drag-and-drop conditions for your components`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`Control how your components should be edited. From simple text fields to content editables and drag to resize; if you can do it in React, then you can do it with Craft.js.`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"editable-react-components"},`Editable React Components`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Let's start with a simple Card component like this:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const Card = ({title}) => {
@@ -24719,8 +25116,60 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
+/* harmony import */ var _site_src_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
+const frontMatter={id:'user-component',title:'UserComponent',sidebar_label:'UserComponent'};const metadata={"id":"version-0.1.0-beta.8/api/user-component","title":"UserComponent","description":"A wrapper of React.ComponentType. Accepts a static craft property for configuring the User Component.","source":"@site/versioned_docs/version-0.1.0-beta.8/api/UserComponent.md","permalink":"/r/docs/api/user-component","version":"0.1.0-beta.8","sidebar_label":"UserComponent","sidebar":"version-0.1.0-beta.8/docs","previous":{"title":"Node","permalink":"/r/docs/api/node"},"next":{"title":"NodeTree","permalink":"/r/docs/api/nodetree"}};/* @jsx mdx */const rightToc=[{value:'Reference',id:'reference',children:[{value:'Properties',id:'properties',children:[]}]},{value:'Example',id:'example',children:[]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"type",mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`A wrapper of `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`React.ComponentType<Props>`),`. Accepts a static `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`craft`),` property for configuring the User Component.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"reference"},`Reference`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"properties"},`Properties`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["","React.ComponentType<T> &",[["craft","Object",[["displayName","String","A user-friendly name for the User Component. The value here will be used to set the node.data.displayName property."],["props","T","Specify default values for the props T"],["custom","Record<string, any>","Specify default custom values for the User Component"],["related","Record<string, React.ElementType>","A map of React Components to share the same Node context. This components will be able access the useNode hook"],["rules?",[["canDrag","(currentNode: Node, helpers: NodeHelpers) => boolean","Specifies if the component can be dragged. Applicable only to components whose corresponding Node is a direct child of a Canvas"],["canDrop","(targetNode: Node, currentNode, helpers: NodeHelpers) => boolean","Specifies if the current Node that is being dragged can be dropped in its target. Applicable only if the current Node is a direct child of a Canvas Node"],["canMoveIn","(incomingNode: Node, currentNode: Node, helpers: NodeHelpers) => boolean","Specifies if an incoming Node can be dropped into the current component. Applicable only to components whose corresponding Node is a Canvas"],["canMoveOut","(outgoingNode: Node, currentNode: Node, helpers: NodeHelpers) => boolean","Specifies if a child Node can be dragged out of the current component. Applicable only to components whose corresponding Node is a Canvas"]]]]]]]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"example"},`Example`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`type TextProps = {
+  color: string;
+  text: string;
+};
+
+const TextComponent: UserComponent<TextProps> = ({color, text}) => {
+  return (
+    <h2 style={{color}}>{text}</h2>
+  )
+}
+
+const TextSettings = () => {
+  const {props, setProp} = useNode();
+  return (
+    <div>
+      Text: <input type="text" value={props.text} onChange={e => setProp(props => props.text = e.target.value) }/>
+      Color: <input type="text" value={props.color} onChange={e => setProp(props => props.color = e.target.value) }/>
+    </div>
+  )
+}
+TextComponent.craft = {
+  displayName: "My Text Component",
+  props: {
+    color: "#000",
+    text: "Hi"
+  },
+  rules: {
+    canDrag: (self: Node, helper) => true,
+    canMoveIn: (incoming: Node, self: Node, helper) => true,
+    canMoveOut: (outgoing: Node, self: Node, helper) => true
+  },
+  related: {
+    settings: TextSettings
+  }
+}
+`)));};MDXContent.isMDXComponent=true;
+
+/***/ }),
+/* 200 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "frontMatter", function() { return frontMatter; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
+/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
 /* harmony import */ var _site_src_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
@@ -24763,122 +25212,6 @@ const App = () => {
 `)));};MDXContent.isMDXComponent=true;
 
 /***/ }),
-/* 200 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "frontMatter", function() { return frontMatter; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
-const frontMatter={id:'overview',title:'Overview'};const metadata={"id":"version-0.1.0-beta.7/overview","title":"Overview","description":"Motivation","source":"@site/versioned_docs/version-0.1.0-beta.7/overview.md","permalink":"/r/docs/overview","version":"0.1.0-beta.7","sidebar":"version-0.1.0-beta.7/docs","next":{"title":"Acknowledgements","permalink":"/r/docs/acknowledgements"}};/* @jsx mdx */const rightToc=[{value:'Motivation',id:'motivation',children:[]},{value:'Features',id:'features',children:[{value:'It&#39;s just React',id:'its-just-react',children:[]},{value:'Control how your components are edited',id:'control-how-your-components-are-edited',children:[]},{value:'User components with droppable regions',id:'user-components-with-droppable-regions',children:[]},{value:'Extensible',id:'extensible',children:[]},{value:'Serializable state',id:'serializable-state',children:[]}]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"motivation"},`Motivation`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Page editors are a great way to provide an excellent user experience. However, to build one is often a pretty dreadful task.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`There're existing libraries that come with a fully working page editor out of the box with a user interface and editable components. However, if you wish to make customisations such as tweaking the user interface, it will most definitely involve modifying the library itself.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Craft.js solves this problem by modularising the building blocks of a page editor. It provides a drag-n-drop system and handles the way user components should be rendered, updated and moved - among other things. With this, you'll be able to focus on building the page editor according to your own specifications and needs.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"features"},`Features`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"its-just-react"},`It's just React`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`No need for complicated plugin systems. Design your editor from top to bottom the same way as you would design any other frontend application in React.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`A simple user component can easily be defined as such:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`import {useNode} from "@craftjs/core";
-
-const TextComponent = ({text}) => {
-  const { connectors:{drag} } = useNode();
-
-  return (
-    <div ref={drag}>
-      <h2>{text}</h2>
-    </div>
-  )
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Heck, the entire UI of your page editor is built using just React.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`import React from "react";
-import {Editor, Frame, Canvas, Selector} from "@craftjs/core";
-const App = () => {
-  return (
-    <div>
-      <header>Some fancy header or whatever</header>
-      <Editor>
-        // Editable area starts here
-        <Frame resolver={TextComponent, Container}> 
-          <Canvas>
-            <TextComponent text="I'm already rendered here" />
-          </Canvas>
-        </Frame>
-      </Editor>
-    </div>
-  )
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"control-how-your-components-are-edited"},`Control how your components are edited`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`An obvious requirement for page editors is that they need to allow users to edit components. With Craft.js, you control the process of which these components should be edited.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`In the following example, when the user clicks on a component, we'll display a modal that requires the user to input a value for the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`text`),` prop. As the input value changes, the component will be re-rendered with updated prop.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`import {useNode} from "@craftjs/core";
-
-const TextComponent = ({text}) => {
-  const { connectors:{ connect, drag }, isClicked, actions: {setProp} } = useNode(
-    (state) => ({
-      isClicked: state.event.selected,
-    })
-  );
-
-  return (
-    <div ref={dom => connect(drag(dom))}>
-      <h2>{text}</h2>
-      {
-        isClicked ? (
-          <Modal>
-            <input
-              type="text"
-              value={text}
-              onChange={e => setProp(e.target.value)}
-            />
-          </Modal>
-        )
-      }
-    </div>
-  )
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`With this, you could easily implement content editable text or drag-to-resize components, just as any modern page editor would have.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"user-components-with-droppable-regions"},`User components with droppable regions`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Let's say we need a "Container" component which users can drop into the editor. Additionally, we would also like them to be able to drag and drop other components into the Container.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`In Craft.js, it's as simple as calling the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`<Canvas />`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`import {useNode} from "@craftjs/core";
-const Container = () => {
-  const { connectors: {drag} } = useNode();
-
-  return (
-    <div ref={drag}>
-      <Canvas id="drop_section">
-         // Now users will be able to drag/drop components into this section
-        <TextComponent />
-      </Canvas>
-    </div>
-  )
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"extensible"},`Extensible`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Craft.js provides an expressive API which allows you to easily read and manipulate the editor state. Let's say you would like to implement a copy function for a component:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`import {useEditor, useNode} from "@craftjs/core";
-const Container = () => {
-  const { actions: {add}, query: { createNode, node } } = useEditor();
-  const { id, connectors: {drag, connect}} = useNode();
-  return (
-    <div ref={dom => connect(drag(dom))}>
-      ...
-      <a onClick={() => {
-        const { data: {type, props}} = node(id).get();
-        add(
-          createNode(React.createElement(type, props));
-        );
-      }}>
-        Make a copy of me
-      </a>
-    </div>
-  )
-}
-
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"serializable-state"},`Serializable state`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`The editor's state can be serialized into JSON which you can then apply a compression technique of your choice for storage.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const SaveButton = () => {
-  const { query } = useEditor();
-  return <a onClick={() => console.log(query.serialize()) }>Get JSON</a>
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Of course, Craft.js will also able to recreate the entire state from the JSON string.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const App = () => {
-  const jsonString = /* retrieve JSON from server */
-  return (
-    <Editor>
-      <Frame json={jsonString}>
-        ...
-      </Frame>
-    </Editor>
-  )
-}
-`)));};MDXContent.isMDXComponent=true;
-
-/***/ }),
 /* 201 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -24888,8 +25221,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
 /* harmony import */ var _site_src_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
@@ -24934,8 +25267,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
 const frontMatter={id:'nodes',title:'Nodes'};const metadata={"id":"version-0.1.0-beta.6/concepts/nodes","title":"Nodes","description":"User Elements","source":"@site/versioned_docs/version-0.1.0-beta.6/concepts/nodes.md","permalink":"/r/docs/0.1.0-beta.6/concepts/nodes","version":"0.1.0-beta.6","sidebar":"version-0.1.0-beta.6/docs","previous":{"title":"Acknowledgements","permalink":"/r/docs/0.1.0-beta.6/acknowledgements"},"next":{"title":"User Components","permalink":"/r/docs/0.1.0-beta.6/concepts/user-components"}};/* @jsx mdx */const rightToc=[{value:'User Elements',id:'user-elements',children:[]},{value:'Node',id:'node',children:[]},{value:'Canvas',id:'canvas',children:[]},{value:'How Nodes are created',id:'how-nodes-are-created',children:[]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"user-elements"},`User Elements`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`User Elements are React Elements which the end user will have the ability to manipulate. In other words, these are the elements which you will want your users to edit, drag and/or drop in your editor.  `),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Just like React Elements, these can be either simple HTML tags or React Components. We'll refer to User Elements which are React Components simply as `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("em",{parentName:"p"},`User Components`),`.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"node"},`Node`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Craft.js maintains an internal state comprised of objects called Nodes which represent and manage User Elements that are rendered in the editor. These Nodes contain information such as the element type, current props, DOM element, parent Node and so on. Hence, every User Element is rendered and managed by their corresponding Node.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"canvas"},`Canvas`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`A Canvas is a special type of Node which is able to store child Nodes. The child Node's User Element will be made draggable.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Essentially, if a User Element is managed by a Canvas node, that would effectively turn that component into a droppable region where users can drag and drop components into and out of.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`In a nutshell:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("ul",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`A Canvas node defines a droppable region`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`A Node that is a child of a Canvas is draggable`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`A Canvas node itself is not draggable unless it is a child Node of parent Canvas. `)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"how-nodes-are-created"},`How Nodes are created`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`We know what Nodes are and that every User Component must be represented by a `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Node`),`, but how do we actually represent our React elements as Nodes? `),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`<Canvas />`),` is a React component provided by Craft.js which automatically creates a Canvas node and a Node for each of its immediate child. `),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Let's say we want to create a droppable region, `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`div`),` with its immediate children being made draggable:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`<Canvas is="div"> // A Canvas node with the type div;
@@ -24970,38 +25303,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
-const frontMatter={id:'nodes',title:'Nodes'};const metadata={"id":"version-0.1.0-beta.7/concepts/nodes","title":"Nodes","description":"User Elements","source":"@site/versioned_docs/version-0.1.0-beta.7/concepts/nodes.md","permalink":"/r/docs/concepts/nodes","version":"0.1.0-beta.7","sidebar":"version-0.1.0-beta.7/docs","previous":{"title":"Acknowledgements","permalink":"/r/docs/acknowledgements"},"next":{"title":"User Components","permalink":"/r/docs/concepts/user-components"}};/* @jsx mdx */const rightToc=[{value:'User Elements',id:'user-elements',children:[]},{value:'Node',id:'node',children:[]},{value:'Canvas Node',id:'canvas-node',children:[]},{value:'Representing User Elements as Nodes',id:'representing-user-elements-as-nodes',children:[]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"user-elements"},`User Elements`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`User Elements are React Elements which the end user will have the ability to manipulate. In other words, these are the elements which you will want your users to edit, drag and/or drop in your editor.  `),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Just like React Elements, these can be either simple HTML tags or React Components. We'll refer to User Elements which are React Components simply as `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("em",{parentName:"p"},`User Components`),`.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"node"},`Node`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Craft.js maintains an internal state comprised of objects called Nodes which represent and manage User Elements that are rendered in the editor. These Nodes contain information such as the element type, current props, DOM element, parent Node and so on. Hence, every User Element is rendered and managed by their corresponding Node.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"canvas-node"},`Canvas Node`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`A Canvas is a special type of Node which enables it's corresponding user element to be a droppable region, where its child Node's user element will be made draggable.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`In a nutshell:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("ul",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`A Canvas node defines a droppable region`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`A Node that is a child of a Canvas is draggable`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`A Canvas node itself is not draggable unless it is a child Node of another Canvas. `)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"representing-user-elements-as-nodes"},`Representing User Elements as Nodes`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Let's take a look at how User Elements are actually represented as Nodes:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`<div style={{ background: "#333" }}> // A Node with the type div;
-  <h1>Hi</h1> // Node of the type h1; not draggable
-  <MyComp>Hey</MyComp> //  Node of the type MyComp; not draggable
-  <MyContainerComponent> // A Node with the type MyContainerComponent; not draggable
-    <h2>Second level</h2> // A Node with the type h2; not draggable! 
-  </MyContainerComponent>
-</div>
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`In the above example, a Node is created for each React element. The top-level `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`div`),` has 3 child nodes and the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`MyContainerComponent`),` Node has a `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`h2`),` child Node.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`By default, a non-Canvas Node is created. So, how do we actually create a Canvas node? For example, how do we make the top-level `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`div`),` into a Canvas Node so we could drag/drop it's children around? This is where the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`<Element />`),` component becomes handy in manually defining Nodes.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx","metastring":"{1}","{1}":true}),`<Element is="div" style={{ background: "#333" }} canvas> // A Canvas Node with the type div;
-  <h1>Hi</h1> // Node of the type h1; draggable
-  <MyComp>Hey</MyComp> //  Node of the type MyComp; draggable
-  <MyContainerComponent> // A Node with the type MyContainerComponent; draggable
-    <h2>Second level</h2> // A Node with the type h2; not draggable! 
-  </MyContainerComponent>
-</Element>
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("blockquote",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"blockquote"},`The `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`is`),` prop specifies the type of User Element to create; it can be either a HTML tag or a User Component`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`In the above example, using the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`<Element />`),` component with the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`canvas`),` prop, we've created a Canvas node of the type `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`div`),`. Since our `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`div`),` element is now handled by a Canvas node, therefore it is now a droppable region. On the other hand, since `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`h1`),`, `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`MyComp`),` and `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`MyContainerComp`),` are child Nodes of a Canvas, they are now draggable. `),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`The `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`<Element />`),` component can also be used to configure other values of a Node, which is further detailed `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"p"},{"href":"../api/Element"}),`here`)));};MDXContent.isMDXComponent=true;
-
-/***/ }),
-/* 204 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "frontMatter", function() { return frontMatter; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
 const frontMatter={id:'serializing',title:'Serializing'};const metadata={"id":"version-0.1.0-beta.6/concepts/serializing","title":"Serializing","description":"Serializing","source":"@site/versioned_docs/version-0.1.0-beta.6/concepts/serializing.md","permalink":"/r/docs/0.1.0-beta.6/concepts/serializing","version":"0.1.0-beta.6"};/* @jsx mdx */const rightToc=[{value:'Serializing',id:'serializing',children:[]},{value:'Resolvers',id:'resolvers',children:[]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"serializing"},`Serializing`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`We can serialize the editor's current state of Nodes into JSON by calling the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`serialize`),` method provided by the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`useEditor`),` hook`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const Toolbar = () => {
@@ -25041,15 +25344,45 @@ const App = () => {
 `)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Notice how the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`resolvedName`),` is `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`MyText`),` rather than the name of the component, `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Text`),`. This is because in our `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`resolver`),`, we mapped `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`MyText`),` to our Text component. Now, when we deserialize - Craft.js is easily able to find `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`MyText`),` in our resolver, and knows the component it refers to.`));};MDXContent.isMDXComponent=true;
 
 /***/ }),
+/* 204 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _theme_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(25);
+function Support(){return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_theme_Layout__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"],{title:"Support"},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div",{className:"padding-vert--lg"},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div",{className:"container"},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div",{className:"row"},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div",{className:"col"},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("article",null,/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header",null,/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1",{style:{fontSize:'3rem',marginBottom:'3rem'}},"Support")),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p",null,"Development for Craft.js began in April 2019 as a personal project of mine. It was months after months of experimenting and trial-and-error until it was able to become a viable solution. The repository was made public and the first public beta release was made in January 2020! Since then, the project has gained traction and contributions from people all over the world."),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p",null,"Craft.js is released under the",' ',/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a",{target:"_blank",href:"https://github.com/prevwong/craft.js/blob/master/LICENSE"},"MIT license"),' ',"and is built with 100% love. If you found it useful and would like to ensure its continued development, please consider becoming a backer/sponsor or making a one-time donation via",' ',/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a",{href:"https://opencollective.com/craftjs/contribute",target:"_blank"},"Open Collective"),' ',"or",' ',/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a",{href:"https://paypal.me/prevwong",target:"_blank"},"Paypal"),"."),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a",{href:"https://opencollective.com/craftjs/contribute",target:"_blank"},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img",{src:"https://opencollective.com/craftjs/donate/button@2x.png?color=blue",width:260})))),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div",{className:"col col--3"})))));}/* harmony default export */ __webpack_exports__["default"] = (Support);
+
+/***/ }),
 /* 205 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _theme_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(25);
-function Support(){return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_theme_Layout__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"],{title:"Support"},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div",{className:"padding-vert--lg"},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div",{className:"container"},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div",{className:"row"},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div",{className:"col"},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("article",null,/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header",null,/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1",{style:{fontSize:"3rem",marginBottom:"3rem"}},"Support")),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p",null,"Development for Craft.js began in April 2019 as a personal project of mine. It was months after months of experimenting and trial-and-error until it was able to become a viable solution. The repository was made public and the first public beta release was made in January 2020! Since then, the project has gained traction and contributions from people all over the world."),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p",null,"Craft.js is released under the"," ",/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a",{target:"_blank",href:"https://github.com/prevwong/craft.js/blob/master/LICENSE"},"MIT license")," ","and is built with 100% love. If you found it useful and would like to ensure its continued development, please consider becoming a backer/sponsor or making a one-time donation via"," ",/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a",{href:"https://opencollective.com/craftjs/contribute",target:"_blank"},"Open Collective")," ","or"," ",/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a",{href:"https://paypal.me/prevwong",target:"_blank"},"Paypal"),"."),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a",{href:"https://opencollective.com/craftjs/contribute",target:"_blank"},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img",{src:"https://opencollective.com/craftjs/donate/button@2x.png?color=blue",width:260})))),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div",{className:"col col--3"})))));}/* harmony default export */ __webpack_exports__["default"] = (Support);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "frontMatter", function() { return frontMatter; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
+/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
+const frontMatter={id:'nodes',title:'Nodes'};const metadata={"id":"version-0.1.0-beta.8/concepts/nodes","title":"Nodes","description":"User Elements","source":"@site/versioned_docs/version-0.1.0-beta.8/concepts/nodes.md","permalink":"/r/docs/concepts/nodes","version":"0.1.0-beta.8","sidebar":"version-0.1.0-beta.8/docs","previous":{"title":"Acknowledgements","permalink":"/r/docs/acknowledgements"},"next":{"title":"User Components","permalink":"/r/docs/concepts/user-components"}};/* @jsx mdx */const rightToc=[{value:'User Elements',id:'user-elements',children:[]},{value:'Node',id:'node',children:[]},{value:'Canvas Node',id:'canvas-node',children:[]},{value:'Representing User Elements as Nodes',id:'representing-user-elements-as-nodes',children:[]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"user-elements"},`User Elements`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`User Elements are React Elements which the end user will have the ability to manipulate. In other words, these are the elements which you will want your users to edit, drag and/or drop in your editor.  `),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Just like React Elements, these can be either simple HTML tags or React Components. We'll refer to User Elements which are React Components simply as `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("em",{parentName:"p"},`User Components`),`.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"node"},`Node`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Craft.js maintains an internal state comprised of objects called Nodes which represent and manage User Elements that are rendered in the editor. These Nodes contain information such as the element type, current props, DOM element, parent Node and so on. Hence, every User Element is rendered and managed by their corresponding Node.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"canvas-node"},`Canvas Node`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`A Canvas is a special type of Node which enables it's corresponding user element to be a droppable region, where its child Node's user element will be made draggable.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`In a nutshell:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("ul",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`A Canvas node defines a droppable region`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`A Node that is a child of a Canvas is draggable`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`A Canvas node itself is not draggable unless it is a child Node of another Canvas. `)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"representing-user-elements-as-nodes"},`Representing User Elements as Nodes`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Let's take a look at how User Elements are actually represented as Nodes:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`<div style={{ background: "#333" }}> // A Node with the type div;
+  <h1>Hi</h1> // Node of the type h1; not draggable
+  <MyComp>Hey</MyComp> //  Node of the type MyComp; not draggable
+  <MyContainerComponent> // A Node with the type MyContainerComponent; not draggable
+    <h2>Second level</h2> // A Node with the type h2; not draggable! 
+  </MyContainerComponent>
+</div>
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`In the above example, a Node is created for each React element. The top-level `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`div`),` has 3 child nodes and the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`MyContainerComponent`),` Node has a `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`h2`),` child Node.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`By default, a non-Canvas Node is created. So, how do we actually create a Canvas node? For example, how do we make the top-level `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`div`),` into a Canvas Node so we could drag/drop it's children around? This is where the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`<Element />`),` component becomes handy in manually defining Nodes.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx","metastring":"{1}","{1}":true}),`<Element is="div" style={{ background: "#333" }} canvas> // A Canvas Node with the type div;
+  <h1>Hi</h1> // Node of the type h1; draggable
+  <MyComp>Hey</MyComp> //  Node of the type MyComp; draggable
+  <MyContainerComponent> // A Node with the type MyContainerComponent; draggable
+    <h2>Second level</h2> // A Node with the type h2; not draggable! 
+  </MyContainerComponent>
+</Element>
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("blockquote",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"blockquote"},`The `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`is`),` prop specifies the type of User Element to create; it can be either a HTML tag or a User Component`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`In the above example, using the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`<Element />`),` component with the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`canvas`),` prop, we've created a Canvas node of the type `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`div`),`. Since our `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`div`),` element is now handled by a Canvas node, therefore it is now a droppable region. On the other hand, since `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`h1`),`, `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`MyComp`),` and `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`MyContainerComp`),` are child Nodes of a Canvas, they are now draggable. `),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`The `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`<Element />`),` component can also be used to configure other values of a Node, which is further detailed `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"p"},{"href":"../api/Element"}),`here`)));};MDXContent.isMDXComponent=true;
 
 /***/ }),
 /* 206 */
@@ -25061,8 +25394,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
 /* harmony import */ var _site_src_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
@@ -25138,8 +25471,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
 /* harmony import */ var _site_src_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
@@ -25200,12 +25533,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
 /* harmony import */ var _site_src_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
-const frontMatter={id:'node',title:'Node',sidebar_label:'Node'};const metadata={"id":"version-0.1.0-beta.7/api/node","title":"Node","description":"Reference","source":"@site/versioned_docs/version-0.1.0-beta.7/api/Node.md","permalink":"/r/docs/api/node","version":"0.1.0-beta.7","sidebar_label":"Node","sidebar":"version-0.1.0-beta.7/docs","previous":{"title":"EditorState","permalink":"/r/docs/api/editor-state"},"next":{"title":"UserComponent","permalink":"/r/docs/api/user-component"}};/* @jsx mdx */const rightToc=[{value:'Reference',id:'reference',children:[{value:'Properties',id:'properties',children:[]}]},{value:'Examples',id:'examples',children:[{value:'Basics',id:'basics',children:[]},{value:'Child Nodes',id:'child-nodes',children:[]},{value:'Linked nodes',id:'linked-nodes',children:[]},{value:'Nodes with Custom properties',id:'nodes-with-custom-properties',children:[]}]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"type",mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"reference"},`Reference`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"properties"},`Properties`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["id","NodeId","A randomly generated unique id"],["data","Object",[["props","Record<String, any>","The current props for the user element"],["type","React.ElementType","The type of User Element"],["name","String","Name of the User Element"],["displayName","String","By default, it will be set to the same value as 'name'. But User Components have the ability to opt for a more user-friendly name by setting the craft.name property"],["isCanvas","boolean","True if the current Node is a Canvas Node"],["parent","NodeId","The parent Node's id"],["index","number","Position of current Node in its parent"],["nodes","NodeId[]","The id of the child Nodes"],["hidden","boolean"],["custom","Record<String, any>","Custom properties stored in the Node"],["linkedNodes","Record<String, NodeId>","A map of Nodes defined inside the User Component. Only applicable if the current Node's User Element is a Component which contains &lt;Element /&gt; inside its render"]]],["events","Object",[["selected","boolean","Is true if the user element is clicked"],["hovered","boolean","Is true if the user element is being hovered"],["dragged","boolean","Is true if the user element is being dragged"]]],["dom","HTMLElement","The DOM of the current Node's User Element. For User Components, this is defined by the `connect` connector"],["related","Record<String, React.ElementType>","A map of React Components that shares the current Node context"],["rules","Object",[["canDrag","(currentNode: Node) => boolean","Specifies if the current Node can be dragged. Applicable only if the current Node is a direct child of a Canvas Node"],["canMoveIn","(incomingNode: Node, currentNode: Node) => boolean","Specifies if an incoming Node can be dropped in the current Node. Applicable only if the current Node is a Canvas Node"],["canMoveOut","(outgoingNode: Node, currentNode: Node) => boolean","Specifies if a child Node can be dragged out of the current Node. Applicable only if the current Node is a Canvas Node"]]]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"examples"},`Examples`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"basics"},`Basics`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"simple-elements"},`Simple elements`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`// Example
+const frontMatter={id:'node',title:'Node',sidebar_label:'Node'};const metadata={"id":"api/node","title":"Node","description":"Reference","source":"@site/docs/api/Node.md","permalink":"/r/docs/next/api/node","version":"next","sidebar_label":"Node","sidebar":"docs","previous":{"title":"EditorState","permalink":"/r/docs/next/api/editor-state"},"next":{"title":"UserComponent","permalink":"/r/docs/next/api/user-component"}};/* @jsx mdx */const rightToc=[{value:'Reference',id:'reference',children:[{value:'Properties',id:'properties',children:[]}]},{value:'Examples',id:'examples',children:[{value:'Basics',id:'basics',children:[]},{value:'Child Nodes',id:'child-nodes',children:[]},{value:'Linked nodes',id:'linked-nodes',children:[]},{value:'Nodes with Custom properties',id:'nodes-with-custom-properties',children:[]}]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"type",mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"reference"},`Reference`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"properties"},`Properties`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["id","NodeId","A randomly generated unique id"],["data","Object",[["props","Record<String, any>","The current props for the user element"],["type","React.ElementType","The type of User Element"],["name","String","Name of the User Element"],["displayName","String","By default, it will be set to the same value as 'name'. But User Components have the ability to opt for a more user-friendly name by setting the craft.name property"],["isCanvas","boolean","True if the current Node is a Canvas Node"],["parent","NodeId","The parent Node's id"],["index","number","Position of current Node in its parent"],["nodes","NodeId[]","The id of the child Nodes"],["hidden","boolean"],["custom","Record<String, any>","Custom properties stored in the Node"],["linkedNodes","Record<String, NodeId>","A map of Nodes defined inside the User Component. Only applicable if the current Node's User Element is a Component which contains &lt;Element /&gt; inside its render"]]],["events","Object",[["selected","boolean","Is true if the user element is clicked"],["hovered","boolean","Is true if the user element is being hovered"],["dragged","boolean","Is true if the user element is being dragged"]]],["dom","HTMLElement","The DOM of the current Node's User Element. For User Components, this is defined by the `connect` connector"],["related","Record<String, React.ElementType>","A map of React Components that shares the current Node context"],["rules","Object",[["canDrag","(currentNode: Node) => boolean","Specifies if the current Node can be dragged. Applicable only if the current Node is a direct child of a Canvas Node"],["canDrop","(targetNode: Node, currentNode: Node) => boolean","Specifies if the current Node that is being dragged can be dropped in its target. Applicable only if the current Node is a direct child of a Canvas Node"],["canMoveIn","(incomingNode: Node, currentNode: Node) => boolean","Specifies if an incoming Node can be dropped in the current Node. Applicable only if the current Node is a Canvas Node"],["canMoveOut","(outgoingNode: Node, currentNode: Node) => boolean","Specifies if a child Node can be dragged out of the current Node. Applicable only if the current Node is a Canvas Node"]]]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"examples"},`Examples`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"basics"},`Basics`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"simple-elements"},`Simple elements`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`// Example
 <div style={{background: "#eee"}}>Hello</h2>
 
 "node-a": {
@@ -25344,12 +25677,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
-const frontMatter={id:'acknowledgements',title:'Acknowledgements'};const metadata={"id":"version-0.1.0-beta.7/acknowledgements","title":"Acknowledgements","description":"A huge thank you to the authors and contributors of the following libraries/frameworks:","source":"@site/versioned_docs/version-0.1.0-beta.7/acknowledgements.md","permalink":"/r/docs/acknowledgements","version":"0.1.0-beta.7","sidebar":"version-0.1.0-beta.7/docs","previous":{"title":"Overview","permalink":"/r/docs/overview"},"next":{"title":"Nodes","permalink":"/r/docs/concepts/nodes"}};/* @jsx mdx */const rightToc=[];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`A huge thank you to the authors and contributors of the following libraries/frameworks:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("ul",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("strong",{parentName:"li"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"strong"},{"href":"https://github.com/react-dnd/react-dnd"}),`react-dnd`)),` The React drag-n-drop library.
-Although it is not actually used here, many aspects of Craft.js are written with react-dnd as a reference along with some utilities and functions being borrowed. `),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("strong",{parentName:"li"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"strong"},{"href":"https://github.com/artf/grapesjs"}),`Grape.js`)),` The HTML web builder framework. This has served as an inspiration for Craft.js. The element positioning logic used in Craft.js is borrowed from Grape.js`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("strong",{parentName:"li"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"strong"},{"href":"https://github.com/pelotom/use-methods"}),`use-methods`)),` A super handy hook when dealing with reducers. Craft.js uses a slightly modified version of `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"li"},`use-methods`),` to better fit our API.`)));};MDXContent.isMDXComponent=true;
+/* harmony import */ var _site_src_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
+const frontMatter={id:'editor-state',title:'EditorState',sidebar_label:'EditorState'};const metadata={"id":"version-0.1.0-beta.8/api/editor-state","title":"EditorState","description":"Reference","source":"@site/versioned_docs/version-0.1.0-beta.8/api/EditorState.md","permalink":"/r/docs/api/editor-state","version":"0.1.0-beta.8","sidebar_label":"EditorState","sidebar":"version-0.1.0-beta.8/docs","previous":{"title":"Save and Load","permalink":"/r/docs/guides/save-load-state"},"next":{"title":"Node","permalink":"/r/docs/api/node"}};/* @jsx mdx */const rightToc=[{value:'Reference',id:'reference',children:[{value:'Properties',id:'properties',children:[]}]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"type",mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"reference"},`Reference`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"properties"},`Properties`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["nodes","Record<NodeId, Node>","A map sof all the Nodes in the editor"],["events","Object",[["selected","NodeId"],["hovered","NodeId"],["dragged","NodeId"]]],["options","Object",[["resolver","Map<String, React.ComponentType>","A map of User Components that will be used in the editor"],["enabled?","boolean","Optional. If set to false, all editing capabilities will be disabled"],["indicator?",'Record<"success" | "error", String>',"Optional. The colour to use for the drop indicator. The colour set in 'success' will be used when the indicator shows a droppable location; otherwise the colour set in 'error' will be used."],["onRender?","React.ComponentType<{element: React.ReactElement}>","Optional. Specify a custom component to render every User Element in the editor."],["onNodesChange?","() => void","Optional. A callback method when the values of any of the nodes in the state changes"]]]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("blockquote",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"blockquote"},`Note: `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`options`),` can be specified as props in the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"p"},{"href":"/r/docs/api/editor"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"a"},`<Editor />`)))));};MDXContent.isMDXComponent=true;
 
 /***/ }),
 /* 210 */
@@ -25357,151 +25690,7 @@ Although it is not actually used here, many aspects of Craft.js are written with
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "frontMatter", function() { return frontMatter; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
-/* harmony import */ var _site_src_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
-const frontMatter={id:'node',title:'Node',sidebar_label:'Node'};const metadata={"id":"api/node","title":"Node","description":"Reference","source":"@site/docs/api/Node.md","permalink":"/r/docs/next/api/node","version":"next","sidebar_label":"Node","sidebar":"docs","previous":{"title":"EditorState","permalink":"/r/docs/next/api/editor-state"},"next":{"title":"UserComponent","permalink":"/r/docs/next/api/user-component"}};/* @jsx mdx */const rightToc=[{value:'Reference',id:'reference',children:[{value:'Properties',id:'properties',children:[]}]},{value:'Examples',id:'examples',children:[{value:'Basics',id:'basics',children:[]},{value:'Child Nodes',id:'child-nodes',children:[]},{value:'Linked nodes',id:'linked-nodes',children:[]},{value:'Nodes with Custom properties',id:'nodes-with-custom-properties',children:[]}]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"type",mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"reference"},`Reference`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"properties"},`Properties`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["id","NodeId","A randomly generated unique id"],["data","Object",[["props","Record<String, any>","The current props for the user element"],["type","React.ElementType","The type of User Element"],["name","String","Name of the User Element"],["displayName","String","By default, it will be set to the same value as 'name'. But User Components have the ability to opt for a more user-friendly name by setting the craft.name property"],["isCanvas","boolean","True if the current Node is a Canvas Node"],["parent","NodeId","The parent Node's id"],["index","number","Position of current Node in its parent"],["nodes","NodeId[]","The id of the child Nodes"],["hidden","boolean"],["custom","Record<String, any>","Custom properties stored in the Node"],["linkedNodes","Record<String, NodeId>","A map of Nodes defined inside the User Component. Only applicable if the current Node's User Element is a Component which contains &lt;Element /&gt; inside its render"]]],["events","Object",[["selected","boolean","Is true if the user element is clicked"],["hovered","boolean","Is true if the user element is being hovered"],["dragged","boolean","Is true if the user element is being dragged"]]],["dom","HTMLElement","The DOM of the current Node's User Element. For User Components, this is defined by the `connect` connector"],["related","Record<String, React.ElementType>","A map of React Components that shares the current Node context"],["rules","Object",[["canDrag","(currentNode: Node) => boolean","Specifies if the current Node can be dragged. Applicable only if the current Node is a direct child of a Canvas Node"],["canMoveIn","(incomingNode: Node, currentNode: Node) => boolean","Specifies if an incoming Node can be dropped in the current Node. Applicable only if the current Node is a Canvas Node"],["canMoveOut","(outgoingNode: Node, currentNode: Node) => boolean","Specifies if a child Node can be dragged out of the current Node. Applicable only if the current Node is a Canvas Node"]]]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"examples"},`Examples`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"basics"},`Basics`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"simple-elements"},`Simple elements`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`// Example
-<div style={{background: "#eee"}}>Hello</h2>
-
-"node-a": {
-  id: "node-a",
-  data: {
-    type: "div",
-    props: {
-      style: {{
-        background: "#eee",
-      }}
-      children: "Hello"
-    },
-    name: "div",
-    displayName: "div",
-    isCanvas: false
-  }
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"user-component"},`User Component`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`// Definition
-const Container = () => {}
-Container.craft = {
-  name: "SimpleContainer"
-};
-
-
-// Example
-<Container bg="#fff" />
-
-"node-b": {
-  id: "node-b",
-  data: {
-    type: Container,
-    props: {
-      bg: "#fff"
-    },
-    name: "Container",
-    displayName: "SimpleContainer",
-    isCanvas: false
-  }
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"child-nodes"},`Child Nodes`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Nodes that are referenced in the parent Node's `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`data.nodes`),` property. These nodes are rendered in the parent User Component's `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`children`),` prop`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`// Example
-<Container bg="#fff">
-  // highlight-next-line
-  <h2>Hello</h2>
-</Container>
-
-"node-a": {
-  id: "node-a",
-  data: {
-    ...
-    type: Container,
-    props: {...},
-    // highlight-next-line
-    nodes: ["node-b"]
-  }
-}
-
-"node-b": {
-  id: "node-b",
-  data: {
-    type: "h2,
-    props: {...},
-    // highlight-next-line
-    parent: "node-a"
-  }
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"linked-nodes"},`Linked nodes`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Nodes that are linked to a parent Node via an arbitary `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`id`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`// Definition
-const TextEditable = () => {};
-
-const Container = () => {
-  return (
-    <div>
-      // highlight-next-line
-      <Element id="header" is={TextEditable} text="Header" />
-    </div>
-  )
-}
-
-// Example
-<Container bg="#fff" />
-
-"node-a": {
-  id: "node-a",
-  data: {
-    type: Container,
-    props: {...},
-    // highlight-next-line
-    linkedNodes: {
-      // highlight-next-line
-      "header": "node-b"
-      // highlight-next-line
-    }
-  }
-}
-
-"node-b": {
-  id: "node-b",
-  data: {
-    type: TextEditable,
-    props: {...},
-    // highlight-next-line
-    parent: "node-a"
-  }
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"nodes-with-custom-properties"},`Nodes with Custom properties`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`// Definition
-const Container = () => {...}
-Container.craft = {
-  custom: { // default custom values
-    toSaveInDatabase: false
-  }
-};
-
-// Example
-<Element is={Container} bg="#fff" custom={{ toSaveInDatabase: true}} />
-
-"node-b": {
-  id: "node-b",
-  data: {
-    ...
-    custom: {
-      toSaveInDatabase: true,
-      style: {{
-        display: "flex"
-      }}
-    }
-  }
-}
-`)));};MDXContent.isMDXComponent=true;
-
-/***/ }),
-/* 211 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _docusaurus_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(23);
 /**
@@ -25509,10 +25698,10 @@ __webpack_require__.r(__webpack_exports__);
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- */function Home(){if(typeof window!=="undefined"&&"production"!="development"){window.location.href="https://craft.js.org/";return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p",{style:{padding:"10px",textAlign:"center"}},"Redirecting...");}else{return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_docusaurus_router__WEBPACK_IMPORTED_MODULE_1__[/* Redirect */ "a"],{to:"docs/overview"});}}/* harmony default export */ __webpack_exports__["default"] = (Home);
+ */function Home(){if(typeof window!=='undefined'&&"production"!='development'){window.location.href='https://craft.js.org/';return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p",{style:{padding:'10px',textAlign:'center'}},"Redirecting...");}else{return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_docusaurus_router__WEBPACK_IMPORTED_MODULE_1__[/* Redirect */ "a"],{to:"docs/overview"});}}/* harmony default export */ __webpack_exports__["default"] = (Home);
 
 /***/ }),
-/* 212 */
+/* 211 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -25521,8 +25710,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
 const frontMatter={id:'nodes',title:'Nodes'};const metadata={"id":"concepts/nodes","title":"Nodes","description":"User Elements","source":"@site/docs/concepts/nodes.md","permalink":"/r/docs/next/concepts/nodes","version":"next","sidebar":"docs","previous":{"title":"Acknowledgements","permalink":"/r/docs/next/acknowledgements"},"next":{"title":"User Components","permalink":"/r/docs/next/concepts/user-components"}};/* @jsx mdx */const rightToc=[{value:'User Elements',id:'user-elements',children:[]},{value:'Node',id:'node',children:[]},{value:'Canvas Node',id:'canvas-node',children:[]},{value:'Representing User Elements as Nodes',id:'representing-user-elements-as-nodes',children:[]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"user-elements"},`User Elements`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`User Elements are React Elements which the end user will have the ability to manipulate. In other words, these are the elements which you will want your users to edit, drag and/or drop in your editor.  `),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Just like React Elements, these can be either simple HTML tags or React Components. We'll refer to User Elements which are React Components simply as `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("em",{parentName:"p"},`User Components`),`.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"node"},`Node`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Craft.js maintains an internal state comprised of objects called Nodes which represent and manage User Elements that are rendered in the editor. These Nodes contain information such as the element type, current props, DOM element, parent Node and so on. Hence, every User Element is rendered and managed by their corresponding Node.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"canvas-node"},`Canvas Node`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`A Canvas is a special type of Node which enables it's corresponding user element to be a droppable region, where its child Node's user element will be made draggable.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`In a nutshell:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("ul",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`A Canvas node defines a droppable region`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`A Node that is a child of a Canvas is draggable`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`A Canvas node itself is not draggable unless it is a child Node of another Canvas. `)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"representing-user-elements-as-nodes"},`Representing User Elements as Nodes`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Let's take a look at how User Elements are actually represented as Nodes:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`<div style={{ background: "#333" }}> // A Node with the type div;
@@ -25542,7 +25731,7 @@ const frontMatter={id:'nodes',title:'Nodes'};const metadata={"id":"concepts/node
 `)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("blockquote",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"blockquote"},`The `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`is`),` prop specifies the type of User Element to create; it can be either a HTML tag or a User Component`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`In the above example, using the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`<Element />`),` component with the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`canvas`),` prop, we've created a Canvas node of the type `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`div`),`. Since our `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`div`),` element is now handled by a Canvas node, therefore it is now a droppable region. On the other hand, since `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`h1`),`, `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`MyComp`),` and `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`MyContainerComp`),` are child Nodes of a Canvas, they are now draggable. `),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`The `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`<Element />`),` component can also be used to configure other values of a Node, which is further detailed `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"p"},{"href":"../api/Element"}),`here`)));};MDXContent.isMDXComponent=true;
 
 /***/ }),
-/* 213 */
+/* 212 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -25551,8 +25740,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
 const frontMatter={id:'overview',title:'Overview'};const metadata={"id":"version-0.1.0-beta.6/overview","title":"Overview","description":"Motivation","source":"@site/versioned_docs/version-0.1.0-beta.6/overview.md","permalink":"/r/docs/0.1.0-beta.6/overview","version":"0.1.0-beta.6","sidebar":"version-0.1.0-beta.6/docs","next":{"title":"Acknowledgements","permalink":"/r/docs/0.1.0-beta.6/acknowledgements"}};/* @jsx mdx */const rightToc=[{value:'Motivation',id:'motivation',children:[]},{value:'Features',id:'features',children:[{value:'It&#39;s just React',id:'its-just-react',children:[]},{value:'Control how your components are edited',id:'control-how-your-components-are-edited',children:[]},{value:'User components with droppable regions',id:'user-components-with-droppable-regions',children:[]},{value:'Extensible',id:'extensible',children:[]},{value:'Serializable state',id:'serializable-state',children:[]}]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"motivation"},`Motivation`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Page editors are a great way to provide an excellent user experience. However, to build one is often a pretty dreadful task.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`There're existing libraries that come with a fully working page editor out of the box with a user interface and editable components. However, if you wish to make customisations such as tweaking the user interface, it will most definitely involve modifying the library itself.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Craft.js solves this problem by modularising the building blocks of a page editor. It provides a drag-n-drop system and handles the way user components should be rendered, updated and moved - among other things. With this, you'll be able to focus on building the page editor according to your own specifications and needs.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"features"},`Features`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"its-just-react"},`It's just React`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`No need for complicated plugin systems. Design your editor from top to bottom the same way as you would design any other frontend application in React.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`A simple user component can easily be defined as such:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`import {useNode} from "@craftjs/core";
@@ -25658,7 +25847,7 @@ const Container = () => {
 `)));};MDXContent.isMDXComponent=true;
 
 /***/ }),
-/* 214 */
+/* 213 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -25667,8 +25856,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
 /* harmony import */ var _site_src_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
@@ -26454,6 +26643,68 @@ export const Topbar = () => {
 `)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Image */ "c"],{img:"tutorial/topbar.gif",mdxType:"Image"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("blockquote",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"blockquote"},`We'll explore how to compress the JSON output and have the editor load from the serialised JSON in the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"p"},{"href":"/r/docs/0.1.0-beta.6/guides/save-load-state"}),`Save and Load`),` guide.`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"you-made-it-"},`You made it 🎉`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`We've made it until the end! Not too bad right? Hopefully, you're able to see the simplicity of building a fully working page editor with Craft.js.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`We do not need to worry about implementing the drag-n-drop system but rather simply focus on writing rules and attaching connectors to the desired elements. Defining droppable regions is simply wrapping an area with `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`<Canvas />`),`.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`When it comes to writing the components themselves, it is the same as writing any other React component - you control how the components react to different editor events and how they are edited. `));};MDXContent.isMDXComponent=true;
 
 /***/ }),
+/* 214 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "frontMatter", function() { return frontMatter; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
+/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
+/* harmony import */ var _site_src_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
+const frontMatter={id:'frame',title:'<Frame />',sidebar_label:'<Frame />'};const metadata={"id":"version-0.1.0-beta.8/api/frame","title":"<Frame />","description":"Frame defines the editable area in your page editor. It is rendered based on the editor's internal state (i.e. Nodes).","source":"@site/versioned_docs/version-0.1.0-beta.8/api/Frame.md","permalink":"/r/docs/api/frame","version":"0.1.0-beta.8","sidebar_label":"<Frame />","sidebar":"version-0.1.0-beta.8/docs","previous":{"title":"<Editor />","permalink":"/r/docs/api/editor"},"next":{"title":"<Element />","permalink":"/r/docs/api/element"}};/* @jsx mdx */const rightToc=[{value:'Reference',id:'reference',children:[{value:'Props',id:'props',children:[]}]},{value:'Examples',id:'examples',children:[{value:'With JSX',id:'with-jsx',children:[]},{value:'Loading from serialised Nodes',id:'loading-from-serialised-nodes',children:[]}]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"component",mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Frame defines the editable area in your page editor. It is rendered based on the editor's internal state (i.e. Nodes).`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-tsx"}),`const { connectors, setProp, ...collected } = useNode(collector);
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"reference"},`Reference`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"props"},`Props`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Both props specifies the initial screen to render. You must specify at least one of them (`,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`data`),` takes precendence over `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`children`),`).`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["children?","React.ReactElement","Creates the initial screen using React Elements. The element defined here will be the Root Node"],["data?","SerializedNodes | string","Loads the initial nodes from SerializedNodes (can be supplied in JSON)"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("blockquote",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"blockquote"},`These props are memoized - after the initial render, changes to these props will have no effect. If for example, you wish to load a different set of serialised JSON nodes after the initial render, you may use the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`deserialize`),` method via the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"p"},{"href":"/r/docs/api/useEditor"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"a"},`useEditor`)),` hook.`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"examples"},`Examples`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"with-jsx"},`With JSX`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-tsx","metastring":"{9,10,16,17}","{9,10,16,17}":true}),`import {Editor, Frame, Element} from "@craftjs/core";
+
+const App = () => {
+  return (
+    <div>
+      <h2>My App!</h2>
+      <Editor>
+        <h2>My Page Editor</h2>
+        <Frame> 
+          <Element is={Container} canvas> // defines the Root Node
+            <h2>Drag me around</h2>
+            <MyComp text="You can drag me around too" />
+            <Element is="div" style={{background: "#333" }}>
+              <p>Same here</p>
+            </Element>
+          </Element>
+        </Frame>
+      </Editor>
+    </div>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"loading-from-serialised-nodes"},`Loading from serialised Nodes`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-tsx","metastring":"{10}","{10}":true}),`import {Editor, Frame, Element} from "@craftjs/core";
+
+const App = () => {
+  return (
+    <div>
+      <h2>My App!</h2>
+      <Editor>
+        <h2>My Page Editor</h2>
+        <Frame
+          data='{"ROOT":{"type":"div","isCanvas":true,"props":{},"parent":null,"displayName":"div","custom":{},"nodes":["node-sdiwzXkvQ","node-rGFDi0G6m","node-yNBLMy5Oj"]},"node-sdiwzXkvQ":{"type":{"resolvedName":"Card"},"props":{},"parent":"ROOT","displayName":"Card","custom":{},"_childCanvas":{"main":"canvas-_EEw_eBD_","second":"canvas-lE4Ni9oIn"}}'
+        > 
+          <Element is={Container} canvas> // defines the Root Node
+            <h2>Drag me around</h2>
+            <MyComp text="You can drag me around too" />
+            <Element is="div" style={{background: "#333" }}>
+              <p>Same here</p>
+            </Element>
+          </Element>
+        </Frame>
+      </Editor>
+    </div>
+  )
+}
+`)));};MDXContent.isMDXComponent=true;
+
+/***/ }),
 /* 215 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -26463,58 +26714,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
-const frontMatter={id:'serializing',title:'Serializing'};const metadata={"id":"version-0.1.0-beta.7/concepts/serializing","title":"Serializing","description":"Serializing","source":"@site/versioned_docs/version-0.1.0-beta.7/concepts/serializing.md","permalink":"/r/docs/concepts/serializing","version":"0.1.0-beta.7"};/* @jsx mdx */const rightToc=[{value:'Serializing',id:'serializing',children:[]},{value:'Resolvers',id:'resolvers',children:[]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"serializing"},`Serializing`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`We can serialize the editor's current state of Nodes into JSON by calling the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`serialize`),` method provided by the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`useEditor`),` hook`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const Toolbar = () => {
-  const { query } = useEditor();
-
-  return (
-    <a onClick={() => console.log(query.serialize())}>Serialize</a>
-  )
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"resolvers"},`Resolvers`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Craft.js exports the nodes in its internal state into a serialzable JSON format. For this to be possible, complex objects such as functions cannot be included - which means User Components cannot be serialised. `),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`To overcome this is why when setting up Craft.js with your React application, one of the first things you have to do is to specify a map of user components in the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`resolver`),` prop of the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Manager`),` component.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`import {Text, Hero, Container} from ".../myproject/components";
-
-const App = () => {
-  return (
-    <Manager resolvers={{
-      "MyText" : Text
-    }}>
-      <Frame>
-        <Element is="div">
-          <h1>Hi</h1>
-          <Text text="Hi" />
-        </Element>
-      </Frame>
-    </Manager>
-  )
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Given the above example, when a `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Node`),` that is of the type  `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Text`),` is serialised, it will return something like this:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-json"}),`"node-randomId": {
-  "type": {
-    "resolvedName": "MyText"
-  },
-  "props": {
-    "text" : "Hi World!"
-  },
-  "parent": "ROOT",
-  "displayName": "Card"
-  ...
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Notice how the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`resolvedName`),` is `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`MyText`),` rather than the name of the component, `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Text`),`. This is because in our `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`resolver`),`, we mapped `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`MyText`),` to our Text component. Now, when we deserialize - Craft.js is easily able to find `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`MyText`),` in our resolver, and knows the component it refers to.`));};MDXContent.isMDXComponent=true;
-
-/***/ }),
-/* 216 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "frontMatter", function() { return frontMatter; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
 /* harmony import */ var _site_src_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
@@ -26578,7 +26779,7 @@ const App = () => {
 `)));};MDXContent.isMDXComponent=true;
 
 /***/ }),
-/* 217 */
+/* 216 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -26587,8 +26788,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
 const frontMatter={id:'dev',title:'Craft.js - Build any page editor with React'};const metadata={"id":"version-0.1.0-beta.6/dev","title":"Craft.js - Build any page editor with React","description":"You know a web application is fancy when it has a page editor. Without a doubt, a page editor helps boost user experience significantly. If you're a frontend developer and have been tasked to be build one before, then you know precisely the difficulties and challenges of building one.","source":"@site/versioned_docs/version-0.1.0-beta.6/dev.md","permalink":"/r/docs/0.1.0-beta.6/dev","version":"0.1.0-beta.6"};/* @jsx mdx */const rightToc=[{value:'Introducing Craft.js',id:'introducing-craftjs',children:[{value:'TL;DR',id:'tldr',children:[]}]},{value:'Editable React Components',id:'editable-react-components',children:[]},{value:'Control editing behaviours',id:'control-editing-behaviours',children:[]},{value:'Your page editor, your user interface',id:'your-page-editor-your-user-interface',children:[{value:'Interacting with the editor',id:'interacting-with-the-editor',children:[]}]},{value:'Closing words',id:'closing-words',children:[]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`You know a web application is fancy when it has a page editor. Without a doubt, a page editor helps boost user experience significantly. If you're a frontend developer and have been tasked to be build one before, then you know precisely the difficulties and challenges of building one.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Existing libraries such as Grape.js or react-page are great for a working out-of-the-box page editor solution. However, as soon as you need to customise the look and feel of the page editor itself, you will find yourself hacking in the library's code.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"introducing-craftjs"},`Introducing Craft.js`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Craft.js is a React framework to build any type of page editor. Instead of providing a working page editor implementation with a user interface, Craft.js provides an abstraction for you to implement your own page editor upon. It comes backed-in with an extensible drag-n-drop system which handles the way React elements should be rendered/updated, and a cohesive API to interact with the editor which you can additionally implement your own features on top of.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"tldr"},`TL;DR`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("ul",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`Design your own user interface for your page editor`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`Write React components that end-user could edit`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`Govern drag-and-drop conditions for your components`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`Control how your components should be edited. From simple text fields to content editables and drag to resize; if you can do it in React, then you can do it with Craft.js.`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"editable-react-components"},`Editable React Components`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Let's start with a simple Card component like this:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const Card = ({title}) => {
@@ -26753,6 +26954,59 @@ const Toolbar = () => {
 `)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Let's break this down:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("ul",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`First, we access the editor's state to retrieve the type of the currently selected element`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`Then, when the "Save Checkpoint" button is clicked, we use the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"li"},`serialize`),` query which tells the editor to return its state in a serialised JSON form. We then save the JSON output in our component's state`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`Once we have the JSON, we display the "Load from checkpoint" button. When this button is clicked, we simply call the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"li"},`deserialize`),` editor action which essentially returns the editor to the state stored in the JSON output.`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"closing-words"},`Closing words`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`This has been a high-level overview of Craft.js and we've only covered some very basic examples. We've seen how we could easily control almost every aspect of the page editor experience. Hopefully, this article has given you an idea on the possibilities of what you can do with Craft.js.`));};MDXContent.isMDXComponent=true;
 
 /***/ }),
+/* 217 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "frontMatter", function() { return frontMatter; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
+/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
+/* harmony import */ var _site_src_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
+const frontMatter={id:'layers',title:'Layers'};const metadata={"id":"version-0.1.0-beta.8/additional/layers","title":"Layers","description":"A Photoshop-like layers panel for your page editor.","source":"@site/versioned_docs/version-0.1.0-beta.8/additional/layers.md","permalink":"/r/docs/additional/layers","version":"0.1.0-beta.8","sidebar":"version-0.1.0-beta.8/docs","previous":{"title":"NodeHelpers","permalink":"/r/docs/api/helpers"}};/* @jsx mdx */const rightToc=[{value:'Usage',id:'usage',children:[]},{value:'Types',id:'types',children:[{value:'Layer',id:'layer',children:[]}]},{value:'Reference',id:'reference',children:[{value:'<code>&lt;Layers /&gt;</code>',id:'layers-',children:[]},{value:'<code>useLayer</code>',id:'uselayer',children:[]}]},{value:'Default components',id:'default-components',children:[]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`A Photoshop-like layers panel for your page editor.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Image */ "c"],{img:"layers.gif",mdxType:"Image"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"usage"},`Usage`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-bash"}),`yarn add @craftjs/layers
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`import React from "react";
+import {Editor} from "@craftjs/core"
+import {Layers} from "@craftjs/layers"
+
+export default function App() {
+  return (
+    <div style={{margin: "0 auto", width: "800px"}}>
+      <Typography variant="h5" align="center">A super simple page editor</Typography>
+      <Editor resolver={...}>
+        <Layers />
+      </Editor>
+    </div>
+  );
+} 
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"types"},`Types`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"layer"},`Layer`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"properties"},`Properties`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["id","NodeId","A randomly generated unique id"],["depth","number","A depth of the current Layer"],["expanded","boolean","Returns true if the Layer is expanded"],["events","Object",[["selected","boolean","Is true if the layer is clicked"],["hovered","boolean","Is true if the layer is being hovered"]]],["dom","HTMLElement","The DOM of the current layer including its header and children. This is defined by the `connectLayer` connector"],["headingDom","HTMLElement","The DOM of the current Layer's heading. This is defined by the `connectLayerHeader` connector"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"reference"},`Reference`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"layers-"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"h3"},`<Layers />`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"props"},`Props`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["expandRootOnLoad?","boolean","Optional. If enabled, the Root Node will be expanded by default"],["renderLayer?","React.ReactElement","Optional. Specify the component to render each layer"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"uselayer"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"h3"},`useLayer`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"parameters"},`Parameters`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["collector","(layer: Layer) => Collected","A function that collects relevant state information from the corresponding `Layer`. The component will re-render when the values returned by this function changes."]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"returns"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[[null,"Object",[["connectors","Object",[["drag","(dom: HTMLElement, nodeId: String) => HTMLElement","Specifies the DOM that should be draggable"],["layer","(dom: HTMLElement, nodeId: String) => HTMLElement","Specifies the DOM that represents the entire Layer"],["layerHeading","(dom: HTMLElement, nodeId: String) => HTMLElement","Specifies the DOM that represents the layer's heading"]]],["actions","Object",[["toggleLayer","() => void","Toggle the corresponding Layer's expanded state"]]]]]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"default-components"},`Default components`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`These following components are available for you to extend upon if you wish to design your own component to render the layers (which can be specified in the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`renderLayer`),` prop).`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("ul",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"li"},`<DefaultLayer />`),` `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("ul",{parentName:"li"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"li"},`<DefaultLayerHeader />`),` `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("ul",{parentName:"li"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"li"},`<EditableLayerName>`),` This component enables the end user to edit the layer names. The values are saved into the respective Node's `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"li"},`custom.displayName`),` prop.`)))))),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`
+const Layer = () => {
+  return (
+    <div>
+      <DefaultLayerHeader />
+    </div>
+  )
+}
+
+const App = () => {
+  return (
+    <Editor>
+      <Frame>
+        ...
+      </Frame>
+      <Layers 
+        renderLayer={Layer}
+      />
+    </Editor>
+  )
+}
+`)));};MDXContent.isMDXComponent=true;
+
+/***/ }),
 /* 218 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -26762,8 +27016,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
 const frontMatter={id:'acknowledgements',title:'Acknowledgements'};const metadata={"id":"acknowledgements","title":"Acknowledgements","description":"A huge thank you to the authors and contributors of the following libraries/frameworks:","source":"@site/docs/acknowledgements.md","permalink":"/r/docs/next/acknowledgements","version":"next","sidebar":"docs","previous":{"title":"Overview","permalink":"/r/docs/next/overview"},"next":{"title":"Nodes","permalink":"/r/docs/next/concepts/nodes"}};/* @jsx mdx */const rightToc=[];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`A huge thank you to the authors and contributors of the following libraries/frameworks:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("ul",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("strong",{parentName:"li"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"strong"},{"href":"https://github.com/react-dnd/react-dnd"}),`react-dnd`)),` The React drag-n-drop library.
@@ -26779,8 +27033,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
 /* harmony import */ var _site_src_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
@@ -26796,8 +27050,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
 /* harmony import */ var _site_src_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
@@ -26848,217 +27102,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
-/* harmony import */ var _site_src_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
-const frontMatter={id:'save-load-state',title:'Save and Load'};const metadata={"id":"version-0.1.0-beta.7/guides/save-load-state","title":"Save and Load","description":"This guide extends upon the Basic Tutorial","source":"@site/versioned_docs/version-0.1.0-beta.7/guides/save-load.md","permalink":"/r/docs/guides/save-load-state","version":"0.1.0-beta.7","sidebar":"version-0.1.0-beta.7/docs","previous":{"title":"Basic Tutorial","permalink":"/r/docs/guides/basic-tutorial"},"next":{"title":"EditorState","permalink":"/r/docs/api/editor-state"}};/* @jsx mdx */const rightToc=[{value:'Overview',id:'overview',children:[]},{value:'Copy compressed output',id:'copy-compressed-output',children:[]},{value:'Load state',id:'load-state',children:[{value:'Load JSON on page load',id:'load-json-on-page-load',children:[]}]},{value:'All set! 💖',id:'all-set-',children:[]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`This guide extends upon the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"p"},{"href":"/craft.js/r/docs/basic-tutorial"}),`Basic Tutorial`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"overview"},`Overview`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Previously, we saw how we could serialise the entire state of `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Nodes`),` in our editor into JSON. Of course, you probably will not want to store the JSON in your server or database, for obvious reasons. Instead, you should first employ a text compression technique of your choice to compress the serialised JSON Nodes.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`In this guide, we'll be mainly modifying the previous tutorial's Topbar component. We'll add 2 new features`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("ul",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`Copy the compressed output of the serialised Nodes to the user's clipboard`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`Load the editor state from a compressed output of serialised Nodes.`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`We'll be using 2 external libraries - `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`lzutf8`),` (for compression) and `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`copy-to-clipboard`),` (you know)`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-bash"}),`yarn add lzutf8 copy-to-clipboard
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"copy-compressed-output"},`Copy compressed output`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`We'll use `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`lzutf8`),` to compress our serialised JSON Nodes, and additionally transform it into base64.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx","metastring":"{24-36}","{24-36}":true}),`import React, { useState } from "react";
-import { Box, FormControlLabel, Switch, Grid, Button as MaterialButton, Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions, TextField, Snackbar } from "@material-ui/core";
-import { useEditor } from "@craftjs/core";
-import lz from "lzutf8";
-import copy from 'copy-to-clipboard';
-
-export const Topbar = () => {
-  const { actions, query, enabled } = useEditor((state) => ({
-    enabled: state.options.enabled
-  }));
-
-const [snackbarMessage, setSnackbarMessage] = useState();
-  return (
-    <Box px={1} py={1} mt={3} mb={1} bgcolor="#cbe8e7">
-      <Grid container alignItems="center">
-        <Grid item xs>
-          <FormControlLabel
-            className="enable-disable-toggle"
-            control={<Switch checked={enabled} onChange={(_, value) => actions.setOptions(options => options.enabled = value)} />}
-            label="Enable"
-          />
-        </Grid>
-        <Grid item>
-          <MaterialButton 
-            className="copy-state-btn"
-            size="small" 
-            variant="outlined" 
-            color="secondary"
-            onClick={() => {
-              const json = query.serialize();
-              copy(lz.encodeBase64(lz.compress(json)));
-              setSnackbarMessage("State copied to clipboard")
-            }}
-          >
-              Copy current state
-          </MaterialButton>
-          <Snackbar
-            autoHideDuration={1000}
-            anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
-            open={!!snackbarMessage}
-            onClose={() => setSnackbarMessage(null)}
-            message={<span>{snackbarMessage}</span>}
-          />
-        </Grid>
-      </Grid>
-    </Box>
-  )
-};
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`When you click on the button now, it should copy the compressed base64 string to the clipboard.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"load-state"},`Load state`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Now let's implement the Load State button in our Topbar component. We will display a Dialog box when the button is clicked, and our users would be able to paste the compressed base64 string here. `),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Then, we would need to work in reverse to obtain the original JSON provided by our editor. Finally, we'll call the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`deserialize`),` action which will result in the editor replacing all the current Nodes in the editor with the deserialized output.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx","metastring":"{12-14,40-83}","{12-14,40-83}":true}),`import React, { useState } from "react";
-import { Box, FormControlLabel, Switch, Grid, Button as MaterialButton, Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions, TextField, Snackbar } from "@material-ui/core";
-import { useEditor } from "@craftjs/core";
-import lz from "lzutf8";
-import copy from 'copy-to-clipboard';
-
-export const Topbar = () => {
-  const { actions, query, enabled } = useEditor((state) => ({
-    enabled: state.options.enabled
-  }));
-
-  const [dialogOpen, setDialogOpen] = useState(false);
-  const [snackbarMessage, setSnackbarMessage] = useState();
-  const [stateToLoad, setStateToLoad] = useState(null);
-
-  return (
-    <Box px={1} py={1} mt={3} mb={1} bgcolor="#cbe8e7">
-      <Grid container alignItems="center">
-        <Grid item xs>
-          <FormControlLabel
-            className="enable-disable-toggle"
-            control={<Switch checked={enabled} onChange={(_, value) => actions.setOptions(options => options.enabled = value)} />}
-            label="Enable"
-          />
-        </Grid>
-        <Grid item>
-          <MaterialButton 
-            className="copy-state-btn"
-            size="small" 
-            variant="outlined" 
-            color="secondary"
-            onClick={() => {
-              const json = query.serialize();
-              copy(lz.encodeBase64(lz.compress(json)));
-              setSnackbarMessage("State copied to clipboard")
-            }}
-          >
-              Copy current state
-          </MaterialButton>
-          <MaterialButton 
-            className="load-state-btn"
-            size="small" 
-            variant="outlined" 
-            color="secondary"
-            onClick={() => setDialogOpen(true)}
-          >
-              Load
-          </MaterialButton>
-          <Dialog
-            open={dialogOpen}
-            onClose={() => setDialogOpen(false)}
-            fullWidth
-            maxWidth="md"
-          >
-            <DialogTitle id="alert-dialog-title">Load state</DialogTitle>
-            <DialogContent>
-              <TextField 
-                multiline 
-                fullWidth
-                placeholder='Paste the contents that was copied from the "Copy Current State" button'
-                size="small"
-                value={stateToLoad}
-                onChange={e => setStateToLoad(e.target.value)}
-              />
-            </DialogContent>
-            <DialogActions>
-              <MaterialButton onClick={() => setDialogOpen(false)} color="primary">
-                Cancel
-              </MaterialButton>
-              <MaterialButton 
-                onClick={() => {
-                  setDialogOpen(false);
-                  const json = lz.decompress(lz.decodeBase64(stateToLoad));
-                  actions.deserialize(json);
-                  setSnackbarMessage("State loaded")
-                }} 
-                color="primary" 
-                autoFocus
-              >
-                Load
-              </MaterialButton>
-            </DialogActions>
-          </Dialog>
-          <Snackbar
-            autoHideDuration={1000}
-            anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
-            open={!!snackbarMessage}
-            onClose={() => setSnackbarMessage(null)}
-            message={<span>{snackbarMessage}</span>}
-          />
-        </Grid>
-      </Grid>
-    </Box>
-  )
-};
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"load-json-on-page-load"},`Load JSON on page load`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Of course, what if we wanted our editor to load a serialized output on page load? For this, we will need to take a step back and revisit the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`<Frame />`),` component which we encountered when we first set up Craft.js. `),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`By default, it constructs the editor state based on whats was initially rendered in its `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`children`),`. But, we could also specifiy the serialised JSON nodes to its `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`json`),` prop which would cause it to load the state from the JSON string instead. `),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`import React, {useState, useEffect} from 'react';
-import "../styles/main.css";
-import {Typography, Button as MaterialButton, Paper, Grid, makeStyles} from '@material-ui/core';
-import {Toolbox} from '../components/Toolbox';
-import {Container} from '../components/user/Container';
-import {Button} from '../components/user/Button';
-import {Card, CardBottom, CardTop} from '../components/user/Card';
-import {Text} from '../components/user/Text';
-import {SettingsPanel} from '../components/SettingsPanel';
-import {Editor, Frame, Element} from "@craftjs/core";
-import { Topbar } from '../components/Topbar';
-
-
-export default function App() {
-  const [enabled, setEnabled] = useState(true);
-  const [json, setJson] = useState(null);
-
-  // Load save state from server on page load
-  useEffect(() => {
-    const stateToLoad = await fetch("your api to get the compressed data");
-    const json = lz.decompress(lz.decodeBase64(stateToLoad));
-    setJson(json);
-  }, []);
-
-  return (
-    <div style={{margin: "0 auto", width: "800px"}}>
-      <Typography style={{margin: "20px 0"}} variant="h5" align="center">Basic Page Editor</Typography>
-        <Editor
-          resolver={{Card, Button, Text, Container, CardTop, CardBottom}}
-          enabled={enabled}
-        > 
-          <Topbar />
-          <Grid container spacing={5} style={{paddingTop: "10px"}}>
-            <Grid item xs>
-              <Frame json={json}>
-                <Element is={Container} padding={5} background="#eeeeee">
-                  ...
-                </Element>
-              </Frame>
-            </Grid>
-            <Grid item xs={4}>
-              ...
-            </Grid>
-          </Grid>
-        </Editor>
-    </div>
-  );
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"all-set-"},`All set! 💖`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Now, play with the editor and press the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Copy Current State`),` button when you are done. Refresh the page so the editor returns to its default state, then press the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Load State`),` button and paste the copied output - you should see the editor displaying the elements in the state from the time you copied.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Image */ "c"],{img:"tutorial/save-and-load.gif",mdxType:"Image"}));};MDXContent.isMDXComponent=true;
-
-/***/ }),
-/* 222 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "frontMatter", function() { return frontMatter; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
 /* harmony import */ var _site_src_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
@@ -27255,6 +27300,22 @@ export const Sidebar = connectEditor((state) => ({
 `)));};MDXContent.isMDXComponent=true;
 
 /***/ }),
+/* 222 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "frontMatter", function() { return frontMatter; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
+/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
+const frontMatter={id:'support',title:'Support'};const metadata={"id":"version-0.1.0-beta.6/support","title":"Support","description":"Development for Craft.js began in April 2019 as a personal project of mine. It was months after months of experimenting and trial-and-error until it was able to become a viable solution. The repository was made public and the first public beta release was made in January 2020! Since then, the project has gained traction and contributions from people all over the world.","source":"@site/versioned_docs/version-0.1.0-beta.6/support.md","permalink":"/r/docs/0.1.0-beta.6/support","version":"0.1.0-beta.6"};/* @jsx mdx */const rightToc=[];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Development for Craft.js began in April 2019 as a personal project of mine. It was months after months of experimenting and trial-and-error until it was able to become a viable solution. The repository was made public and the first public beta release was made in January 2020! Since then, the project has gained traction and contributions from people all over the world.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Craft.js is released under the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"p"},{"href":"https://github.com/prevwong/craft.js/blob/master/LICENSE"}),`MIT license`),` and is built with 100% love. If you found it useful and would like to ensure its continued development, please consider becoming a backer/sponsor or making a one-time donation via `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",{href:"https://opencollective.com/craftjs/contribute",target:"_blank"},`Open Collective`),` or `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",{href:"https://paypal.me/prevwong",target:"_blank"},`Paypal`),`. `),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",{href:"https://opencollective.com/craftjs/contribute",target:"_blank"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("img",{src:"https://opencollective.com/craftjs/donate/button@2x.png?color=blue",width:260})));};MDXContent.isMDXComponent=true;
+
+/***/ }),
 /* 223 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -27264,14 +27325,299 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
-const frontMatter={id:'support',title:'Support'};const metadata={"id":"version-0.1.0-beta.6/support","title":"Support","description":"Development for Craft.js began in April 2019 as a personal project of mine. It was months after months of experimenting and trial-and-error until it was able to become a viable solution. The repository was made public and the first public beta release was made in January 2020! Since then, the project has gained traction and contributions from people all over the world.","source":"@site/versioned_docs/version-0.1.0-beta.6/support.md","permalink":"/r/docs/0.1.0-beta.6/support","version":"0.1.0-beta.6"};/* @jsx mdx */const rightToc=[];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Development for Craft.js began in April 2019 as a personal project of mine. It was months after months of experimenting and trial-and-error until it was able to become a viable solution. The repository was made public and the first public beta release was made in January 2020! Since then, the project has gained traction and contributions from people all over the world.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Craft.js is released under the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"p"},{"href":"https://github.com/prevwong/craft.js/blob/master/LICENSE"}),`MIT license`),` and is built with 100% love. If you found it useful and would like to ensure its continued development, please consider becoming a backer/sponsor or making a one-time donation via `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",{href:"https://opencollective.com/craftjs/contribute",target:"_blank"},`Open Collective`),` or `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",{href:"https://paypal.me/prevwong",target:"_blank"},`Paypal`),`. `),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",{href:"https://opencollective.com/craftjs/contribute",target:"_blank"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("img",{src:"https://opencollective.com/craftjs/donate/button@2x.png?color=blue",width:260})));};MDXContent.isMDXComponent=true;
+const frontMatter={id:'dev',title:'Craft.js - Build any page editor with React'};const metadata={"id":"version-0.1.0-beta.8/dev","title":"Craft.js - Build any page editor with React","description":"You know a web application is fancy when it has a page editor. Without a doubt, a page editor helps boost user experience significantly. If you're a frontend developer and have been tasked to be build one before, then you know precisely the difficulties and challenges of building one.","source":"@site/versioned_docs/version-0.1.0-beta.8/dev.md","permalink":"/r/docs/dev","version":"0.1.0-beta.8"};/* @jsx mdx */const rightToc=[{value:'Introducing Craft.js',id:'introducing-craftjs',children:[{value:'TL;DR',id:'tldr',children:[]}]},{value:'Editable React Components',id:'editable-react-components',children:[]},{value:'Control editing behaviours',id:'control-editing-behaviours',children:[]},{value:'Your page editor, your user interface',id:'your-page-editor-your-user-interface',children:[{value:'Interacting with the editor',id:'interacting-with-the-editor',children:[]}]},{value:'Closing words',id:'closing-words',children:[]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`You know a web application is fancy when it has a page editor. Without a doubt, a page editor helps boost user experience significantly. If you're a frontend developer and have been tasked to be build one before, then you know precisely the difficulties and challenges of building one.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Existing libraries such as Grape.js or react-page are great for a working out-of-the-box page editor solution. However, as soon as you need to customise the look and feel of the page editor itself, you will find yourself hacking in the library's code.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"introducing-craftjs"},`Introducing Craft.js`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Craft.js is a React framework to build any type of page editor. Instead of providing a working page editor implementation with a user interface, Craft.js provides an abstraction for you to implement your own page editor upon. It comes backed-in with an extensible drag-n-drop system which handles the way React elements should be rendered/updated, and a cohesive API to interact with the editor which you can additionally implement your own features on top of.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"tldr"},`TL;DR`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("ul",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`Design your own user interface for your page editor`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`Write React components that end-user could edit`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`Govern drag-and-drop conditions for your components`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`Control how your components should be edited. From simple text fields to content editables and drag to resize; if you can do it in React, then you can do it with Craft.js.`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"editable-react-components"},`Editable React Components`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Let's start with a simple Card component like this:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const Card = ({title}) => {
+  return (
+    <div>
+      <h2>{title}</h2>
+      <div id="p-only">
+        <p>Hi</p>
+      </div>
+    </div>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`First, to integrate it with with Craft.js' drag-and-drop system, we just need to do the following modifications:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`import {useNode} from "@craftjs/core";
+
+const Card = ({title}) => {
+  const { connectors: { connect, drag } } = useNode();
+  return (
+    <div ref={dom => connect(drag(dom))}>
+      <h2>{title}</h2>
+      <div id="p-only">
+        <p>Hi</p>
+      </div>
+    </div>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`What's happening here? `),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("ul",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`We passed the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"li"},`connect`),` connector to the root element of our component; this tells Craft.js that this element represents the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"li"},`Card`),` component. Hence, the dimensions of the specified element will be taken into consideration during drag and drop events.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`Then, we also passed `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"li"},`drag`),` connector to the same root element; this adds the drag handlers to the DOM. If the component is rendered as the child of a `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"li"},`<Canvas />`),`, the user will be able to drag this element and it will move the entire Text component.`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Next, we might want to be able to control the drag-n-drop rules of our Card component. For example, let's say we only want our Card component to be draggable as long as its `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`title`),` prop is not "No Drag". We can achieve this easily as such:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const Card = () => {...}
+
+Card.craft = {
+  rules: {
+    canDrag: (node) => node.data.props.title != "No Drag"
+  }
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h4",{"id":"droppable-regions"},`Droppable regions`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Next, let's take a look at the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`#p-only`),` element we specified in our Card component. What if we want this area to be droppable where only `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`p`),` can be dropped? `),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`This is where the`,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`<Canvas />`),` component provided by Craft.js becomes useful. It defines a droppable region where each of its immediate child is draggable.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`import {useNode, Canvas} from "@craftjs/core";
+
+const Card = ({title}) => {
+  const { connectors: { connect, drag } } = useNode();
+  return (
+    <div ref={dom => connect(drag(dom))}>
+      <h2>{title}</h2>
+      <Canvas id="p-only">
+        <p>Hi</p>
+      </Canvas>
+    </div>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Your next question might be about how we control our newly created droppable region. The `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`<Canvas />`),` component accepts an `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`is`),` prop which can be either a HTML element or a React component (by default, it's a `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`div`),`). So, if we supply a React component, we can essentially achieve the same design flexibility as we have with our Card component:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`import {useNode, Canvas} from "@craftjs/core";
+
+const Container = ({children}) => {
+  const { connectors: {connect} } = useNode();
+  return (
+    <div ref={dom => connect(dom)}>
+      {children}
+    </div>
+  )
+}
+
+Container.craft = {
+  rules: {
+    canMoveIn: (incomingNode) => incomingNode.data.type == "p"
+  }
+}
+
+const Card = ({title}) => {
+  const { connectors: { connect, drag } } = useNode();
+  return (
+    <div ref={dom => connect(drag(dom))}>
+      <h2>{title}</h2>
+      <Canvas id="p-only" is={Container}>
+        <p>Hi</p>
+      </Canvas>
+    </div>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Let's break this down a bit. Our `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`<Container />`),` component is being rendered as a droppable region. This means, all dropped elements will be rendered in the component's `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`children`),` prop. Next, we also specified the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`connectors`),` just as we did previously. This time, we specified a `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`canMoveIn`),` rule where only elements with the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`p`),` tag will be accepted into the component.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"control-editing-behaviours"},`Control editing behaviours`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Of course, any page editor must allow the end-user to edit the elements that are rendered. With Craft.js, you are in control of this as well. `),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Let's make our `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`h2`),` element content editable so our users could visually edit the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`title`),` prop:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const Card = ({title}) => {
+  const { connectors: { connect, drag }, setProp } = useNode();
+  return (
+    <div ref={dom => connect(drag(dom))}>
+      <h2 contentEditable onKeyUp={e => setProp(e.target.innerText)}>{title}</h2>
+      ...
+    </div>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("blockquote",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"blockquote"},`In a real application, you may want to consider using react-contenteditable`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Obviously, we do not want the element to be content editable all the time; perhaps only when our Card component is actually clicked:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const Card = ({title}) => {
+  const { connectors: { connect, drag }, setProp, isSelected } = useNode((node) => ({
+    isSelected: node.events.selected
+  }));
+
+  return (
+    <div ref={dom => connect(drag(dom))}>
+      <h2 contentEditable={isSelected} onKeyUp={e => setProp(e.target.innerText)}>{title}</h2>
+      ...
+    </div>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`What we are doing is essentially accessing Craft's internal state and retrieving information about the current instance of our Card component. In this case, we are retrieving the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`selected`),` event state which returns `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`true`),` when the user clicks on the DOM specified by the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`connect`),` connector of the Component.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"your-page-editor-your-user-interface"},`Your page editor, your user interface`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Essentially, Craft.js exposes these few React components:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("ul",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"li"},`Editor`),` creates the Editor context and sets everything up`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"li"},`Frame`),` defines the editable area`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`As you may have noticed, none of these are UI components. Instead, they are intended to be plugged into any user interface you would like to implement for your page editor.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Let's take a look at a super simple interface that we could design:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`// pages/index.js
+import React from 'react';
+
+export default function App() {
+  return (
+    <>
+      <h2>My page editor</h2>
+      <Editor> {/* sets everything up */ }
+        <div>
+          <Frame> {/* This part is now editable */ }
+            <Canvas is="div" style={{background: "#eee"}}> { /* Creates a gray droppable div */ }
+              <h2>Drag me around</h2> 
+              <p>I'm draggable too</h2>
+              <Canvas is="div"> {/* a div that is both droppable and draggable */}
+                <h2>Hi</h2> {/* a draggable h2 */}
+              </Canvas>
+            </Canvas>
+          </Frame>
+        </div>
+      </Editor>
+    </>
+  );
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"interacting-with-the-editor"},`Interacting with the editor`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Your user interface will most likely need to display some information or perform certain editor-related actions.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Let's say we want to design a Toolbar component that does the following things:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("ul",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`Tells us the the type of the currently selected element`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`Has a button to save the current editor state`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`Has another button to load the last saved editor state`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`import React, {useState} from 'react';
+
+export default function App() {
+  return (
+    <>
+      <h2>My page editor</h2>
+      <Editor> 
+        <Toolbar /> {/* Add this */}
+        <div>
+          <Frame>
+            ...
+          </Frame>
+        </div>
+      </Editor>
+    </>
+  );
+}
+
+const Toolbar = () => {
+  const [savedState, setSavedState] = useState();
+  const { selectedType, actions, query } = useEditor(state => {
+    const selectedId = state.events.selected;
+    return {
+      selectedType: selectedId && state.nodes[selectedId].data.type
+    }
+  });
+
+  return (
+    <div>
+      <h2>Currently selected: {selectedType} </h2>
+      <a onClick={() => {
+        const editorState = query.serialize();
+        setSavedState(editorState);
+      }}>Save checkpoint</a>
+     {
+       savedState ? (
+         <a onClick={() => 
+          actions.deserialize(editorState)
+         }>Load from checkpoint</a>
+       ) : null
+     }
+    </div>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Let's break this down:`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("ul",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`First, we access the editor's state to retrieve the type of the currently selected element`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`Then, when the "Save Checkpoint" button is clicked, we use the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"li"},`serialize`),` query which tells the editor to return its state in a serialised JSON form. We then save the JSON output in our component's state`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("li",{parentName:"ul"},`Once we have the JSON, we display the "Load from checkpoint" button. When this button is clicked, we simply call the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"li"},`deserialize`),` editor action which essentially returns the editor to the state stored in the JSON output.`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"closing-words"},`Closing words`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`This has been a high-level overview of Craft.js and we've only covered some very basic examples. We've seen how we could easily control almost every aspect of the page editor experience. Hopefully, this article has given you an idea on the possibilities of what you can do with Craft.js.`));};MDXContent.isMDXComponent=true;
 
 /***/ }),
 /* 224 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "frontMatter", function() { return frontMatter; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
+/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
+/* harmony import */ var _site_src_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
+const frontMatter={id:'useNode',title:'useNode()',sidebar_label:'useNode()'};const metadata={"id":"version-0.1.0-beta.8/api/useNode","title":"useNode()","description":"A Hook that provides methods and state information related to the corresponding Node that manages the current component.","source":"@site/versioned_docs/version-0.1.0-beta.8/api/useNode.md","permalink":"/r/docs/api/useNode","version":"0.1.0-beta.8","sidebar_label":"useNode()","sidebar":"version-0.1.0-beta.8/docs","previous":{"title":"useEditor()","permalink":"/r/docs/api/useEditor"},"next":{"title":"NodeHelpers","permalink":"/r/docs/api/helpers"}};/* @jsx mdx */const rightToc=[{value:'Reference',id:'reference',children:[{value:'Parameters',id:'parameters',children:[]},{value:'Returns',id:'returns',children:[]}]},{value:'Examples',id:'examples',children:[{value:'Collecting state information',id:'collecting-state-information',children:[]},{value:'Connectors',id:'connectors',children:[]},{value:'Usage within child components',id:'usage-within-child-components',children:[]},{value:'Manipulating state',id:'manipulating-state',children:[]}]},{value:'Legacy API',id:'legacy-api',children:[{value:'Parameters',id:'parameters-1',children:[]},{value:'Injected Props',id:'injected-props',children:[]},{value:'Example',id:'example',children:[]}]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"hook",mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`A Hook that provides methods and state information related to the corresponding `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Node`),` that manages the current component. `),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-tsx"}),`const { connectors, setProp, ...collected } = useNode(collector);
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("blockquote",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"blockquote"},`Note: This hook can only be used within a User Component. `)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"reference"},`Reference`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"parameters"},`Parameters`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["collector","(node: Node) => Collected","A function that collects relevant state information from the corresponding Node. The component will re-render when the values returned by this function changes."]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"returns"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[[null,"Object",[["id","NodeId","The corresponding Node's id"],["related","boolean","Identifies if the component is being used as related component"],["inNodeContext","boolean","This is useful if you are designing a User Component that you also wish to be used as an ordinary React Component; this property helps to differentiate whether the component is being used as a User Component or not"],["connectors","Object",[["connect","(dom: HTMLElement) => HTMLElement","Specifies the DOM that represents the User Component"],["drag","(dom: HTMLElement) => HTMLElement","Specifies the DOM that should be draggable"]]],["actions","Object",[["setProp","(props: Object) => void","Manipulate the current component's props"]]],["...collected","Collected","The collected values returned from the collector"]]]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"examples"},`Examples`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"collecting-state-information"},`Collecting state information`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-tsx"}),`import cx from "classnames";
+import {useNode} from "@craftjs/core";
+
+const Example = () => {
+  const { isHovered, amIBeingDragged } = useNode((node) => ({
+    isHovered: node.events.hovered,
+    amIBeingDragged: node.events.drag,
+
+  }));
+
+  return (
+    <div className={cx({
+      "hovering" : isHovered,
+      "dragged" : amIBeingDragged
+    })}>
+      Yo
+    </div>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"connectors"},`Connectors`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Connectors must receive a HTML element which can be obtained via an element's `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`ref`),`.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Typically, you would want to chain the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`connect`),` and `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`drag`),` connectors to the root element of your component. This way, users would be able to drag anywhere within the DOM to move the component.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const Example = () => {
+  const { connectors: {connect, drag} } = useNode();
+
+  return (
+    <div ref={ref => connect(drag(ref))}>
+      <div>Hi world</div>
+    </div>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Alternatively, you could place the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`drag`),` connector in a child element too.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`In the following example, we specified it on the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`a`),` element. Now, users will need to drag the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`a`),` element if they wish to move the component.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const Example = () => {
+  const { connectors: {connect, drag} } = useNode();
+
+  return (
+    <div ref={connect}>
+      <div>Hi world</div>
+      <a ref={drag}>Drag me to move this component</a>
+    </div>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`You could place the connectors on a React Component as well. However, the component must expose/forward its DOM in its `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`ref`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const CustomDragHandler = React.forwardRef((props, ref) => {
+  return(
+    <a ref={ref}>Drag me to move this component</a>
+  )
+});
+
+const Example = () => {
+  const { connectors: {connect, drag} } = useNode();
+
+  return (
+    <div ref={connect}>
+      <div>Hi world</div>
+      <CustomDragHandler ref={drag}>Drag me to move this component</CustomDragHandler>
+    </div>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"usage-within-child-components"},`Usage within child components`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`Since User Components are contextually bounded by the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Node`),` that they are being managed by, thus `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`useNode`),` can be used anywhere `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("strong",{parentName:"p"},`within`),` the component tree.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`In the previous example, we didn't actually need to forward refs from `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`CustomDragHandler`),` since it's bounded by the same `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`Node`),` as its parent. Instead, we can just use the connectors from `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`useNode`),` directly.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const CustomDragHandler = () => {
+  const {drag} = useNode();
+  return(
+    <a ref={drag}>Drag me to move this component</a>
+  )
+};
+
+const Example = () => {
+  const { connectors: {connect} } = useNode();
+
+  return (
+    <div ref={connect}>
+      <div>Hi world</div>
+      <CustomDragHandler />
+    </div>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"manipulating-state"},`Manipulating state`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const Example = ({someProp}) => {
+  const { connectors: {connect, drag} } = useNode();
+
+  return (
+    <div ref={connect}>
+      <div>Hi world</div>
+      <a ref={drag}>Drag me to move this component</a>
+      <input type="text" value={someProp} onChange={e => {
+        setProp(props => {
+          props.someProp = e.target.value;
+        });
+      }} />
+    </div>
+  )
+}
+`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"legacy-api"},`Legacy API`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`For Class Components, use `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`connectNode`),` instead.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"hoc",title:false,mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"parameters-1"},`Parameters`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["collector","(node: Node) => Collected","A function that collects relevant state information from the corresponding Node. The component will re-render when the values returned by this function changes."]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"injected-props"},`Injected Props`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["...useNode(collector)","Object","Identical return values as the useNode() hook above"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"example"},`Example`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`
+import {connectNode} from "@craftjs/core";
+class ButtonInner extends React.Component {
+  render() {
+    const { connectors: {connect, drag}, isHovered, ...compProps } = this.props;
+    const { text, color  } = compProps;
+
+    return (
+      <button ref={ ref => connect(drag(ref))} style={{margin: "5px", backgroundColor: color}} >
+        {text}
+        {
+          isHovered ? "I'm being hovered" : null
+        }
+      </button>
+    );
+  }
+};
+
+export const Button = connectNode((node) => ({
+  isHovered: node.events.hovered
+}))(ButtonInner);
+
+`)));};MDXContent.isMDXComponent=true;
+
+/***/ }),
+/* 225 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27282,7 +27628,7 @@ var defaultsPure = __webpack_require__(110);
 var intersection = __webpack_require__(442);
 var find = __webpack_require__(70);
 var valToNumber = __webpack_require__(443);
-var omit = __webpack_require__(225);
+var omit = __webpack_require__(226);
 var objectHasKeys = __webpack_require__(111);
 
 var RefinementList = __webpack_require__(444);
@@ -28776,7 +29122,7 @@ module.exports = SearchParameters;
 
 
 /***/ }),
-/* 225 */
+/* 226 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28801,7 +29147,7 @@ module.exports = _objectWithoutPropertiesLoose;
 
 
 /***/ }),
-/* 226 */
+/* 227 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28809,11 +29155,11 @@ module.exports = _objectWithoutPropertiesLoose;
 
 var merge = __webpack_require__(109);
 var defaultsPure = __webpack_require__(110);
-var orderBy = __webpack_require__(227);
+var orderBy = __webpack_require__(228);
 var compact = __webpack_require__(445);
 var find = __webpack_require__(70);
 var findIndex = __webpack_require__(446);
-var formatSort = __webpack_require__(228);
+var formatSort = __webpack_require__(229);
 
 var generateHierarchicalTree = __webpack_require__(447);
 
@@ -29695,7 +30041,7 @@ module.exports = SearchResults;
 
 
 /***/ }),
-/* 227 */
+/* 228 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29781,7 +30127,7 @@ module.exports = orderBy;
 
 
 /***/ }),
-/* 228 */
+/* 229 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29826,7 +30172,7 @@ module.exports = function formatSort(sortBy, defaults) {
 
 
 /***/ }),
-/* 229 */
+/* 230 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29847,7 +30193,7 @@ module.exports = inherits;
 
 
 /***/ }),
-/* 230 */
+/* 231 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29857,7 +30203,7 @@ module.exports = '3.1.2';
 
 
 /***/ }),
-/* 231 */
+/* 232 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -29866,8 +30212,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
 /* harmony import */ var _site_src_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
@@ -30069,7 +30415,7 @@ const Hero = ({title}) => {
 `)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`HeroHeader`),` and `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`HeroFooter`),` are User Components, so we can now design and configure them just like any other User Components. On that note, don't forget that you will need to include these in the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`resolver`),` as well.`));};MDXContent.isMDXComponent=true;
 
 /***/ }),
-/* 232 */
+/* 233 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -30078,8 +30424,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
 /* harmony import */ var _site_src_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
@@ -30093,6 +30439,7 @@ const frontMatter={id:'user-components',title:'User Components'};const metadata=
 Text.craft = {
   props: {},
   rules: {
+    canDrop: () => true,
     canDrag: () => true,
     canMoveIn: () => true,
     canMoveOut: () => true
@@ -30244,7 +30591,7 @@ const TextToolbarSettings = () => {
 `)));};MDXContent.isMDXComponent=true;
 
 /***/ }),
-/* 233 */
+/* 234 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -30253,225 +30600,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
 /* harmony import */ var _site_src_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
 const frontMatter={id:'editor-state',title:'EditorState',sidebar_label:'EditorState'};const metadata={"id":"version-0.1.0-beta.6/api/editor-state","title":"EditorState","description":"Reference","source":"@site/versioned_docs/version-0.1.0-beta.6/api/EditorState.md","permalink":"/r/docs/0.1.0-beta.6/api/editor-state","version":"0.1.0-beta.6","sidebar_label":"EditorState","sidebar":"version-0.1.0-beta.6/docs","previous":{"title":"Save and Load","permalink":"/r/docs/0.1.0-beta.6/guides/save-load-state"},"next":{"title":"Node","permalink":"/r/docs/0.1.0-beta.6/api/node"}};/* @jsx mdx */const rightToc=[{value:'Reference',id:'reference',children:[{value:'Properties',id:'properties',children:[]}]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"type",mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"reference"},`Reference`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"properties"},`Properties`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["nodes","Record<NodeId, Node>","A map sof all the Nodes in the editor"],["events","Object",[["selected","NodeId"],["hovered","NodeId"],["dragged","NodeId"]]],["options","Object",[["resolver","Map<String, React.ComponentType>","A map of User Components that will be used in the editor"],["enabled?","boolean","Optional. If set to false, all editing capabilities will be disabled"],["indicator?",'Record<"success" | "error", String>',"Optional. The colour to use for the drop indicator. The colour set in 'success' will be used when the indicator shows a droppable location; otherwise the colour set in 'error' will be used."],["onRender?","React.ComponentType<{element: React.ReactElement}>","Optional. Specify a custom component to render every User Element in the editor."]]]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("blockquote",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"blockquote"},`Note: `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`options`),` can be specified as props in the `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("a",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"p"},{"href":"/r/docs/0.1.0-beta.6/api/editor"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"a"},`<Editor />`)))));};MDXContent.isMDXComponent=true;
 
 /***/ }),
-/* 234 */
+/* 235 */
 /***/ (function(module) {
 
 module.exports = JSON.parse("{\"docsSidebars\":{\"docs\":[{\"type\":\"category\",\"label\":\"Introduction\",\"items\":[{\"type\":\"link\",\"label\":\"Overview\",\"href\":\"/r/docs/next/overview\"},{\"type\":\"link\",\"label\":\"Acknowledgements\",\"href\":\"/r/docs/next/acknowledgements\"}]},{\"type\":\"category\",\"label\":\"Core Concepts\",\"items\":[{\"type\":\"link\",\"label\":\"Nodes\",\"href\":\"/r/docs/next/concepts/nodes\"},{\"type\":\"link\",\"label\":\"User Components\",\"href\":\"/r/docs/next/concepts/user-components\"},{\"type\":\"link\",\"label\":\"Interacting with the Editor\",\"href\":\"/r/docs/next/concepts/editor-components\"}]},{\"type\":\"category\",\"label\":\"Guides\",\"items\":[{\"type\":\"link\",\"label\":\"Basic Tutorial\",\"href\":\"/r/docs/next/guides/basic-tutorial\"},{\"type\":\"link\",\"label\":\"Save and Load\",\"href\":\"/r/docs/next/guides/save-load-state\"}]},{\"type\":\"category\",\"label\":\"API Reference\",\"items\":[{\"type\":\"link\",\"label\":\"EditorState\",\"href\":\"/r/docs/next/api/editor-state\"},{\"type\":\"link\",\"label\":\"Node\",\"href\":\"/r/docs/next/api/node\"},{\"type\":\"link\",\"label\":\"UserComponent\",\"href\":\"/r/docs/next/api/user-component\"},{\"type\":\"link\",\"label\":\"NodeTree\",\"href\":\"/r/docs/next/api/nodetree\"},{\"type\":\"link\",\"label\":\"<Editor />\",\"href\":\"/r/docs/next/api/editor\"},{\"type\":\"link\",\"label\":\"<Frame />\",\"href\":\"/r/docs/next/api/frame\"},{\"type\":\"link\",\"label\":\"<Element />\",\"href\":\"/r/docs/next/api/element\"},{\"type\":\"link\",\"label\":\"useEditor()\",\"href\":\"/r/docs/next/api/useEditor\"},{\"type\":\"link\",\"label\":\"useNode()\",\"href\":\"/r/docs/next/api/useNode\"},{\"type\":\"link\",\"label\":\"NodeHelpers\",\"href\":\"/r/docs/next/api/helpers\"}]},{\"type\":\"category\",\"label\":\"Additional Packages\",\"items\":[{\"type\":\"link\",\"label\":\"Layers\",\"href\":\"/r/docs/next/additional/layers\"}]}]},\"permalinkToSidebar\":{\"/r/docs/next/acknowledgements\":\"docs\",\"/r/docs/next/additional/layers\":\"docs\",\"/r/docs/next/api/editor\":\"docs\",\"/r/docs/next/api/editor-state\":\"docs\",\"/r/docs/next/api/element\":\"docs\",\"/r/docs/next/api/frame\":\"docs\",\"/r/docs/next/api/helpers\":\"docs\",\"/r/docs/next/api/node\":\"docs\",\"/r/docs/next/api/nodetree\":\"docs\",\"/r/docs/next/api/useEditor\":\"docs\",\"/r/docs/next/api/useNode\":\"docs\",\"/r/docs/next/api/user-component\":\"docs\",\"/r/docs/next/concepts/editor-components\":\"docs\",\"/r/docs/next/concepts/nodes\":\"docs\",\"/r/docs/next/concepts/user-components\":\"docs\",\"/r/docs/next/guides/basic-tutorial\":\"docs\",\"/r/docs/next/guides/save-load-state\":\"docs\",\"/r/docs/next/overview\":\"docs\"},\"version\":\"next\"}");
-
-/***/ }),
-/* 235 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "frontMatter", function() { return frontMatter; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "metadata", function() { return metadata; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rightToc", function() { return rightToc; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
-/* harmony import */ var _site_src_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
-const frontMatter={id:'useEditor',title:'useEditor()',sidebar_label:'useEditor()'};const metadata={"id":"version-0.1.0-beta.7/api/useEditor","title":"useEditor()","description":"A Hook that provides methods and state information associated with the entire editor.","source":"@site/versioned_docs/version-0.1.0-beta.7/api/useEditor.md","permalink":"/r/docs/api/useEditor","version":"0.1.0-beta.7","sidebar_label":"useEditor()","sidebar":"version-0.1.0-beta.7/docs","previous":{"title":"<Element />","permalink":"/r/docs/api/element"},"next":{"title":"useNode()","permalink":"/r/docs/api/useNode"}};/* @jsx mdx */const rightToc=[{value:'Reference',id:'reference',children:[{value:'Parameters',id:'parameters',children:[]},{value:'Returns',id:'returns',children:[]}]},{value:'Examples',id:'examples',children:[{value:'Collecting state information',id:'collecting-state-information',children:[]},{value:'Updating props',id:'updating-props',children:[]},{value:'Hiding and Deleting a Node',id:'hiding-and-deleting-a-node',children:[]},{value:'Moving a Node',id:'moving-a-node',children:[]},{value:'Creating and Adding a new Node',id:'creating-and-adding-a-new-node',children:[]},{value:'Getting the currently selected Node&#39;s descendants',id:'getting-the-currently-selected-nodes-descendants',children:[]},{value:'Displaying Drop Indicator for the best possible drop location',id:'displaying-drop-indicator-for-the-best-possible-drop-location',children:[]}]},{value:'Legacy API',id:'legacy-api',children:[{value:'Parameters',id:'parameters-1',children:[]},{value:'Injected Props',id:'injected-props',children:[]},{value:'Example',id:'example',children:[]}]}];const makeShortcode=name=>function MDXDefaultShortcode(props){console.warn("Component "+name+" was not imported, exported, or provided by MDXProvider as global scope");return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("div",props);};const layoutProps={rightToc};const MDXLayout="wrapper";function MDXContent({components,...props}){return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(MDXLayout,Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({},layoutProps,props,{components:components,mdxType:"MDXLayout"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"hook",mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`A Hook that provides methods and state information associated with the entire editor.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-tsx"}),`const { connectors, actions, query, ...collected } = useEditor(collector);
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"reference"},`Reference`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"parameters"},`Parameters`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["collector","(state: EditorState, query: Query) => Collected","A function that collects relevant state information from the editor state. The component will re-render when the values returned by this function changes."]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"returns"},`Returns`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[[null,"Object",[["connectors","Object",[["select","(dom: HTMLElement, nodeId: NodeId) => HTMLElement","Specifies the DOM that when clicked will in turn click the specified Node's user component"],["hover","(dom: HTMLElement, nodeId: NodeId) => HTMLElement","Specifies the DOM that when hovered will in turn hover the specified Node's user component"],["drag","(dom: HTMLElement, nodeId: NodeId) => HTMLElement","Specifies the DOM that when dragged will move the specified Node's user component. Only applicable if the component is rendered as an immediate child of a &lt;Canvas /&gt; component."],["create","(dom: HTMLElement, userElement: React.ReactElement) => HTMLElement","Specifies the DOM that when dragged will create a new instance of the specified User Element at the drop location."]]],["actions","ActionMethods",[["add","(nodes: Node, parentId?: NodeId, index?: number) => void","Add a Node to the given parent node ID at the specified index. By default the parentId is the id of the Root Node"],["addNodeTree","(tree: NodeTree, parentId?: NodeId) => void","Add a NodeTree to the given parent node ID at the specified index. By default the parentId is the id of the Root Node"],["clearEvents","() => void","Resets the editors events state"],["delete","(nodeID: NodeId) => void","Delete the specified Node"],["deserialize","(data: SerializedNodes | string) => void","Recreate Nodes from a SerializedNodes object/json. This will clear all the current Nodes in the editor state with the recreated Nodes"],["move","(nodeId: NodeId, targetParentId: NodeId, index: number) => void","Move a Node to the specified parent Node at the given index."],["setProp","(nodeId: NodeId, update: (props: Object) => void) => void","Manipulate the props of the given Node"],["setCustom","(nodeId: NodeId, update: (custom: Object) => void) => void","Manipulate the custom values of the given Node"],["setHidden","(nodeId: NodeId, bool: boolean) => void","When set to true, the User Component of the specified Node will be hidden, but not removed"],["setOptions","(options: Object) => void","Update the editor's options. The options object passed is the same as the &lt;Editor /&gt; props."],["selectNode","(nodeId: NodeId | null) => void","Select the specified node. You can clear the selection by passing `null`"]]],["query","QueryMethods",[["getSerializedNodes","() => SerializedNodes","Return the current Nodes into a simpler form safe for storage"],["serialize","() => String","Return getSerializedNodes() in JSON"],["getOptions","() => Object","Get the options specified in the &lt;Editor /&gt; component"],["getDropPlaceholder","(sourceNodeId: NodeId, targetNodeId: NodeId, pos: {x: number, y: number}, nodesToDOM?: (node: Node) => HTMLElement = node => node.dom)","Given the target Node and mouse coordinates on the screen, determine the best possible location to drop the source Node. By default, the Node's DOM property is taken into consideration."],["node","(id: NodeId) => NodeHelpers","Returns an object containing helper methods to describe the specified Node. Click <a href='/craft.js/r/docs/api/helpers/'>here</a> for more information."],["parseReactElement","(element: React.ReactElement) => Object",[["toNodeTree","() => NodeTree","Parses a given React element into a NodeTree"]]],["parseSerializedNode","(node: SerializedNode) => Object",[["toNode","() => Node","Parses a serialized Node back into it's full Node form"]]]]],["inContext","boolean","Returns false if the component is rendered outside of the &lt;Editor /&gt;. This is useful if you are designing a general component that you also wish to use outside of Craft.js."],["...collected","Collected","The collected values returned from the collector"]]]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"examples"},`Examples`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"collecting-state-information"},`Collecting state information`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-tsx"}),`import {useEditor} from "@craftjs/core";
-
-const Example = () => {
-  const { hoveredNodeId } = useEditor((state) => ({
-    hoveredNodeId: state.events.hovered
-  }));
-
-  return (
-    <div>
-      The ID of the node currently being hovered is: {hoveredNodeId}
-    </div>
-  )
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"updating-props"},`Updating props`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-tsx"}),`import {useEditor} from "@craftjs/core";
-
-const Example = () => {
-  const { selectedNodeId, actions: {setProp} } = useEditor((state) => ({
-    selectedNodeId: state.events.selected
-  }));
-
-  return (
-    <a
-      onClick={_ => {
-        setProp(selectedNodeId, props => {
-          props.text = "new value";
-        });
-      }}
-    >
-      Update
-    </a>
-  )
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"hiding-and-deleting-a-node"},`Hiding and Deleting a Node`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const Example = () => {
-  const {selectedNodeId, actions} = useEditor((state) => ({
-    selectedNodeId: state.events.selected
-  }));
-  return selectedNodeId && (
-    <div>
-      <h2>Node selected: {selectedNodeId}</h2>
-      <a onClick={() => actions.hide(selectedNodeId)}>Hide</a>
-      <a onClick={() => actions.delete(selectedNodeId)}>Delete</a>
-    </div>
-  )
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"moving-a-node"},`Moving a Node`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const Example = () => {
-  const [sourceId, setSourceId] = useState();
-  const [targetId, setTargetId] = useState();
-  
-  const {selectedNodeId, actions, query} = useEditor((state) => ({
-    selectedNodeId: state.events.selected
-  }));
-
-  return selectedNodeId && (
-    <div>
-      <h2>Node selected: {selectedNodeId}</h2>
-      <div>
-        <input type="text" value={sourceId} placeholder="Source" disabled />
-        <button onClick={() => selectedNodeId && setSourceId(selectedNodeId)}>Set selected Node as source</button>
-      </div>
-      <div>
-        <input type="text" value={targetId} placeholder="Target" disabled />
-        <button onClick={() => selectedNodeId && setTargetId(selectedNodeId)}>Set selected Node as target</button>
-      </div>
-      {
-        sourceId && targeId ? (
-          <button onClick={() => {
-            try {
-              // .canDropInParent will throw an error message if the conditions failed
-              query.canDropInParent(sourceId, targetId); 
-              actions.move(sourceId, targetId);
-            } catch (e) {
-              console.error(e.message);
-            } 
-          }}>Move Node</button>
-        )
-      }
-    </div>
-  )
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"creating-and-adding-a-new-node"},`Creating and Adding a new Node`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-tsx"}),`import {useEditor} from "@craftjs/core";
-
-const Example = () => {
-  const { query, actions } = useEditor((state, query) => ({
-    hoveredNodeId: state.events.hovered
-  }));
-
-  return (
-    <div>
-      <a onClick={() => {
-        const node = query.parseReactElement(<h2>Hi</h2>).toNodeTree();
-        actions.addNodeTree(node);
-      }}>Click me to add a new Node</a>
-    </div>
-  )
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"getting-the-currently-selected-nodes-descendants"},`Getting the currently selected Node's descendants`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("blockquote",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",{parentName:"blockquote"},`Query methods are also accessible from within the collector function.`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-tsx"}),`import {useEditor} from "@craftjs/core";
-
-const Example = () => {
-  const { selectedDescendants } = useEditor((state, query) => ({
-    selectedDescendants: state.events && query.node(state.events.selected).descendants().map(node => node.id)
-  }));
-
-  return (
-    <ul>
-      {
-        selectedDescendants && selectedDescendants.map(id => <li>{id}</li> )
-      }
-    </ul>
-  )
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"displaying-drop-indicator-for-the-best-possible-drop-location"},`Displaying Drop Indicator for the best possible drop location`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`const Example = () => {
-  const [screenClick, setScreenClick] = useState(false);
-  const [sourceId, setSourceId] = useState();
-  const [targetId, setTargetId] = useState();
-  
-  const {selectedNodeId, actions, query} = useEditor((state) => ({
-    selectedNodeId: state.events.selected
-  }));
-
-  const disableScreenClick = useEffect((e) => {
-     if(e.key === "Escape") {
-       setScreenClick(false);
-    }
-  }, [screenClick]);
-
-  const clickOnScreen = useEffect((e) => {
-    const {clientX: x, clientY: y} = e;
-    const dropIndicator = query.getDropIndicator(sourceId, targetId, {x, y});
-    actions.setDropIndicator(dropIndicator);
-  }, [screenClick]);
-  
-
-  useEffect(() => {
-    window.addEventListener("click", clickOnScreen);
-    window.addEventListener("keyup", disableScreenClick);
-    return (() => {
-      window.removeEventListener("click", clickOnScreen);
-      window.removeEventListener("keyup", disableScreenClick);
-    })
-  }, [clickOnScreen, disableScreenClick]);
-
-  return selectedNodeId && (
-    <div>
-      <h2>Node selected: {selectedNodeId}</h2>
-      <div>
-        <input type="text" value={sourceId} placeholder="Source" disabled />
-        <button onClick={() => selectedNodeId && setSourceId(selectedNodeId)}>Set selected Node as source</button>
-      </div>
-      <div>
-        <input type="text" value={targetId} placeholder="Target" disabled />
-        <button onClick={() => selectedNodeId && setTargetId(selectedNodeId)}>Set selected Node as target</button>
-      </div>
-      {
-        sourceId && targeId ? (
-          <button onClick={() => {
-            setScreenClick(true);
-          }}>
-            {screenClick ? "Click anywhere on the screen to display indicator" : "Start"}
-          </button>
-        )
-      }
-    </div>
-  )
-}
-`)),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h2",{"id":"legacy-api"},`Legacy API`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("p",null,`For Class Components, use `,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("inlineCode",{parentName:"p"},`connectEditor`),` instead.`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* Badge */ "b"],{type:"hoc",title:false,mdxType:"Badge"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"parameters-1"},`Parameters`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["collector","(node: Node) => Collected","A function that collects relevant state information from the corresponding Node. The component will re-render when the values returned by this function changes."]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"injected-props"},`Injected Props`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])(_site_src_components__WEBPACK_IMPORTED_MODULE_3__[/* API */ "a"],{items:[["...useEditor(collector)","Object","Identical return values as the useEditor() hook above"]],mdxType:"API"}),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("h3",{"id":"example"},`Example`),Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("pre",null,Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__[/* mdx */ "b"])("code",Object(_home_runner_work_craft_js_craft_js_packages_docs_node_modules_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({parentName:"pre"},{"className":"language-jsx"}),`import { connectEditor } from "@craftjs/core";
-
-class SidebarInner extends React.Component {
-  render() {
-    const { actions, query, enabled, currentSelectedNodeId } = this.props;
-    return (
-      <div>
-        <input type="checkbox" value={enabled} onChange={
-          e => actions.setOptions(options => options.enabled = !enabled)
-        } />
-        <button 
-          onClick={() => {
-            console.log(query.serialize())
-          }}
-        >
-            Serialize JSON to console
-        </button>
-      </div>
-    )
-  }
-}
-
-export const Sidebar = connectEditor((state) => ({
-  currentSelectedNodeId: state.events.selected
-}))(SidebarInner);
-`)));};MDXContent.isMDXComponent=true;
 
 /***/ }),
 /* 236 */
@@ -30487,7 +30627,7 @@ export const Sidebar = connectEditor((state) => ({
 __webpack_require__.r(__webpack_exports__);
 
 // EXTERNAL MODULE: ./node_modules/react/index.js
-var react = __webpack_require__(1);
+var react = __webpack_require__(2);
 var react_default = /*#__PURE__*/__webpack_require__.n(react);
 
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/dist/esm.js
@@ -30506,7 +30646,7 @@ var Layout = __webpack_require__(25);
 var DocItem = __webpack_require__(72);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/extends.js
-var esm_extends = __webpack_require__(2);
+var esm_extends = __webpack_require__(1);
 
 // EXTERNAL MODULE: /home/runner/work/craft.js/craft.js/node_modules/classnames/index.js
 var classnames = __webpack_require__(6);
@@ -31135,7 +31275,7 @@ const currentRoute=!isHomePage?baseRoute.routes.find(route=>{return Object(route
 __webpack_require__.r(__webpack_exports__);
 
 // EXTERNAL MODULE: ./node_modules/react/index.js
-var react = __webpack_require__(1);
+var react = __webpack_require__(2);
 var react_default = /*#__PURE__*/__webpack_require__.n(react);
 
 // EXTERNAL MODULE: /home/runner/work/craft.js/craft.js/node_modules/stylis/stylis.min.js
@@ -34023,7 +34163,7 @@ var versions = __webpack_require__(38);
   > div > h3 {
     font-size: 15px;
   }
-`;function Version(){const context=Object(useDocusaurusContext["a" /* default */])();const{siteConfig={}}=context;const latestVersion=versions[0];const pastVersions=versions.filter(version=>version!==latestVersion);const repoUrl=`https://github.com/${siteConfig.organizationName}/${siteConfig.projectName}`;return/*#__PURE__*/react_default.a.createElement(Layout["a" /* default */],{title:"Versions",permalink:"/versions",description:"Docusaurus 2 Versions page listing all documented site versions"},/*#__PURE__*/react_default.a.createElement(Page,{className:"container margin-vert--lg"},/*#__PURE__*/react_default.a.createElement("h1",null,"Craft.js Documentation Versions"),/*#__PURE__*/react_default.a.createElement("div",{className:"margin-bottom--lg"},/*#__PURE__*/react_default.a.createElement("h3",{id:"latest"},"Latest version (Stable)"),/*#__PURE__*/react_default.a.createElement("table",null,/*#__PURE__*/react_default.a.createElement("tbody",null,/*#__PURE__*/react_default.a.createElement("tr",null,/*#__PURE__*/react_default.a.createElement("th",null,latestVersion),/*#__PURE__*/react_default.a.createElement("td",null,/*#__PURE__*/react_default.a.createElement(Link["a" /* default */],{to:Object(useBaseUrl["a" /* default */])("/docs/overview")},"Documentation")),/*#__PURE__*/react_default.a.createElement("td",null,/*#__PURE__*/react_default.a.createElement("a",{href:`${repoUrl}/releases/tag/v${latestVersion}`},"Release Notes")))))),pastVersions.length>0&&/*#__PURE__*/react_default.a.createElement("div",{className:"margin-bottom--lg"},/*#__PURE__*/react_default.a.createElement("h3",{id:"archive"},"Past Versions"),/*#__PURE__*/react_default.a.createElement("table",null,/*#__PURE__*/react_default.a.createElement("tbody",null,pastVersions.map(version=>/*#__PURE__*/react_default.a.createElement("tr",{key:version},/*#__PURE__*/react_default.a.createElement("th",null,version),/*#__PURE__*/react_default.a.createElement("td",null,/*#__PURE__*/react_default.a.createElement(Link["a" /* default */],{to:Object(useBaseUrl["a" /* default */])(`/docs/${version}/overview`)},"Documentation")),/*#__PURE__*/react_default.a.createElement("td",null,/*#__PURE__*/react_default.a.createElement("a",{href:`${repoUrl}/releases/tag/v${version}`},"Release Notes")))))))));}/* harmony default export */ var pages_versions = __webpack_exports__["default"] = (Version);
+`;function Version(){const context=Object(useDocusaurusContext["a" /* default */])();const{siteConfig={}}=context;const latestVersion=versions[0];const pastVersions=versions.filter(version=>version!==latestVersion);const repoUrl=`https://github.com/${siteConfig.organizationName}/${siteConfig.projectName}`;return/*#__PURE__*/react_default.a.createElement(Layout["a" /* default */],{title:"Versions",permalink:"/versions",description:"Docusaurus 2 Versions page listing all documented site versions"},/*#__PURE__*/react_default.a.createElement(Page,{className:"container margin-vert--lg"},/*#__PURE__*/react_default.a.createElement("h1",null,"Craft.js Documentation Versions"),/*#__PURE__*/react_default.a.createElement("div",{className:"margin-bottom--lg"},/*#__PURE__*/react_default.a.createElement("h3",{id:"latest"},"Latest version (Stable)"),/*#__PURE__*/react_default.a.createElement("table",null,/*#__PURE__*/react_default.a.createElement("tbody",null,/*#__PURE__*/react_default.a.createElement("tr",null,/*#__PURE__*/react_default.a.createElement("th",null,latestVersion),/*#__PURE__*/react_default.a.createElement("td",null,/*#__PURE__*/react_default.a.createElement(Link["a" /* default */],{to:Object(useBaseUrl["a" /* default */])('/docs/overview')},"Documentation")),/*#__PURE__*/react_default.a.createElement("td",null,/*#__PURE__*/react_default.a.createElement("a",{href:`${repoUrl}/releases/tag/v${latestVersion}`},"Release Notes")))))),pastVersions.length>0&&/*#__PURE__*/react_default.a.createElement("div",{className:"margin-bottom--lg"},/*#__PURE__*/react_default.a.createElement("h3",{id:"archive"},"Past Versions"),/*#__PURE__*/react_default.a.createElement("table",null,/*#__PURE__*/react_default.a.createElement("tbody",null,pastVersions.map(version=>/*#__PURE__*/react_default.a.createElement("tr",{key:version},/*#__PURE__*/react_default.a.createElement("th",null,version),/*#__PURE__*/react_default.a.createElement("td",null,/*#__PURE__*/react_default.a.createElement(Link["a" /* default */],{to:Object(useBaseUrl["a" /* default */])(`/docs/${version}/overview`)},"Documentation")),/*#__PURE__*/react_default.a.createElement("td",null,/*#__PURE__*/react_default.a.createElement("a",{href:`${repoUrl}/releases/tag/v${version}`},"Release Notes")))))))));}/* harmony default export */ var pages_versions = __webpack_exports__["default"] = (Version);
 
 /***/ }),
 /* 239 */
@@ -34033,7 +34173,7 @@ var versions = __webpack_require__(38);
 __webpack_require__.r(__webpack_exports__);
 
 // EXTERNAL MODULE: ./node_modules/react/index.js
-var react = __webpack_require__(1);
+var react = __webpack_require__(2);
 var react_default = /*#__PURE__*/__webpack_require__.n(react);
 
 // EXTERNAL MODULE: /home/runner/work/craft.js/craft.js/node_modules/algoliasearch/lite.js
@@ -35515,7 +35655,7 @@ if (Object.getOwnPropertyDescriptor(fs, 'promises')) {
 /* 244 */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"/r/\":{\"component\":\"c4f5d8e4\"},\"/r/search\":{\"component\":\"f2922919\"},\"/r/support\":{\"component\":\"ab9bdc8a\"},\"/r/versions\":{\"component\":\"18b93cb3\"},\"/r/docs/0.1.0-beta.6/:route\":{\"component\":\"1be78505\",\"docsMetadata\":\"39c21874\"},\"/r/docs/0.1.0-beta.6/acknowledgements\":{\"component\":\"17896441\",\"content\":\"45398abe\"},\"/r/docs/0.1.0-beta.6/additional/layers\":{\"component\":\"17896441\",\"content\":\"9cf0c811\"},\"/r/docs/0.1.0-beta.6/api/canvas\":{\"component\":\"17896441\",\"content\":\"17837e87\"},\"/r/docs/0.1.0-beta.6/api/editor\":{\"component\":\"17896441\",\"content\":\"8b897adc\"},\"/r/docs/0.1.0-beta.6/api/editor-state\":{\"component\":\"17896441\",\"content\":\"fb5ff824\"},\"/r/docs/0.1.0-beta.6/api/frame\":{\"component\":\"17896441\",\"content\":\"1dd4a722\"},\"/r/docs/0.1.0-beta.6/api/helpers\":{\"component\":\"17896441\",\"content\":\"5325a4b2\"},\"/r/docs/0.1.0-beta.6/api/node\":{\"component\":\"17896441\",\"content\":\"dad44952\"},\"/r/docs/0.1.0-beta.6/api/useEditor\":{\"component\":\"17896441\",\"content\":\"5e9281cd\"},\"/r/docs/0.1.0-beta.6/api/useNode\":{\"component\":\"17896441\",\"content\":\"08514ee8\"},\"/r/docs/0.1.0-beta.6/api/user-component\":{\"component\":\"17896441\",\"content\":\"db6caf4f\"},\"/r/docs/0.1.0-beta.6/concepts/editor-components\":{\"component\":\"17896441\",\"content\":\"15197d08\"},\"/r/docs/0.1.0-beta.6/concepts/nodes\":{\"component\":\"17896441\",\"content\":\"9fc42c9c\"},\"/r/docs/0.1.0-beta.6/concepts/serializing\":{\"component\":\"17896441\",\"content\":\"a56cdbc9\"},\"/r/docs/0.1.0-beta.6/concepts/user-components\":{\"component\":\"17896441\",\"content\":\"f2a3862d\"},\"/r/docs/0.1.0-beta.6/dev\":{\"component\":\"17896441\",\"content\":\"d486a7a6\"},\"/r/docs/0.1.0-beta.6/guides/basic-tutorial\":{\"component\":\"17896441\",\"content\":\"ccff2dc8\"},\"/r/docs/0.1.0-beta.6/guides/save-load-state\":{\"component\":\"17896441\",\"content\":\"58a8258a\"},\"/r/docs/0.1.0-beta.6/overview\":{\"component\":\"17896441\",\"content\":\"caed3f4a\"},\"/r/docs/0.1.0-beta.6/support\":{\"component\":\"17896441\",\"content\":\"e5684210\"},\"/r/docs/next/:route\":{\"component\":\"1be78505\",\"docsMetadata\":\"fbb10bde\"},\"/r/docs/next/acknowledgements\":{\"component\":\"17896441\",\"content\":\"da5da385\"},\"/r/docs/next/additional/layers\":{\"component\":\"17896441\",\"content\":\"4c00dda0\"},\"/r/docs/next/api/editor\":{\"component\":\"17896441\",\"content\":\"d46aba6e\"},\"/r/docs/next/api/editor-state\":{\"component\":\"17896441\",\"content\":\"0a85db17\"},\"/r/docs/next/api/element\":{\"component\":\"17896441\",\"content\":\"b0361ba7\"},\"/r/docs/next/api/frame\":{\"component\":\"17896441\",\"content\":\"b547cdf8\"},\"/r/docs/next/api/helpers\":{\"component\":\"17896441\",\"content\":\"22cb26d9\"},\"/r/docs/next/api/node\":{\"component\":\"17896441\",\"content\":\"b87a6656\"},\"/r/docs/next/api/nodetree\":{\"component\":\"17896441\",\"content\":\"9f506e79\"},\"/r/docs/next/api/useEditor\":{\"component\":\"17896441\",\"content\":\"e06c0a6d\"},\"/r/docs/next/api/useNode\":{\"component\":\"17896441\",\"content\":\"0cbef37d\"},\"/r/docs/next/api/user-component\":{\"component\":\"17896441\",\"content\":\"44d60fd4\"},\"/r/docs/next/concepts/editor-components\":{\"component\":\"17896441\",\"content\":\"1c458e9f\"},\"/r/docs/next/concepts/nodes\":{\"component\":\"17896441\",\"content\":\"c8905571\"},\"/r/docs/next/concepts/serializing\":{\"component\":\"17896441\",\"content\":\"83a1b1f4\"},\"/r/docs/next/concepts/user-components\":{\"component\":\"17896441\",\"content\":\"f34773b8\"},\"/r/docs/next/dev\":{\"component\":\"17896441\",\"content\":\"950718c7\"},\"/r/docs/next/guides/basic-tutorial\":{\"component\":\"17896441\",\"content\":\"4e2f9345\"},\"/r/docs/next/guides/save-load-state\":{\"component\":\"17896441\",\"content\":\"6a4fa8a4\"},\"/r/docs/next/overview\":{\"component\":\"17896441\",\"content\":\"1db64337\"},\"/r/docs/:route\":{\"component\":\"1be78505\",\"docsMetadata\":\"7c74713e\"},\"/r/docs/acknowledgements\":{\"component\":\"17896441\",\"content\":\"b8528cd2\"},\"/r/docs/additional/layers\":{\"component\":\"17896441\",\"content\":\"6419f853\"},\"/r/docs/api/editor\":{\"component\":\"17896441\",\"content\":\"6dde9663\"},\"/r/docs/api/editor-state\":{\"component\":\"17896441\",\"content\":\"44725de5\"},\"/r/docs/api/element\":{\"component\":\"17896441\",\"content\":\"3fddf6a4\"},\"/r/docs/api/frame\":{\"component\":\"17896441\",\"content\":\"76e09823\"},\"/r/docs/api/helpers\":{\"component\":\"17896441\",\"content\":\"0cd4e543\"},\"/r/docs/api/node\":{\"component\":\"17896441\",\"content\":\"b5fdb636\"},\"/r/docs/api/nodetree\":{\"component\":\"17896441\",\"content\":\"93afb4cc\"},\"/r/docs/api/useEditor\":{\"component\":\"17896441\",\"content\":\"feee030f\"},\"/r/docs/api/useNode\":{\"component\":\"17896441\",\"content\":\"7214c1fa\"},\"/r/docs/api/user-component\":{\"component\":\"17896441\",\"content\":\"6f7a91e6\"},\"/r/docs/concepts/editor-components\":{\"component\":\"17896441\",\"content\":\"775f4c22\"},\"/r/docs/concepts/nodes\":{\"component\":\"17896441\",\"content\":\"a4a7d593\"},\"/r/docs/concepts/serializing\":{\"component\":\"17896441\",\"content\":\"d0c99745\"},\"/r/docs/concepts/user-components\":{\"component\":\"17896441\",\"content\":\"028ee526\"},\"/r/docs/dev\":{\"component\":\"17896441\",\"content\":\"3a23b72d\"},\"/r/docs/guides/basic-tutorial\":{\"component\":\"17896441\",\"content\":\"1d603ce4\"},\"/r/docs/guides/save-load-state\":{\"component\":\"17896441\",\"content\":\"def0a8a0\"},\"/r/docs/overview\":{\"component\":\"17896441\",\"content\":\"9e01f5b3\"}}");
+module.exports = JSON.parse("{\"/r/\":{\"component\":\"c4f5d8e4\"},\"/r/search\":{\"component\":\"f2922919\"},\"/r/support\":{\"component\":\"ab9bdc8a\"},\"/r/versions\":{\"component\":\"18b93cb3\"},\"/r/docs/0.1.0-beta.6/:route\":{\"component\":\"1be78505\",\"docsMetadata\":\"39c21874\"},\"/r/docs/0.1.0-beta.6/acknowledgements\":{\"component\":\"17896441\",\"content\":\"45398abe\"},\"/r/docs/0.1.0-beta.6/additional/layers\":{\"component\":\"17896441\",\"content\":\"9cf0c811\"},\"/r/docs/0.1.0-beta.6/api/canvas\":{\"component\":\"17896441\",\"content\":\"17837e87\"},\"/r/docs/0.1.0-beta.6/api/editor\":{\"component\":\"17896441\",\"content\":\"8b897adc\"},\"/r/docs/0.1.0-beta.6/api/editor-state\":{\"component\":\"17896441\",\"content\":\"fb5ff824\"},\"/r/docs/0.1.0-beta.6/api/frame\":{\"component\":\"17896441\",\"content\":\"1dd4a722\"},\"/r/docs/0.1.0-beta.6/api/helpers\":{\"component\":\"17896441\",\"content\":\"5325a4b2\"},\"/r/docs/0.1.0-beta.6/api/node\":{\"component\":\"17896441\",\"content\":\"dad44952\"},\"/r/docs/0.1.0-beta.6/api/useEditor\":{\"component\":\"17896441\",\"content\":\"5e9281cd\"},\"/r/docs/0.1.0-beta.6/api/useNode\":{\"component\":\"17896441\",\"content\":\"08514ee8\"},\"/r/docs/0.1.0-beta.6/api/user-component\":{\"component\":\"17896441\",\"content\":\"db6caf4f\"},\"/r/docs/0.1.0-beta.6/concepts/editor-components\":{\"component\":\"17896441\",\"content\":\"15197d08\"},\"/r/docs/0.1.0-beta.6/concepts/nodes\":{\"component\":\"17896441\",\"content\":\"9fc42c9c\"},\"/r/docs/0.1.0-beta.6/concepts/serializing\":{\"component\":\"17896441\",\"content\":\"a56cdbc9\"},\"/r/docs/0.1.0-beta.6/concepts/user-components\":{\"component\":\"17896441\",\"content\":\"f2a3862d\"},\"/r/docs/0.1.0-beta.6/dev\":{\"component\":\"17896441\",\"content\":\"d486a7a6\"},\"/r/docs/0.1.0-beta.6/guides/basic-tutorial\":{\"component\":\"17896441\",\"content\":\"ccff2dc8\"},\"/r/docs/0.1.0-beta.6/guides/save-load-state\":{\"component\":\"17896441\",\"content\":\"58a8258a\"},\"/r/docs/0.1.0-beta.6/overview\":{\"component\":\"17896441\",\"content\":\"caed3f4a\"},\"/r/docs/0.1.0-beta.6/support\":{\"component\":\"17896441\",\"content\":\"e5684210\"},\"/r/docs/next/:route\":{\"component\":\"1be78505\",\"docsMetadata\":\"fbb10bde\"},\"/r/docs/next/acknowledgements\":{\"component\":\"17896441\",\"content\":\"da5da385\"},\"/r/docs/next/additional/layers\":{\"component\":\"17896441\",\"content\":\"4c00dda0\"},\"/r/docs/next/api/editor\":{\"component\":\"17896441\",\"content\":\"d46aba6e\"},\"/r/docs/next/api/editor-state\":{\"component\":\"17896441\",\"content\":\"0a85db17\"},\"/r/docs/next/api/element\":{\"component\":\"17896441\",\"content\":\"b0361ba7\"},\"/r/docs/next/api/frame\":{\"component\":\"17896441\",\"content\":\"b547cdf8\"},\"/r/docs/next/api/helpers\":{\"component\":\"17896441\",\"content\":\"22cb26d9\"},\"/r/docs/next/api/node\":{\"component\":\"17896441\",\"content\":\"b87a6656\"},\"/r/docs/next/api/nodetree\":{\"component\":\"17896441\",\"content\":\"9f506e79\"},\"/r/docs/next/api/useEditor\":{\"component\":\"17896441\",\"content\":\"e06c0a6d\"},\"/r/docs/next/api/useNode\":{\"component\":\"17896441\",\"content\":\"0cbef37d\"},\"/r/docs/next/api/user-component\":{\"component\":\"17896441\",\"content\":\"44d60fd4\"},\"/r/docs/next/concepts/editor-components\":{\"component\":\"17896441\",\"content\":\"1c458e9f\"},\"/r/docs/next/concepts/nodes\":{\"component\":\"17896441\",\"content\":\"c8905571\"},\"/r/docs/next/concepts/serializing\":{\"component\":\"17896441\",\"content\":\"83a1b1f4\"},\"/r/docs/next/concepts/user-components\":{\"component\":\"17896441\",\"content\":\"f34773b8\"},\"/r/docs/next/dev\":{\"component\":\"17896441\",\"content\":\"950718c7\"},\"/r/docs/next/guides/basic-tutorial\":{\"component\":\"17896441\",\"content\":\"4e2f9345\"},\"/r/docs/next/guides/save-load-state\":{\"component\":\"17896441\",\"content\":\"6a4fa8a4\"},\"/r/docs/next/overview\":{\"component\":\"17896441\",\"content\":\"1db64337\"},\"/r/docs/:route\":{\"component\":\"1be78505\",\"docsMetadata\":\"7c74713e\"},\"/r/docs/acknowledgements\":{\"component\":\"17896441\",\"content\":\"02cc89dc\"},\"/r/docs/additional/layers\":{\"component\":\"17896441\",\"content\":\"d6d17c91\"},\"/r/docs/api/editor\":{\"component\":\"17896441\",\"content\":\"5c3c18c5\"},\"/r/docs/api/editor-state\":{\"component\":\"17896441\",\"content\":\"bb3e23e3\"},\"/r/docs/api/element\":{\"component\":\"17896441\",\"content\":\"5746a993\"},\"/r/docs/api/frame\":{\"component\":\"17896441\",\"content\":\"cd1d0329\"},\"/r/docs/api/helpers\":{\"component\":\"17896441\",\"content\":\"15a04443\"},\"/r/docs/api/node\":{\"component\":\"17896441\",\"content\":\"4a6f66a7\"},\"/r/docs/api/nodetree\":{\"component\":\"17896441\",\"content\":\"583510cc\"},\"/r/docs/api/useEditor\":{\"component\":\"17896441\",\"content\":\"7caa7790\"},\"/r/docs/api/useNode\":{\"component\":\"17896441\",\"content\":\"ec960b95\"},\"/r/docs/api/user-component\":{\"component\":\"17896441\",\"content\":\"9bf6c42a\"},\"/r/docs/concepts/editor-components\":{\"component\":\"17896441\",\"content\":\"59a40c78\"},\"/r/docs/concepts/nodes\":{\"component\":\"17896441\",\"content\":\"ad58dbb8\"},\"/r/docs/concepts/serializing\":{\"component\":\"17896441\",\"content\":\"069dca66\"},\"/r/docs/concepts/user-components\":{\"component\":\"17896441\",\"content\":\"503cb11c\"},\"/r/docs/dev\":{\"component\":\"17896441\",\"content\":\"e8f4e8ba\"},\"/r/docs/guides/basic-tutorial\":{\"component\":\"17896441\",\"content\":\"366bfad1\"},\"/r/docs/guides/save-load-state\":{\"component\":\"17896441\",\"content\":\"20e6824d\"},\"/r/docs/overview\":{\"component\":\"17896441\",\"content\":\"90d32da8\"}}");
 
 /***/ }),
 /* 245 */
@@ -35654,7 +35794,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(1);
+var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -36967,8 +37107,8 @@ module.exports = {
 
 var AlgoliaSearchHelper = __webpack_require__(441);
 
-var SearchParameters = __webpack_require__(224);
-var SearchResults = __webpack_require__(226);
+var SearchParameters = __webpack_require__(225);
+var SearchResults = __webpack_require__(227);
 
 /**
  * The algoliasearchHelper module is the function that will let its
@@ -37010,7 +37150,7 @@ function algoliasearchHelper(client, index, opts) {
  * @member module:algoliasearchHelper.version
  * @type {number}
  */
-algoliasearchHelper.version = __webpack_require__(230);
+algoliasearchHelper.version = __webpack_require__(231);
 
 /**
  * Constructor for the Helper.
@@ -37152,7 +37292,7 @@ if (true) {
  * LICENSE file in the root directory of this source tree.
  */
 
-var k=__webpack_require__(58),m=__webpack_require__(1),aa=__webpack_require__(71);function r(a){for(var b="https://reactjs.org/docs/error-decoder.html?invariant="+a,c=1;c<arguments.length;c++)b+="&args[]="+encodeURIComponent(arguments[c]);return"Minified React error #"+a+"; visit "+b+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings."}
+var k=__webpack_require__(58),m=__webpack_require__(2),aa=__webpack_require__(71);function r(a){for(var b="https://reactjs.org/docs/error-decoder.html?invariant="+a,c=1;c<arguments.length;c++)b+="&args[]="+encodeURIComponent(arguments[c]);return"Minified React error #"+a+"; visit "+b+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings."}
 var u="function"===typeof Symbol&&Symbol.for,ba=u?Symbol.for("react.portal"):60106,v=u?Symbol.for("react.fragment"):60107,ca=u?Symbol.for("react.strict_mode"):60108,da=u?Symbol.for("react.profiler"):60114,x=u?Symbol.for("react.provider"):60109,ea=u?Symbol.for("react.context"):60110,fa=u?Symbol.for("react.concurrent_mode"):60111,ha=u?Symbol.for("react.forward_ref"):60112,B=u?Symbol.for("react.suspense"):60113,ia=u?Symbol.for("react.suspense_list"):60120,ja=u?Symbol.for("react.memo"):60115,ka=u?Symbol.for("react.lazy"):
 60116,la=u?Symbol.for("react.fundamental"):60117,ma=u?Symbol.for("react.scope"):60119,C=m.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;C.hasOwnProperty("ReactCurrentDispatcher")||(C.ReactCurrentDispatcher={current:null});C.hasOwnProperty("ReactCurrentBatchConfig")||(C.ReactCurrentBatchConfig={suspense:null});
 function na(a){if(-1===a._status){a._status=0;var b=a._ctor;b=b();a._result=b;b.then(function(c){0===a._status&&(c=c.default,a._status=1,a._result=c)},function(c){0===a._status&&(a._status=2,a._result=c)})}}
@@ -37299,7 +37439,7 @@ module.exports = ReactPropTypesSecret;
 
 function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
 
-var React = __webpack_require__(1);
+var React = __webpack_require__(2);
 var React__default = _interopDefault(React);
 var shallowEqual = _interopDefault(__webpack_require__(263));
 
@@ -52282,7 +52422,7 @@ var _DocSearch = __webpack_require__(384);
 
 var _DocSearch2 = _interopRequireDefault(_DocSearch);
 
-var _version = __webpack_require__(170);
+var _version = __webpack_require__(171);
 
 var _version2 = _interopRequireDefault(_version);
 
@@ -52353,11 +52493,11 @@ var _utils = __webpack_require__(433);
 
 var _utils2 = _interopRequireDefault(_utils);
 
-var _version = __webpack_require__(170);
+var _version = __webpack_require__(171);
 
 var _version2 = _interopRequireDefault(_version);
 
-var _zepto = __webpack_require__(169);
+var _zepto = __webpack_require__(170);
 
 var _zepto2 = _interopRequireDefault(_zepto);
 
@@ -53529,7 +53669,7 @@ var zlib = __webpack_require__(393);
 
 var inherits = __webpack_require__(44);
 var Promise = global.Promise || __webpack_require__(395).Promise;
-var semver = __webpack_require__(154);
+var semver = __webpack_require__(155);
 var isNotSupported = semver.satisfies(process.version, '<0.10');
 var isNode010 = semver.satisfies(process.version, '=0.10');
 var places = __webpack_require__(396);
@@ -53866,7 +54006,7 @@ AlgoliaSearchNodeJS.prototype.getSecuredApiKeyRemainingValidity = function getSe
  * Expose `debug()` as the module.
  */
 
-exports = module.exports = __webpack_require__(153);
+exports = module.exports = __webpack_require__(154);
 exports.log = log;
 exports.formatArgs = formatArgs;
 exports.save = save;
@@ -54222,7 +54362,7 @@ var util = __webpack_require__(43);
  * Expose `debug()` as the module.
  */
 
-exports = module.exports = __webpack_require__(153);
+exports = module.exports = __webpack_require__(154);
 exports.init = init;
 exports.log = log;
 exports.formatArgs = formatArgs;
@@ -55690,7 +55830,7 @@ return Promise$1;
 module.exports = createPlacesClient;
 
 var qs3 = __webpack_require__(397);
-var buildSearchMethod = __webpack_require__(155);
+var buildSearchMethod = __webpack_require__(156);
 
 function createPlacesClient(algoliasearch) {
   return function places(appID, apiKey, opts) {
@@ -56795,10 +56935,10 @@ function notImplemented() {
 /***/ (function(module, exports, __webpack_require__) {
 
 var inherits = __webpack_require__(44);
-var IndexCore = __webpack_require__(156);
+var IndexCore = __webpack_require__(157);
 var deprecate = __webpack_require__(104);
 var deprecatedMessage = __webpack_require__(105);
-var exitPromise = __webpack_require__(161);
+var exitPromise = __webpack_require__(162);
 var errors = __webpack_require__(52);
 
 var deprecateForwardToSlaves = deprecate(
@@ -57226,7 +57366,7 @@ Index.prototype.browseAll = function(query, queryParameters) {
     query = undefined;
   }
 
-  var merge = __webpack_require__(157);
+  var merge = __webpack_require__(158);
 
   var IndexBrowser = __webpack_require__(404);
 
@@ -58142,7 +58282,7 @@ if (!Object.keys) {
 	// modified from https://github.com/es-shims/es5-shim
 	var has = Object.prototype.hasOwnProperty;
 	var toStr = Object.prototype.toString;
-	var isArgs = __webpack_require__(160); // eslint-disable-line global-require
+	var isArgs = __webpack_require__(161); // eslint-disable-line global-require
 	var isEnumerable = Object.prototype.propertyIsEnumerable;
 	var hasDontEnumBug = !isEnumerable.call({ toString: null }, 'toString');
 	var hasProtoEnumBug = isEnumerable.call(function () {}, 'prototype');
@@ -58312,8 +58452,8 @@ IndexBrowser.prototype._clean = function() {
 module.exports = AlgoliaSearchCore;
 
 var errors = __webpack_require__(52);
-var exitPromise = __webpack_require__(161);
-var IndexCore = __webpack_require__(156);
+var exitPromise = __webpack_require__(162);
+var IndexCore = __webpack_require__(157);
 var store = __webpack_require__(406);
 
 // We will always put the API KEY in the JSON body in case of too long API KEY,
@@ -59033,7 +59173,7 @@ AlgoliaSearchCore.prototype.searchForFacetValues = function(queries) {
     }
 
     var clone = __webpack_require__(33);
-    var omit = __webpack_require__(158);
+    var omit = __webpack_require__(159);
 
     var indexName = query.indexName;
     var params = query.params;
@@ -59377,7 +59517,7 @@ function cleanup() {
 
 module.exports = createAnalyticsClient;
 
-var algoliasearch = __webpack_require__(152);
+var algoliasearch = __webpack_require__(153);
 
 function createAnalyticsClient(appId, apiKey, opts) {
   var analytics = {};
@@ -59469,7 +59609,7 @@ function createAnalyticsClient(appId, apiKey, opts) {
 "use strict";
 
 
-var objectKeys = __webpack_require__(159);
+var objectKeys = __webpack_require__(160);
 
 module.exports = function reduce(list, iterator) {
     var keys = objectKeys(list);
@@ -59554,9 +59694,9 @@ function getKeepaliveAgent(protocol) {
   var http = __webpack_require__(65);
   var https = __webpack_require__(42);
 
-  var HttpsAgent = __webpack_require__(162).HttpsAgent;
-  var HttpAgent = __webpack_require__(162);
-  var semver = __webpack_require__(154);
+  var HttpsAgent = __webpack_require__(163).HttpsAgent;
+  var HttpAgent = __webpack_require__(163);
+  var semver = __webpack_require__(155);
 
   var keepAliveAgent;
 
@@ -59985,7 +60125,7 @@ exports.globalAgent = new Agent();
 
 var https = __webpack_require__(42);
 var utils = __webpack_require__(106);
-var HttpAgent = __webpack_require__(163);
+var HttpAgent = __webpack_require__(164);
 var OriginalHttpsAgent = https.Agent;
 
 var HttpsAgent;
@@ -60415,7 +60555,7 @@ module.exports = __webpack_require__(418);
 
 
 // this will inject Zepto in window, unfortunately no easy commonJS zepto build
-var zepto = __webpack_require__(164);
+var zepto = __webpack_require__(165);
 
 // setup DOM element
 var DOM = __webpack_require__(36);
@@ -60440,7 +60580,7 @@ _.Event = zepto.Event;
 
 var typeaheadKey = 'aaAutocomplete';
 var Typeahead = __webpack_require__(419);
-var EventBus = __webpack_require__(165);
+var EventBus = __webpack_require__(166);
 
 function autocomplete(selector, options, datasets, typeaheadObject) {
   datasets = _.isArray(datasets) ? datasets : [].slice.call(arguments, 2);
@@ -60516,10 +60656,10 @@ var attrsKey = 'aaAttrs';
 
 var _ = __webpack_require__(29);
 var DOM = __webpack_require__(36);
-var EventBus = __webpack_require__(165);
+var EventBus = __webpack_require__(166);
 var Input = __webpack_require__(420);
 var Dropdown = __webpack_require__(427);
-var html = __webpack_require__(166);
+var html = __webpack_require__(167);
 var css = __webpack_require__(108);
 
 // constructor
@@ -62147,7 +62287,7 @@ var datumKey = 'aaDatum';
 
 var _ = __webpack_require__(29);
 var DOM = __webpack_require__(36);
-var html = __webpack_require__(166);
+var html = __webpack_require__(167);
 var css = __webpack_require__(108);
 var EventEmitter = __webpack_require__(107);
 
@@ -62467,8 +62607,8 @@ module.exports = {
 
 
 var _ = __webpack_require__(29);
-var version = __webpack_require__(167);
-var parseAlgoliaClientVersion = __webpack_require__(168);
+var version = __webpack_require__(168);
+var parseAlgoliaClientVersion = __webpack_require__(169);
 
 module.exports = function search(index, params) {
   var algoliaVersion = parseAlgoliaClientVersion(index.as._ua);
@@ -62498,8 +62638,8 @@ module.exports = function search(index, params) {
 
 
 var _ = __webpack_require__(29);
-var version = __webpack_require__(167);
-var parseAlgoliaClientVersion = __webpack_require__(168);
+var version = __webpack_require__(168);
+var parseAlgoliaClientVersion = __webpack_require__(169);
 
 module.exports = function popularIn(index, params, details, options) {
   var algoliaVersion = parseAlgoliaClientVersion(index.as._ua);
@@ -62621,7 +62761,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-var _zepto = __webpack_require__(169);
+var _zepto = __webpack_require__(170);
 
 var _zepto2 = _interopRequireDefault(_zepto);
 
@@ -62902,7 +63042,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _react = __webpack_require__(1);
+var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -62932,7 +63072,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _react = __webpack_require__(1);
+var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -63034,16 +63174,16 @@ __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED:{ReactCurrentDispatcher:I,Rea
 "use strict";
 
 
-var SearchParameters = __webpack_require__(224);
-var SearchResults = __webpack_require__(226);
+var SearchParameters = __webpack_require__(225);
+var SearchResults = __webpack_require__(227);
 var DerivedHelper = __webpack_require__(448);
 var requestBuilder = __webpack_require__(449);
 
 var events = __webpack_require__(53);
-var inherits = __webpack_require__(229);
+var inherits = __webpack_require__(230);
 var objectHasKeys = __webpack_require__(111);
 
-var version = __webpack_require__(230);
+var version = __webpack_require__(231);
 
 /**
  * Event triggered when a parameter is set or updated
@@ -64517,7 +64657,7 @@ module.exports = valToNumber;
  */
 
 var defaultsPure = __webpack_require__(110);
-var omit = __webpack_require__(225);
+var omit = __webpack_require__(226);
 var objectHasKeys = __webpack_require__(111);
 
 var lib = {
@@ -64698,9 +64838,9 @@ module.exports = function find(array, comparator) {
 
 module.exports = generateTrees;
 
-var orderBy = __webpack_require__(227);
+var orderBy = __webpack_require__(228);
 var find = __webpack_require__(70);
-var prepareHierarchicalFacetSortBy = __webpack_require__(228);
+var prepareHierarchicalFacetSortBy = __webpack_require__(229);
 
 function generateTrees(state) {
   return function generate(hierarchicalFacetResult, hierarchicalFacetIndex) {
@@ -64903,7 +65043,7 @@ function format(
 
 
 var events = __webpack_require__(53);
-var inherits = __webpack_require__(229);
+var inherits = __webpack_require__(230);
 
 /**
  * A DerivedHelper is a way to create sub requests to
@@ -66531,7 +66671,7 @@ includeFileHelper.bind(defaultConfig);
 //# sourceMappingURL=eta.es.js.map
 
 // EXTERNAL MODULE: ./node_modules/react/index.js
-var react = __webpack_require__(1);
+var react = __webpack_require__(2);
 var react_default = /*#__PURE__*/__webpack_require__.n(react);
 
 // EXTERNAL MODULE: ./node_modules/react-router/esm/react-router.js + 4 modules
@@ -66563,7 +66703,7 @@ var fs_extra_lib = __webpack_require__(243);
 var fs_extra_lib_default = /*#__PURE__*/__webpack_require__.n(fs_extra_lib);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/extends.js
-var esm_extends = __webpack_require__(2);
+var esm_extends = __webpack_require__(1);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/interopRequireWildcard.js + 1 modules
 var interopRequireWildcard = __webpack_require__(4);
@@ -66579,7 +66719,7 @@ var interopRequireWildcard = __webpack_require__(4);
 var routesChunkNames = __webpack_require__(244);
 
 // CONCATENATED MODULE: ./.docusaurus/registry.js
-/* harmony default export */ var registry = ({'028ee526':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(145))),"@site/versioned_docs/version-0.1.0-beta.7/concepts/user-components.md",/*require.resolve*/(145)],'08514ee8':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(146))),"@site/versioned_docs/version-0.1.0-beta.6/api/useNode.md",/*require.resolve*/(146)],'0a85db17':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(147))),"@site/docs/api/EditorState.md",/*require.resolve*/(147)],'0cbef37d':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(148))),"@site/docs/api/useNode.md",/*require.resolve*/(148)],'0cd4e543':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(149))),"@site/versioned_docs/version-0.1.0-beta.7/api/NodeHelpers.md",/*require.resolve*/(149)],'15197d08':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(150))),"@site/versioned_docs/version-0.1.0-beta.6/concepts/editor-components.md",/*require.resolve*/(150)],'17837e87':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(151))),"@site/versioned_docs/version-0.1.0-beta.6/api/Canvas.md",/*require.resolve*/(151)],'17896441':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(72))),"@theme/DocItem",/*require.resolve*/(72)],'18b93cb3':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(238))),"@site/src/pages/versions.js",/*require.resolve*/(238)],'1be78505':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(237))),"@theme/DocPage",/*require.resolve*/(237)],'1c458e9f':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(171))),"@site/docs/concepts/editor-components.md",/*require.resolve*/(171)],'1d603ce4':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(172))),"@site/versioned_docs/version-0.1.0-beta.7/guides/basic-tutorial.md",/*require.resolve*/(172)],'1db64337':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(173))),"@site/docs/overview.md",/*require.resolve*/(173)],'1dd4a722':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(174))),"@site/versioned_docs/version-0.1.0-beta.6/api/Frame.md",/*require.resolve*/(174)],'22cb26d9':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(175))),"@site/docs/api/NodeHelpers.md",/*require.resolve*/(175)],'39c21874':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(176))),"~docs/r-docs-0-1-0-beta-6-route-703.json",/*require.resolve*/(176)],'3a23b72d':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(177))),"@site/versioned_docs/version-0.1.0-beta.7/dev.md",/*require.resolve*/(177)],'3fddf6a4':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(178))),"@site/versioned_docs/version-0.1.0-beta.7/api/Element.md",/*require.resolve*/(178)],'44725de5':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(179))),"@site/versioned_docs/version-0.1.0-beta.7/api/EditorState.md",/*require.resolve*/(179)],'44d60fd4':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(180))),"@site/docs/api/UserComponent.md",/*require.resolve*/(180)],'45398abe':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(181))),"@site/versioned_docs/version-0.1.0-beta.6/acknowledgements.md",/*require.resolve*/(181)],'4c00dda0':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(182))),"@site/docs/additional/layers.md",/*require.resolve*/(182)],'4e2f9345':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(183))),"@site/docs/guides/basic-tutorial.md",/*require.resolve*/(183)],'5325a4b2':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(184))),"@site/versioned_docs/version-0.1.0-beta.6/api/NodeHelpers.md",/*require.resolve*/(184)],'58a8258a':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(185))),"@site/versioned_docs/version-0.1.0-beta.6/guides/save-load.md",/*require.resolve*/(185)],'5e9281cd':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(186))),"@site/versioned_docs/version-0.1.0-beta.6/api/useEditor.md",/*require.resolve*/(186)],'6419f853':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(187))),"@site/versioned_docs/version-0.1.0-beta.7/additional/layers.md",/*require.resolve*/(187)],'6a4fa8a4':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(188))),"@site/docs/guides/save-load.md",/*require.resolve*/(188)],'6dde9663':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(189))),"@site/versioned_docs/version-0.1.0-beta.7/api/Editor.md",/*require.resolve*/(189)],'6f7a91e6':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(190))),"@site/versioned_docs/version-0.1.0-beta.7/api/UserComponent.md",/*require.resolve*/(190)],'7214c1fa':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(191))),"@site/versioned_docs/version-0.1.0-beta.7/api/useNode.md",/*require.resolve*/(191)],'76e09823':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(192))),"@site/versioned_docs/version-0.1.0-beta.7/api/Frame.md",/*require.resolve*/(192)],'775f4c22':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(193))),"@site/versioned_docs/version-0.1.0-beta.7/concepts/editor-components.md",/*require.resolve*/(193)],'7c74713e':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(194))),"~docs/r-docs-route-4af.json",/*require.resolve*/(194)],'83a1b1f4':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(195))),"@site/docs/concepts/serializing.md",/*require.resolve*/(195)],'8b897adc':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(196))),"@site/versioned_docs/version-0.1.0-beta.6/api/Editor.md",/*require.resolve*/(196)],'93afb4cc':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(197))),"@site/versioned_docs/version-0.1.0-beta.7/api/NodeTree.md",/*require.resolve*/(197)],'950718c7':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(198))),"@site/docs/dev.md",/*require.resolve*/(198)],'9cf0c811':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(199))),"@site/versioned_docs/version-0.1.0-beta.6/additional/layers.md",/*require.resolve*/(199)],'9e01f5b3':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(200))),"@site/versioned_docs/version-0.1.0-beta.7/overview.md",/*require.resolve*/(200)],'9f506e79':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(201))),"@site/docs/api/NodeTree.md",/*require.resolve*/(201)],'9fc42c9c':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(202))),"@site/versioned_docs/version-0.1.0-beta.6/concepts/nodes.md",/*require.resolve*/(202)],'a4a7d593':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(203))),"@site/versioned_docs/version-0.1.0-beta.7/concepts/nodes.md",/*require.resolve*/(203)],'a56cdbc9':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(204))),"@site/versioned_docs/version-0.1.0-beta.6/concepts/serializing.md",/*require.resolve*/(204)],'ab9bdc8a':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(205))),"@site/src/pages/support.js",/*require.resolve*/(205)],'b0361ba7':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(206))),"@site/docs/api/Element.md",/*require.resolve*/(206)],'b547cdf8':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(207))),"@site/docs/api/Frame.md",/*require.resolve*/(207)],'b5fdb636':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(208))),"@site/versioned_docs/version-0.1.0-beta.7/api/Node.md",/*require.resolve*/(208)],'b8528cd2':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(209))),"@site/versioned_docs/version-0.1.0-beta.7/acknowledgements.md",/*require.resolve*/(209)],'b87a6656':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(210))),"@site/docs/api/Node.md",/*require.resolve*/(210)],'c4f5d8e4':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(211))),"@site/src/pages/index.js",/*require.resolve*/(211)],'c8905571':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(212))),"@site/docs/concepts/nodes.md",/*require.resolve*/(212)],'caed3f4a':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(213))),"@site/versioned_docs/version-0.1.0-beta.6/overview.md",/*require.resolve*/(213)],'ccff2dc8':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(214))),"@site/versioned_docs/version-0.1.0-beta.6/guides/basic-tutorial.md",/*require.resolve*/(214)],'d0c99745':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(215))),"@site/versioned_docs/version-0.1.0-beta.7/concepts/serializing.md",/*require.resolve*/(215)],'d46aba6e':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(216))),"@site/docs/api/Editor.md",/*require.resolve*/(216)],'d486a7a6':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(217))),"@site/versioned_docs/version-0.1.0-beta.6/dev.md",/*require.resolve*/(217)],'da5da385':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(218))),"@site/docs/acknowledgements.md",/*require.resolve*/(218)],'dad44952':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(219))),"@site/versioned_docs/version-0.1.0-beta.6/api/Node.md",/*require.resolve*/(219)],'db6caf4f':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(220))),"@site/versioned_docs/version-0.1.0-beta.6/api/UserComponent.md",/*require.resolve*/(220)],'def0a8a0':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(221))),"@site/versioned_docs/version-0.1.0-beta.7/guides/save-load.md",/*require.resolve*/(221)],'e06c0a6d':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(222))),"@site/docs/api/useEditor.md",/*require.resolve*/(222)],'e5684210':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(223))),"@site/versioned_docs/version-0.1.0-beta.6/support.md",/*require.resolve*/(223)],'f2922919':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(239))),"/home/runner/work/craft.js/craft.js/packages/docs/node_modules/@docusaurus/theme-search-algolia/src/pages/search/index.js",/*require.resolve*/(239)],'f2a3862d':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(231))),"@site/versioned_docs/version-0.1.0-beta.6/concepts/user-components.md",/*require.resolve*/(231)],'f34773b8':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(232))),"@site/docs/concepts/user-components.md",/*require.resolve*/(232)],'fb5ff824':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(233))),"@site/versioned_docs/version-0.1.0-beta.6/api/EditorState.md",/*require.resolve*/(233)],'fbb10bde':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(234))),"~docs/r-docs-next-route-3a0.json",/*require.resolve*/(234)],'feee030f':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(235))),"@site/versioned_docs/version-0.1.0-beta.7/api/useEditor.md",/*require.resolve*/(235)]});
+/* harmony default export */ var registry = ({'02cc89dc':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(145))),"@site/versioned_docs/version-0.1.0-beta.8/acknowledgements.md",/*require.resolve*/(145)],'069dca66':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(146))),"@site/versioned_docs/version-0.1.0-beta.8/concepts/serializing.md",/*require.resolve*/(146)],'08514ee8':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(147))),"@site/versioned_docs/version-0.1.0-beta.6/api/useNode.md",/*require.resolve*/(147)],'0a85db17':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(148))),"@site/docs/api/EditorState.md",/*require.resolve*/(148)],'0cbef37d':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(149))),"@site/docs/api/useNode.md",/*require.resolve*/(149)],'15197d08':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(150))),"@site/versioned_docs/version-0.1.0-beta.6/concepts/editor-components.md",/*require.resolve*/(150)],'15a04443':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(151))),"@site/versioned_docs/version-0.1.0-beta.8/api/NodeHelpers.md",/*require.resolve*/(151)],'17837e87':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(152))),"@site/versioned_docs/version-0.1.0-beta.6/api/Canvas.md",/*require.resolve*/(152)],'17896441':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(72))),"@theme/DocItem",/*require.resolve*/(72)],'18b93cb3':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(238))),"@site/src/pages/versions.js",/*require.resolve*/(238)],'1be78505':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(237))),"@theme/DocPage",/*require.resolve*/(237)],'1c458e9f':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(172))),"@site/docs/concepts/editor-components.md",/*require.resolve*/(172)],'1db64337':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(173))),"@site/docs/overview.md",/*require.resolve*/(173)],'1dd4a722':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(174))),"@site/versioned_docs/version-0.1.0-beta.6/api/Frame.md",/*require.resolve*/(174)],'20e6824d':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(175))),"@site/versioned_docs/version-0.1.0-beta.8/guides/save-load.md",/*require.resolve*/(175)],'22cb26d9':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(176))),"@site/docs/api/NodeHelpers.md",/*require.resolve*/(176)],'366bfad1':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(177))),"@site/versioned_docs/version-0.1.0-beta.8/guides/basic-tutorial.md",/*require.resolve*/(177)],'39c21874':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(178))),"~docs/r-docs-0-1-0-beta-6-route-703.json",/*require.resolve*/(178)],'44d60fd4':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(179))),"@site/docs/api/UserComponent.md",/*require.resolve*/(179)],'45398abe':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(180))),"@site/versioned_docs/version-0.1.0-beta.6/acknowledgements.md",/*require.resolve*/(180)],'4a6f66a7':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(181))),"@site/versioned_docs/version-0.1.0-beta.8/api/Node.md",/*require.resolve*/(181)],'4c00dda0':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(182))),"@site/docs/additional/layers.md",/*require.resolve*/(182)],'4e2f9345':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(183))),"@site/docs/guides/basic-tutorial.md",/*require.resolve*/(183)],'503cb11c':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(184))),"@site/versioned_docs/version-0.1.0-beta.8/concepts/user-components.md",/*require.resolve*/(184)],'5325a4b2':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(185))),"@site/versioned_docs/version-0.1.0-beta.6/api/NodeHelpers.md",/*require.resolve*/(185)],'5746a993':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(186))),"@site/versioned_docs/version-0.1.0-beta.8/api/Element.md",/*require.resolve*/(186)],'583510cc':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(187))),"@site/versioned_docs/version-0.1.0-beta.8/api/NodeTree.md",/*require.resolve*/(187)],'58a8258a':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(188))),"@site/versioned_docs/version-0.1.0-beta.6/guides/save-load.md",/*require.resolve*/(188)],'59a40c78':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(189))),"@site/versioned_docs/version-0.1.0-beta.8/concepts/editor-components.md",/*require.resolve*/(189)],'5c3c18c5':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(190))),"@site/versioned_docs/version-0.1.0-beta.8/api/Editor.md",/*require.resolve*/(190)],'5e9281cd':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(191))),"@site/versioned_docs/version-0.1.0-beta.6/api/useEditor.md",/*require.resolve*/(191)],'6a4fa8a4':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(192))),"@site/docs/guides/save-load.md",/*require.resolve*/(192)],'7c74713e':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(193))),"~docs/r-docs-route-4af.json",/*require.resolve*/(193)],'7caa7790':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(194))),"@site/versioned_docs/version-0.1.0-beta.8/api/useEditor.md",/*require.resolve*/(194)],'83a1b1f4':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(195))),"@site/docs/concepts/serializing.md",/*require.resolve*/(195)],'8b897adc':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(196))),"@site/versioned_docs/version-0.1.0-beta.6/api/Editor.md",/*require.resolve*/(196)],'90d32da8':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(197))),"@site/versioned_docs/version-0.1.0-beta.8/overview.md",/*require.resolve*/(197)],'950718c7':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(198))),"@site/docs/dev.md",/*require.resolve*/(198)],'9bf6c42a':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(199))),"@site/versioned_docs/version-0.1.0-beta.8/api/UserComponent.md",/*require.resolve*/(199)],'9cf0c811':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(200))),"@site/versioned_docs/version-0.1.0-beta.6/additional/layers.md",/*require.resolve*/(200)],'9f506e79':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(201))),"@site/docs/api/NodeTree.md",/*require.resolve*/(201)],'9fc42c9c':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(202))),"@site/versioned_docs/version-0.1.0-beta.6/concepts/nodes.md",/*require.resolve*/(202)],'a56cdbc9':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(203))),"@site/versioned_docs/version-0.1.0-beta.6/concepts/serializing.md",/*require.resolve*/(203)],'ab9bdc8a':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(204))),"@site/src/pages/support.js",/*require.resolve*/(204)],'ad58dbb8':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(205))),"@site/versioned_docs/version-0.1.0-beta.8/concepts/nodes.md",/*require.resolve*/(205)],'b0361ba7':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(206))),"@site/docs/api/Element.md",/*require.resolve*/(206)],'b547cdf8':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(207))),"@site/docs/api/Frame.md",/*require.resolve*/(207)],'b87a6656':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(208))),"@site/docs/api/Node.md",/*require.resolve*/(208)],'bb3e23e3':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(209))),"@site/versioned_docs/version-0.1.0-beta.8/api/EditorState.md",/*require.resolve*/(209)],'c4f5d8e4':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(210))),"@site/src/pages/index.js",/*require.resolve*/(210)],'c8905571':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(211))),"@site/docs/concepts/nodes.md",/*require.resolve*/(211)],'caed3f4a':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(212))),"@site/versioned_docs/version-0.1.0-beta.6/overview.md",/*require.resolve*/(212)],'ccff2dc8':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(213))),"@site/versioned_docs/version-0.1.0-beta.6/guides/basic-tutorial.md",/*require.resolve*/(213)],'cd1d0329':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(214))),"@site/versioned_docs/version-0.1.0-beta.8/api/Frame.md",/*require.resolve*/(214)],'d46aba6e':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(215))),"@site/docs/api/Editor.md",/*require.resolve*/(215)],'d486a7a6':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(216))),"@site/versioned_docs/version-0.1.0-beta.6/dev.md",/*require.resolve*/(216)],'d6d17c91':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(217))),"@site/versioned_docs/version-0.1.0-beta.8/additional/layers.md",/*require.resolve*/(217)],'da5da385':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(218))),"@site/docs/acknowledgements.md",/*require.resolve*/(218)],'dad44952':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(219))),"@site/versioned_docs/version-0.1.0-beta.6/api/Node.md",/*require.resolve*/(219)],'db6caf4f':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(220))),"@site/versioned_docs/version-0.1.0-beta.6/api/UserComponent.md",/*require.resolve*/(220)],'e06c0a6d':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(221))),"@site/docs/api/useEditor.md",/*require.resolve*/(221)],'e5684210':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(222))),"@site/versioned_docs/version-0.1.0-beta.6/support.md",/*require.resolve*/(222)],'e8f4e8ba':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(223))),"@site/versioned_docs/version-0.1.0-beta.8/dev.md",/*require.resolve*/(223)],'ec960b95':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(224))),"@site/versioned_docs/version-0.1.0-beta.8/api/useNode.md",/*require.resolve*/(224)],'f2922919':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(239))),"/home/runner/work/craft.js/craft.js/packages/docs/node_modules/@docusaurus/theme-search-algolia/src/pages/search/index.js",/*require.resolve*/(239)],'f2a3862d':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(232))),"@site/versioned_docs/version-0.1.0-beta.6/concepts/user-components.md",/*require.resolve*/(232)],'f34773b8':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(233))),"@site/docs/concepts/user-components.md",/*require.resolve*/(233)],'fb5ff824':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(234))),"@site/versioned_docs/version-0.1.0-beta.6/api/EditorState.md",/*require.resolve*/(234)],'fbb10bde':[()=>Promise.resolve().then(()=>Object(interopRequireWildcard["a" /* default */])(__webpack_require__(235))),"~docs/r-docs-next-route-3a0.json",/*require.resolve*/(235)]});
 // CONCATENATED MODULE: ./node_modules/@docusaurus/core/lib/client/flat.js
 /**
  * Copyright (c) 2017-present, Facebook, Inc.
