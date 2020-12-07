@@ -18,7 +18,7 @@ export class History {
   timeline: Timeline = [];
   pointer = -1;
 
-  throttledInversePatch: Patch[];
+  throttledInversePatch: Patch[] | null;
   add(patches: Patch[], inversePatches: Patch[]) {
     if (patches.length === 0 && inversePatches.length === 0) {
       return;

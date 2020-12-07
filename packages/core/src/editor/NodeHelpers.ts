@@ -197,8 +197,16 @@ export function NodeHelpers(state: EditorState, id: NodeId) {
             ERROR_MOVE_TO_DESCENDANT
           );
 
-          const currentParentNode =
-            targetNode.data.parent && state.nodes[targetNode.data.parent];
+          const currentParentNode = targetNode.data.parent
+            ? state.nodes[targetNode.data.parent]
+            : null;
+
+          if (!currentParentNode) {
+            // TODO handle this case
+            console.error('No parent node found.');
+
+            return;
+          }
 
           invariant(
             currentParentNode.data.isCanvas,

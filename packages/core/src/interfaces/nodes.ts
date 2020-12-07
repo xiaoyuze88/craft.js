@@ -114,6 +114,6 @@ export type NodeSelector<
   : NodeIdSelector | NodeObjSelector;
 
 export type NodeSelectorWrapper = {
-  node: Node;
+  node: Node | null;
   exists: boolean;
 };

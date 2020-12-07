@@ -16,18 +16,18 @@ type Actions<M extends MethodsOrOptions, Q extends QueryMethods> = {
 
 export type useCollector<
   M extends MethodsOrOptions,
-  Q extends QueryMethods | null,
+  Q extends QueryMethods,
   C = null
 > = C extends null ? Actions<M, Q> : C & Actions<M, Q>;
 
 export function useCollector<
   M extends MethodsOrOptions,
-  Q extends QueryMethods | null
+  Q extends QueryMethods
 >(store: SubscriberAndCallbacksFor<M, Q>): useCollector<M, Q>;
 
 export function useCollector<
   M extends MethodsOrOptions,
-  Q extends QueryMethods | null,
+  Q extends QueryMethods,
   C
 >(
   store: SubscriberAndCallbacksFor<M, Q>,
@@ -36,7 +36,7 @@ export function useCollector<
 
 export function useCollector<
   M extends MethodsOrOptions,
-  Q extends QueryMethods | null,
+  Q extends QueryMethods,
   C
 >(store: SubscriberAndCallbacksFor<M, Q>, collector?: any) {
   const { subscribe, getState, actions, query } = store;

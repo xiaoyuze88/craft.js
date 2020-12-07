@@ -1,19 +1,23 @@
 export const getDOMPadding = (dom: HTMLElement) => {
+  const computedStyle = window.getComputedStyle(dom);
   return {
-    left: parseInt(window.getComputedStyle(dom).paddingLeft),
-    right: parseInt(window.getComputedStyle(dom).paddingRight),
-    bottom: parseInt(window.getComputedStyle(dom).paddingTop),
-    top: parseInt(window.getComputedStyle(dom).paddingBottom),
+    left: parseInt(computedStyle.paddingLeft || '0'),
+    right: parseInt(computedStyle.paddingRight || '0'),
+    bottom: parseInt(computedStyle.paddingTop || '0'),
+    top: parseInt(computedStyle.paddingBottom || '0'),
   };
 };
+
 export const getDOMMargin = (dom: HTMLElement) => {
+  const computedStyle = window.getComputedStyle(dom);
   return {
-    left: parseInt(window.getComputedStyle(dom).marginLeft),
-    right: parseInt(window.getComputedStyle(dom).marginRight),
-    bottom: parseInt(window.getComputedStyle(dom).marginTop),
-    top: parseInt(window.getComputedStyle(dom).marginBottom),
+    left: parseInt(computedStyle.marginLeft || '0'),
+    right: parseInt(computedStyle.marginRight || '0'),
+    bottom: parseInt(computedStyle.marginTop || '0'),
+    top: parseInt(computedStyle.marginBottom || '0'),
   };
 };
+
 export const getDOMInfo = (dom: HTMLElement) => {
   const {
     x,

@@ -12,16 +12,21 @@ type DefaultEventHandlersOptions = {
   isMultiSelectEnabled: (e) => boolean;
 };
 
+// TODO move this to utils
+function notNull<T>(arg: T | null): arg is T {
+  return arg !== null;
+}
+
 /**
  * Specifies Editor-wide event handlers and connectors
  */
 export class DefaultEventHandlers extends CoreEventHandlers {
-  static draggedElementShadow: HTMLElement;
-  static draggedElement: DraggedElement;
-  static indicator: Indicator = null;
+  static draggedElementShadow: HTMLElement | null;
+  static draggedElement: DraggedElement | null;
+  static indicator: Indicator | null = null;
 
   options: DefaultEventHandlersOptions;
-  currentSelectedElementIds = [];
+  currentSelectedElementIds: string[] = [];
 
   constructor(store, options?: DefaultEventHandlersOptions) {
     super(store);
@@ -63,7 +68,7 @@ export class DefaultEventHandlers extends CoreEventHandlers {
             (e: CraftDOMEvent<MouseEvent>, id: NodeId) => {
               e.craft.stopPropagation();
 
-              let newSelectedElementIds = [];
+              let newSelectedElementIds: string[] = [];
 
               if (id) {
                 const { query } = this.store;
@@ -216,15 +221,19 @@ export class DefaultEventHandlers extends CoreEventHandlers {
 
               actions.setNodeEvent('dragged', selectedElementIds);
 
-              const selectedDOMs = selectedElementIds.map(
-                (id) => query.node(id).get().dom
-              );
+              const selectedDOMs = selectedElementIds
+                .map((id) => query.node(id).get().dom)
+                .filter(notNull);
 
-              DefaultEventHandlers.draggedElementShadow = createShadow(
-                e,
-                query.node(id).get().dom,
-                selectedDOMs
-              );
+              const draggedNodeDom = query.node(id).get().dom;
+              if (draggedNodeDom) {
+                DefaultEventHandlers.draggedElementShadow = createShadow(
+                  e,
+                  draggedNodeDom,
+                  selectedDOMs
+                );
+              }
+
               DefaultEventHandlers.draggedElement = selectedElementIds;
             }
           ),
@@ -299,7 +308,7 @@ export class DefaultEventHandlers extends CoreEventHandlers {
       onDropNode(draggedElement, placement);
     }
 
-    if (draggedElementShadow) {
+    if (draggedElementShadow && draggedElementShadow.parentNode) {
       draggedElementShadow.parentNode.removeChild(draggedElementShadow);
       DefaultEventHandlers.draggedElementShadow = null;
     }

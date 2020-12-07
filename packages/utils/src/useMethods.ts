@@ -100,6 +100,7 @@ export type QueryMethods<
   O = any,
   R extends MethodRecordBase<S> = any
 > = (state?: S, options?: O) => R;
+
 export type QueryCallbacksFor<M extends QueryMethods> = M extends QueryMethods<
   any,
   any,
@@ -168,17 +169,17 @@ export function useMethods<
 export function useMethods<
   S,
   R extends MethodRecordBase<S>,
-  Q extends QueryMethods = null
+  Q extends QueryMethods
 >(
   methodsOrOptions: MethodsOrOptions<S, R>,
   initialState: any,
-  queryMethods?: Q,
+  queryMethods: Q | null = null,
   patchListener?: any
 ): SubscriberAndCallbacksFor<MethodsOrOptions<S, R>, Q> {
   const history = useMemo(() => new History(), []);
 
   let methods: Methods<S, R>;
-  let ignoreHistoryForActionsRef = useRef([]);
+  let ignoreHistoryForActionsRef: React.MutableRefObject<string[]> = useRef([]);
   let normalizeHistoryRef = useRef<any>();
 
   if (typeof methodsOrOptions === 'function') {
@@ -294,6 +295,8 @@ export function useMethods<
   );
 
   const actions = useMemo(() => {
+    // FIXME
+    // @ts-ignore
     const actionTypes = Object.keys(methodsFactory(null, null));
 
     const { current: ignoreHistoryForActions } = ignoreHistoryForActionsRef;

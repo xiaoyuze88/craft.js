@@ -17,7 +17,7 @@ export type DOMInfo = Record<
   | 'outerHeight',
   number
 > & {
-  inFlow: boolean;
+  inFlow: boolean | null;
   margin: Record<'top' | 'left' | 'bottom' | 'right', number>;
   padding: Record<'top' | 'left' | 'bottom' | 'right', number>;
 };

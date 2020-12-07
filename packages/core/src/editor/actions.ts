@@ -300,7 +300,7 @@ const Methods = (
 
     setNodeEvent(
       eventType: NodeEventTypes,
-      nodeIdSelector: NodeSelector<NodeSelectorType.Id>
+      nodeIdSelector: NodeSelector<NodeSelectorType.Id> | null
     ) {
       const current = state.events[eventType];
       if (current.size > 0) {
@@ -395,7 +395,7 @@ const Methods = (
       targets.forEach(({ node }) => cb(state.nodes[node.id].data.props));
     },
 
-    selectNode(nodeIdSelector?: NodeSelector<NodeSelectorType.Id>) {
+    selectNode(nodeIdSelector?: NodeSelector<NodeSelectorType.Id> | null) {
       if (nodeIdSelector) {
         const targets = getNodesFromSelector(state.nodes, nodeIdSelector, {
           idOnly: true,

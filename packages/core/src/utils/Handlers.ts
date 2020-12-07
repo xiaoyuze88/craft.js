@@ -19,7 +19,7 @@ export const defineEventListener = (
   name: string,
   handler: (e: CraftDOMEvent<Event>, payload: any) => void,
   capture?: boolean
-): CraftEventListener => [name, handler, capture];
+): CraftEventListener => [name, handler, !!capture];
 
 export type Handler = {
   /**
@@ -67,8 +67,8 @@ class WatchHandler {
 
   private handler: Handler;
   private unsubscribe: () => void;
-  private cleanDOM: void | (() => void);
-  private listenersToRemove: (() => void)[];
+  private cleanDOM: void | (() => void) | null;
+  private listenersToRemove: (() => void)[] | null;
 
   constructor(store, el: HTMLElement, opts: any, handler: Handler) {
     this.el = el;
@@ -145,6 +145,7 @@ class WatchHandler {
 /**
  * Creates Event Handlers
  */
+// @ts-ignore
 export abstract class Handlers<T extends string = null> {
   // Stores a map of DOM elements to their attached connector's WatchHandler
   private wm = new WeakMap<HTMLElement, Record<string, WatchHandler>>();

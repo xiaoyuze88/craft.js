@@ -26,7 +26,10 @@ export const NodeProvider: React.FC<NodeProvider> = ({
 
   // Get fresh connectors whenever the Nodes are rehydrated (eg: after deserialisation)
   const connectors = useMemo(() => {
-    return handlers.derive(NodeHandlers, id).connectors();
+    if (handlers) {
+      return handlers.derive(NodeHandlers, id).connectors();
+    }
+    return null;
     // eslint-disable-next-line  react-hooks/exhaustive-deps
   }, [handlers, hydrationTimestamp, id]);
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC, memo } from 'react';
 
 import { NodeProvider } from './NodeContext';
 
@@ -9,7 +9,7 @@ export type NodeElement = {
   id: NodeId;
 };
 
-export const NodeElement: React.FC<NodeElement> = React.memo(({ id }) => {
+export const NodeElement: FC<NodeElement> = memo(({ id }) => {
   return (
     <NodeProvider id={id}>
       <RenderNodeToElement />

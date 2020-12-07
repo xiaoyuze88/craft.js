@@ -2,7 +2,7 @@ export const createShadow = (
   e: DragEvent,
   targetDOM: HTMLElement,
   shadowsToCreate: HTMLElement[]
-) => {
+): HTMLDivElement | null => {
   const selectorDOM = e.currentTarget as HTMLElement;
   const {
     top: targetTop,
@@ -10,7 +10,7 @@ export const createShadow = (
   } = targetDOM.getBoundingClientRect();
 
   if (!selectorDOM) {
-    return;
+    return null;
   }
 
   const container = document.createElement('div');
@@ -34,7 +34,9 @@ export const createShadow = (
   });
 
   document.body.appendChild(container);
-  e.dataTransfer.setDragImage(container, targetLeft, targetTop);
+  if (e.dataTransfer) {
+    e.dataTransfer.setDragImage(container, targetLeft, targetTop);
+  }
 
   return container;
 };

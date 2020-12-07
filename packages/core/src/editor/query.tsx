@@ -49,7 +49,7 @@ export function QueryMethods(state: EditorState) {
       source: NodeSelector,
       target: NodeId,
       pos: { x: number; y: number },
-      nodesToDOM: (node: Node) => HTMLElement = (node) =>
+      nodesToDOM: (node: Node) => HTMLElement | null = (node) =>
         state.nodes[node.id].dom
     ) => {
       const targetNode = state.nodes[target],
@@ -84,9 +84,9 @@ export function QueryMethods(state: EditorState) {
         pos.x,
         pos.y
       );
-      const currentNode =
-        targetParentNodes.length &&
-        state.nodes[targetParentNodes[dropAction.index]];
+      const currentNode = targetParentNodes.length
+        ? state.nodes[targetParentNodes[dropAction.index]]
+        : null;
 
       const output: Indicator = {
         placement: {
