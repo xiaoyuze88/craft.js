@@ -1,21 +1,30 @@
-import { EditorContext, QueryMethods } from '@craftjs/core';
 import {
   QueryCallbacksFor,
   ERROR_USE_EDITOR_OUTSIDE_OF_EDITOR_CONTEXT,
+  ConditionallyMergeRecordTypes,
 } from '@craftjs/utils';
 import { useContext } from 'react';
 import invariant from 'tiny-invariant';
 
 import { RuntimeStore } from './store';
-import { useCollectorReturnType, useCollector } from './useCollector';
-
-import { RuntimeState } from '../interfaces';
+import { RuntimeState } from '../../interfaces';
 import { noop } from '../utils';
+import { QueryMethods, EditorContext } from '../../editor';
 
 export type RuntimeCollector<C> = (
   state: RuntimeState,
   query: QueryCallbacksFor<typeof QueryMethods>
 ) => C;
+
+type CollectorMethods<S extends RuntimeStore> = {
+  actions: S['actions'];
+  query: S['query'];
+};
+
+export type useCollectorReturnType<
+  S extends RuntimeStore,
+  C = null
+> = ConditionallyMergeRecordTypes<C, CollectorMethods<S>>;
 
 export type useInternalContainerReturnType<C = null> = useCollectorReturnType<
   RuntimeStore,

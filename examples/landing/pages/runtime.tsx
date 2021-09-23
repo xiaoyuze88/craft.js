@@ -1,4 +1,4 @@
-import { Editor, Frame, Element } from '@craftjs/core';
+import { Runtime, Editor, Frame, Element } from '@craftjs/core';
 import { createMuiTheme } from '@material-ui/core';
 import { ThemeProvider } from '@material-ui/styles';
 import React from 'react';
@@ -10,7 +10,6 @@ import { Custom2, Custom2VideoDrop } from '../components/selectors/Custom2';
 import { Custom3, Custom3BtnDrop } from '../components/selectors/Custom3';
 import { Video } from '../components/selectors/Video';
 import { data } from '../data';
-import { Runtime } from '../components/runtime';
 
 const theme = createMuiTheme({
   typography: {

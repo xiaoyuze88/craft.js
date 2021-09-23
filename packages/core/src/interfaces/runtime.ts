@@ -1,13 +1,13 @@
-import { Resolver } from '@craftjs/core';
-
+import { Resolver } from './editor';
 import { Nodes } from './nodes';
 
-export type Options = {
+export type RuntimeContainerOptions = {
   onRender: React.ComponentType<{ render: React.ReactElement }>;
   resolver: Resolver;
 };
 
 export type RuntimeState = {
+  runtime: boolean;
   nodes: Nodes;
-  options: Options;
+  options: RuntimeContainerOptions;
 };

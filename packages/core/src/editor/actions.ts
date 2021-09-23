@@ -210,7 +210,7 @@ const Methods = (
       deleteNode(id);
     },
 
-    deserialize(input: SerializedNodes | string, NodeProvider?: any) {
+    deserialize(input: SerializedNodes | string) {
       const dehydratedNodes =
         typeof input == 'string' ? JSON.parse(input) : input;
 
@@ -224,7 +224,7 @@ const Methods = (
         return [
           nodeId,
           query
-            .parseSerializedNode(dehydratedNodes[id], NodeProvider)
+            .parseSerializedNode(dehydratedNodes[id])
             .toNode((node) => (node.id = nodeId)),
         ];
       });

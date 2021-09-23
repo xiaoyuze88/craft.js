@@ -11,7 +11,7 @@ export type NodeElementProps = {
 };
 
 export const NodeElement: React.FC<NodeElementProps> = ({ id, render }) => {
-  console.log('default NodeElement rendered');
+  console.error('default NodeElement rendered');
   return (
     <NodeProvider id={id}>
       <RenderNodeToElement render={render} />

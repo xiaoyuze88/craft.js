@@ -1,12 +1,13 @@
-import {
-  SerializedNodes,
-  Resolver,
-} from '@craftjs/core';
+// import {
+//   SerializedNodes,
+//   Resolver,
+// } from '@craftjs/core';
 import React, { useEffect, useState, useRef, useMemo } from 'react';
 
 import { Frame } from './render';
 
 import { Container } from './container';
+import { Resolver, SerializedNodes } from '../interfaces';
 // import { useInternalEditor } from '../editor/useInternalEditor';
 // import { NodeElement } from '../nodes/NodeElement';
 

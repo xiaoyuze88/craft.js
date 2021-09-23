@@ -1,11 +1,12 @@
-import { ActionMethods, EditorState, QueryMethods } from '@craftjs/core';
 import { Action, QueryCallbacksFor } from '@craftjs/utils';
 import { useMemo, useReducer } from 'react';
 
-import { RuntimeState, Options } from '../interfaces';
+import { ActionMethods, QueryMethods } from '../../editor';
+import { RuntimeState, Options, EditorState } from '../../interfaces';
 import { noop } from '../utils';
 
 export const editorInitialState: RuntimeState = {
+  runtime: true,
   nodes: {},
   options: {
     onRender: ({ render }) => render,
@@ -46,7 +47,7 @@ export type RuntimeStore = {
 
 const ActionMethodsFactory = (
   state: RuntimeState,
-  query: Omit<QueryCallbacksFor<typeof QueryMethods>, 'history'>,
+  query: Omit<QueryCallbacksFor<typeof QueryMethods>, 'history'>
 ) => {
   const {
     deserialize,
@@ -57,7 +58,7 @@ const ActionMethodsFactory = (
     setHidden,
     setProp,
     setState,
-  } = ActionMethods(state as EditorState, query as any);
+  } = ActionMethods(state as any, query as any);
 
   return {
     deserialize,
@@ -97,7 +98,7 @@ export const useRuntimeStore = (options: Partial<Options>): RuntimeStore => {
         ...editorInitialState.options,
         ...options,
       },
-    },
+    }
   );
 
   const query = useMemo(() => QueryMethods(state), [state]);

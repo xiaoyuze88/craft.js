@@ -1,7 +1,8 @@
-import { NodeContext, NodeContextType } from '@craftjs/core';
+// import { NodeContext, NodeContextType } from '@craftjs/core';
 import React from 'react';
 
 import { noop } from '../utils';
+import { NodeContext, NodeContextType } from '../../nodes';
 
 export type NodeProviderProps = Omit<NodeContextType, 'connectors'>;
 
@@ -21,5 +22,3 @@ export const NodeProvider: React.FC<NodeProviderProps> = ({
     </NodeContext.Provider>
   );
 };
-
-global.RuntimeNodeProvider = NodeProvider;

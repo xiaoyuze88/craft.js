@@ -1,10 +1,10 @@
-import { NodeId } from '@craftjs/core';
 import React, { useMemo } from 'react';
 
 import { SimpleElement } from './SimpleElement';
 
 import { NodeElement } from '../nodes';
 import { useInternalNode } from '../nodes/useInternalNode';
+import { NodeId } from '../../../lib/interfaces';
 
 export const DefaultRender = () => {
   const { type, props, nodes, hydrationTimestamp } = useInternalNode(

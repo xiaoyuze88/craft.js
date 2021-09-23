@@ -1,9 +1,9 @@
-import { NodeId } from '@craftjs/core';
 import React from 'react';
 
-import { NodeProvider } from './NodeContext';
+import { NodeProvider } from './NodeProvider';
 
 import { RenderNodeToElement } from '../render/RenderNode';
+import { NodeId } from '../../interfaces';
 
 export type NodeElementProps = {
   id: NodeId;

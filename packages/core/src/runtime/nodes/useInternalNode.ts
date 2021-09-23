@@ -1,9 +1,10 @@
-import { NodeContext, NodeContextType, Node } from '@craftjs/core';
 import { ERROR_USE_NODE_OUTSIDE_OF_EDITOR_CONTEXT } from '@craftjs/utils';
 import { useMemo, useContext } from 'react';
 import invariant from 'tiny-invariant';
 
 import { useInternalContainer } from '../container';
+import { NodeContext, NodeContextType } from '../../nodes';
+import { Node } from '../../interfaces';
 
 type internalActions = NodeContextType & {
   inNodeContext: boolean;
@@ -21,10 +22,10 @@ export type useInternalNodeReturnType<S = null> = S extends null
 
 export function useInternalNode(): useInternalNodeReturnType;
 export function useInternalNode<S = null>(
-  collect?: (node: Node) => S
+  collect?: (node: Node) => S,
 ): useInternalNodeReturnType<S>;
 export function useInternalNode<S = null>(
-  collect?: (node: Node) => S
+  collect?: (node: Node) => S,
 ): useInternalNodeReturnType<S> {
   const context = useContext(NodeContext);
   invariant(context, ERROR_USE_NODE_OUTSIDE_OF_EDITOR_CONTEXT);
@@ -35,7 +36,7 @@ export function useInternalNode<S = null>(
     (state) => {
       console.log('use internal node, collect result: ', id, JSON.stringify(id && state.nodes[id] && collect && collect(state.nodes[id])));
       return id && state.nodes[id] && collect && collect(state.nodes[id]);
-    }
+    },
   );
 
   const actions = useMemo(() => {
