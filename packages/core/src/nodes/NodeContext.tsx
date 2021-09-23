@@ -27,6 +27,8 @@ export const NodeProvider: React.FC<NodeProviderProps> = ({
 }) => {
   const handlers = useEventHandler();
 
+  console.log('default NodeProvider rendered');
+
   const connectors = useMemo(
     () =>
       wrapConnectorHooks({

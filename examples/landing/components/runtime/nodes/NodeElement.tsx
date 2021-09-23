@@ -1,8 +1,8 @@
+import { NodeId } from '@craftjs/core';
 import React from 'react';
 
 import { NodeProvider } from './NodeContext';
 
-import { NodeId } from '../interfaces';
 import { RenderNodeToElement } from '../render/RenderNode';
 
 export type NodeElementProps = {
@@ -11,10 +11,9 @@ export type NodeElementProps = {
 };
 
 export const NodeElement: React.FC<NodeElementProps> = ({ id, render }) => {
-  console.log('default NodeElement rendered');
   return (
     <NodeProvider id={id}>
-      <RenderNodeToElement render={render} />
+      <RenderNodeToElement render={render}/>
     </NodeProvider>
   );
 };

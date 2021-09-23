@@ -7,6 +7,8 @@ import { NodeElement } from '../nodes/NodeElement';
 import { useInternalNode } from '../nodes/useInternalNode';
 
 export const DefaultRender = () => {
+  console.error('default render rendered');
+
   const { type, props, nodes, hydrationTimestamp } = useInternalNode(
     (node) => ({
       type: node.data.type,

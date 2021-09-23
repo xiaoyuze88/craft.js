@@ -174,7 +174,10 @@ export function QueryMethods(state: EditorState) {
       },
     }),
 
-    parseSerializedNode: (serializedNode: SerializedNode) => ({
+    parseSerializedNode: (
+      serializedNode: SerializedNode,
+      NodeProvider?: any
+    ) => ({
       toNode(normalize?: (node: Node) => void): Node {
         const data = deserializeNode(serializedNode, state.options.resolver);
         invariant(data.type, ERROR_NOT_IN_RESOLVER);
@@ -188,30 +191,40 @@ export function QueryMethods(state: EditorState) {
         }
 
         return _()
-          .parseFreshNode({
-            ...(id ? { id } : {}),
-            data,
-          })
+          .parseFreshNode(
+            {
+              ...(id ? { id } : {}),
+              data,
+            },
+            NodeProvider
+          )
           .toNode(!id && normalize);
       },
     }),
 
-    parseFreshNode: (node: FreshNode) => ({
+    parseFreshNode: (node: FreshNode, NodeProvider?: any) => ({
       toNode(normalize?: (node: Node) => void): Node {
-        return createNode(node, (node) => {
-          if (node.data.parent === DEPRECATED_ROOT_NODE) {
-            node.data.parent = ROOT_NODE;
-          }
+        return createNode(
+          node,
+          (node) => {
+            if (node.data.parent === DEPRECATED_ROOT_NODE) {
+              node.data.parent = ROOT_NODE;
+            }
 
-          const name = resolveComponent(state.options.resolver, node.data.type);
-          invariant(name !== null, ERROR_NOT_IN_RESOLVER);
-          node.data.displayName = node.data.displayName || name;
-          node.data.name = name;
+            const name = resolveComponent(
+              state.options.resolver,
+              node.data.type
+            );
+            invariant(name !== null, ERROR_NOT_IN_RESOLVER);
+            node.data.displayName = node.data.displayName || name;
+            node.data.name = name;
 
-          if (normalize) {
-            normalize(node);
-          }
-        });
+            if (normalize) {
+              normalize(node);
+            }
+          },
+          NodeProvider
+        );
       },
     }),
 
