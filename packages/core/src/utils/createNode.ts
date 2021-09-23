@@ -9,17 +9,15 @@ import {
   elementPropToNodeData,
   deprecateCanvasComponent,
 } from '../nodes';
-import { NodeProvider as DefaultNodeProvider } from '../nodes/NodeContext';
+import { NodeProvider } from '../nodes/NodeContext';
 
 const getNodeTypeName = (type: string | { name: string }) =>
   typeof type == 'string' ? type : type.name;
 
 export function createNode(
   newNode: FreshNode,
-  normalize?: (node: Node) => void,
-  NodeProvider = DefaultNodeProvider,
+  normalize?: (node: Node) => void
 ) {
-  console.log('createNode provider matched?', NodeProvider === global.RuntimeNodeProvider);
   let actualType = newNode.data.type as any;
   let id = newNode.id || getRandomNodeId();
 
@@ -134,7 +132,7 @@ export function createNode(
           React.createElement(
             NodeProvider,
             relatedNodeContext,
-            React.createElement(userComponentConfig.related[comp], props),
+            React.createElement(userComponentConfig.related[comp], props)
           );
       });
     }

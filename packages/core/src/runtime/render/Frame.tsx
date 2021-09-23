@@ -1,10 +1,10 @@
-import { SerializedNodes } from '@craftjs/core';
 import { deprecationWarning, ROOT_NODE } from '@craftjs/utils';
 import React, { useEffect, useState, useRef } from 'react';
 
 import { NodeProvider } from '../nodes';
 import { useInternalContainer } from '../container';
 import { NodeElement } from '../nodes';
+import { SerializedNodes } from '../../../lib/interfaces';
 
 export type Frame = {
   data?: string | SerializedNodes;

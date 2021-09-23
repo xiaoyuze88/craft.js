@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { NodeProvider } from './NodeContext';
+import { NodeProvider } from './NodeProvider';
 
-import { NodeId } from '../interfaces';
 import { RenderNodeToElement } from '../render/RenderNode';
+import { NodeId } from '../../interfaces';
 
 export type NodeElementProps = {
   id: NodeId;
@@ -11,10 +11,9 @@ export type NodeElementProps = {
 };
 
 export const NodeElement: React.FC<NodeElementProps> = ({ id, render }) => {
-  console.error('default NodeElement rendered');
   return (
     <NodeProvider id={id}>
-      <RenderNodeToElement render={render} />
+      <RenderNodeToElement render={render}/>
     </NodeProvider>
   );
 };

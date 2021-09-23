@@ -1,17 +1,16 @@
-import { EditorContext } from '@craftjs/core';
 import { ERROR_RESOLVER_NOT_AN_OBJECT } from '@craftjs/utils';
 import { pickBy } from 'lodash';
 import React, { useEffect, useMemo } from 'react';
 import invariant from 'tiny-invariant';
 
+import { EditorContext } from '../../editor';
 import { useRuntimeStore } from './store';
-
-import { Options } from '../interfaces';
+import { RuntimeContainerOptions } from '../../interfaces';
 
 /**
  * A React Component that provides the Editor context
  */
-export const Container: React.FC<Partial<Options>> = ({
+export const Container: React.FC<Partial<RuntimeContainerOptions>> = ({
   children,
   onRender,
   resolver,
@@ -20,7 +19,7 @@ export const Container: React.FC<Partial<Options>> = ({
   if (resolver !== undefined) {
     invariant(
       typeof resolver === 'object' && !Array.isArray(resolver),
-      ERROR_RESOLVER_NOT_AN_OBJECT
+      ERROR_RESOLVER_NOT_AN_OBJECT,
     );
   }
 
