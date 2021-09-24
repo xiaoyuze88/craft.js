@@ -33,13 +33,18 @@ const StyledButton = styled.button<ButtonProps>`
 export const Button: UserComponent<ButtonProps> = (props: any) => {
   const {
     connectors: { connect },
+    id,
   } = useNode((node) => ({
     selected: node.events.selected,
+    id: node.id,
   }));
 
-  const { text, textComponent, color, ...otherProps } = props;
+  const { text, textComponent, color, loading, events, ...otherProps } = props;
+  console.log('events', events, loading);
+
   return (
     <StyledButton
+      id={id}
       ref={connect}
       className={cx([
         'rounded w-full px-4 py-2',
@@ -48,7 +53,9 @@ export const Button: UserComponent<ButtonProps> = (props: any) => {
         },
       ])}
       {...otherProps}
+      onClick={events.tap}
     >
+      {loading && 'loading...'}
       <Text {...textComponent} text={text} color={props.color} />
     </StyledButton>
   );

@@ -1,9 +1,16 @@
 import { Action, QueryCallbacksFor } from '@craftjs/utils';
+import produce from 'immer';
 import { useMemo, useReducer } from 'react';
 
-import { ActionMethods, QueryMethods } from '../../editor';
-import { RuntimeState, Options, EditorState } from '../../interfaces';
-import { noop } from '../utils';
+import { noop } from './utils';
+
+import { ActionMethods, QueryMethods } from '../editor';
+import {
+  RuntimeState,
+  RuntimeOptions,
+  DataState,
+  PageDefine,
+} from '../interfaces';
 
 export const editorInitialState: RuntimeState = {
   runtime: true,
@@ -11,7 +18,15 @@ export const editorInitialState: RuntimeState = {
   options: {
     onRender: ({ render }) => render,
     resolver: {},
+    data: {
+      productId: '',
+      appData: {
+        dataset: {},
+        pages: [],
+      },
+    },
   },
+  dataset: {},
 };
 
 export const ActionMethodsWithConfig = {
@@ -73,36 +88,52 @@ const ActionMethodsFactory = (
   };
 };
 
-export const useRuntimeStore = (options: Partial<Options>): RuntimeStore => {
+const reduceFunction = (state, action: Action) => {
+  console.log('reducer prev => ', state);
+  console.log('reducer action => ', action);
+
+  const query = QueryMethods(state);
+
+  const methods = ActionMethodsFactory(state, query);
+
+  if (methods[action.type]) {
+    methods[action.type](...action.payload);
+  }
+
+  console.log('reducer after => ', state);
+
+  return state;
+  // return { ...state };
+};
+
+export const useRuntimeStore = (
+  options: Partial<RuntimeOptions>
+): RuntimeStore => {
   const [state, dispatch] = useReducer(
-    (state, action: Action) => {
-      console.log('reducer prev => ', state);
-      console.log('reducer action => ', action);
+    produce(reduceFunction),
+    options.data,
+    (data) => {
+      const initState = {
+        ...editorInitialState,
+        options: {
+          ...editorInitialState.options,
+          ...options,
+        },
+      };
 
-      const query = QueryMethods(state);
+      Object.keys(data.appData.dataset).forEach((key) => {
+        const { dataType, initValue } = data.appData.dataset[key];
 
-      const methods = ActionMethodsFactory(state, query);
+        initState.dataset[key] = initValue;
+      });
 
-      if (methods[action.type]) {
-        methods[action.type](...action.payload);
-      }
-
-      console.log('reducer after => ', state);
-
-      // return state;
-      return { ...state };
-    },
-    {
-      ...editorInitialState,
-      options: {
-        ...editorInitialState.options,
-        ...options,
-      },
+      return initState;
     }
   );
 
+  // const onChangeRef = useRef<any>(noop);
+  // const collectorRef = useRef<any>(noop);
   const query = useMemo(() => QueryMethods(state), [state]);
-
   const actions = useMemo(() => {
     const actionTypes = Object.keys(ActionMethodsFactory(null, null));
 
@@ -114,11 +145,20 @@ export const useRuntimeStore = (options: Partial<Options>): RuntimeStore => {
     };
   }, []);
 
-  return {
-    actions,
-    query,
-    state,
-    getState: () => state,
-    subscribe: () => noop,
-  };
+  // const onRender = () => {
+  //   onChangeRef.current(collectorRef.current(state));
+  // };
+  //
+  // onRender();
+
+  return useMemo(
+    () => ({
+      actions,
+      query,
+      state,
+      getState: () => state,
+      subscribe: () => noop,
+    }),
+    [actions, query, state]
+  );
 };

@@ -2,10 +2,10 @@ export const data = {
   productId: '',
   appData: {
     // 全局state
-    state: {
+    dataset: {
       // ...物模型
       // 设备在线/离线
-      show: {
+      loading: {
         dataType: 'boolean',
         initValue: true,
       },
@@ -913,11 +913,8 @@ export const data = {
             },
             isCanvas: false,
             props: {
-              background: {
-                r: 255,
-                g: 255,
-                b: 255,
-                a: 0.5,
+              style: {
+                // backgroundColor: 'black',
               },
               color: {
                 r: 92,
@@ -940,11 +937,33 @@ export const data = {
                 },
                 margin: [0, 0, 0, 0],
                 shadow: 0,
-                text: 'Text',
+                text: 'Text 123',
               },
+              ':loading': '$app.dataset.loading',
             },
             displayName: 'Button',
-            custom: {},
+            custom: {
+              listeners: [
+                {
+                  id: 'wa2q1c9f8e1',
+                  eventName: 'tap',
+                  type: 'platform',
+                  handler: {
+                    name: 'showModal',
+                    module: 'platform',
+                    params: {
+                      cancelColor: '#000000',
+                      cancelText: '取消',
+                      confirmColor: '#576B95',
+                      confirmText: '确认',
+                      content: '请输入弹窗内容',
+                      showCancel: true,
+                      title: '弹窗标题',
+                    },
+                  },
+                },
+              ],
+            },
             parent: 'vr-2L-_y2J',
             hidden: false,
             nodes: [],
@@ -1079,7 +1098,7 @@ export const data = {
           },
         },
         // 页面级state
-        state: {
+        dataset: {
           showInner: {
             dataType: 'boolean',
             initValue: false,

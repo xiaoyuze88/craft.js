@@ -3,8 +3,6 @@ import React, { useMemo } from 'react';
 
 import { useEventHandler } from '../events';
 import { NodeId } from '../interfaces';
-import { useInternalEditor } from '../editor/useInternalEditor';
-import { NodeProvider as RuntimeNodeProvider } from '../runtime/nodes';
 
 export type NodeContextType = {
   id: NodeId;
@@ -27,9 +25,6 @@ export const NodeProvider: React.FC<NodeProviderProps> = ({
   related = false,
   children,
 }) => {
-  const { runtime } = useInternalEditor((state) => ({
-    runtime: state.runtime,
-  }));
   const handlers = useEventHandler();
 
   const connectors = useMemo(
@@ -41,11 +36,7 @@ export const NodeProvider: React.FC<NodeProviderProps> = ({
     [handlers, id]
   );
 
-  return runtime ? (
-    <RuntimeNodeProvider {...{ id, related, connectors }}>
-      {children}
-    </RuntimeNodeProvider>
-  ) : (
+  return (
     <NodeContext.Provider value={{ id, related, connectors }}>
       {children}
     </NodeContext.Provider>

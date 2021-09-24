@@ -12,6 +12,7 @@ export type useCollectorReturnType<
   S extends SubscriberAndCallbacksFor<any, any>,
   C = null
 > = ConditionallyMergeRecordTypes<C, CollectorMethods<S>>;
+
 export function useCollector<S extends SubscriberAndCallbacksFor<any, any>, C>(
   store: S,
   collector?: (
@@ -58,6 +59,11 @@ export function useCollector<S extends SubscriberAndCallbacksFor<any, any>, C>(
       if (unsubscribe) unsubscribe();
     };
   }, [onCollect, query, subscribe]);
+
+  // @ts-ignore
+  if (getState().runtime) {
+    return onCollect(collector ? collector(getState(), query) : null);
+  }
 
   return renderCollected;
 }

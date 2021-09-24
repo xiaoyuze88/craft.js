@@ -2,24 +2,23 @@ import { deprecationWarning, ROOT_NODE } from '@craftjs/utils';
 import React, { useEffect, useState, useRef } from 'react';
 
 import { NodeProvider } from '../nodes';
-import { useInternalContainer } from '../container';
 import { NodeElement } from '../nodes';
-import { SerializedNodes } from '../../../lib/interfaces';
+import { SerializedNodes } from '../interfaces';
+import { useInternalEditor } from '../editor/useInternalEditor';
 
-export type Frame = {
+export type RuntimeFrame = {
   data?: string | SerializedNodes;
 };
 
 /**
  * A React Component that defines the editable area
  */
-export const Frame: React.FC<Frame> = ({ data }) => {
-  const { actions } = useInternalContainer();
+export const RuntimeFrame: React.FC<RuntimeFrame> = ({ data }) => {
+  const { actions } = useInternalEditor();
 
   useEffect(() => {
-    console.log('data', data);
     actions.deserialize(data, NodeProvider);
   }, [actions, data]);
 
-  return <NodeElement id={ROOT_NODE}/>;
+  return <NodeElement id={ROOT_NODE} />;
 };
